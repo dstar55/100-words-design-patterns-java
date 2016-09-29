@@ -16,6 +16,7 @@ title: Home
 		-->
       </header>
       <div class="post_excerpt">
+	  <!--
         <p>
           {% if post.description %}
           {{ post.description}}
@@ -24,11 +25,10 @@ title: Home
           {% endif %} 
           <a class="read-more" href="{{ post.url | prepend: site.baseurl }}"> »  </a>
         </p> 
-
+-->
         <p>
 			{% for page in site.pages %}
-			<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-			<p>{{ page.content }}</p>
+			<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>			
 			{% endfor %}
         </p> 
 		
