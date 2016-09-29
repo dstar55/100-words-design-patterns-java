@@ -65,11 +65,12 @@ title: Home
 			{% for page in site.pages %}
 			  {% if page.tag == 'pattern' %}  
 				<h3><a href="{{ site.baseurl }}/{{ page.permalink }}">{{ page.title }}</a></h3>
+				<!--
 				<p>page.url {{ page.url }}</p>
 				<p>site.baseurl {{ site.baseurl }}</p>
 				<p>page.title {{ page.title }}</p>
 				<p>page.permalink {{ page.permalink }}</p>
-				<p>page.tag {{ page.tag }}</p>
+				<p>page.tag {{ page.tag }}</p>-->
 			  {% endif %}
 			{% endfor %}
 		</p> 
