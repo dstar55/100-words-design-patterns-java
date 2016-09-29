@@ -24,6 +24,14 @@ title: Home
           {% endif %} 
           <a class="read-more" href="{{ post.url | prepend: site.baseurl }}"> »  </a>
         </p> 
+
+        <p>
+			{% for page in site.pages %}
+			<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+			<p>{{ page.content }}</p>
+			{% endfor %}
+        </p> 
+		
       </div>
       <footer class="post_meta">
 
