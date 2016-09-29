@@ -63,7 +63,7 @@ title: Home
 	<article class="post_card post">
 		<p>
 			{% for page in site.pages %}
-			  {% if page.layout == 'pattern' %}  
+			  {% if page.tag == 'pattern' %}  
 				<h3><a href="{{ site.baseurl }}/{{ page.permalink }}">{{ page.title }}</a></h3>
 				<p>page.url {{ page.url }}</p>
 				<p>site.baseurl {{ site.baseurl }}</p>
