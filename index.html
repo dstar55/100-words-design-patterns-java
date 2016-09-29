@@ -59,13 +59,18 @@ title: Home
       <hr/>
     </article>
     {% endfor %}
-
-    <p>
+	
+	<article class="post_card post">
+		<p>
 			{% for page in site.pages %}
-			<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>			
+			  {% if page.layout == 'pattern' %}  
+				<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+				<!--<p>{{ page.content }}</p>-->
+			  {% endif %}
 			{% endfor %}
-    </p> 
-
+		</p> 
+	</article>
+	
     <div class="pagination older-post"><a href="./archive"><data data-icon="ei-arrow-right"></data> Archive  </a></div>
   </div>
 </div>
