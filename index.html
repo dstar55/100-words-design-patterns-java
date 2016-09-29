@@ -65,7 +65,10 @@ title: Home
 			{% for page in site.pages %}
 			  {% if page.layout == 'pattern' %}  
 				<h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
-				<!--<p>{{ page.content }}</p>-->
+				<p>page.url {{ page.url }}</p>
+				<p>page.baseurl {{ page.baseurl }}</p>
+				<p>page.title {{ page.title }}</p>
+				<p>page.permalink {{ page.permalink }}</p>
 			  {% endif %}
 			{% endfor %}
 		</p> 
