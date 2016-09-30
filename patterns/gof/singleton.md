@@ -1,9 +1,8 @@
 ---
 layout: page
-title: singleton
-permalink: /singleton/
+title: Singleton
+permlink: /Singleton/
 tag: pattern
 ---
 
-singleton
-
+Singleton

@@ -1,9 +1,8 @@
 ---
 layout: page
-title: builder
-permalink: /builder/
+title: Builder
+permlink: /Builder/
 tag: pattern
 ---
 
-builder
-
+Builder
