@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Decorator
-permlink: /Decorator/
+permalink: /Decorator/
 tag: pattern
 ---
 

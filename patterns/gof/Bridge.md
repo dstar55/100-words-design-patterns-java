@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bridge
-permlink: /Bridge/
+permalink: /Bridge/
 tag: pattern
 ---
 

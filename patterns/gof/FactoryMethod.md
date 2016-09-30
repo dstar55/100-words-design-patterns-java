@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Factory Method
-permlink: /FactoryMethod/
+permalink: /FactoryMethod/
 tag: pattern
 ---
 

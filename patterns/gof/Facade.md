@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Facade
-permlink: /Facade/
+permalink: /Facade/
 tag: pattern
 ---
 

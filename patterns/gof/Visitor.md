@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Visitor
-permlink: /Visitor/
+permalink: /Visitor/
 tag: pattern
 ---
 

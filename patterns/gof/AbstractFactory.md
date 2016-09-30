@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Abstract Factory
-permlink: /AbstractFactory/
+permalink: /AbstractFactory/
 tag: pattern
 ---
 

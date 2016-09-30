@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Composite
-permlink: /Composite/
+permalink: /Composite/
 tag: pattern
 ---
 

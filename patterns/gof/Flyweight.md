@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Flyweight
-permlink: /Flyweight/
+permalink: /Flyweight/
 tag: pattern
 ---
 

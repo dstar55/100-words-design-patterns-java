@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Command
-permlink: /Command/
+permalink: /Command/
 tag: pattern
 ---
 

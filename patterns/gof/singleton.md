@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Singleton
-permlink: /Singleton/
+permalink: /Singleton/
 tag: pattern
 ---
 

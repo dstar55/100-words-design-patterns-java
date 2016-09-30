@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Builder
-permlink: /builder/
+permalink: /Builder/
 tag: pattern
 ---
 

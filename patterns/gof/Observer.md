@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Observer
-permlink: /Observer/
+permalink: /Observer/
 tag: pattern
 ---
 

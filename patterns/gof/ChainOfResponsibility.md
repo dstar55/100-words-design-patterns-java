@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Chain Of Responsibility
-permlink: /ChainOfResponsibility/
+permalink: /ChainOfResponsibility/
 tag: pattern
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Iterator
-permlink: /Iterator/
+permalink: /Iterator/
 tag: pattern
 ---
 
