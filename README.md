@@ -1,3 +1,6 @@
+
+http://dstar55.github.io/100-words-design-patterns-java/
+
 # jekyll-simple
 
 ## simple
