@@ -6,3 +6,9 @@ tag: pattern
 ---
 
 Singleton
+
+```java
+private void index(){
+  MessageBox.Show("hello world");
+}
+``` 
