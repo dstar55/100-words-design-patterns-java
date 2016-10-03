@@ -23,7 +23,7 @@ The call center will contact the available taxi nearest to customer’s location
 ### UML 
 ![]({{site.baseurl}}/assets/img/mediator.png)
 
-#### Colleague.java
+#### *Colleague.java* 
 ```java 
 package com.hundredwordsgof.mediator;
 
@@ -52,7 +52,7 @@ abstract class Colleague {
 }
 ```
 
-#### ConcreteColleague1.java
+#### *ConcreteColleague1.java* 
 ```java 
 package com.hundredwordsgof.mediator;
 
@@ -78,7 +78,7 @@ public class ConcreteColleague1 extends Colleague {
 }
 ```
 
-#### ConcreteColleague2.java
+#### *ConcreteColleague2.java* 
 ```java 
 package com.hundredwordsgof.mediator;
 
@@ -102,7 +102,7 @@ public class ConcreteColleague2 extends Colleague {
 }
 ```
 
-#### ConcreteMediator.java
+#### *ConcreteMediator.java* 
 ```java 
 package com.hundredwordsgof.mediator;
 
@@ -142,7 +142,7 @@ public class ConcreteMediator implements Mediator{
 }
 ```
 
-#### Mediator.java
+#### *Mediator.java* 
 ```java 
 package com.hundredwordsgof.mediator;
 

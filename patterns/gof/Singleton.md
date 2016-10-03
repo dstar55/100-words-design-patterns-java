@@ -20,7 +20,7 @@ Regardless of who that person is the title, "Men's 100 meters world record holde
 ### UML 
 ![]({{site.baseurl}}/assets/img/singleton.png)
 
-#### Singleton.java
+#### *Singleton.java* 
 ```java 
 package com.hundredwordsgof.singleton;
 

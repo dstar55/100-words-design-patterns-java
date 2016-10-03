@@ -18,7 +18,7 @@ Process of browsing is example of Iterator pattern.
 ### UML 
 ![]({{site.baseurl}}/assets/img/iterator.png)
 
-#### Aggregate.java
+#### *Aggregate.java* 
 ```java 
 package com.hundredwordsgof.iterator;
 
@@ -34,7 +34,7 @@ public interface Aggregate {
 }
 ```
 
-#### ConcreteAggregate.java
+#### *ConcreteAggregate.java* 
 ```java 
 package com.hundredwordsgof.iterator;
 
@@ -59,7 +59,7 @@ public class ConcreteAggregate implements Aggregate {
 }
 ```
 
-#### ConcreteIterator.java
+#### *ConcreteIterator.java* 
 ```java 
 package com.hundredwordsgof.iterator;
 
@@ -103,7 +103,7 @@ public class ConcreteIterator implements Iterator {
 }
 ```
 
-#### Iterator.java
+#### *Iterator.java* 
 ```java 
 package com.hundredwordsgof.iterator;
 

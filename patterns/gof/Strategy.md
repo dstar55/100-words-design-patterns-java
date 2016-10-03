@@ -21,7 +21,7 @@ The user must choose the Strategy based on his possibilities, preferences.
 ### UML 
 ![]({{site.baseurl}}/assets/img/strategy.png)
 
-#### ConcreteStrategyA.java
+#### *ConcreteStrategyA.java* 
 ```java 
 package com.hundredwordsgof.strategy;
 
@@ -39,7 +39,7 @@ public class ConcreteStrategyA implements Strategy{
 }
 ```
 
-#### ConcreteStrategyB.java
+#### *ConcreteStrategyB.java* 
 ```java 
 package com.hundredwordsgof.strategy;
 
@@ -57,7 +57,7 @@ public class ConcreteStrategyB implements Strategy{
 }
 ```
 
-#### ConcreteStrategyC.java
+#### *ConcreteStrategyC.java* 
 ```java 
 package com.hundredwordsgof.strategy;
 
@@ -75,7 +75,7 @@ public class ConcreteStrategyC implements Strategy{
 }
 ```
 
-#### Context.java
+#### *Context.java* 
 ```java 
 package com.hundredwordsgof.strategy;
 
@@ -99,7 +99,7 @@ public class Context {
 
 ```
 
-#### Strategy.java
+#### *Strategy.java* 
 ```java 
 package com.hundredwordsgof.strategy;
 

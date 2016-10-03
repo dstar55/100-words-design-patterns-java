@@ -21,7 +21,7 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 ### UML 
 ![]({{site.baseurl}}/assets/img/state.png)
 
-#### ConcreteState1.java
+#### *ConcreteState1.java* 
 ```java 
 package com.hundredwordsgof.state;
 
@@ -44,7 +44,7 @@ public class ConcreteState1 implements State {
 }
 ```
 
-#### ConcreteState2.java
+#### *ConcreteState2.java* 
 ```java 
 package com.hundredwordsgof.state;
 
@@ -67,7 +67,7 @@ public class ConcreteState2 implements State {
 }
 ```
 
-#### Context.java
+#### *Context.java* 
 ```java 
 package com.hundredwordsgof.state;
 
@@ -91,7 +91,7 @@ public class Context {
 }
 ```
 
-#### State.java
+#### *State.java* 
 ```java 
 package com.hundredwordsgof.state;
 

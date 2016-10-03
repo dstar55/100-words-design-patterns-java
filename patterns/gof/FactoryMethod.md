@@ -17,7 +17,7 @@ Plasticine is used for children's play. Plasticine is injected into predefined m
 ### UML 
 ![]({{site.baseurl}}/assets/img/factorymethod.png)
 
-#### ConcreteCreator.java
+#### *ConcreteCreator.java* 
 ```java 
 package com.hundredwordsgof.factorymethod;
 
@@ -43,7 +43,7 @@ public class ConcreteCreator extends Creator {
 }
 ```
 
-#### ConcreteProductA.java
+#### *ConcreteProductA.java* 
 ```java 
 package com.hundredwordsgof.factorymethod;
 
@@ -57,7 +57,7 @@ public class ConcreteProductA implements Product {
 }
 ```
 
-#### ConcreteProductB.java
+#### *ConcreteProductB.java* 
 ```java 
 package com.hundredwordsgof.factorymethod;
 
@@ -71,7 +71,7 @@ public class ConcreteProductB implements Product {
 }
 ```
 
-#### Creator.java
+#### *Creator.java* 
 ```java 
 package com.hundredwordsgof.factorymethod;
 
@@ -86,7 +86,7 @@ abstract class Creator {
 }
 ```
 
-#### Product.java
+#### *Product.java* 
 ```java 
 package com.hundredwordsgof.factorymethod;
 

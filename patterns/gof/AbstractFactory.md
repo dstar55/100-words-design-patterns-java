@@ -22,7 +22,7 @@ The same machine is used to stamp French, Italian or German cards.
 ### UML 
 ![]({{site.baseurl}}/assets/img/abstractfactory.png)
 
-#### AbstractFactory.java
+#### *AbstractFactory.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
 
@@ -40,7 +40,7 @@ public interface AbstractFactory {
 }
 ```
 
-#### AbstractProductA.java
+#### *AbstractProductA.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
 
@@ -54,7 +54,7 @@ abstract class AbstractProductA {
 }
 ```
 
-#### AbstractProductB.java
+#### *AbstractProductB.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
 
@@ -68,7 +68,7 @@ abstract class AbstractProductB {
 }
 ```
 
-#### ConcreteFactory1.java
+#### *ConcreteFactory1.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
 
@@ -92,7 +92,7 @@ public class ConcreteFactory1 implements AbstractFactory {
 }
 ```
 
-#### ConcreteFactory2.java
+#### *ConcreteFactory2.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
 
@@ -116,7 +116,7 @@ public class ConcreteFactory2 implements AbstractFactory {
 }
 ```
 
-#### ProductA1.java
+#### *ProductA1.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
 
@@ -130,7 +130,7 @@ public class ProductA1 extends AbstractProductA {
 }
 ```
 
-#### ProductA2.java
+#### *ProductA2.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
 
@@ -144,7 +144,7 @@ public class ProductA2 extends AbstractProductA {
 }
 ```
 
-#### ProductB1.java
+#### *ProductB1.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
 
@@ -158,7 +158,7 @@ public class ProductB1 extends AbstractProductB {
 }
 ```
 
-#### ProductB2.java
+#### *ProductB2.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
 

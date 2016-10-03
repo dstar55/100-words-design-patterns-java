@@ -19,7 +19,7 @@ The spoilers do not change the car itself, but adds additional functionality whi
 ### UML 
 ![]({{site.baseurl}}/assets/img/decorator.png)
 
-#### Component.java
+#### *Component.java* 
 ```java 
 package com.hundredwordsgof.decorator;
 
@@ -35,7 +35,7 @@ public interface Component {
 }
 ```
 
-#### ConcreteComponent.java
+#### *ConcreteComponent.java* 
 ```java 
 package com.hundredwordsgof.decorator;
 
@@ -53,7 +53,7 @@ public class ConcreteComponent implements Component {
 }
 ```
 
-#### ConcreteDecoratorA.java
+#### *ConcreteDecoratorA.java* 
 ```java 
 package com.hundredwordsgof.decorator;
 
@@ -81,7 +81,7 @@ public class ConcreteDecoratorA extends Decorator {
 }
 ```
 
-#### ConcreteDecoratorB.java
+#### *ConcreteDecoratorB.java* 
 ```java 
 package com.hundredwordsgof.decorator;
 
@@ -111,7 +111,7 @@ public class ConcreteDecoratorB extends Decorator {
 }
 ```
 
-#### Decorator.java
+#### *Decorator.java* 
 ```java 
 package com.hundredwordsgof.decorator;
 

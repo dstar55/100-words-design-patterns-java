@@ -19,7 +19,7 @@ Database normalization is flyweight. Normalisation, is the process of organizing
 ### UML 
 ![]({{site.baseurl}}/assets/img/flyweight.png)
 
-#### ConcreteFlyweight.java
+#### *ConcreteFlyweight.java* 
 ```java 
 package com.hundredwordsgof.flyweight;
 
@@ -52,7 +52,7 @@ public class ConcreteFlyweight implements Flyweight{
 }
 ```
 
-#### Flyweight.java
+#### *Flyweight.java* 
 ```java 
 package com.hundredwordsgof.flyweight;
 
@@ -68,7 +68,7 @@ public interface Flyweight {
 }
 ```
 
-#### FlyweightFactory.java
+#### *FlyweightFactory.java* 
 ```java 
 package com.hundredwordsgof.flyweight;
 
@@ -115,7 +115,7 @@ public class FlyweightFactory {
 }
 ```
 
-#### UnsharedConcreteFlyweight.java
+#### *UnsharedConcreteFlyweight.java* 
 ```java 
 package com.hundredwordsgof.flyweight;
 

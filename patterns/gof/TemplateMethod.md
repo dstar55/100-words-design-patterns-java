@@ -23,7 +23,7 @@ At the end of the day worker go home, have a dinner and go to sleep.
 ### UML 
 ![]({{site.baseurl}}/assets/img/templatemethod.png)
 
-#### AbstractClass.java
+#### *AbstractClass.java* 
 ```java 
 package com.hundredwordsgof.templatemethod;
 
@@ -51,7 +51,7 @@ abstract class AbstractClass {
 }
 ```
 
-#### ConcreteClass.java
+#### *ConcreteClass.java* 
 ```java 
 package com.hundredwordsgof.templatemethod;
 
