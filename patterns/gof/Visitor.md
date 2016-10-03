@@ -5,10 +5,9 @@ permalink: /Visitor/
 tag: pattern
 ---
 
-Visitor
 
 
-# Story 
+## Story 
 
 Allows for one or more operations to be applied to a set of objects at runtime, decoupling the operations from object structure.
 

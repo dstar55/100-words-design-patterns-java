@@ -5,10 +5,9 @@ permalink: /Observer/
 tag: pattern
 ---
 
-Observer
 
 
-# Story 
+## Story 
 
 Keep me updated.
 

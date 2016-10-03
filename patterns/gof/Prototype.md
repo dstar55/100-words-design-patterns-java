@@ -5,10 +5,9 @@ permalink: /Prototype/
 tag: pattern
 ---
 
-Prototype
 
 
-# Story 
+## Story 
 
 Clone itself.
 

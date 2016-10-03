@@ -5,10 +5,9 @@ permalink: /TemplateMethod/
 tag: pattern
 ---
 
-Template Method
 
 
-# Story 
+## Story 
 
 Defines a skeleton of an algorithm in an operation.
 Algorithm will have common and specialized part.
