@@ -27,6 +27,7 @@ Correct handler of request is only known during execution of the request when re
 ###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/chainofresponsibility.png)
 
+###  <a id="Implementation"></a>Implementation 
 #### *ConcreteHandler1.java* 
 ```java 
 package com.hundredwordsgof.chainofresponsibility;
@@ -105,3 +106,5 @@ abstract class Handler {
 }
 ```
 
+###  <a id="Usage"></a>Usage 
+usage 

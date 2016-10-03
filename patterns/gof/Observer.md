@@ -24,6 +24,7 @@ Subscribers can subscribers or unsubscribers to the newsletters.
 ###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/observer.png)
 
+###  <a id="Implementation"></a>Implementation 
 #### *ConcreteObserver.java* 
 ```java 
 package com.hundredwordsgof.observer;
@@ -129,3 +130,5 @@ abstract class Subject {
 }
 ```
 
+###  <a id="Usage"></a>Usage 
+usage 

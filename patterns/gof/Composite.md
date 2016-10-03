@@ -25,6 +25,7 @@ A brick is a basic object, but on a same time brick is a container which can hol
 ###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/composite.png)
 
+###  <a id="Implementation"></a>Implementation 
 #### *Component.java* 
 ```java 
 package com.hundredwordsgof.composite;
@@ -98,3 +99,5 @@ public class Leaf extends Component {
 }
 ```
 
+###  <a id="Usage"></a>Usage 
+usage 

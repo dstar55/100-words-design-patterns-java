@@ -30,6 +30,7 @@ This is a typical example for Facade.
 ###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/facade.png)
 
+###  <a id="Implementation"></a>Implementation 
 #### *Compiler.java* 
 ```java 
 package com.hundredwordsgof.facade;
@@ -270,3 +271,5 @@ public class Tokenizer {
 }
 ```
 
+###  <a id="Usage"></a>Usage 
+usage 

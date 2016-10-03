@@ -27,6 +27,7 @@ At the end of the day worker go home, have a dinner and go to sleep.
 ###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/templatemethod.png)
 
+###  <a id="Implementation"></a>Implementation 
 #### *AbstractClass.java* 
 ```java 
 package com.hundredwordsgof.templatemethod;
@@ -78,3 +79,5 @@ public class ConcreteClass extends AbstractClass{
 }
 ```
 
+###  <a id="Usage"></a>Usage 
+usage 

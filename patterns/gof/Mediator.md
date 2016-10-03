@@ -27,6 +27,7 @@ The call center will contact the available taxi nearest to customer’s location
 ###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/mediator.png)
 
+###  <a id="Implementation"></a>Implementation 
 #### *Colleague.java* 
 ```java 
 package com.hundredwordsgof.mediator;
@@ -160,3 +161,5 @@ public interface Mediator {
 }
 ```
 
+###  <a id="Usage"></a>Usage 
+usage 

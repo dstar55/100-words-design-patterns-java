@@ -26,6 +26,7 @@ The same machine is used to stamp French, Italian or German cards.
 ###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/abstractfactory.png)
 
+###  <a id="Implementation"></a>Implementation 
 #### *AbstractFactory.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -176,3 +177,5 @@ public class ProductB2 extends AbstractProductB {
 }
 ```
 
+###  <a id="Usage"></a>Usage 
+usage 

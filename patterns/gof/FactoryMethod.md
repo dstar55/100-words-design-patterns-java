@@ -21,6 +21,7 @@ Plasticine is used for children's play. Plasticine is injected into predefined m
 ###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/factorymethod.png)
 
+###  <a id="Implementation"></a>Implementation 
 #### *ConcreteCreator.java* 
 ```java 
 package com.hundredwordsgof.factorymethod;
@@ -104,3 +105,5 @@ public interface Product {
 }
 ```
 
+###  <a id="Usage"></a>Usage 
+usage 
