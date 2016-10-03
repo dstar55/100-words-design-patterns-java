@@ -21,12 +21,12 @@ Regardless of who that person is the title, "Men's 100 meters world record holde
 
 
 
-###<a id="UML"></a>UML 
+### <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/singleton.png)
 
-###<a id="Implementation"></a>Implementation
+### <a id="Implementation"></a>Implementation
 
-#### *Singleton.java* 
+##### *Singleton.java* 
 ```java 
 package com.hundredwordsgof.singleton;
 
@@ -63,6 +63,6 @@ public class Singleton {
 }
 ```
 
-###<a id="Usage"></a>Usage
+### <a id="Usage"></a>Usage
 
 usage
