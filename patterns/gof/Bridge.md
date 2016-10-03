@@ -21,3 +21,95 @@ There are different implementations of the steering wheels used in cars, buses, 
 ### UML 
 ![]({{site.baseurl}}/assets/img/bridge.png)
 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/Abstraction.java
+```java 
+package com.hundredwordsgof.bridge;
+
+
+/**
+ * 
+ * Abstraction, defines abstraction interface, maintains a reference to object of type Implementator
+ * 
+ */
+abstract class Abstraction {
+
+	protected Implementor implementor;
+	
+	public Abstraction(Implementor implementor){
+		this.implementor = implementor;		
+	}
+	
+	abstract String operation();
+	
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/ConcreteImplementorA.java
+```java 
+package com.hundredwordsgof.bridge;
+
+/**
+ * 
+ * ConcreteImplementatorA, implements Implementor interface
+ *
+ */
+public class ConcreteImplementorA implements Implementor {
+
+
+	public void implementation() {
+	}
+
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/ConcreteImplementorB.java
+```java 
+package com.hundredwordsgof.bridge;
+
+/**
+ * 
+ * ConcreteImplementatorB, implements Implementor interface
+ *
+ */
+public class ConcreteImplementorB implements Implementor {
+
+
+	public void implementation() {
+	}
+
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/Implementor.java
+```java 
+package com.hundredwordsgof.bridge;
+
+/**
+ * 
+ * Implementor, defines interface for implementation
+ *
+ */
+public interface Implementor {
+
+	void implementation();
+	
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/RefinedAbstraction.java
+```java 
+package com.hundredwordsgof.bridge;
+
+/**
+ * 
+ * Refined Abstraction, extends the interface defined by Abstraction
+ *
+ */
+public class RefinedAbstraction extends Abstraction{
+
+	public RefinedAbstraction(Implementor implementor) {
+		super(implementor);
+	}
+
+	public String operation() {
+		return this.implementor.getClass().getName();
+	}
+
+}
+``` 

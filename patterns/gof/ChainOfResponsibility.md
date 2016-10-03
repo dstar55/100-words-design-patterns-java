@@ -23,3 +23,78 @@ Correct handler of request is only known during execution of the request when re
 ### UML 
 ![]({{site.baseurl}}/assets/img/chainofresponsibility.png)
 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/chainofresponsibility/ConcreteHandler1.java
+```java 
+package com.hundredwordsgof.chainofresponsibility;
+
+/**
+ * 
+ * ConcreteHandler1 class, handles the request, can access to the next object in a chain and forward the request if necesary
+ * 
+ */
+public class ConcreteHandler1 extends Handler {
+
+	private boolean hanldeRequestInvoked = false;
+	
+	void handleRequest() {
+
+		hanldeRequestInvoked = true;
+		
+		// if some condition call handleRequest on successor
+		if(hanldeRequestInvoked){
+			succesor.handleRequest();
+		}
+	}
+
+	public boolean isHanldeRequestInvoked() {
+		return hanldeRequestInvoked;
+	}
+
+	
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/chainofresponsibility/ConcreteHandler2.java
+```java 
+package com.hundredwordsgof.chainofresponsibility;
+
+/**
+ * 
+ * ConcreteHandler1 class, handles the request, can access to the next object in a chain and forward the request if necesary
+ * 
+ */
+public class ConcreteHandler2 extends Handler {
+
+	private boolean hanldeRequestInvoked = false;
+	
+	void handleRequest() {
+		hanldeRequestInvoked = true;
+	}
+
+	public boolean isHanldeRequestInvoked() {
+		return hanldeRequestInvoked;
+	}
+	
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/chainofresponsibility/Handler.java
+```java 
+package com.hundredwordsgof.chainofresponsibility;
+
+
+/**
+ * 
+ * Handler interface, declares an interface for request handling 
+ *
+ */
+abstract class Handler {
+
+	protected Handler succesor;
+	
+	abstract void handleRequest();
+
+	public void setSuccesor(Handler succesor) {
+		this.succesor = succesor;
+	}
+	
+}
+``` 

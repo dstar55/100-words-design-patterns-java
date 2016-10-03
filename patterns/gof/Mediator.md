@@ -23,3 +23,131 @@ The call center will contact the available taxi nearest to customer’s location
 ### UML 
 ![]({{site.baseurl}}/assets/img/mediator.png)
 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/mediator/Colleague.java
+```java 
+package com.hundredwordsgof.mediator;
+
+/**
+ * Colleague defines an interface for communication with another Colleague via mediator.
+ *
+ */
+abstract class Colleague {
+
+	protected Mediator mediator;
+	
+	protected String receivedMessage;
+	
+	public Colleague(Mediator mediator){
+		this.mediator = mediator;
+	}
+	
+	abstract void notifyColleague(String message);
+
+	abstract void receive(String message);
+
+	public String getReceivedMessage() {
+		return this.receivedMessage;
+	}
+
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/mediator/ConcreteColleague1.java
+```java 
+package com.hundredwordsgof.mediator;
+
+
+/**
+ * ConcreteColleague1 implements Colleague interface.
+ *
+ */
+public class ConcreteColleague1 extends Colleague {
+	
+	public ConcreteColleague1(Mediator mediator) {
+		super(mediator);
+	}
+
+	public void notifyColleague(String message){
+		this.mediator.notifyColleague(this, message);
+	}
+
+	public void receive(String message) {
+		this.receivedMessage = message;
+	}
+		
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/mediator/ConcreteColleague2.java
+```java 
+package com.hundredwordsgof.mediator;
+
+/**
+ * ConcreteColleague2 implements Colleague interface.
+ *
+ */
+public class ConcreteColleague2 extends Colleague {
+
+	public ConcreteColleague2(Mediator mediator) {
+		super(mediator);
+	}
+
+	public void notifyColleague(String message){
+		this.mediator.notifyColleague(this, message);
+	}
+
+	public void receive(String message) {
+		this.receivedMessage = message;	
+	}
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/mediator/ConcreteMediator.java
+```java 
+package com.hundredwordsgof.mediator;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+/**
+* ConcreteMediator implements Mediator, coordinates between Colleague objects.
+*
+*/
+public class ConcreteMediator implements Mediator{
+
+	private List<Colleague> colleagues;
+	
+	public ConcreteMediator(){	
+		colleagues = new ArrayList<Colleague>();
+	}
+	
+	public void addColleague(Colleague colleague){
+		colleagues.add(colleague);
+	}
+	
+	public void notifyColleague(Colleague colleague, String message) {
+
+		for (Iterator iterator = colleagues.iterator(); iterator.hasNext();) {
+			Colleague receiverColleague = (Colleague) iterator.next();
+		
+			if(colleague != receiverColleague){
+				receiverColleague.receive(message);
+			}
+		}
+	}
+	
+	
+	
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/mediator/Mediator.java
+```java 
+package com.hundredwordsgof.mediator;
+
+/**
+ * Mediator defines an interface for communicating with Colleague objects.
+ *
+ */
+public interface Mediator {
+
+	void notifyColleague(Colleague colleague, String message);
+}
+``` 

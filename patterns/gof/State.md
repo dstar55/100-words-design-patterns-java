@@ -21,3 +21,84 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 ### UML 
 ![]({{site.baseurl}}/assets/img/state.png)
 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/state/ConcreteState1.java
+```java 
+package com.hundredwordsgof.state;
+
+/** 
+ * ConcreteState1 implements a behavior associated with a state of the Context.
+ *
+ */
+public class ConcreteState1 implements State {
+
+	private boolean handleInvoked = false;
+	
+	public void handle() {
+		this.handleInvoked = true;
+	}
+
+	public boolean isHandleInvoked() {
+		return handleInvoked;
+	}
+
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/state/ConcreteState2.java
+```java 
+package com.hundredwordsgof.state;
+
+/** 
+ * ConcreteState2 implements a behavior associated with a state of the Context.
+ *
+ */
+public class ConcreteState2 implements State {
+
+	private boolean handleInvoked = false;
+	
+	public void handle() {
+		this.handleInvoked = true;		
+	}
+
+	public boolean isHandleInvoked() {
+		return handleInvoked;
+	}
+	
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/state/Context.java
+```java 
+package com.hundredwordsgof.state;
+
+/** 
+ * Context maintains an instance of a ConcreteState subclass that defines the current state.
+ *
+ */
+public class Context {
+
+	private State state;
+	
+	public void request(){
+		state.handle();
+	}
+
+	public void setState(State state) {
+		this.state = state;
+	}
+	
+	
+}
+``` 
+#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/state/State.java
+```java 
+package com.hundredwordsgof.state;
+
+/**
+ * The interface for encapsulating the behavior associated with a particular state of the Context.
+ *
+ */
+public interface State {
+
+	void handle();
+	
+}
+``` 
