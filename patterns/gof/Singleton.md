@@ -11,7 +11,7 @@ tag: pattern
 * [Usage](#Usage)
 
 
-### <a id="Story">s</a>Story 
+### <a id="Story"></a>Story 
 
 Singleton ensures that only one(single) object can be created from the class.
 
