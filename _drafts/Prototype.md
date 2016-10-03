@@ -7,7 +7,8 @@ tag: pattern
 
 Prototype
 
-* Story 
+
+# Story 
 
 Clone itself.
 

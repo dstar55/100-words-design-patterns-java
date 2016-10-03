@@ -7,7 +7,8 @@ tag: pattern
 
 Adapter
 
-* Story 
+
+# Story 
 
 Allows that interface of an existing class to be used from another interface.
 

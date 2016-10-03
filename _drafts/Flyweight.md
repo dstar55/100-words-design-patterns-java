@@ -7,7 +7,8 @@ tag: pattern
 
 Flyweight
 
-* Story 
+
+# Story 
 
 Remove duplicates.
 

@@ -7,7 +7,8 @@ tag: pattern
 
 State
 
-* Story 
+
+# Story 
 
 Behavior depends on its state.
 

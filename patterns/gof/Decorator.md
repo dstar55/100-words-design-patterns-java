@@ -7,7 +7,8 @@ tag: pattern
 
 Decorator
 
-* Story 
+
+# Story 
 
 Attach additional responsibilities to an object dynamically. 
 

@@ -7,7 +7,8 @@ tag: pattern
 
 Memento
 
-* Story 
+
+# Story 
 
 Helps to restore an object’s state to it previous state.
 

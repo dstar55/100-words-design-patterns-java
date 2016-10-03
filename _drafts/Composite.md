@@ -7,7 +7,8 @@ tag: pattern
 
 Composite
 
-* Story 
+
+# Story 
 
 Compose objects into tree structures to represent part-whole hierarchies. 
 Group of objects is to be treated in the same way as a single instance of an object. 

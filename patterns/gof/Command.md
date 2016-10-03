@@ -7,7 +7,8 @@ tag: pattern
 
 Command
 
-* Story 
+
+# Story 
 
 Issue requests to objects without knowing anything about the operation being requested or the receiver of the request.
 

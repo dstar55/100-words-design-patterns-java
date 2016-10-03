@@ -7,7 +7,8 @@ tag: pattern
 
 Strategy
 
-* Story 
+
+# Story 
 
 Select an algorithm at runtime.
 
