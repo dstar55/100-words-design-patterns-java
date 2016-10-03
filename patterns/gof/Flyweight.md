@@ -5,9 +5,13 @@ permalink: /Flyweight/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Remove duplicates.
 
@@ -16,7 +20,7 @@ Database normalization is flyweight. Normalisation, is the process of organizing
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/flyweight.png)
 
 #### *ConcreteFlyweight.java* 

@@ -5,15 +5,19 @@ permalink: /Interpreter/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 A person who translates orally from one language into another.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/interpreter.png)
 
 #### *AbstractExpression.java* 

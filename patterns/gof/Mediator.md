@@ -5,9 +5,13 @@ permalink: /Mediator/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Defines an object that controls how a set of objects interact.
 
@@ -20,7 +24,7 @@ The call center will contact the available taxi nearest to customer’s location
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/mediator.png)
 
 #### *Colleague.java* 

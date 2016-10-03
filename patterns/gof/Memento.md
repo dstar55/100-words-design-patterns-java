@@ -5,9 +5,13 @@ permalink: /Memento/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Helps to restore an object’s state to it previous state.
 
@@ -20,7 +24,7 @@ This mechanism of rolling back uses the memento design pattern.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/memento.png)
 
 #### *Caretaker.java* 

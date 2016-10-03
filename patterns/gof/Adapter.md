@@ -5,9 +5,13 @@ permalink: /Adapter/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Allows that interface of an existing class to be used from another interface.
 
@@ -17,6 +21,6 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/adapter.png)
 

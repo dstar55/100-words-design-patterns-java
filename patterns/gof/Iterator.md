@@ -5,9 +5,13 @@ permalink: /Iterator/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Book is a set of written, printed sheets bound together into a volume.
 You can browse through the book page by page, or quickly jump to interesting chapter.
@@ -15,7 +19,7 @@ Process of browsing is example of Iterator pattern.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/iterator.png)
 
 #### *Aggregate.java* 

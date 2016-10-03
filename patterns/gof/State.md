@@ -5,9 +5,13 @@ permalink: /State/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Behavior depends on its state.
 
@@ -18,7 +22,7 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/state.png)
 
 #### *ConcreteState1.java* 

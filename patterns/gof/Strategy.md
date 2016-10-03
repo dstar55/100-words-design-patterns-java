@@ -5,9 +5,13 @@ permalink: /Strategy/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Select an algorithm at runtime.
 
@@ -18,7 +22,7 @@ The user must choose the Strategy based on his possibilities, preferences.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/strategy.png)
 
 #### *ConcreteStrategyA.java* 

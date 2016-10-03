@@ -5,9 +5,13 @@ permalink: /Decorator/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Attach additional responsibilities to an object dynamically. 
 
@@ -16,7 +20,7 @@ The spoilers do not change the car itself, but adds additional functionality whi
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/decorator.png)
 
 #### *Component.java* 

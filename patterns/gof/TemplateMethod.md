@@ -5,9 +5,13 @@ permalink: /TemplateMethod/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Defines a skeleton of an algorithm in an operation.
 Algorithm will have common and specialized part.
@@ -20,7 +24,7 @@ At the end of the day worker go home, have a dinner and go to sleep.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/templatemethod.png)
 
 #### *AbstractClass.java* 

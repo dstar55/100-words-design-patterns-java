@@ -5,9 +5,13 @@ permalink: /Composite/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Compose objects into tree structures to represent part-whole hierarchies. 
 Group of objects is to be treated in the same way as a single instance of an object. 
@@ -18,7 +22,7 @@ A brick is a basic object, but on a same time brick is a container which can hol
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/composite.png)
 
 #### *Component.java* 

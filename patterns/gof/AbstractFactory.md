@@ -5,9 +5,13 @@ permalink: /AbstractFactory/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Provides an interface for creating families of related objects, without specifying concrete classes. 
 
@@ -19,7 +23,7 @@ The same machine is used to stamp French, Italian or German cards.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/abstractfactory.png)
 
 #### *AbstractFactory.java* 

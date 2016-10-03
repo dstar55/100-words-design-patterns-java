@@ -5,9 +5,13 @@ permalink: /ChainOfResponsibility/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 The Chain of Responsibility allows an object to send a command without knowing which object will receive and handle it. 
 The request is sent from one object to another making them parts of a chain and each object in this chain can handle the command, pass it on or do both. 
@@ -20,7 +24,7 @@ Correct handler of request is only known during execution of the request when re
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/chainofresponsibility.png)
 
 #### *ConcreteHandler1.java* 

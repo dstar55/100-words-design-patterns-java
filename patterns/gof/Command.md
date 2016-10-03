@@ -5,9 +5,13 @@ permalink: /Command/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Issue requests to objects without knowing anything about the operation being requested or the receiver of the request.
 
@@ -17,7 +21,7 @@ Car Technician will receive a request and fix a problem.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/command.png)
 
 #### *Command.java* 

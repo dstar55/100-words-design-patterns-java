@@ -5,9 +5,13 @@ permalink: /Observer/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Keep me updated.
 
@@ -17,7 +21,7 @@ Subscribers can subscribers or unsubscribers to the newsletters.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/observer.png)
 
 #### *ConcreteObserver.java* 

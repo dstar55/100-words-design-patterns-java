@@ -5,16 +5,20 @@ permalink: /FactoryMethod/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Defines an interface for creating objects, but lets subclasses decides which class to instantiate.
 Plasticine is used for children's play. Plasticine is injected into predefined molds. The class of end product(ball, toy, sculpture) is determined by the mold.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/factorymethod.png)
 
 #### *ConcreteCreator.java* 

@@ -5,9 +5,13 @@ permalink: /Proxy/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Provide a surrogate or placeholder for another object to control access to it.
 
@@ -17,7 +21,7 @@ He is an accredited messenger, agent, or representative who is sent by one gover
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/proxy.png)
 
 #### *Proxy.java* 

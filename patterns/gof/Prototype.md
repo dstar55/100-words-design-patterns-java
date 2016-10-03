@@ -5,9 +5,13 @@ permalink: /Prototype/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Clone itself.
 
@@ -16,7 +20,7 @@ Sheep Dolly is the first mammal to be cloned, so Dolly is a duplicate.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/prototype.png)
 
 #### *Client.java* 

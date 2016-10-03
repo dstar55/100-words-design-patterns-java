@@ -5,9 +5,13 @@ permalink: /Bridge/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Decouple an abstraction from its implementation so that the two can vary independently.
 
@@ -18,7 +22,7 @@ There are different implementations of the steering wheels used in cars, buses, 
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/bridge.png)
 
 #### *Abstraction.java* 

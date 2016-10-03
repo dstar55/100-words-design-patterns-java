@@ -5,9 +5,13 @@ permalink: /Visitor/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Allows for one or more operations to be applied to a set of objects at runtime, decoupling the operations from object structure.
 
@@ -17,7 +21,7 @@ disparate set of elements, some with prices and others that needs to be weighted
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/visitor.png)
 
 #### *ConcreteElementA.java* 

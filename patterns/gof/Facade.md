@@ -5,9 +5,13 @@ permalink: /Facade/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Facade hides the complexities of the system and provides an interface to the client from where the client can access the system.
 
@@ -23,7 +27,7 @@ This is a typical example for Facade.
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/facade.png)
 
 #### *Compiler.java* 

@@ -5,9 +5,13 @@ permalink: /Builder/
 tag: pattern
 ---
 
+* [Story](#Story)
+* [UML](#UML)
+* [Implementation](#Implementation)
+* [Usage](#Usage)
 
 
-### Story 
+###  <a id="Story"></a>Story 
 
 Separates the construction of a complex object from its representation so that the same construction process can create different representations.
 
@@ -18,7 +22,7 @@ Whether a customer picks a classical hard disk or SSD for storage, the construct
 
 
 
-### UML 
+###  <a id="UML"></a>UML 
 ![]({{site.baseurl}}/assets/img/builder.png)
 
 #### *Builder.java* 
