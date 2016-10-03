@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Compose objects into tree structures to represent part-whole hierarchies. 
 Group of objects is to be treated in the same way as a single instance of an object. 
@@ -19,3 +19,5 @@ A brick is a basic object, but on a same time brick is a container which can hol
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

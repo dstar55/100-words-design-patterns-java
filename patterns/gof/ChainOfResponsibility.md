@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 The Chain of Responsibility allows an object to send a command without knowing which object will receive and handle it. 
 The request is sent from one object to another making them parts of a chain and each object in this chain can handle the command, pass it on or do both. 
@@ -21,3 +21,5 @@ Correct handler of request is only known during execution of the request when re
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Allows for one or more operations to be applied to a set of objects at runtime, decoupling the operations from object structure.
 
@@ -18,3 +18,5 @@ disparate set of elements, some with prices and others that needs to be weighted
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

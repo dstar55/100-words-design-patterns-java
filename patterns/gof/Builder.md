@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Separates the construction of a complex object from its representation so that the same construction process can create different representations.
 
@@ -19,3 +19,5 @@ Whether a customer picks a classical hard disk or SSD for storage, the construct
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

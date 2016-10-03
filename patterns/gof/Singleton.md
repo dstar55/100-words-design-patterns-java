@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Singleton ensures that only one(single) object can be created from the class.
 
@@ -18,3 +18,5 @@ Regardless of who that person is the title, "Men's 100 meters world record holde
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

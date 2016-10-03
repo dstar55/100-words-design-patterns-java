@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Defines a skeleton of an algorithm in an operation.
 Algorithm will have common and specialized part.
@@ -21,3 +21,5 @@ At the end of the day worker go home, have a dinner and go to sleep.
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

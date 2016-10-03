@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Decouple an abstraction from its implementation so that the two can vary independently.
 
@@ -19,3 +19,5 @@ There are different implementations of the steering wheels used in cars, buses, 
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

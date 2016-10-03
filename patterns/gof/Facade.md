@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Facade hides the complexities of the system and provides an interface to the client from where the client can access the system.
 
@@ -24,3 +24,5 @@ This is a typical example for Facade.
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

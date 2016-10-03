@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Allows that interface of an existing class to be used from another interface.
 
@@ -18,3 +18,5 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

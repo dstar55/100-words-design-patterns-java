@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Attach additional responsibilities to an object dynamically. 
 
@@ -17,3 +17,5 @@ The spoilers do not change the car itself, but adds additional functionality whi
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

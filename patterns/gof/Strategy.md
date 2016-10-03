@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Select an algorithm at runtime.
 
@@ -19,3 +19,5 @@ The user must choose the Strategy based on his possibilities, preferences.
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

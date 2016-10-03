@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Defines an object that controls how a set of objects interact.
 
@@ -21,3 +21,5 @@ The call center will contact the available taxi nearest to customer’s location
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

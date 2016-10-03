@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Provides an interface for creating families of related objects, without specifying concrete classes. 
 
@@ -20,3 +20,5 @@ The same machine is used to stamp French, Italian or German cards.
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)

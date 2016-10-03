@@ -7,7 +7,7 @@ tag: pattern
 
 
 
-## Story 
+### Story 
 
 Provide a surrogate or placeholder for another object to control access to it.
 
@@ -18,3 +18,5 @@ He is an accredited messenger, agent, or representative who is sent by one gover
 
 
 
+### UML 
+![]({{site.baseurl}}/assets/img/state.png)
