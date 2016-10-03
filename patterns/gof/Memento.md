@@ -28,6 +28,7 @@ This mechanism of rolling back uses the memento design pattern.
 ![]({{site.baseurl}}/assets/img/memento.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *Caretaker.java* 
 ```java 
 package com.hundredwordsgof.memento;
@@ -114,4 +115,6 @@ public class Originator {
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

@@ -24,6 +24,7 @@ Database normalization is flyweight. Normalisation, is the process of organizing
 ![]({{site.baseurl}}/assets/img/flyweight.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *ConcreteFlyweight.java* 
 ```java 
 package com.hundredwordsgof.flyweight;
@@ -149,4 +150,6 @@ public class UnsharedConcreteFlyweight implements Flyweight{
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

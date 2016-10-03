@@ -25,6 +25,7 @@ disparate set of elements, some with prices and others that needs to be weighted
 ![]({{site.baseurl}}/assets/img/visitor.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *ConcreteElementA.java* 
 ```java 
 package com.hundredwordsgof.visitor;
@@ -204,4 +205,6 @@ public interface Visitor {
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

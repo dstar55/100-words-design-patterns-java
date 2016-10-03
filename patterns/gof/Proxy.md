@@ -25,6 +25,7 @@ He is an accredited messenger, agent, or representative who is sent by one gover
 ![]({{site.baseurl}}/assets/img/proxy.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *Proxy.java* 
 ```java 
 package com.hundredwordsgof.proxy;
@@ -87,4 +88,6 @@ public interface Subject {
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

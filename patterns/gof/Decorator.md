@@ -24,6 +24,7 @@ The spoilers do not change the car itself, but adds additional functionality whi
 ![]({{site.baseurl}}/assets/img/decorator.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *Component.java* 
 ```java 
 package com.hundredwordsgof.decorator;
@@ -140,4 +141,6 @@ abstract class Decorator implements Component{
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

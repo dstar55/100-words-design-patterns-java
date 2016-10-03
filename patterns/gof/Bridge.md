@@ -26,6 +26,7 @@ There are different implementations of the steering wheels used in cars, buses, 
 ![]({{site.baseurl}}/assets/img/bridge.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *Abstraction.java* 
 ```java 
 package com.hundredwordsgof.bridge;
@@ -124,4 +125,6 @@ public class RefinedAbstraction extends Abstraction{
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

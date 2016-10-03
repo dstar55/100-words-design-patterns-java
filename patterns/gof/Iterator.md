@@ -23,6 +23,7 @@ Process of browsing is example of Iterator pattern.
 ![]({{site.baseurl}}/assets/img/iterator.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *Aggregate.java* 
 ```java 
 package com.hundredwordsgof.iterator;
@@ -131,4 +132,6 @@ public interface Iterator {
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

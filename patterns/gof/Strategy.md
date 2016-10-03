@@ -26,6 +26,7 @@ The user must choose the Strategy based on his possibilities, preferences.
 ![]({{site.baseurl}}/assets/img/strategy.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *ConcreteStrategyA.java* 
 ```java 
 package com.hundredwordsgof.strategy;
@@ -123,4 +124,6 @@ public interface Strategy {
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

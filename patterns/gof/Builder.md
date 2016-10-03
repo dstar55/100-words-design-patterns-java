@@ -26,6 +26,7 @@ Whether a customer picks a classical hard disk or SSD for storage, the construct
 ![]({{site.baseurl}}/assets/img/builder.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *Builder.java* 
 ```java 
 package com.hundredwordsgof.builder;
@@ -136,4 +137,6 @@ public class Product {
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

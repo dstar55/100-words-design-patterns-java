@@ -25,5 +25,8 @@ Some modify power or signal attributes, while others merely adapt the physical f
 ![]({{site.baseurl}}/assets/img/adapter.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 ###  <a id="Usage"></a>Usage 
+
 usage 
+

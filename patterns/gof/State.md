@@ -26,6 +26,7 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 ![]({{site.baseurl}}/assets/img/state.png)
 
 ###  <a id="Implementation"></a>Implementation 
+
 #### *ConcreteState1.java* 
 ```java 
 package com.hundredwordsgof.state;
@@ -112,4 +113,6 @@ public interface State {
 ```
 
 ###  <a id="Usage"></a>Usage 
+
 usage 
+
