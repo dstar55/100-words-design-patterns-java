@@ -6,6 +6,7 @@ tag: pattern
 ---
 
 Mediator
+
 * Story 
 
 Defines an object that controls how a set of objects interact.
@@ -16,6 +17,7 @@ Taxi drivers communicate with the Mediator(Radio Taxi Call Center), rather than 
 When customer needs a taxi, he calls Radio Taxi Call Center. 
 All taxis have a GPS unit which tells where the taxi is present right now, also there is a central information system which tells which taxi is available to serve the customer. 
 The call center will contact the available taxi nearest to customer’s location and send them to serve the customer.
+
 
 
 

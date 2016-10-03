@@ -6,6 +6,7 @@ tag: pattern
 ---
 
 Facade
+
 * Story 
 
 Facade hides the complexities of the system and provides an interface to the client from where the client can access the system.
@@ -18,6 +19,7 @@ If this to much for you than you can find event manager and tell him that you ne
 dinner for 100 people, and need a good music troop to play music while the reception is going on. 
 
 This is a typical example for Facade. 
+
 
 
 
