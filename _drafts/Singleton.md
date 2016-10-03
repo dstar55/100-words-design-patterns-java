@@ -5,10 +5,9 @@ permalink: /Singleton/
 tag: pattern
 ---
 
-Singleton
 
 
-# Story 
+## Story 
 
 Singleton ensures that only one(single) object can be created from the class.
 

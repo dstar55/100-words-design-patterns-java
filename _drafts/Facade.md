@@ -5,10 +5,9 @@ permalink: /Facade/
 tag: pattern
 ---
 
-Facade
 
 
-# Story 
+## Story 
 
 Facade hides the complexities of the system and provides an interface to the client from where the client can access the system.
 

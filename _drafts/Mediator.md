@@ -5,10 +5,9 @@ permalink: /Mediator/
 tag: pattern
 ---
 
-Mediator
 
 
-# Story 
+## Story 
 
 Defines an object that controls how a set of objects interact.
 
