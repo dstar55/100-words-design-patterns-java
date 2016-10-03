@@ -15,6 +15,6 @@ Process of browsing is example of Iterator pattern.
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/iterator.png)
+

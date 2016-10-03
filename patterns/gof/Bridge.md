@@ -18,6 +18,6 @@ There are different implementations of the steering wheels used in cars, buses, 
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/bridge.png)
+

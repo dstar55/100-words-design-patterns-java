@@ -20,6 +20,6 @@ At the end of the day worker go home, have a dinner and go to sleep.
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/templatemethod.png)
+

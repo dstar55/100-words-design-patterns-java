@@ -17,6 +17,6 @@ Subscribers can subscribers or unsubscribers to the newsletters.
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/observer.png)
+

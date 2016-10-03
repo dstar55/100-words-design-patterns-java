@@ -18,6 +18,6 @@ The user must choose the Strategy based on his possibilities, preferences.
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/strategy.png)
+

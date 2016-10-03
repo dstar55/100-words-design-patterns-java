@@ -20,6 +20,6 @@ Correct handler of request is only known during execution of the request when re
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/chainofresponsibility.png)
+

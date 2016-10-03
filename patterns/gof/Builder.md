@@ -18,6 +18,6 @@ Whether a customer picks a classical hard disk or SSD for storage, the construct
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/builder.png)
+

@@ -14,6 +14,6 @@ Plasticine is used for children's play. Plasticine is injected into predefined m
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/factorymethod.png)
+

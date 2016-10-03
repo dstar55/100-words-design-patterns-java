@@ -17,6 +17,6 @@ Regardless of who that person is the title, "Men's 100 meters world record holde
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/singleton.png)
+

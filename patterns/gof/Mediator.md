@@ -20,6 +20,6 @@ The call center will contact the available taxi nearest to customer’s location
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/mediator.png)
+

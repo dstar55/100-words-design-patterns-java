@@ -19,6 +19,6 @@ The same machine is used to stamp French, Italian or German cards.
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/abstractfactory.png)
+

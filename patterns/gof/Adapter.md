@@ -17,6 +17,6 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/adapter.png)
+

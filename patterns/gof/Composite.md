@@ -18,6 +18,6 @@ A brick is a basic object, but on a same time brick is a container which can hol
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/composite.png)
+

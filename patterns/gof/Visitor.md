@@ -17,6 +17,6 @@ disparate set of elements, some with prices and others that needs to be weighted
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/visitor.png)
+

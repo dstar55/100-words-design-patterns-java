@@ -20,6 +20,6 @@ This mechanism of rolling back uses the memento design pattern.
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/memento.png)
+

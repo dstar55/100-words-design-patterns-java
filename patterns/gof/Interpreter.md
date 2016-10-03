@@ -13,6 +13,6 @@ A person who translates orally from one language into another.
 
 
 
-
 ### UML 
-![]({{site.baseurl}}/assets/img/state.png)
+![]({{site.baseurl}}/assets/img/interpreter.png)
+
