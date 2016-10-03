@@ -21,7 +21,7 @@ There are different implementations of the steering wheels used in cars, buses, 
 ### UML 
 ![]({{site.baseurl}}/assets/img/bridge.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/Abstraction.java
+#### Abstraction.java
 ```java 
 package com.hundredwordsgof.bridge;
 
@@ -44,7 +44,7 @@ abstract class Abstraction {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/ConcreteImplementorA.java
+#### ConcreteImplementorA.java
 ```java 
 package com.hundredwordsgof.bridge;
 
@@ -62,7 +62,7 @@ public class ConcreteImplementorA implements Implementor {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/ConcreteImplementorB.java
+#### ConcreteImplementorB.java
 ```java 
 package com.hundredwordsgof.bridge;
 
@@ -80,7 +80,7 @@ public class ConcreteImplementorB implements Implementor {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/Implementor.java
+#### Implementor.java
 ```java 
 package com.hundredwordsgof.bridge;
 
@@ -96,7 +96,7 @@ public interface Implementor {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/bridge/RefinedAbstraction.java
+#### RefinedAbstraction.java
 ```java 
 package com.hundredwordsgof.bridge;
 

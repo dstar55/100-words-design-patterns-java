@@ -23,7 +23,7 @@ Correct handler of request is only known during execution of the request when re
 ### UML 
 ![]({{site.baseurl}}/assets/img/chainofresponsibility.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/chainofresponsibility/ConcreteHandler1.java
+#### ConcreteHandler1.java
 ```java 
 package com.hundredwordsgof.chainofresponsibility;
 
@@ -54,7 +54,7 @@ public class ConcreteHandler1 extends Handler {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/chainofresponsibility/ConcreteHandler2.java
+#### ConcreteHandler2.java
 ```java 
 package com.hundredwordsgof.chainofresponsibility;
 
@@ -78,7 +78,7 @@ public class ConcreteHandler2 extends Handler {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/chainofresponsibility/Handler.java
+#### Handler.java
 ```java 
 package com.hundredwordsgof.chainofresponsibility;
 

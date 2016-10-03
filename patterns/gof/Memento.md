@@ -23,7 +23,7 @@ This mechanism of rolling back uses the memento design pattern.
 ### UML 
 ![]({{site.baseurl}}/assets/img/memento.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/memento/Caretaker.java
+#### Caretaker.java
 ```java 
 package com.hundredwordsgof.memento;
 
@@ -48,7 +48,7 @@ public class Caretaker {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/memento/Memento.java
+#### Memento.java
 ```java 
 package com.hundredwordsgof.memento;
 
@@ -73,7 +73,7 @@ public class Memento {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/memento/Originator.java
+#### Originator.java
 ```java 
 package com.hundredwordsgof.memento;
 

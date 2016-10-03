@@ -20,7 +20,7 @@ Car Technician will receive a request and fix a problem.
 ### UML 
 ![]({{site.baseurl}}/assets/img/command.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/command/Command.java
+#### Command.java
 ```java 
 package com.hundredwordsgof.command;
 
@@ -36,7 +36,7 @@ public interface Command {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/command/ConcreteCommand.java
+#### ConcreteCommand.java
 ```java 
 package com.hundredwordsgof.command;
 
@@ -60,7 +60,7 @@ public class ConcreteCommand implements Command {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/command/Invoker.java
+#### Invoker.java
 ```java 
 package com.hundredwordsgof.command;
 
@@ -83,7 +83,7 @@ public class Invoker {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/command/Receiver.java
+#### Receiver.java
 ```java 
 package com.hundredwordsgof.command;
 

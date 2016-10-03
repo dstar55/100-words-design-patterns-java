@@ -20,7 +20,7 @@ disparate set of elements, some with prices and others that needs to be weighted
 ### UML 
 ![]({{site.baseurl}}/assets/img/visitor.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/ConcreteElementA.java
+#### ConcreteElementA.java
 ```java 
 package com.hundredwordsgof.visitor;
 
@@ -48,7 +48,7 @@ public class ConcreteElementA implements Element {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/ConcreteElementB.java
+#### ConcreteElementB.java
 ```java 
 package com.hundredwordsgof.visitor;
 
@@ -77,7 +77,7 @@ public class ConcreteElementB implements Element {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/ConcreteVisitor1.java
+#### ConcreteVisitor1.java
 ```java 
 package com.hundredwordsgof.visitor;
 
@@ -101,7 +101,7 @@ public class ConcreteVisitor1 implements Visitor {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/ConcreteVisitor2.java
+#### ConcreteVisitor2.java
 ```java 
 package com.hundredwordsgof.visitor;
 
@@ -125,7 +125,7 @@ public class ConcreteVisitor2 implements Visitor {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/Element.java
+#### Element.java
 ```java 
 package com.hundredwordsgof.visitor;
 
@@ -140,7 +140,7 @@ public interface Element {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/ObjectStructure.java
+#### ObjectStructure.java
 ```java 
 package com.hundredwordsgof.visitor;
 
@@ -179,7 +179,7 @@ public class ObjectStructure {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/Visitor.java
+#### Visitor.java
 ```java 
 package com.hundredwordsgof.visitor;
 

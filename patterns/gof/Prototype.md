@@ -19,7 +19,7 @@ Sheep Dolly is the first mammal to be cloned, so Dolly is a duplicate.
 ### UML 
 ![]({{site.baseurl}}/assets/img/prototype.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/prototype/Client.java
+#### Client.java
 ```java 
 package com.hundredwordsgof.prototype;
 
@@ -42,7 +42,7 @@ public class Client {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/prototype/ConcretePrototype.java
+#### ConcretePrototype.java
 ```java 
 package com.hundredwordsgof.prototype;
 
@@ -58,7 +58,7 @@ public class ConcretePrototype extends Prototype {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/prototype/Prototype.java
+#### Prototype.java
 ```java 
 package com.hundredwordsgof.prototype;
 

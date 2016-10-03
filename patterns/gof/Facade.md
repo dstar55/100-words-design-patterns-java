@@ -26,7 +26,7 @@ This is a typical example for Facade.
 ### UML 
 ![]({{site.baseurl}}/assets/img/facade.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/facade/Compiler.java
+#### Compiler.java
 ```java 
 package com.hundredwordsgof.facade;
 
@@ -54,7 +54,7 @@ public class Compiler {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/facade/ExpressionNode.java
+#### ExpressionNode.java
 ```java 
 package com.hundredwordsgof.facade;
 
@@ -98,7 +98,7 @@ public class ExpressionNode extends Node {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/facade/Generator.java
+#### Generator.java
 ```java 
 package com.hundredwordsgof.facade;
 
@@ -131,7 +131,7 @@ public class Generator {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/facade/Node.java
+#### Node.java
 ```java 
 package com.hundredwordsgof.facade;
 
@@ -144,7 +144,7 @@ public class Node {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/facade/OperandNode.java
+#### OperandNode.java
 ```java 
 package com.hundredwordsgof.facade;
 
@@ -166,7 +166,7 @@ public class OperandNode extends Node {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/facade/Parser.java
+#### Parser.java
 ```java 
 package com.hundredwordsgof.facade;
 
@@ -238,7 +238,7 @@ public class Parser {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/facade/Tokenizer.java
+#### Tokenizer.java
 ```java 
 package com.hundredwordsgof.facade;
 

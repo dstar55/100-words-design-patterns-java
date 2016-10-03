@@ -20,7 +20,7 @@ He is an accredited messenger, agent, or representative who is sent by one gover
 ### UML 
 ![]({{site.baseurl}}/assets/img/proxy.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/proxy/Proxy.java
+#### Proxy.java
 ```java 
 package com.hundredwordsgof.proxy;
 
@@ -50,7 +50,7 @@ public class Proxy implements Subject {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/proxy/RealSubject.java
+#### RealSubject.java
 ```java 
 package com.hundredwordsgof.proxy;
 
@@ -66,7 +66,7 @@ public class RealSubject implements Subject {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/proxy/Subject.java
+#### Subject.java
 ```java 
 package com.hundredwordsgof.proxy;
 

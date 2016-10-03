@@ -20,7 +20,7 @@ Subscribers can subscribers or unsubscribers to the newsletters.
 ### UML 
 ![]({{site.baseurl}}/assets/img/observer.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/observer/ConcreteObserver.java
+#### ConcreteObserver.java
 ```java 
 package com.hundredwordsgof.observer;
 
@@ -51,7 +51,7 @@ public class ConcreteObserver implements Observer{
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/observer/ConcreteSubject.java
+#### ConcreteSubject.java
 ```java 
 package com.hundredwordsgof.observer;
 
@@ -77,7 +77,7 @@ public class ConcreteSubject extends Subject {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/observer/Observer.java
+#### Observer.java
 ```java 
 package com.hundredwordsgof.observer;
 
@@ -92,7 +92,7 @@ public interface Observer {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/observer/Subject.java
+#### Subject.java
 ```java 
 package com.hundredwordsgof.observer;
 

@@ -21,7 +21,7 @@ Whether a customer picks a classical hard disk or SSD for storage, the construct
 ### UML 
 ![]({{site.baseurl}}/assets/img/builder.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/builder/Builder.java
+#### Builder.java
 ```java 
 package com.hundredwordsgof.builder;
 
@@ -40,7 +40,7 @@ abstract class Builder {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/builder/ConcreteBuilder.java
+#### ConcreteBuilder.java
 ```java 
 package com.hundredwordsgof.builder;
 
@@ -73,7 +73,7 @@ public class ConcreteBuilder extends Builder {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/builder/Director.java
+#### Director.java
 ```java 
 package com.hundredwordsgof.builder;
 
@@ -96,7 +96,7 @@ public class Director {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/builder/Product.java
+#### Product.java
 ```java 
 package com.hundredwordsgof.builder;
 

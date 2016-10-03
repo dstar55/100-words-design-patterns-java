@@ -16,7 +16,7 @@ A person who translates orally from one language into another.
 ### UML 
 ![]({{site.baseurl}}/assets/img/interpreter.png)
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/interpreter/AbstractExpression.java
+#### AbstractExpression.java
 ```java 
 package com.hundredwordsgof.interpreter;
 
@@ -33,7 +33,7 @@ public abstract class AbstractExpression {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/interpreter/AndExpression.java
+#### AndExpression.java
 ```java 
 package com.hundredwordsgof.interpreter;
 
@@ -75,7 +75,7 @@ public class AndExpression extends AbstractExpression {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/interpreter/Context.java
+#### Context.java
 ```java 
 package com.hundredwordsgof.interpreter;
 
@@ -114,7 +114,7 @@ public class Context {
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/interpreter/OrExpression.java
+#### OrExpression.java
 ```java 
 package com.hundredwordsgof.interpreter;
 
@@ -152,7 +152,7 @@ public class OrExpression extends AbstractExpression{
 }
 ```
 
-#### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/interpreter/TerminalExpression.java
+#### TerminalExpression.java
 ```java 
 package com.hundredwordsgof.interpreter;
 
