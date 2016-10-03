@@ -41,7 +41,8 @@ public class ConcreteCreator extends Creator {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/factorymethod/ConcreteProductA.java
 ```java 
 package com.hundredwordsgof.factorymethod;
@@ -54,7 +55,8 @@ package com.hundredwordsgof.factorymethod;
 public class ConcreteProductA implements Product {
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/factorymethod/ConcreteProductB.java
 ```java 
 package com.hundredwordsgof.factorymethod;
@@ -67,7 +69,8 @@ package com.hundredwordsgof.factorymethod;
 public class ConcreteProductB implements Product {
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/factorymethod/Creator.java
 ```java 
 package com.hundredwordsgof.factorymethod;
@@ -81,7 +84,8 @@ abstract class Creator {
 	abstract Product factoryMethod(String type);
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/factorymethod/Product.java
 ```java 
 package com.hundredwordsgof.factorymethod;
@@ -94,4 +98,5 @@ package com.hundredwordsgof.factorymethod;
 public interface Product {
 
 }
-``` 
+```
+

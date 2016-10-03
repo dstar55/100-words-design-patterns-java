@@ -52,7 +52,8 @@ public class ConcreteHandler1 extends Handler {
 
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/chainofresponsibility/ConcreteHandler2.java
 ```java 
 package com.hundredwordsgof.chainofresponsibility;
@@ -75,7 +76,8 @@ public class ConcreteHandler2 extends Handler {
 	}
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/chainofresponsibility/Handler.java
 ```java 
 package com.hundredwordsgof.chainofresponsibility;
@@ -97,4 +99,5 @@ abstract class Handler {
 	}
 	
 }
-``` 
+```
+

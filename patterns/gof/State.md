@@ -42,7 +42,8 @@ public class ConcreteState1 implements State {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/state/ConcreteState2.java
 ```java 
 package com.hundredwordsgof.state;
@@ -64,7 +65,8 @@ public class ConcreteState2 implements State {
 	}
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/state/Context.java
 ```java 
 package com.hundredwordsgof.state;
@@ -87,7 +89,8 @@ public class Context {
 	
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/state/State.java
 ```java 
 package com.hundredwordsgof.state;
@@ -101,4 +104,5 @@ public interface State {
 	void handle();
 	
 }
-``` 
+```
+

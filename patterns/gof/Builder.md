@@ -38,7 +38,8 @@ abstract class Builder {
 	public abstract Builder buildPart2(String part);
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/builder/ConcreteBuilder.java
 ```java 
 package com.hundredwordsgof.builder;
@@ -70,7 +71,8 @@ public class ConcreteBuilder extends Builder {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/builder/Director.java
 ```java 
 package com.hundredwordsgof.builder;
@@ -92,7 +94,8 @@ public class Director {
 		builder.createProduct().buildPart1("part1").buildPart2("part2");
 	}
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/builder/Product.java
 ```java 
 package com.hundredwordsgof.builder;
@@ -125,4 +128,5 @@ public class Product {
 	
 	
 }
-``` 
+```
+

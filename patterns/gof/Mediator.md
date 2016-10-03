@@ -50,7 +50,8 @@ abstract class Colleague {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/mediator/ConcreteColleague1.java
 ```java 
 package com.hundredwordsgof.mediator;
@@ -75,7 +76,8 @@ public class ConcreteColleague1 extends Colleague {
 	}
 		
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/mediator/ConcreteColleague2.java
 ```java 
 package com.hundredwordsgof.mediator;
@@ -98,7 +100,8 @@ public class ConcreteColleague2 extends Colleague {
 		this.receivedMessage = message;	
 	}
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/mediator/ConcreteMediator.java
 ```java 
 package com.hundredwordsgof.mediator;
@@ -137,7 +140,8 @@ public class ConcreteMediator implements Mediator{
 	
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/mediator/Mediator.java
 ```java 
 package com.hundredwordsgof.mediator;
@@ -150,4 +154,5 @@ public interface Mediator {
 
 	void notifyColleague(Colleague colleague, String message);
 }
-``` 
+```
+

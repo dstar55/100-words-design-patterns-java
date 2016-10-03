@@ -46,7 +46,8 @@ public class Caretaker {
 	
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/memento/Memento.java
 ```java 
 package com.hundredwordsgof.memento;
@@ -70,7 +71,8 @@ public class Memento {
 
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/memento/Originator.java
 ```java 
 package com.hundredwordsgof.memento;
@@ -104,4 +106,5 @@ public class Originator {
 	
 	
 }
-``` 
+```
+

@@ -50,7 +50,8 @@ public class ConcreteFlyweight implements Flyweight{
 
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/flyweight/Flyweight.java
 ```java 
 package com.hundredwordsgof.flyweight;
@@ -65,7 +66,8 @@ public interface Flyweight {
 	void operation(Object extrinsicState);
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/flyweight/FlyweightFactory.java
 ```java 
 package com.hundredwordsgof.flyweight;
@@ -111,7 +113,8 @@ public class FlyweightFactory {
 		return (Flyweight)flyweights.get(key);
 	}
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/flyweight/UnsharedConcreteFlyweight.java
 ```java 
 package com.hundredwordsgof.flyweight;
@@ -138,4 +141,5 @@ public class UnsharedConcreteFlyweight implements Flyweight{
 	}
 	
 }
-``` 
+```
+

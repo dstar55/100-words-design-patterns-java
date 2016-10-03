@@ -33,7 +33,8 @@ public interface Component {
 	void operation();
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/decorator/ConcreteComponent.java
 ```java 
 package com.hundredwordsgof.decorator;
@@ -50,7 +51,8 @@ public class ConcreteComponent implements Component {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/decorator/ConcreteDecoratorA.java
 ```java 
 package com.hundredwordsgof.decorator;
@@ -77,7 +79,8 @@ public class ConcreteDecoratorA extends Decorator {
 
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/decorator/ConcreteDecoratorB.java
 ```java 
 package com.hundredwordsgof.decorator;
@@ -106,7 +109,8 @@ public class ConcreteDecoratorB extends Decorator {
 
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/decorator/Decorator.java
 ```java 
 package com.hundredwordsgof.decorator;
@@ -128,4 +132,5 @@ abstract class Decorator implements Component{
 
 	
 }
-``` 
+```
+

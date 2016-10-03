@@ -49,7 +49,8 @@ abstract class AbstractClass {
 	
 	abstract String primitiveOperation2();
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/templatemethod/ConcreteClass.java
 ```java 
 package com.hundredwordsgof.templatemethod;
@@ -71,4 +72,5 @@ public class ConcreteClass extends AbstractClass{
 	}
 
 }
-``` 
+```
+

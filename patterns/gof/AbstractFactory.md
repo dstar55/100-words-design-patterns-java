@@ -38,7 +38,8 @@ public interface AbstractFactory {
 	AbstractProductB createProductB();
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/abstractfactory/AbstractProductA.java
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -51,7 +52,8 @@ package com.hundredwordsgof.abstractfactory;
 abstract class AbstractProductA {
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/abstractfactory/AbstractProductB.java
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -64,7 +66,8 @@ package com.hundredwordsgof.abstractfactory;
 abstract class AbstractProductB {
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/abstractfactory/ConcreteFactory1.java
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -87,7 +90,8 @@ public class ConcreteFactory1 implements AbstractFactory {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/abstractfactory/ConcreteFactory2.java
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -110,7 +114,8 @@ public class ConcreteFactory2 implements AbstractFactory {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/abstractfactory/ProductA1.java
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -123,7 +128,8 @@ package com.hundredwordsgof.abstractfactory;
 public class ProductA1 extends AbstractProductA {
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/abstractfactory/ProductA2.java
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -136,7 +142,8 @@ package com.hundredwordsgof.abstractfactory;
 public class ProductA2 extends AbstractProductA {
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/abstractfactory/ProductB1.java
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -149,7 +156,8 @@ package com.hundredwordsgof.abstractfactory;
 public class ProductB1 extends AbstractProductB {
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/abstractfactory/ProductB2.java
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -162,4 +170,5 @@ package com.hundredwordsgof.abstractfactory;
 public class ProductB2 extends AbstractProductB {
 
 }
-``` 
+```
+

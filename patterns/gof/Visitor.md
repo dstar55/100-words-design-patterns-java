@@ -46,7 +46,8 @@ public class ConcreteElementA implements Element {
 	
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/ConcreteElementB.java
 ```java 
 package com.hundredwordsgof.visitor;
@@ -74,7 +75,8 @@ public class ConcreteElementB implements Element {
 	
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/ConcreteVisitor1.java
 ```java 
 package com.hundredwordsgof.visitor;
@@ -97,7 +99,8 @@ public class ConcreteVisitor1 implements Visitor {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/ConcreteVisitor2.java
 ```java 
 package com.hundredwordsgof.visitor;
@@ -120,7 +123,8 @@ public class ConcreteVisitor2 implements Visitor {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/Element.java
 ```java 
 package com.hundredwordsgof.visitor;
@@ -134,7 +138,8 @@ public interface Element {
 	void accept(Visitor visitor);
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/ObjectStructure.java
 ```java 
 package com.hundredwordsgof.visitor;
@@ -172,7 +177,8 @@ public class ObjectStructure {
 		}
 	}	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/visitor/Visitor.java
 ```java 
 package com.hundredwordsgof.visitor;
@@ -190,4 +196,5 @@ public interface Visitor {
 	void visitConcreteElementB(ConcreteElementB concreteElementB);
 
 }
-``` 
+```
+

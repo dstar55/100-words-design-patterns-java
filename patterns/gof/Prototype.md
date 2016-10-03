@@ -40,7 +40,8 @@ public class Client {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/prototype/ConcretePrototype.java
 ```java 
 package com.hundredwordsgof.prototype;
@@ -55,7 +56,8 @@ public class ConcretePrototype extends Prototype {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/prototype/Prototype.java
 ```java 
 package com.hundredwordsgof.prototype;
@@ -73,4 +75,5 @@ public abstract class Prototype implements Cloneable  {
 	abstract Prototype copyMe() throws CloneNotSupportedException;
 	
 }
-``` 
+```
+

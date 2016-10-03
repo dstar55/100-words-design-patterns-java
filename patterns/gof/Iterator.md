@@ -32,7 +32,8 @@ public interface Aggregate {
 	Iterator createIterator();
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/iterator/ConcreteAggregate.java
 ```java 
 package com.hundredwordsgof.iterator;
@@ -56,7 +57,8 @@ public class ConcreteAggregate implements Aggregate {
 
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/iterator/ConcreteIterator.java
 ```java 
 package com.hundredwordsgof.iterator;
@@ -99,7 +101,8 @@ public class ConcreteIterator implements Iterator {
 	
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/iterator/Iterator.java
 ```java 
 package com.hundredwordsgof.iterator;
@@ -120,4 +123,5 @@ public interface Iterator {
 	Object currentItem();
 	
 }
-``` 
+```
+

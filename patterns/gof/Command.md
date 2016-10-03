@@ -34,7 +34,8 @@ public interface Command {
 	void execute();
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/command/ConcreteCommand.java
 ```java 
 package com.hundredwordsgof.command;
@@ -57,7 +58,8 @@ public class ConcreteCommand implements Command {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/command/Invoker.java
 ```java 
 package com.hundredwordsgof.command;
@@ -79,7 +81,8 @@ public class Invoker {
 		command.execute();
 	}
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/command/Receiver.java
 ```java 
 package com.hundredwordsgof.command;
@@ -102,4 +105,5 @@ public class Receiver {
 	}
 		
 }
-``` 
+```
+

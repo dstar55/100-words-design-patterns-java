@@ -48,7 +48,8 @@ public class Proxy implements Subject {
 
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/proxy/RealSubject.java
 ```java 
 package com.hundredwordsgof.proxy;
@@ -63,7 +64,8 @@ public class RealSubject implements Subject {
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/proxy/Subject.java
 ```java 
 package com.hundredwordsgof.proxy;
@@ -77,4 +79,5 @@ public interface Subject {
 	void doOperation();
 	
 }
-``` 
+```
+

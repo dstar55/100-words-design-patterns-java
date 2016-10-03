@@ -37,7 +37,8 @@ public class ConcreteStrategyA implements Strategy{
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/strategy/ConcreteStrategyB.java
 ```java 
 package com.hundredwordsgof.strategy;
@@ -54,7 +55,8 @@ public class ConcreteStrategyB implements Strategy{
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/strategy/ConcreteStrategyC.java
 ```java 
 package com.hundredwordsgof.strategy;
@@ -71,7 +73,8 @@ public class ConcreteStrategyC implements Strategy{
 	}
 
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/strategy/Context.java
 ```java 
 package com.hundredwordsgof.strategy;
@@ -94,7 +97,8 @@ public class Context {
 	}
 }
 
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/strategy/Strategy.java
 ```java 
 package com.hundredwordsgof.strategy;
@@ -111,4 +115,5 @@ public interface Strategy {
 	
 }
 
-``` 
+```
+

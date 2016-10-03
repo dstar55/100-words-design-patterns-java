@@ -31,7 +31,8 @@ public abstract class AbstractExpression {
 	abstract void interpret(Context context);
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/interpreter/AndExpression.java
 ```java 
 package com.hundredwordsgof.interpreter;
@@ -72,7 +73,8 @@ public class AndExpression extends AbstractExpression {
 	
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/interpreter/Context.java
 ```java 
 package com.hundredwordsgof.interpreter;
@@ -110,7 +112,8 @@ public class Context {
 	}
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/interpreter/OrExpression.java
 ```java 
 package com.hundredwordsgof.interpreter;
@@ -147,7 +150,8 @@ public class OrExpression extends AbstractExpression{
 				
 	}
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/interpreter/TerminalExpression.java
 ```java 
 package com.hundredwordsgof.interpreter;
@@ -171,4 +175,5 @@ public class TerminalExpression extends AbstractExpression {
 	}
 
 }
-``` 
+```
+

@@ -36,7 +36,8 @@ abstract class Component {
 	
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/composite/Composite.java
 ```java 
 package com.hundredwordsgof.composite;
@@ -73,7 +74,8 @@ public class Composite extends Component {
 		return children.get(index);
 	}	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/composite/Leaf.java
 ```java 
 package com.hundredwordsgof.composite;
@@ -90,4 +92,5 @@ public class Leaf extends Component {
 	}
 
 }
-``` 
+```
+

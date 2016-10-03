@@ -49,7 +49,8 @@ public class ConcreteObserver implements Observer{
 
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/observer/ConcreteSubject.java
 ```java 
 package com.hundredwordsgof.observer;
@@ -74,7 +75,8 @@ public class ConcreteSubject extends Subject {
 	
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/observer/Observer.java
 ```java 
 package com.hundredwordsgof.observer;
@@ -88,7 +90,8 @@ public interface Observer {
 	void update();
 	
 }
-``` 
+```
+
 #### ./100-words-design-patterns-java/src/main/java/com/hundredwordsgof/observer/Subject.java
 ```java 
 package com.hundredwordsgof.observer;
@@ -120,4 +123,5 @@ abstract class Subject {
 		}
 	}
 }
-``` 
+```
+
