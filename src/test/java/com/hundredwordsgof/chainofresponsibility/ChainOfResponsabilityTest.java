@@ -20,14 +20,14 @@ public class ChainOfResponsabilityTest {
 		concreteHandler1.setSuccesor(concreteHandler2);
 		
 		// handleRequest on handlers is not invoked 
-		assertEquals(false, ((ConcreteHandler1)concreteHandler1).isHanldeRequestInvoked());
-		assertEquals(false, ((ConcreteHandler2)concreteHandler2).isHanldeRequestInvoked());
+		assertEquals(false, ((ConcreteHandler1)concreteHandler1).isHandleRequestInvoked());
+		assertEquals(false, ((ConcreteHandler2)concreteHandler2).isHandleRequestInvoked());
 		
 		concreteHandler1.handleRequest();
 		
 		// handleRequest on handlers is invoked
-		assertEquals(true, ((ConcreteHandler1)concreteHandler1).isHanldeRequestInvoked());
-		assertEquals(true, ((ConcreteHandler2)concreteHandler2).isHanldeRequestInvoked());
+		assertEquals(true, ((ConcreteHandler1)concreteHandler1).isHandleRequestInvoked());
+		assertEquals(true, ((ConcreteHandler2)concreteHandler2).isHandleRequestInvoked());
 		
 	}
 }
