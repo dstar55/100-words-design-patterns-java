@@ -5,17 +5,17 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/ConcreteElementA.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="244" y="328"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+      <operations public="true" package="true" protected="false" private="true" static="true"/>    
     </display>  
   </class>  
   <class id="2" language="java" name="com.hundredwordsgof.visitor.ConcreteVisitor2" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/ConcreteVisitor2.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="671" y="346"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -25,17 +25,17 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/ConcreteElementB.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="432" y="331"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+      <operations public="true" package="true" protected="false" private="true" static="true"/>    
     </display>  
   </class>  
   <interface id="4" language="java" name="com.hundredwordsgof.visitor.Visitor" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/Visitor.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="820" y="142"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -45,7 +45,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/ObjectStructure.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="93" y="135"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -55,7 +55,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/ConcreteVisitor1.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="975" y="347"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -65,7 +65,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/Element.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="346" y="136"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    

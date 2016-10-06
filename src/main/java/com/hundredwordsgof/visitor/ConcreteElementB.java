@@ -17,7 +17,7 @@ public class ConcreteElementB implements Element {
 		counter++;
 	}
 
-	public int getCounter() {
+	protected int getCounter() {
 		return counter;
 	}
 	

@@ -6,7 +6,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/prototype/ConcretePrototype.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="585" y="439"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -16,7 +16,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/prototype/Client.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="353" y="271"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -26,7 +26,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/prototype/Prototype.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="586" y="272"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    

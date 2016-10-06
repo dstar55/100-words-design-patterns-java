@@ -10,15 +10,13 @@ public class Singleton {
 	/** 
 	 * Holds reference to single instance. 
 	 */	
-	private static Singleton INSTANCE;
-	
+	private static Singleton INSTANCE;	
 	
 	/** 
 	 * Overrides public Constructor. 
 	 */
 	private Singleton(){		
-	}
-	
+	}	
 	
 	/**
 	 * Creates the instance if it does not yet exist(lazy instantiation).

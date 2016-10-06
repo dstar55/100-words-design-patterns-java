@@ -12,7 +12,7 @@ public class ConcreteState1 implements State {
 		this.handleInvoked = true;
 	}
 
-	public boolean isHandleInvoked() {
+	protected boolean isHandleInvoked() {
 		return handleInvoked;
 	}
 

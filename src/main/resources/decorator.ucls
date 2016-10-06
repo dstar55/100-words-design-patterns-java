@@ -6,7 +6,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/decorator/ConcreteComponent.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="171" y="265"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -16,7 +16,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/decorator/Decorator.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="405" y="271"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -27,10 +27,10 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/decorator/ConcreteDecoratorB.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="290" y="466"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+      <attributes public="true" package="true" protected="true" private="false" static="true"/>      
+      <operations public="true" package="true" protected="false" private="true" static="true"/>    
     </display>  
   </class>  
   <class id="4" language="java" name="com.hundredwordsgof.decorator.ConcreteDecoratorA" 
@@ -38,7 +38,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/decorator/ConcreteDecoratorA.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="516" y="464"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -48,7 +48,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/decorator/Component.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="267" y="91"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    

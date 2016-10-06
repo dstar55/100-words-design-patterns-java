@@ -26,7 +26,7 @@ public class ObjectStructure {
 	}	
 	
 
-	void acceptAll(Visitor visitor) {
+	public void acceptAll(Visitor visitor) {
 		for (Iterator iterator = children.iterator(); iterator.hasNext();) {
 			Element element = (Element) iterator.next();
 			element.accept(visitor);

@@ -6,7 +6,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/flyweight/ConcreteFlyweight.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="375" y="366"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -16,7 +16,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/flyweight/Flyweight.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="525" y="148"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -27,7 +27,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/flyweight/FlyweightFactory.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="184" y="147"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -38,7 +38,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/flyweight/UnsharedConcreteFlyweight.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="648" y="384"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    

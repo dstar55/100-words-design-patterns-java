@@ -7,14 +7,14 @@ package com.hundredwordsgof.strategy;
  */
 public class Context {
 
-	private Strategy startegy;
+	private Strategy strategy;
 	
 	public Context(Strategy startegy){
-		this.startegy = startegy;
+		this.strategy = startegy;
 	}
 
-	public String contextInterface(){
-		return this.startegy.algorithmInterface();
+	protected String contextInterface(){
+		return this.strategy.algorithmInterface();
 	}
 }
 

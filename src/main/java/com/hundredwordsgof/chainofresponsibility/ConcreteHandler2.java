@@ -14,7 +14,7 @@ public class ConcreteHandler2 extends Handler {
 		handleRequestInvoked = true;
 	}
 
-	public boolean isHandleRequestInvoked() {
+	protected boolean isHandleRequestInvoked() {
 		return handleRequestInvoked;
 	}
 	

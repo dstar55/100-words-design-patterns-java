@@ -5,7 +5,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/singleton/Singleton.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="108" width="173" x="478" y="200"/>    
-    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    

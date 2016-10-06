@@ -13,7 +13,7 @@ public class Receiver {
 		operationPerfomed = true;
 	}
 
-	public boolean isOperationPerfomed() {
+	protected boolean isOperationPerfomed() {
 		return operationPerfomed;
 	}
 		

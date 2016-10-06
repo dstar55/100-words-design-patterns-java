@@ -6,7 +6,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/interpreter/TerminalExpression.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="327" y="334"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -17,7 +17,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/interpreter/AbstractExpression.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="330" y="146"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -27,7 +27,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/interpreter/Context.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="104" y="178"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -37,7 +37,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/interpreter/AndExpression.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="99" width="303" x="567" y="64"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -47,7 +47,7 @@
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/interpreter/OrExpression.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="712" y="299"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    

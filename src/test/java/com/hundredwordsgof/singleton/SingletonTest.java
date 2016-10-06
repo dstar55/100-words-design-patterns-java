@@ -9,18 +9,18 @@ import org.junit.Test;
  * Test implementation of the Singleton pattern.
  */
 public class SingletonTest {
-	
-	
+		
 	@Test
 	public void testSingleton() {
 
-		// invoke Singleton.getInstance() for first time, object must be created
+		// invokes Singleton.getInstance() for first time, 
+		// object will be created
 		Singleton singleton = Singleton.getInstance();
 		assertNotNull(singleton);
 		
-		// invoke Singleton.getInstance() for second time, we will get reference to the same object 
+		// invokes Singleton.getInstance() for second time, 
+		// reference to the same object will be returned 
 		Singleton secondSingleton = Singleton.getInstance();		
-		assertEquals(singleton, secondSingleton);
-		
+		assertEquals(singleton, secondSingleton);	
 	}		
 }
