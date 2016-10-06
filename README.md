@@ -664,7 +664,7 @@ At the end of the day worker go home, have a dinner and go to sleep.
 
 UML: 
 
-![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/master/src/main/resources/template.png "UML Template")
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/master/src/main/resources/templatemethod.png "UML Template")
 
 Source Code:
 
