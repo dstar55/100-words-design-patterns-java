@@ -21,7 +21,7 @@ The spoilers do not change the car itself, but adds additional functionality whi
 
 
 ###  <a id="UML"></a>UML 
-![]({{site.baseurl}}/assets/img/decorator.png)
+[![]({{site.baseurl}}/assets/img/decorator.png)]({{site.baseurl}}/assets/img/decorator.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

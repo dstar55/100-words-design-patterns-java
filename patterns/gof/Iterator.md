@@ -20,7 +20,7 @@ Process of browsing is example of Iterator pattern.
 
 
 ###  <a id="UML"></a>UML 
-![]({{site.baseurl}}/assets/img/iterator.png)
+[![]({{site.baseurl}}/assets/img/iterator.png)]({{site.baseurl}}/assets/img/iterator.png)
 
 ###  <a id="Implementation"></a>Implementation 
 
