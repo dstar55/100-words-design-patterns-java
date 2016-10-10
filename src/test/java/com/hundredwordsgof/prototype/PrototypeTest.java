@@ -1,4 +1,4 @@
-package com.hundredwordsgof.protoype;
+package com.hundredwordsgof.prototype;
 
 import static org.junit.Assert.assertNotEquals;
 
