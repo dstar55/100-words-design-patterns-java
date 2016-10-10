@@ -49,7 +49,7 @@ public class ConcreteObserver implements Observer{
 		observerState = subject.getState();
 	}
 
-	public int getObserverState() {
+	protected int getObserverState() {
 		return observerState;
 	}
 

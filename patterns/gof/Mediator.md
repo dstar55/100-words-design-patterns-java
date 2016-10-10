@@ -41,7 +41,7 @@ abstract class Colleague {
 
 	protected Mediator mediator;
 	
-	protected String receivedMessage;
+	private String receivedMessage;
 	
 	public Colleague(Mediator mediator){
 		this.mediator = mediator;
@@ -51,10 +51,14 @@ abstract class Colleague {
 
 	abstract void receive(String message);
 
-	public String getReceivedMessage() {
+	protected String getReceivedMessage() {
 		return this.receivedMessage;
 	}
 
+	protected void setReceivedMessage(String receivedMessage) {
+		this.receivedMessage = receivedMessage;
+	}
+	
 }
 ```
 
@@ -78,7 +82,7 @@ public class ConcreteColleague1 extends Colleague {
 	}
 
 	public void receive(String message) {
-		this.receivedMessage = message;
+		this.setReceivedMessage(message);
 	}
 		
 }
@@ -103,7 +107,7 @@ public class ConcreteColleague2 extends Colleague {
 	}
 
 	public void receive(String message) {
-		this.receivedMessage = message;	
+		this.setReceivedMessage(message);	
 	}
 }
 ```

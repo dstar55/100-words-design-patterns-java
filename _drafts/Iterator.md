@@ -57,8 +57,8 @@ public class ConcreteAggregate implements Aggregate {
 		return new ConcreteIterator(this);
 	}
 
-	public String[] getRecords() {
-		return records.clone();
+	protected String[] getRecords() {
+		return records;
 	}
 
 	

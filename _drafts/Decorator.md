@@ -109,7 +109,7 @@ public class ConcreteDecoratorB extends Decorator {
 		behaviorMethodInvoked = true;
 	}
 
-	public boolean isBehaviorMethodInvoked() {
+	protected boolean isBehaviorMethodInvoked() {
 		return behaviorMethodInvoked;
 	}
 

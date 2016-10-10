@@ -46,7 +46,7 @@ public class ConcreteElementA implements Element {
 		counter++;
 	}
 
-	public int getCounter() {
+	protected int getCounter() {
 		return counter;
 	}
 	
@@ -75,7 +75,7 @@ public class ConcreteElementB implements Element {
 		counter++;
 	}
 
-	public int getCounter() {
+	protected int getCounter() {
 		return counter;
 	}
 	
@@ -176,7 +176,7 @@ public class ObjectStructure {
 	}	
 	
 
-	void acceptAll(Visitor visitor) {
+	public void acceptAll(Visitor visitor) {
 		for (Iterator iterator = children.iterator(); iterator.hasNext();) {
 			Element element = (Element) iterator.next();
 			element.accept(visitor);
