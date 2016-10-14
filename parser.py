@@ -1,7 +1,7 @@
 '''
 Created on 5 Oct 2016
 
-@author: sd99
+@author: dstar55@yahoo.com
 '''
 import constants
 import re

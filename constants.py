@@ -1,7 +1,7 @@
 '''
 Created on 30 Sep 2016
 
-@author: sd99
+@author: dstar55@yahoo.com
 '''
 
 SLASH = '/'

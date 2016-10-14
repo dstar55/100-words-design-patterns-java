@@ -3,7 +3,7 @@ Created on 02 Sep 2016
 
 Generates content for design-patterns-story site  
 
-@author: DS
+@author: dstar55@yahoo.com
 
 '''
 
