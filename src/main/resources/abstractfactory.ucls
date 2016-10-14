@@ -16,8 +16,8 @@
     project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/abstractfactory/AbstractProductA.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="744" y="78"/>    
-    <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
+    <position height="67" width="143" x="174" y="360"/>    
+    <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -27,7 +27,7 @@
     project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/abstractfactory/AbstractProductB.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="67" width="178" x="681" y="311"/>    
+    <position height="67" width="184" x="148" y="580"/>    
     <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -38,7 +38,7 @@
     project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/abstractfactory/ConcreteFactory1.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="118" y="260"/>    
+    <position height="-1" width="-1" x="146" y="257"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="false" protected="true" private="true" static="true"/>      
@@ -49,7 +49,7 @@
     project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/abstractfactory/ConcreteFactory2.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="382" y="262"/>    
+    <position height="-1" width="-1" x="365" y="257"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -59,7 +59,7 @@
   <class id="6" language="java" name="com.hundredwordsgof.abstractfactory.ProductA1" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/abstractfactory/ProductA1.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="67" width="110" x="601" y="182"/>    
+    <position height="67" width="121" x="114" y="476"/>    
     <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -69,7 +69,7 @@
   <class id="7" language="java" name="com.hundredwordsgof.abstractfactory.ProductA2" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/abstractfactory/ProductA2.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="67" width="110" x="801" y="187"/>    
+    <position height="67" width="116" x="252" y="475"/>    
     <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -79,7 +79,7 @@
   <class id="8" language="java" name="com.hundredwordsgof.abstractfactory.ProductB1" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/abstractfactory/ProductB1.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="67" width="124" x="586" y="466"/>    
+    <position height="67" width="139" x="48" y="682"/>    
     <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -89,61 +89,54 @@
   <class id="9" language="java" name="com.hundredwordsgof.abstractfactory.ProductB2" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/abstractfactory/ProductB2.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="67" width="116" x="817" y="463"/>    
+    <position height="67" width="132" x="335" y="687"/>    
     <display autosize="false" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <dependency id="10">    
-    <bendpoint x="482" y="289"/>    
-    <bendpoint x="858" y="290"/>    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <realization id="11">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
-  <dependency id="12">    
-    <bendpoint x="385" y="578"/>    
-    <bendpoint x="877" y="582"/>    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <generalization id="13">    
+  <generalization id="10">    
     <end type="SOURCE" refId="9"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <dependency id="14">    
-    <bendpoint x="118" y="401"/>    
-    <bendpoint x="654" y="403"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <generalization id="15">    
+  <generalization id="11">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
-  <realization id="16">    
+  <realization id="12">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="1"/>  
   </realization>  
+  <realization id="13">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
   <generalization id="17">    
     <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
   <dependency id="18">    
-    <bendpoint x="118" y="498"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="19">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="8"/>  
   </dependency>  
-  <generalization id="19">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+  <classifier-display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="false" protected="true" private="true" static="true"/>    
     <operations public="true" package="true" protected="true" private="true" static="true"/>  
