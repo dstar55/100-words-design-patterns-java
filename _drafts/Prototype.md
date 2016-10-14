@@ -25,6 +25,41 @@ Sheep Dolly is the first mammal to be cloned, so Dolly is a duplicate.
 
 ###  <a id="Implementation"></a>Implementation 
 
+#### *Prototype.java* 
+```java 
+package com.hundredwordsgof.prototype;
+
+/**
+ * Declares interface to copy it self.
+ */
+public abstract class Prototype implements Cloneable  {
+
+	/**
+	 * Copy method.
+	 * @return copy of the object
+	 * @throws CloneNotSupportedException exception
+	 */
+	abstract Prototype copyMe() throws CloneNotSupportedException;
+	
+}
+```
+
+#### *ConcretePrototype.java* 
+```java 
+package com.hundredwordsgof.prototype;
+
+public class ConcretePrototype extends Prototype {
+
+	/**
+	 * Implements Prototype, meaning clone method.
+	 */
+	public Prototype copyMe() throws CloneNotSupportedException {
+		return (Prototype)this.clone();
+	}
+
+}
+```
+
 #### *Client.java* 
 ```java 
 package com.hundredwordsgof.prototype;
@@ -45,41 +80,6 @@ public class Client {
 		return prototype.copyMe();
 	}
 
-}
-```
-
-#### *ConcretePrototype.java* 
-```java 
-package com.hundredwordsgof.prototype;
-
-public class ConcretePrototype extends Prototype {
-
-	/**
-	 * Implements Prototype, meaning clone method.
-	 */
-	public Prototype copyMe() throws CloneNotSupportedException {
-		return (Prototype)this.clone();
-	}
-
-}
-```
-
-#### *Prototype.java* 
-```java 
-package com.hundredwordsgof.prototype;
-
-/**
- * Declares interface to copy it self.
- */
-public abstract class Prototype implements Cloneable  {
-
-	/**
-	 * Copy method.
-	 * @return copy of the object
-	 * @throws CloneNotSupportedException exception
-	 */
-	abstract Prototype copyMe() throws CloneNotSupportedException;
-	
 }
 ```
 

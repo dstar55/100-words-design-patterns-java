@@ -25,6 +25,22 @@ Database normalization is flyweight. Normalisation, is the process of organizing
 
 ###  <a id="Implementation"></a>Implementation 
 
+#### *Flyweight.java* 
+```java 
+package com.hundredwordsgof.flyweight;
+
+/**
+ * 
+ * Flyweight, interface through flyweight can recieve and act on extrinic state
+ *
+ */
+public interface Flyweight {
+
+	void operation(Object extrinsicState);
+	
+}
+```
+
 #### *ConcreteFlyweight.java* 
 ```java 
 package com.hundredwordsgof.flyweight;
@@ -58,18 +74,30 @@ public class ConcreteFlyweight implements Flyweight{
 }
 ```
 
-#### *Flyweight.java* 
+#### *UnsharedConcreteFlyweight.java* 
 ```java 
 package com.hundredwordsgof.flyweight;
 
 /**
  * 
- * Flyweight, interface through flyweight can recieve and act on extrinic state
+ * UnsharedConcreteFlyweight, defines objects which are not shared
  *
  */
-public interface Flyweight {
+public class UnsharedConcreteFlyweight implements Flyweight{
 
-	void operation(Object extrinsicState);
+	private Object state;
+
+	public UnsharedConcreteFlyweight(Object state){
+		this.state = state;
+	}
+	
+	public void operation(Object extrinsicState) {
+
+	}
+
+	public Object getState() {
+		return state;
+	}
 	
 }
 ```
@@ -118,34 +146,6 @@ public class FlyweightFactory {
 		
 		return (Flyweight)flyweights.get(key);
 	}
-}
-```
-
-#### *UnsharedConcreteFlyweight.java* 
-```java 
-package com.hundredwordsgof.flyweight;
-
-/**
- * 
- * UnsharedConcreteFlyweight, defines objects which are not shared
- *
- */
-public class UnsharedConcreteFlyweight implements Flyweight{
-
-	private Object state;
-
-	public UnsharedConcreteFlyweight(Object state){
-		this.state = state;
-	}
-	
-	public void operation(Object extrinsicState) {
-
-	}
-
-	public Object getState() {
-		return state;
-	}
-	
 }
 ```
 

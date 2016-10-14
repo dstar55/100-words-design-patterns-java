@@ -27,6 +27,21 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 
 ###  <a id="Implementation"></a>Implementation 
 
+#### *State.java* 
+```java 
+package com.hundredwordsgof.state;
+
+/**
+ * The interface for encapsulating the behavior associated with a particular state of the Context.
+ *
+ */
+public interface State {
+
+	void handle();
+	
+}
+```
+
 #### *ConcreteState1.java* 
 ```java 
 package com.hundredwordsgof.state;
@@ -93,21 +108,6 @@ public class Context {
 		this.state = state;
 	}
 	
-	
-}
-```
-
-#### *State.java* 
-```java 
-package com.hundredwordsgof.state;
-
-/**
- * The interface for encapsulating the behavior associated with a particular state of the Context.
- *
- */
-public interface State {
-
-	void handle();
 	
 }
 ```

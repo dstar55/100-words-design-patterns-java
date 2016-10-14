@@ -44,6 +44,24 @@ abstract class Component {
 }
 ```
 
+#### *Leaf.java* 
+```java 
+package com.hundredwordsgof.composite;
+
+/**
+ * 
+ * Leaf class represents leaf objects in the composition
+ *
+ */
+public class Leaf extends Component {
+
+	void operation() {
+		
+	}
+
+}
+```
+
 #### *Composite.java* 
 ```java 
 package com.hundredwordsgof.composite;
@@ -79,24 +97,6 @@ public class Composite extends Component {
 	public Component getChild(int index){
 		return children.get(index);
 	}	
-}
-```
-
-#### *Leaf.java* 
-```java 
-package com.hundredwordsgof.composite;
-
-/**
- * 
- * Leaf class represents leaf objects in the composition
- *
- */
-public class Leaf extends Component {
-
-	void operation() {
-		
-	}
-
 }
 ```
 

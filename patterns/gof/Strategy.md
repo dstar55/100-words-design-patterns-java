@@ -27,6 +27,24 @@ The user must choose the Strategy based on his possibilities, preferences.
 
 ###  <a id="Implementation"></a>Implementation 
 
+#### *Strategy.java* 
+```java 
+package com.hundredwordsgof.strategy;
+
+/**
+ * Declares an interface common to all supported algorithms. 
+ * Context uses this interface to call the algorithm defined by a ConcreteStrategy. 
+ * 
+ *
+ */
+public interface Strategy {
+
+	String algorithmInterface();
+	
+}
+
+```
+
 #### *ConcreteStrategyA.java* 
 ```java 
 package com.hundredwordsgof.strategy;
@@ -101,24 +119,6 @@ public class Context {
 	protected String contextInterface(){
 		return this.strategy.algorithmInterface();
 	}
-}
-
-```
-
-#### *Strategy.java* 
-```java 
-package com.hundredwordsgof.strategy;
-
-/**
- * Declares an interface common to all supported algorithms. 
- * Context uses this interface to call the algorithm defined by a ConcreteStrategy. 
- * 
- *
- */
-public interface Strategy {
-
-	String algorithmInterface();
-	
 }
 
 ```

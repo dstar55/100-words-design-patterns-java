@@ -24,43 +24,24 @@ Process of browsing is example of Iterator pattern.
 
 ###  <a id="Implementation"></a>Implementation 
 
-#### *Aggregate.java* 
-```java 
-package com.hundredwordsgof.iterator;
-
-/**
-* 
-* Aggregate defines an interface for creating an Iterator object.
-*
-*/
-public interface Aggregate {
-
-	Iterator createIterator();
-	
-}
-```
-
-#### *ConcreteAggregate.java* 
+#### *Iterator.java* 
 ```java 
 package com.hundredwordsgof.iterator;
 
 /**
  * 
- * ConcreteAgregate implements the Iterator creation interface to return an instance of the proper ConcreteIterator.
+ * Iterator defines an interface for accessing and traversing elements.
  *
  */
-public class ConcreteAggregate implements Aggregate {
+public interface Iterator {
 
-	private final String records[] = { "first", "second", "third", "fourth" };
+	Object first();
 	
-	public Iterator createIterator() {
-		return new ConcreteIterator(this);
-	}
-
-	protected String[] getRecords() {
-		return records;
-	}
-
+	Object next();
+	
+	boolean isDone();
+	
+	Object currentItem();
 	
 }
 ```
@@ -109,24 +90,43 @@ public class ConcreteIterator implements Iterator {
 }
 ```
 
-#### *Iterator.java* 
+#### *Aggregate.java* 
+```java 
+package com.hundredwordsgof.iterator;
+
+/**
+* 
+* Aggregate defines an interface for creating an Iterator object.
+*
+*/
+public interface Aggregate {
+
+	Iterator createIterator();
+	
+}
+```
+
+#### *ConcreteAggregate.java* 
 ```java 
 package com.hundredwordsgof.iterator;
 
 /**
  * 
- * Iterator defines an interface for accessing and traversing elements.
+ * ConcreteAgregate implements the Iterator creation interface to return an instance of the proper ConcreteIterator.
  *
  */
-public interface Iterator {
+public class ConcreteAggregate implements Aggregate {
 
-	Object first();
+	private final String records[] = { "first", "second", "third", "fourth" };
 	
-	Object next();
-	
-	boolean isDone();
-	
-	Object currentItem();
+	public Iterator createIterator() {
+		return new ConcreteIterator(this);
+	}
+
+	protected String[] getRecords() {
+		return records;
+	}
+
 	
 }
 ```

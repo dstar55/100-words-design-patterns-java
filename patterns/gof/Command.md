@@ -66,29 +66,6 @@ public class ConcreteCommand implements Command {
 }
 ```
 
-#### *Invoker.java* 
-```java 
-package com.hundredwordsgof.command;
-
-/**
- * 
- * Invoker class, asks the command to carry out the request
- *
- */
-public class Invoker {
-
-	private Command command;
-
-	public Invoker(Command command){
-		this.command = command;
-	}
-	
-	public void execute(){
-		command.execute();
-	}
-}
-```
-
 #### *Receiver.java* 
 ```java 
 package com.hundredwordsgof.command;
@@ -110,6 +87,29 @@ public class Receiver {
 		return operationPerfomed;
 	}
 		
+}
+```
+
+#### *Invoker.java* 
+```java 
+package com.hundredwordsgof.command;
+
+/**
+ * 
+ * Invoker class, asks the command to carry out the request
+ *
+ */
+public class Invoker {
+
+	private Command command;
+
+	public Invoker(Command command){
+		this.command = command;
+	}
+	
+	public void execute(){
+		command.execute();
+	}
 }
 ```
 

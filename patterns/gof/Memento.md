@@ -29,31 +29,6 @@ This mechanism of rolling back uses the memento design pattern.
 
 ###  <a id="Implementation"></a>Implementation 
 
-#### *Caretaker.java* 
-```java 
-package com.hundredwordsgof.memento;
-
-/**
- * 
- * Caretaker responsible for the Memento's safekeeping.
- *
- */
-public class Caretaker {
-
-	private Memento memento;
-
-	public Memento getMemento() {
-		return memento;
-	}
-
-	public void setMemento(Memento memento) {
-		this.memento = memento;
-	}
-	
-	
-}
-```
-
 #### *Memento.java* 
 ```java 
 package com.hundredwordsgof.memento;
@@ -108,6 +83,31 @@ public class Originator {
 
 	public void setState(int state) {
 		this.state = state;
+	}
+	
+	
+}
+```
+
+#### *Caretaker.java* 
+```java 
+package com.hundredwordsgof.memento;
+
+/**
+ * 
+ * Caretaker responsible for the Memento's safekeeping.
+ *
+ */
+public class Caretaker {
+
+	private Memento memento;
+
+	public Memento getMemento() {
+		return memento;
+	}
+
+	public void setMemento(Memento memento) {
+		this.memento = memento;
 	}
 	
 	

@@ -60,47 +60,31 @@ public class Compiler {
 }
 ```
 
-#### *ExpressionNode.java* 
+#### *Tokenizer.java* 
 ```java 
 package com.hundredwordsgof.facade;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
 /**
- * ExpressionNode, represents ExpressionNode in Abstract Syntax Tree.
+ * Tokenizer, tokenize input string into tokens.
  *
  */
-public class ExpressionNode extends Node {
+public class Tokenizer {
+
+	public static List<String> tokenize(String source){
 	
-	private char operator;
-	private Node left;
-	private Node right;
-
-	
-	public char getOperator() {
-		return operator;
+		ArrayList<String> tokens = new ArrayList<String>();
+		
+		StringTokenizer stringTokenizer = new StringTokenizer(source);
+		while (stringTokenizer.hasMoreElements()) {
+			tokens.add((String)stringTokenizer.nextElement());
+		}
+		return tokens;
+		
 	}
-
-	public void setOperator(char operator) {
-		this.operator = operator;
-	}
-
-	public Node getLeft() {
-		return left;
-	}
-
-	public void setLeft(Node left) {
-		this.left = left;
-	}
-
-	public Node getRight() {
-		return right;
-	}
-
-	public void setRight(Node right) {
-		this.right = right;
-	}
-	
-	
-
 }
 ```
 
@@ -147,6 +131,50 @@ package com.hundredwordsgof.facade;
  */
 public class Node {
 	 
+}
+```
+
+#### *ExpressionNode.java* 
+```java 
+package com.hundredwordsgof.facade;
+
+/**
+ * ExpressionNode, represents ExpressionNode in Abstract Syntax Tree.
+ *
+ */
+public class ExpressionNode extends Node {
+	
+	private char operator;
+	private Node left;
+	private Node right;
+
+	
+	public char getOperator() {
+		return operator;
+	}
+
+	public void setOperator(char operator) {
+		this.operator = operator;
+	}
+
+	public Node getLeft() {
+		return left;
+	}
+
+	public void setLeft(Node left) {
+		this.left = left;
+	}
+
+	public Node getRight() {
+		return right;
+	}
+
+	public void setRight(Node right) {
+		this.right = right;
+	}
+	
+	
+
 }
 ```
 
@@ -241,34 +269,6 @@ public class Parser {
 		return true;
 	}
 
-}
-```
-
-#### *Tokenizer.java* 
-```java 
-package com.hundredwordsgof.facade;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
-
-/**
- * Tokenizer, tokenize input string into tokens.
- *
- */
-public class Tokenizer {
-
-	public static List<String> tokenize(String source){
-	
-		ArrayList<String> tokens = new ArrayList<String>();
-		
-		StringTokenizer stringTokenizer = new StringTokenizer(source);
-		while (stringTokenizer.hasMoreElements()) {
-			tokens.add((String)stringTokenizer.nextElement());
-		}
-		return tokens;
-		
-	}
 }
 ```
 

@@ -27,25 +27,18 @@ There are different implementations of the steering wheels used in cars, buses, 
 
 ###  <a id="Implementation"></a>Implementation 
 
-#### *Abstraction.java* 
+#### *Implementor.java* 
 ```java 
 package com.hundredwordsgof.bridge;
 
-
 /**
  * 
- * Abstraction, defines abstraction interface, maintains a reference to object of type Implementator
- * 
+ * Implementor, defines interface for implementation
+ *
  */
-abstract class Abstraction {
+public interface Implementor {
 
-	protected Implementor implementor;
-	
-	public Abstraction(Implementor implementor){
-		this.implementor = implementor;		
-	}
-	
-	abstract String operation();
+	void implementation();
 	
 }
 ```
@@ -86,22 +79,6 @@ public class ConcreteImplementorB implements Implementor {
 }
 ```
 
-#### *Implementor.java* 
-```java 
-package com.hundredwordsgof.bridge;
-
-/**
- * 
- * Implementor, defines interface for implementation
- *
- */
-public interface Implementor {
-
-	void implementation();
-	
-}
-```
-
 #### *RefinedAbstraction.java* 
 ```java 
 package com.hundredwordsgof.bridge;
@@ -121,6 +98,29 @@ public class RefinedAbstraction extends Abstraction{
 		return this.implementor.getClass().getName();
 	}
 
+}
+```
+
+#### *Abstraction.java* 
+```java 
+package com.hundredwordsgof.bridge;
+
+
+/**
+ * 
+ * Abstraction, defines abstraction interface, maintains a reference to object of type Implementator
+ * 
+ */
+abstract class Abstraction {
+
+	protected Implementor implementor;
+	
+	public Abstraction(Implementor implementor){
+		this.implementor = implementor;		
+	}
+	
+	abstract String operation();
+	
 }
 ```
 

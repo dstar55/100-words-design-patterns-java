@@ -23,28 +23,16 @@ Plasticine is used for children's play. Plasticine is injected into predefined m
 
 ###  <a id="Implementation"></a>Implementation 
 
-#### *ConcreteCreator.java* 
+#### *Product.java* 
 ```java 
 package com.hundredwordsgof.factorymethod;
 
 /**
  * 
- * ConcreteCreator class returns an instance of the ConcreteProduct
+ * Product interface defines the interface of objects the factory method creates 
  *
  */
-public class ConcreteCreator extends Creator {
-
-	
-	public Product factoryMethod(String type) {
-		
-		if(type.equals("A")){
-			return new ConcreteProductA();	
-		}else if(type.equals("B")){
-			return new ConcreteProductB();
-		}
-		
-		return null;
-	}
+public interface Product {
 
 }
 ```
@@ -92,16 +80,28 @@ abstract class Creator {
 }
 ```
 
-#### *Product.java* 
+#### *ConcreteCreator.java* 
 ```java 
 package com.hundredwordsgof.factorymethod;
 
 /**
  * 
- * Product interface defines the interface of objects the factory method creates 
+ * ConcreteCreator class returns an instance of the ConcreteProduct
  *
  */
-public interface Product {
+public class ConcreteCreator extends Creator {
+
+	
+	public Product factoryMethod(String type) {
+		
+		if(type.equals("A")){
+			return new ConcreteProductA();	
+		}else if(type.equals("B")){
+			return new ConcreteProductB();
+		}
+		
+		return null;
+	}
 
 }
 ```

@@ -112,6 +112,20 @@ public class ConcreteColleague2 extends Colleague {
 }
 ```
 
+#### *Mediator.java* 
+```java 
+package com.hundredwordsgof.mediator;
+
+/**
+ * Mediator defines an interface for communicating with Colleague objects.
+ *
+ */
+public interface Mediator {
+
+	void notifyColleague(Colleague colleague, String message);
+}
+```
+
 #### *ConcreteMediator.java* 
 ```java 
 package com.hundredwordsgof.mediator;
@@ -149,20 +163,6 @@ public class ConcreteMediator implements Mediator{
 	
 	
 	
-}
-```
-
-#### *Mediator.java* 
-```java 
-package com.hundredwordsgof.mediator;
-
-/**
- * Mediator defines an interface for communicating with Colleague objects.
- *
- */
-public interface Mediator {
-
-	void notifyColleague(Colleague colleague, String message);
 }
 ```
 

@@ -26,6 +26,37 @@ He is an accredited messenger, agent, or representative who is sent by one gover
 
 ###  <a id="Implementation"></a>Implementation 
 
+#### *Subject.java* 
+```java 
+package com.hundredwordsgof.proxy;
+
+/**
+ * Subject interface defines common interface for RealSubject and Proxy
+ * 
+ */
+public interface Subject {
+
+	void doOperation();
+	
+}
+```
+
+#### *RealSubject.java* 
+```java 
+package com.hundredwordsgof.proxy;
+
+/**
+ * RealSubject class is a real object which is represented by Proxy 
+ * 
+ */
+public class RealSubject implements Subject {
+
+	public void doOperation() {
+	}
+
+}
+```
+
 #### *Proxy.java* 
 ```java 
 package com.hundredwordsgof.proxy;
@@ -52,37 +83,6 @@ public class Proxy implements Subject {
 		return realSubject;
 	}
 
-	
-}
-```
-
-#### *RealSubject.java* 
-```java 
-package com.hundredwordsgof.proxy;
-
-/**
- * RealSubject class is a real object which is represented by Proxy 
- * 
- */
-public class RealSubject implements Subject {
-
-	public void doOperation() {
-	}
-
-}
-```
-
-#### *Subject.java* 
-```java 
-package com.hundredwordsgof.proxy;
-
-/**
- * Subject interface defines common interface for RealSubject and Proxy
- * 
- */
-public interface Subject {
-
-	void doOperation();
 	
 }
 ```

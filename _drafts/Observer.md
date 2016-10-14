@@ -26,6 +26,21 @@ Subscribers can subscribe or unsubscribe to the newsletters.
 
 ###  <a id="Implementation"></a>Implementation 
 
+#### *Observer.java* 
+```java 
+package com.hundredwordsgof.observer;
+
+/**
+ * Observer defines an updating interface for objects that should be notified of changes in a subject.
+ *
+ */
+public interface Observer {
+
+	void update();
+	
+}
+```
+
 #### *ConcreteObserver.java* 
 ```java 
 package com.hundredwordsgof.observer;
@@ -53,47 +68,6 @@ public class ConcreteObserver implements Observer{
 		return observerState;
 	}
 
-	
-}
-```
-
-#### *ConcreteSubject.java* 
-```java 
-package com.hundredwordsgof.observer;
-
-
-/**
- * ConcreteSubject stores state of interest to ConcreteObserver objects, sends a notification to its observers when its state changes.
- *
- */
-public class ConcreteSubject extends Subject {
-
-	private int state;
-
-	public int getState() {
-		return state;
-	}
-
-	public void setState(int state) {
-		this.state = state;
-		this.notifyObervers();
-	}
-	
-	
-}
-```
-
-#### *Observer.java* 
-```java 
-package com.hundredwordsgof.observer;
-
-/**
- * Observer defines an updating interface for objects that should be notified of changes in a subject.
- *
- */
-public interface Observer {
-
-	void update();
 	
 }
 ```
@@ -128,6 +102,32 @@ abstract class Subject {
 			observer.update();
 		}
 	}
+}
+```
+
+#### *ConcreteSubject.java* 
+```java 
+package com.hundredwordsgof.observer;
+
+
+/**
+ * ConcreteSubject stores state of interest to ConcreteObserver objects, sends a notification to its observers when its state changes.
+ *
+ */
+public class ConcreteSubject extends Subject {
+
+	private int state;
+
+	public int getState() {
+		return state;
+	}
+
+	public void setState(int state) {
+		this.state = state;
+		this.notifyObervers();
+	}
+	
+	
 }
 ```
 

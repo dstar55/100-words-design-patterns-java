@@ -29,6 +29,29 @@ Correct handler of request is only known during execution of the request when re
 
 ###  <a id="Implementation"></a>Implementation 
 
+#### *Handler.java* 
+```java 
+package com.hundredwordsgof.chainofresponsibility;
+
+
+/**
+ * 
+ * Handler interface, declares an interface for request handling 
+ *
+ */
+abstract class Handler {
+
+	protected Handler succesor;
+	
+	abstract void handleRequest();
+
+	public void setSuccesor(Handler succesor) {
+		this.succesor = succesor;
+	}
+	
+}
+```
+
 #### *ConcreteHandler1.java* 
 ```java 
 package com.hundredwordsgof.chainofresponsibility;
@@ -81,29 +104,6 @@ public class ConcreteHandler2 extends Handler {
 
 	protected boolean isHandleRequestInvoked() {
 		return handleRequestInvoked;
-	}
-	
-}
-```
-
-#### *Handler.java* 
-```java 
-package com.hundredwordsgof.chainofresponsibility;
-
-
-/**
- * 
- * Handler interface, declares an interface for request handling 
- *
- */
-abstract class Handler {
-
-	protected Handler succesor;
-	
-	abstract void handleRequest();
-
-	public void setSuccesor(Handler succesor) {
-		this.succesor = succesor;
 	}
 	
 }

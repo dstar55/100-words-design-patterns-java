@@ -28,24 +28,6 @@ The same machine is used to stamp French, Italian or German cards.
 
 ###  <a id="Implementation"></a>Implementation 
 
-#### *AbstractFactory.java* 
-```java 
-package com.hundredwordsgof.abstractfactory;
-
-/**
- * 
- * Abstract Factory, defines interface for creation of the abstract product objects
- *
- */
-public interface AbstractFactory {
-
-	AbstractProductA createProductA();
-	
-	AbstractProductB createProductB();
-	
-}
-```
-
 #### *AbstractProductA.java* 
 ```java 
 package com.hundredwordsgof.abstractfactory;
@@ -56,6 +38,34 @@ package com.hundredwordsgof.abstractfactory;
  *
  */
 abstract class AbstractProductA {
+
+}
+```
+
+#### *ProductA1.java* 
+```java 
+package com.hundredwordsgof.abstractfactory;
+
+/**
+ * 
+ * ProductA1, implements AbstractProductA interface
+ *
+ */
+public class ProductA1 extends AbstractProductA {
+
+}
+```
+
+#### *ProductA2.java* 
+```java 
+package com.hundredwordsgof.abstractfactory;
+
+/**
+ * 
+ * ProductA2, implements AbstractProductA interface
+ *
+ */
+public class ProductA2 extends AbstractProductA {
 
 }
 ```
@@ -71,6 +81,52 @@ package com.hundredwordsgof.abstractfactory;
  */
 abstract class AbstractProductB {
 
+}
+```
+
+#### *ProductB1.java* 
+```java 
+package com.hundredwordsgof.abstractfactory;
+
+/**
+ * 
+ * ProductB1, implements AbstractProductB interface
+ *
+ */
+public class ProductB1 extends AbstractProductB {
+
+}
+```
+
+#### *ProductB2.java* 
+```java 
+package com.hundredwordsgof.abstractfactory;
+
+/**
+ * 
+ * ProductB2, implements AbstractProductB interface
+ *
+ */
+public class ProductB2 extends AbstractProductB {
+
+}
+```
+
+#### *AbstractFactory.java* 
+```java 
+package com.hundredwordsgof.abstractfactory;
+
+/**
+ * 
+ * Abstract Factory, defines interface for creation of the abstract product objects
+ *
+ */
+public interface AbstractFactory {
+
+	AbstractProductA createProductA();
+	
+	AbstractProductB createProductB();
+	
 }
 ```
 
@@ -118,62 +174,6 @@ public class ConcreteFactory2 implements AbstractFactory {
 	public AbstractProductB createProductB() {
 		return new ProductB2();
 	}
-
-}
-```
-
-#### *ProductA1.java* 
-```java 
-package com.hundredwordsgof.abstractfactory;
-
-/**
- * 
- * ProductA1, implements AbstractProductA interface
- *
- */
-public class ProductA1 extends AbstractProductA {
-
-}
-```
-
-#### *ProductA2.java* 
-```java 
-package com.hundredwordsgof.abstractfactory;
-
-/**
- * 
- * ProductA2, implements AbstractProductA interface
- *
- */
-public class ProductA2 extends AbstractProductA {
-
-}
-```
-
-#### *ProductB1.java* 
-```java 
-package com.hundredwordsgof.abstractfactory;
-
-/**
- * 
- * ProductB1, implements AbstractProductB interface
- *
- */
-public class ProductB1 extends AbstractProductB {
-
-}
-```
-
-#### *ProductB2.java* 
-```java 
-package com.hundredwordsgof.abstractfactory;
-
-/**
- * 
- * ProductB2, implements AbstractProductB interface
- *
- */
-public class ProductB2 extends AbstractProductB {
 
 }
 ```
