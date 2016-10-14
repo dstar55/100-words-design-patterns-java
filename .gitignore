@@ -1,6 +1,7 @@
 # common eclipse file extensions, git will ignore it
 *.pydevproject
 *.pyc
+
 .metadata
 .gradle
 bin/
@@ -14,7 +15,6 @@ local.properties
 target/
 .loadpath
 
-*.py
 
 .bash_profile
 
