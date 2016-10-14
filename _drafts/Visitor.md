@@ -26,6 +26,21 @@ disparate set of elements, some with prices and others that needs to be weighted
 
 ###  <a id="Implementation"></a>Implementation 
 
+#### *Element.java* 
+```java 
+package com.hundredwordsgof.visitor;
+
+/**
+ * Defines an Accept operation that takes a visitor as an argument.
+ * 
+ */
+public interface Element {
+
+	void accept(Visitor visitor);
+	
+}
+```
+
 #### *ConcreteElementA.java* 
 ```java 
 package com.hundredwordsgof.visitor;
@@ -83,6 +98,25 @@ public class ConcreteElementB implements Element {
 }
 ```
 
+#### *Visitor.java* 
+```java 
+package com.hundredwordsgof.visitor;
+
+
+/**
+ * Declares a Visit operation for each class of ConcreteElement in the object structure
+ * 
+ *
+ */
+public interface Visitor {
+
+	void visitConcreteElementA(ConcreteElementA concreteElementA);
+	
+	void visitConcreteElementB(ConcreteElementB concreteElementB);
+
+}
+```
+
 #### *ConcreteVisitor1.java* 
 ```java 
 package com.hundredwordsgof.visitor;
@@ -131,21 +165,6 @@ public class ConcreteVisitor2 implements Visitor {
 }
 ```
 
-#### *Element.java* 
-```java 
-package com.hundredwordsgof.visitor;
-
-/**
- * Defines an Accept operation that takes a visitor as an argument.
- * 
- */
-public interface Element {
-
-	void accept(Visitor visitor);
-	
-}
-```
-
 #### *ObjectStructure.java* 
 ```java 
 package com.hundredwordsgof.visitor;
@@ -182,25 +201,6 @@ public class ObjectStructure {
 			element.accept(visitor);
 		}
 	}	
-}
-```
-
-#### *Visitor.java* 
-```java 
-package com.hundredwordsgof.visitor;
-
-
-/**
- * Declares a Visit operation for each class of ConcreteElement in the object structure
- * 
- *
- */
-public interface Visitor {
-
-	void visitConcreteElementA(ConcreteElementA concreteElementA);
-	
-	void visitConcreteElementB(ConcreteElementB concreteElementB);
-
 }
 ```
 
