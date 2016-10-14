@@ -4,7 +4,7 @@
   <class id="1" language="java" name="com.hundredwordsgof.visitor.ConcreteElementA" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/ConcreteElementA.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="244" y="328"/>    
+    <position height="-1" width="-1" x="270" y="270"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="com.hundredwordsgof.visitor.ConcreteVisitor2" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/ConcreteVisitor2.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="671" y="346"/>    
+    <position height="-1" width="-1" x="135" y="552"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="com.hundredwordsgof.visitor.ConcreteElementB" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/ConcreteElementB.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="432" y="331"/>    
+    <position height="-1" width="-1" x="439" y="272"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -34,7 +34,7 @@
   <interface id="4" language="java" name="com.hundredwordsgof.visitor.Visitor" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/Visitor.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="820" y="142"/>    
+    <position height="-1" width="-1" x="241" y="406"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -54,7 +54,7 @@
   <class id="6" language="java" name="com.hundredwordsgof.visitor.ConcreteVisitor1" project="100-words-design-patterns" 
     file="/100-words-design-patterns/src/main/java/com/hundredwordsgof/visitor/ConcreteVisitor1.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="975" y="347"/>    
+    <position height="-1" width="-1" x="421" y="555"/>    
     <display autosize="true" stereotype="true" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -71,30 +71,30 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <association id="8">    
+  <realization id="8">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="9">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="10">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="11">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="9" name="children">        
+      <attribute id="12" name="children">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="10" minimum="0" maximum="2147483647">        
+      <multiplicity id="13" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="11">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <realization id="12">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="7"/>  
-  </realization>  
-  <realization id="13">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
   <realization id="14">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="7"/>  
