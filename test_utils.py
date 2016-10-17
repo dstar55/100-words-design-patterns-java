@@ -12,6 +12,33 @@ class TestUtils(unittest.TestCase):
     def setup(self):
         pass
 
+    def test_updateDict(self):
+        
+        # prepare data     
+        arrayList = []
+        dict1 = {}
+        dict1.update({"patternName": "Singleton"})
+        dict1.update({"patternId": "Singleton"})
+                        
+        dict2 = {}
+        dict2.update({"patternName": "Proxy"})
+        dict2.update({"patternId": "Proxy"})
+
+        arrayList.append(dict1)
+        arrayList.append(dict2)
+        
+        # call update                
+        utils.updateDict(arrayList, "Singleton", "patternName", "SingletonNameUpdated")        
+        self.assertEqual("SingletonNameUpdated", arrayList[0].get("patternName"))
+        
+        utils.updateDict(arrayList, "Proxy", "patternName", "ProxyNameUpdated")
+        self.assertEqual("ProxyNameUpdated", arrayList[1].get("patternName"))
+        
+
+    def test_extractSubStringBetween(self):
+        self.assertEqual('Singleton', utils.extractSubStringBetween("* [Singleton](#Singleton)", '\[', '\]'))
+        self.assertEqual('Singleton', utils.extractSubStringBetween("* [Singleton](#Singleton)", '\#', '\)'))
+        
     def test_getKey(self):
         lst = [3, 2, 1]
         self.assertEqual(3, utils.getKey(lst))

@@ -5,6 +5,7 @@ Created on 5 Oct 2016
 '''
 import constants
 import re
+import utils
 
 
 # parses readme.md and creates array of dictionaries with key values pairs:
@@ -27,11 +28,12 @@ def parseReadme(readmeLocalPath):
         # * [Singleton](#Singleton)
         if strLine.startswith('* ['):
             dict = {}
+                                                                                        
+            # extracts substring between [] -> pattern name + updates dictionary
+            dict.update({constants.DICT_KEY_PATTERN_NAME: utils.extractSubStringBetween(strLine, '\[', '\]')})
             
-            # extracts substring between []
-            dict.update({constants.DICT_KEY_PATTERN_NAME: re.search(r'\[(.*)\]', strLine).group(1)})
-            # extracts substring between #)
-            dict.update({constants.DICT_KEY_PATTERN_ID: re.search(r'\#(.*)\)', strLine).group(1)})
+            # extracts substring between #) -> pattern id + updates dictionary
+            dict.update({constants.DICT_KEY_PATTERN_ID: utils.extractSubStringBetween(strLine, '\#', '\)')})            
             
             arrayList.append(dict)
         
@@ -43,17 +45,21 @@ def parseReadme(readmeLocalPath):
             
             # strip text after between "" -> pattern id 
             currentPatternID = re.search(r'\"(.*)\"', strLine).group(1)
+            
             # strip text after a> and remove last char -> pattern name
-            currentPatternName = strLine.partition('a>')[2][:-1]
+            #currentPatternName = strLine.partition('a>')[2][:-1]            
                         
         # tag '* Implementation' telling us that story paragraph is finished
         if "* Implementation" in strLine: 
             isInStory = False 
             
-            # update dictionary with story                       
-            for dict in arrayList:
-                if currentPatternID == dict.get(constants.DICT_KEY_PATTERN_ID):
-                    dict.update({constants.DICT_KEY_PATTERN_STORY : currentStory})
+            
+            # update dictionary with story            
+            # TODO refactor               
+            utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_STORY, currentStory)    
+            #for dict in arrayList:
+            #    if currentPatternID == dict.get(constants.DICT_KEY_PATTERN_ID):
+            #        dict.update({constants.DICT_KEY_PATTERN_STORY : currentStory})
                 
                 
             # clean current text
@@ -73,9 +79,10 @@ def parseReadme(readmeLocalPath):
             
             # update dictionary with pattern UML file name
             # TODO refactor update
-            for dict in arrayList:
-                if currentPatternID == dict.get(constants.DICT_KEY_PATTERN_ID):
-                    dict.update({constants.DICT_KEY_PATTERN_UML_FILE_NAME : currentPatternID.lower() + ".png"})        
+            utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_UML_FILE_NAME, currentPatternID.lower() + ".png")
+            #for dict in arrayList:
+            #    if currentPatternID == dict.get(constants.DICT_KEY_PATTERN_ID):
+            #        dict.update({constants.DICT_KEY_PATTERN_UML_FILE_NAME : currentPatternID.lower() + ".png"})        
                    
                    
         # find source code, data is in paragraph which contains substring "Source Code"
@@ -83,10 +90,13 @@ def parseReadme(readmeLocalPath):
 
             # update dictionary with PATTERN_SOURCE_CODE_PACKAGE_NAME and DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME
             # TODO refactor update 
-            for dict in arrayList:
-                if currentPatternID == dict.get(constants.DICT_KEY_PATTERN_ID):                    
-                    dict.update({constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME : constants.PATTERN_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower()})
-                    dict.update({constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME : constants.PATTERN_TEST_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower()})
+            utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
+            utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_TEST_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
+            
+            #for dict in arrayList:
+            #    if currentPatternID == dict.get(constants.DICT_KEY_PATTERN_ID):                    
+            #        dict.update({constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME : constants.PATTERN_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower()})
+            #        dict.update({constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME : constants.PATTERN_TEST_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower()})
                             
              
     return arrayList

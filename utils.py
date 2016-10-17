@@ -4,6 +4,9 @@ Created on 11 Oct 2016
 @author: dstar55@yahoo.com
 '''
 
+import re
+import constants
+
 # key, tuple dictionary
 orderedPatternFilesDict = {"Singleton":( "Singleton.java",), # note that if there is just one item in a tuple, than we must add comma at the end of the statement, otherwise it will be threated as a string 
                             "Prototype":( "Prototype.java", "ConcretePrototype.java", "Client.java"),
@@ -30,6 +33,22 @@ orderedPatternFilesDict = {"Singleton":( "Singleton.java",), # note that if ther
                             "Visitor":( "Element.java", "ConcreteElementA.java", "ConcreteElementB.java", "Visitor.java", "ConcreteVisitor1.java", "ConcreteVisitor2.java", "ObjectStructure.java" )
                         }
 
+# update dictionary from arrayList(contains dictionaries)
+# first key is used to find correct dictionary(based on patternId) in a arrayList, second key is used to find a key in dictionary
+def updateDict(arrayList, dictKey, key, value):
+    for dict in arrayList:
+        if dictKey == dict.get(constants.DICT_KEY_PATTERN_ID):
+            dict.update({key : value})
+    
+    return arrayList
+    
+# extract sub string between two chars in a string    
+def extractSubStringBetween(sourceStr, firstChar, secondChar):
+    #regexStrOrg = r'\[(.*)\]'   
+    regexStr = firstChar +'(.*)' + secondChar
+    
+    extractedStr = re.search(regexStr, sourceStr).group(1)
+    return extractedStr
 
 # get position of the file, dictionary contains key and a tuple as a value. tuple contains ordered list of the file name for each key 
 def getFilePosition(patternName, fileName):
@@ -49,6 +68,7 @@ def getFilePosition(patternName, fileName):
 def getKey(item):
     return item[0]
 
+# def sort list 
 def sort(lst):
     return sorted(lst, key=getKey)
-    
+
