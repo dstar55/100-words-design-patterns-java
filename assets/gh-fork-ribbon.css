@@ -1,3 +1,4 @@
+color/*!
 /*!
  * "Fork me on GitHub" CSS ribbon v0.2.0 | MIT License
  * https://github.com/simonwhitaker/github-fork-ribbon-css
@@ -49,7 +50,11 @@
   padding: .38em 0;
 
   /* Set the base colour */
-  background-color: #a00;
+  /* original value
+  background-color: #a00; */
+  /* set to black */
+  background-color: #333; 
+  
 
   /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
