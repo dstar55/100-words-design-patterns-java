@@ -17,53 +17,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   
-  <!-- github ribbon -->
-    <style>
-        /* This is just the styling for this page. See below for the CSS for the ribbon itself. */
-        html {
-            font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-        h1, h2 {
-            font-weight: 400;
-        }
-        pre {
-            background-color: #222;
-            color: white;
-            padding: 10px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-        }
-        pre:before {
-            content: "$ ";
-            color: #999;
-        }
-        .content {
-            width: 560px;
-            margin: 0 auto;
-            padding-top: 80px;
-            color: #444;
-        }
-        a, a:visited {
-            color: #c00;
-        }
-        .content p {
-            font-weight: 200;
-        }
-
-        /* The default background color is #c00 */
-        .github-fork-ribbon.right-bottom:before {
-            background-color: #090;
-        }
-
-        .github-fork-ribbon.right-top:before {
-            background-color: #f80;
-        }
-
-        .github-fork-ribbon.left-bottom:before {
-            background-color: #333;
-        }
-    </style>  
+  <!-- github ribbon --> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
