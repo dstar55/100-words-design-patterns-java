@@ -49,7 +49,7 @@ def createPageHeaderSection(aFile, dict):
     aFile.write('---\n')
     aFile.write('layout: page\n')
     aFile.write('title: ' + dict.get(constants.DICT_KEY_PATTERN_NAME) + '\n')
-    aFile.write('permalink: /' + dict.get(constants.DICT_KEY_PATTERN_ID) + '/\n')
+    aFile.write('permalink: /patterns/' + dict.get(constants.DICT_KEY_PATTERN_ID) + '/\n')
     aFile.write('tag: pattern\n')
     aFile.write('---\n\n')
 
