@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Template Method
-permalink: /TemplateMethod/
+permalink: /patterns/TemplateMethod/
 tag: pattern
 ---
 

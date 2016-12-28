@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Strategy
-permalink: /Strategy/
+permalink: /patterns/Strategy/
 tag: pattern
 ---
 

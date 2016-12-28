@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Memento
-permalink: /Memento/
+permalink: /patterns/Memento/
 tag: pattern
 ---
 

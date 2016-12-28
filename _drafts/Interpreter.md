@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Interpreter
-permalink: /Interpreter/
+permalink: /patterns/Interpreter/
 tag: pattern
 ---
 

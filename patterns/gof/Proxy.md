@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Proxy
-permalink: /Proxy/
+permalink: /patterns/Proxy/
 tag: pattern
 ---
 

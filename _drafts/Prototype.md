@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Prototype
-permalink: /Prototype/
+permalink: /patterns/Prototype/
 tag: pattern
 ---
 

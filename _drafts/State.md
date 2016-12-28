@@ -1,7 +1,7 @@
 ---
 layout: page
 title: State
-permalink: /State/
+permalink: /patterns/State/
 tag: pattern
 ---
 

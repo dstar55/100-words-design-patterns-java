@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Adapter
-permalink: /Adapter/
+permalink: /patterns/Adapter/
 tag: pattern
 ---
 

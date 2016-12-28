@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Mediator
-permalink: /Mediator/
+permalink: /patterns/Mediator/
 tag: pattern
 ---
 

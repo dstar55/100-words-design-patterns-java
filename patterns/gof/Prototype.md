@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Prototype
-permalink: /Prototype/
+permalink: /patterns/Prototype/
 tag: pattern
 ---
 
@@ -106,9 +106,9 @@ public class PrototypeTest {
 	public void testPrototype() throws CloneNotSupportedException{
 
 		// creates object of type Prototype
-		Prototype prototype =new ConcretePrototype();
+		Prototype prototype = new ConcretePrototype();
 		// creates Client object(Prototype is "injected" via Constructor)
-		Client client =new Client(prototype);
+		Client client = new Client(prototype);
 		
 		// client creates new object(clone it self) of type Prototype 
 		Prototype prototypeClone = client.operation();
