@@ -28,7 +28,7 @@ This is a typical example for Facade.
 
 
 ###  <a id="UML"></a>UML 
-[![]({{site.baseurl}}/assets/img/facade.png)]({{site.baseurl}}/assets/img/facade.png)
+[![](/assets/img/facade.png)](/assets/img/facade.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

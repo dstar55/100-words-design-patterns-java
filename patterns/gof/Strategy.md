@@ -23,7 +23,7 @@ The user must choose the Strategy based on his possibilities, preferences.
 
 
 ###  <a id="UML"></a>UML 
-[![]({{site.baseurl}}/assets/img/strategy.png)]({{site.baseurl}}/assets/img/strategy.png)
+[![](/assets/img/strategy.png)](/assets/img/strategy.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

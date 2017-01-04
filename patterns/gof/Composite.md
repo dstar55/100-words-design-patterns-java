@@ -23,7 +23,7 @@ A brick is a basic object, but on a same time brick is a container which can hol
 
 
 ###  <a id="UML"></a>UML 
-[![]({{site.baseurl}}/assets/img/composite.png)]({{site.baseurl}}/assets/img/composite.png)
+[![](/assets/img/composite.png)](/assets/img/composite.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

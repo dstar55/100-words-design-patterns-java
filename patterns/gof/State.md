@@ -23,7 +23,7 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 
 
 ###  <a id="UML"></a>UML 
-[![]({{site.baseurl}}/assets/img/state.png)]({{site.baseurl}}/assets/img/state.png)
+[![](/assets/img/state.png)](/assets/img/state.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

@@ -23,7 +23,7 @@ There are different implementations of the steering wheels used in cars, buses, 
 
 
 ###  <a id="UML"></a>UML 
-[![]({{site.baseurl}}/assets/img/bridge.png)]({{site.baseurl}}/assets/img/bridge.png)
+[![](/assets/img/bridge.png)](/assets/img/bridge.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

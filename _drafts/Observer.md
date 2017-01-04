@@ -22,7 +22,7 @@ Subscribers can subscribe or unsubscribe to the newsletters.
 
 
 ###  <a id="UML"></a>UML 
-[![]({{site.baseurl}}/assets/img/observer.png)]({{site.baseurl}}/assets/img/observer.png)
+[![](/assets/img/observer.png)](/assets/img/observer.png)
 
 ###  <a id="Implementation"></a>Implementation 
 
