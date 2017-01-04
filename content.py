@@ -72,7 +72,7 @@ def createPageStorySection(aFile, dict):
 # add UML image
 def createPageUMLImageSection(aFile, dict):
     
-    imagePath = '{{site.baseurl}}/assets/img/' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)
+    imagePath = '/assets/img/' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)
      
     aFile.write('###  <a id="UML"></a>UML \n')
     aFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            
