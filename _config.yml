@@ -38,3 +38,4 @@ theme: minima
 
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
