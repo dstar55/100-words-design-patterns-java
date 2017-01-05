@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.design-patterns-stories.com/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Singleton/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Prototype/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Builder/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/FactoryMethod/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/AbstractFactory/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Adapter/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Bridge/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Composite/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Decorator/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Facade/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Flyweight/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Proxy/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/ChainOfResponsibility/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Command/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Interpreter/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Iterator/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Mediator/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Memento/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Observer/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/State/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Strategy/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/TemplateMethod/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/patterns/Visitor/</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.design-patterns-stories.com/archive</loc>
+  <lastmod>2017-01-05T22:18:02+00:00</lastmod>
+</url>
+</urlset>
