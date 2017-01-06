@@ -13,12 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Home
-email: your-email@domain.com
+title: Design Patterns Stories
+email: info@design-patterns-strories.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Gang Of Four Design Pattern explained as real life stories. 
+  Each pattern is implemented in Java and explained in real life story.
+#  Write an awesome description for your new site here. You can edit this
+#  line in _config.yml. It will appear in your document head meta (for
+#  Google search results) and in your feed.xml site description.
 ##baseurl: /100-words-design-patterns-java # the subpath of your site, e.g. /blog
 baseurl: "/patterns" # the subpath of your site, e.g. /blog
 my_setting: "/"
