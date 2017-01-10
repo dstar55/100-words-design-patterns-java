@@ -1,34 +1,16 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Design Patterns Stories
 email: info@design-patterns-strories.com
 description: > # this means to ignore newlines until "baseurl:"
   Gang Of Four Design Pattern explained as real life stories. 
   Each pattern is implemented in Java and explained in real life story.
-#  Write an awesome description for your new site here. You can edit this
-#  line in _config.yml. It will appear in your document head meta (for
-#  Google search results) and in your feed.xml site description.
 ##baseurl: /100-words-design-patterns-java # the subpath of your site, e.g. /blog
 baseurl: "/patterns" # the subpath of your site, e.g. /blog
 my_setting: "/"
 
-#url: "https://dstar55.github.io/100-words-design-patterns-java" # the base hostname & protocol for your site
 url: "https://dstar55.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: design-patterns-strories
+github_username:  dstar55
 
 permalink: :categories/:title
 exclude: [deprecated, vendor, Gemfile, Procfile]
