@@ -112,8 +112,8 @@ public class Context {
 
 	private Strategy strategy;
 	
-	public Context(Strategy startegy){
-		this.strategy = startegy;
+	public Context(Strategy strategy){
+		this.strategy = strategy;
 	}
 
 	protected String contextInterface(){
