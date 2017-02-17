@@ -20,7 +20,6 @@ public class BridgeTest {
 		// creates refined abstraction with concreteimplementorB
 		RefinedAbstraction refinedAbstractionB = new RefinedAbstraction(new ConcreteImplementorB());
 		//invokes operation
-		assertEquals("com.hundredwordsgof.bridge.ConcreteImplementorB", refinedAbstractionB.operation());
-		
+		assertEquals("com.hundredwordsgof.bridge.ConcreteImplementorB", refinedAbstractionB.operation());		
 	}	
 }

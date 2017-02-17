@@ -12,7 +12,7 @@ public class RefinedAbstraction extends Abstraction{
 	}
 
 	public String operation() {
-		return this.implementor.getClass().getName();
+		return this.implementor.implementation();
 	}
 
 }

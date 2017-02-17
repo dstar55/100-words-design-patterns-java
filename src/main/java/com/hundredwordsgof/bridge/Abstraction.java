@@ -14,6 +14,5 @@ abstract class Abstraction {
 		this.implementor = implementor;		
 	}
 	
-	abstract String operation();
-	
+	abstract String operation();	
 }
