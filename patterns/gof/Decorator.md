@@ -37,7 +37,6 @@ package com.hundredwordsgof.decorator;
 public interface Component {
 
 	void operation();
-	
 }
 ```
 
@@ -52,10 +51,8 @@ package com.hundredwordsgof.decorator;
  */
 public class ConcreteComponent implements Component {
 
-
 	public void operation() {
 	}
-
 }
 ```
 
@@ -77,8 +74,6 @@ abstract class Decorator implements Component{
 	public void setComponent(Component component) {
 		this.component = component;
 	}
-
-	
 }
 ```
 
@@ -96,17 +91,13 @@ public class ConcreteDecoratorA extends Decorator {
 	private boolean state;
 	
 	public void operation() {
-
 		state = true;
-		this.component.operation();
-		
+		this.component.operation();	
 	}
 
 	public boolean isState() {
 		return state;
 	}
-
-	
 }
 ```
 
@@ -135,8 +126,6 @@ public class ConcreteDecoratorB extends Decorator {
 	protected boolean isBehaviorMethodInvoked() {
 		return behaviorMethodInvoked;
 	}
-
-	
 }
 ```
 

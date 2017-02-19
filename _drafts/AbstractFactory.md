@@ -126,7 +126,6 @@ public interface AbstractFactory {
 	AbstractProductA createProductA();
 	
 	AbstractProductB createProductB();
-	
 }
 ```
 
@@ -141,16 +140,13 @@ package com.hundredwordsgof.abstractfactory;
  */
 public class ConcreteFactory1 implements AbstractFactory {
 
-	
 	public AbstractProductA createProductA() {
 		return new ProductA1();
 	}
 
-	
 	public AbstractProductB createProductB() {
 		return new ProductB1();
 	}
-
 }
 ```
 
@@ -164,17 +160,14 @@ package com.hundredwordsgof.abstractfactory;
  *
  */
 public class ConcreteFactory2 implements AbstractFactory {
-
 	
 	public AbstractProductA createProductA() {
 		return new ProductA2();
 	}
 
-	
 	public AbstractProductB createProductB() {
 		return new ProductB2();
 	}
-
 }
 ```
 

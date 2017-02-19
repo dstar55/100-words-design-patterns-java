@@ -38,7 +38,6 @@ package com.hundredwordsgof.state;
 public interface State {
 
 	void handle();
-	
 }
 ```
 
@@ -61,7 +60,6 @@ public class ConcreteState1 implements State {
 	protected boolean isHandleInvoked() {
 		return handleInvoked;
 	}
-
 }
 ```
 
@@ -84,7 +82,6 @@ public class ConcreteState2 implements State {
 	protected boolean isHandleInvoked() {
 		return handleInvoked;
 	}
-	
 }
 ```
 
@@ -106,9 +103,7 @@ public class Context {
 
 	public void setState(State state) {
 		this.state = state;
-	}
-	
-	
+	}	
 }
 ```
 

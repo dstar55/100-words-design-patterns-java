@@ -38,7 +38,6 @@ package com.hundredwordsgof.command;
 public interface Command {
 
 	void execute();
-	
 }
 ```
 
@@ -62,7 +61,6 @@ public class ConcreteCommand implements Command {
 	public void execute() {
 		this.receiver.action();
 	}
-
 }
 ```
 
@@ -86,7 +84,6 @@ public class Receiver {
 	protected boolean isOperationPerfomed() {
 		return operationPerfomed;
 	}
-		
 }
 ```
 

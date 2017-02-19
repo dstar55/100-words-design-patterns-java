@@ -42,7 +42,6 @@ abstract class Builder {
 	public abstract Builder buildPart1(String part);
 	
 	public abstract Builder buildPart2(String part);
-	
 }
 ```
 
@@ -75,14 +74,12 @@ public class ConcreteBuilder extends Builder {
 	public Product getResult(){
 		return product;
 	}
-
 }
 ```
 
 #### *Product.java* 
 ```java 
 package com.hundredwordsgof.builder;
-
 
 /** 
  * Product class, represents complex object
@@ -108,8 +105,6 @@ public class Product {
 	public String getPart2() {
 		return part2;
 	}
-	
-	
 }
 ```
 

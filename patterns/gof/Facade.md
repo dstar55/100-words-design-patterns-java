@@ -83,7 +83,6 @@ public class Tokenizer {
 			tokens.add((String)stringTokenizer.nextElement());
 		}
 		return tokens;
-		
 	}
 }
 ```
@@ -114,10 +113,8 @@ public class Generator {
 			
 		}else{
 			throw new Exception("Error in generator");
-		}
-		
+		}		
 	}
-
 }
 ```
 
@@ -148,7 +145,6 @@ public class ExpressionNode extends Node {
 	private Node left;
 	private Node right;
 
-	
 	public char getOperator() {
 		return operator;
 	}
@@ -172,9 +168,6 @@ public class ExpressionNode extends Node {
 	public void setRight(Node right) {
 		this.right = right;
 	}
-	
-	
-
 }
 ```
 
@@ -196,7 +189,6 @@ public class OperandNode extends Node {
 	public void setValue(int value) {
 		this.value = value;
 	}
-	
 }
 ```
 
@@ -268,7 +260,6 @@ public class Parser {
 		}
 		return true;
 	}
-
 }
 ```
 

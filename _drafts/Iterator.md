@@ -41,8 +41,7 @@ public interface Iterator {
 	
 	boolean isDone();
 	
-	Object currentItem();
-	
+	Object currentItem();	
 }
 ```
 
@@ -85,8 +84,6 @@ public class ConcreteIterator implements Iterator {
 	public Object currentItem() {
 		return concreteAggregate.getRecords()[index];
 	}
-	
-
 }
 ```
 
@@ -102,7 +99,6 @@ package com.hundredwordsgof.iterator;
 public interface Aggregate {
 
 	Iterator createIterator();
-	
 }
 ```
 
@@ -126,8 +122,6 @@ public class ConcreteAggregate implements Aggregate {
 	protected String[] getRecords() {
 		return records;
 	}
-
-	
 }
 ```
 

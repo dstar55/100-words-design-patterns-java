@@ -35,12 +35,10 @@ package com.hundredwordsgof.strategy;
  * Declares an interface common to all supported algorithms. 
  * Context uses this interface to call the algorithm defined by a ConcreteStrategy. 
  * 
- *
  */
 public interface Strategy {
 
 	String algorithmInterface();
-	
 }
 
 ```
@@ -59,7 +57,6 @@ public class ConcreteStrategyA implements Strategy{
 	public String algorithmInterface() {
 		return "Go to airport with ConcreteStrategyA, take a taxi";
 	}
-
 }
 ```
 
@@ -77,7 +74,6 @@ public class ConcreteStrategyB implements Strategy{
 	public String algorithmInterface() {
 		return "Go to airport with ConcreteStrategyB, take a bus";
 	}
-
 }
 ```
 
@@ -95,7 +91,6 @@ public class ConcreteStrategyC implements Strategy{
 	public String algorithmInterface() {
 		return "Go to airport with ConcreteStrategyC, take a metro";
 	}
-
 }
 ```
 

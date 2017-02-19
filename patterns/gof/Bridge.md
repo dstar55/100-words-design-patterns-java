@@ -37,9 +37,7 @@ package com.hundredwordsgof.bridge;
  *
  */
 public interface Implementor {
-
-	void implementation();
-	
+	String implementation();
 }
 ```
 
@@ -54,10 +52,9 @@ package com.hundredwordsgof.bridge;
  */
 public class ConcreteImplementorA implements Implementor {
 
-
-	public void implementation() {
+	public String implementation() {
+		return this.getClass().getName();
 	}
-
 }
 ```
 
@@ -72,32 +69,9 @@ package com.hundredwordsgof.bridge;
  */
 public class ConcreteImplementorB implements Implementor {
 
-
-	public void implementation() {
+	public String implementation() {
+		return this.getClass().getName();
 	}
-
-}
-```
-
-#### *RefinedAbstraction.java* 
-```java 
-package com.hundredwordsgof.bridge;
-
-/**
- * 
- * Refined Abstraction, extends the interface defined by Abstraction
- *
- */
-public class RefinedAbstraction extends Abstraction{
-
-	public RefinedAbstraction(Implementor implementor) {
-		super(implementor);
-	}
-
-	public String operation() {
-		return this.implementor.getClass().getName();
-	}
-
 }
 ```
 
@@ -119,8 +93,29 @@ abstract class Abstraction {
 		this.implementor = implementor;		
 	}
 	
-	abstract String operation();
-	
+	abstract String operation();	
+}
+```
+
+#### *RefinedAbstraction.java* 
+```java 
+package com.hundredwordsgof.bridge;
+
+/**
+ * 
+ * Refined Abstraction, extends the interface defined by Abstraction
+ *
+ */
+public class RefinedAbstraction extends Abstraction{
+
+	public RefinedAbstraction(Implementor implementor) {
+		super(implementor);
+	}
+
+	public String operation() {
+		return this.implementor.implementation();
+	}
+
 }
 ```
 
@@ -150,8 +145,7 @@ public class BridgeTest {
 		// creates refined abstraction with concreteimplementorB
 		RefinedAbstraction refinedAbstractionB = new RefinedAbstraction(new ConcreteImplementorB());
 		//invokes operation
-		assertEquals("com.hundredwordsgof.bridge.ConcreteImplementorB", refinedAbstractionB.operation());
-		
+		assertEquals("com.hundredwordsgof.bridge.ConcreteImplementorB", refinedAbstractionB.operation());		
 	}	
 }
 ```

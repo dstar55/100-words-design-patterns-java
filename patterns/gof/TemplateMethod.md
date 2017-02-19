@@ -46,9 +46,7 @@ abstract class AbstractClass {
 	 * @return result of the primitive operations 
 	 */
 	public String templateMethod(){
-		
 		return this.primitiveOperation1() + this.primitiveOperation2();
-		
 	}
 	
 	abstract String primitiveOperation1();
@@ -68,15 +66,13 @@ package com.hundredwordsgof.templatemethod;
  */
 public class ConcreteClass extends AbstractClass{
 
-	String primitiveOperation1() {
+	public String primitiveOperation1() {
 		return "Template";
 	}
 
-
-	String primitiveOperation2() {
+	public String primitiveOperation2() {
 		return "Method";
 	}
-
 }
 ```
 

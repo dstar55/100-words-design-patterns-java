@@ -48,9 +48,7 @@ public class Memento {
 	
 	public int getState() {
 		return state;
-	}
-
-	
+	}	
 }
 ```
 
@@ -109,8 +107,6 @@ public class Caretaker {
 	public void setMemento(Memento memento) {
 		this.memento = memento;
 	}
-	
-	
 }
 ```
 

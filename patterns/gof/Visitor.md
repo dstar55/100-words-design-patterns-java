@@ -37,7 +37,6 @@ package com.hundredwordsgof.visitor;
 public interface Element {
 
 	void accept(Visitor visitor);
-	
 }
 ```
 
@@ -64,8 +63,6 @@ public class ConcreteElementA implements Element {
 	protected int getCounter() {
 		return counter;
 	}
-	
-	
 }
 ```
 
@@ -82,7 +79,6 @@ public class ConcreteElementB implements Element {
 	private int counter = 0;
 	
 	public void accept(Visitor visitor) {
-		
 		visitor.visitConcreteElementB(this);
 	}
 
@@ -92,9 +88,7 @@ public class ConcreteElementB implements Element {
 
 	protected int getCounter() {
 		return counter;
-	}
-	
-	
+	}	
 }
 ```
 
@@ -106,14 +100,12 @@ package com.hundredwordsgof.visitor;
 /**
  * Declares a Visit operation for each class of ConcreteElement in the object structure
  * 
- *
  */
 public interface Visitor {
 
 	void visitConcreteElementA(ConcreteElementA concreteElementA);
 	
 	void visitConcreteElementB(ConcreteElementB concreteElementB);
-
 }
 ```
 
@@ -128,7 +120,6 @@ package com.hundredwordsgof.visitor;
  */
 public class ConcreteVisitor1 implements Visitor {
 
-
 	public void visitConcreteElementA(ConcreteElementA concreteElementA) {		
 		concreteElementA.operationA();
 	}
@@ -137,7 +128,6 @@ public class ConcreteVisitor1 implements Visitor {
 	public void visitConcreteElementB(ConcreteElementB concreteElementB) {		
 		concreteElementB.operationB();
 	}
-
 }
 ```
 
@@ -152,16 +142,13 @@ package com.hundredwordsgof.visitor;
  */
 public class ConcreteVisitor2 implements Visitor {
 
-
 	public void visitConcreteElementA(ConcreteElementA concreteElementA) {
 		concreteElementA.operationA();
 	}
 
-
 	public void visitConcreteElementB(ConcreteElementB concreteElementB) {
 		concreteElementB.operationB();
 	}
-
 }
 ```
 
@@ -194,7 +181,6 @@ public class ObjectStructure {
 		return children.get(index);
 	}	
 	
-
 	public void acceptAll(Visitor visitor) {
 		for (Iterator iterator = children.iterator(); iterator.hasNext();) {
 			Element element = (Element) iterator.next();

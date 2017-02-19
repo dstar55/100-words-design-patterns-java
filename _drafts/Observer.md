@@ -37,7 +37,6 @@ package com.hundredwordsgof.observer;
 public interface Observer {
 
 	void update();
-	
 }
 ```
 
@@ -67,8 +66,6 @@ public class ConcreteObserver implements Observer{
 	protected int getObserverState() {
 		return observerState;
 	}
-
-	
 }
 ```
 
@@ -126,8 +123,6 @@ public class ConcreteSubject extends Subject {
 		this.state = state;
 		this.notifyObervers();
 	}
-	
-	
 }
 ```
 

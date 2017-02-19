@@ -56,7 +56,6 @@ public class ConcretePrototype extends Prototype {
 	public Prototype copyMe() throws CloneNotSupportedException {
 		return (Prototype)this.clone();
 	}
-
 }
 ```
 
@@ -79,7 +78,6 @@ public class Client {
 	public Prototype operation() throws CloneNotSupportedException{
 		return prototype.copyMe();
 	}
-
 }
 ```
 

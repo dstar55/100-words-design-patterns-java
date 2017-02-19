@@ -39,8 +39,6 @@ package com.hundredwordsgof.composite;
 abstract class Component {
 
 	abstract void operation();
-	
-	
 }
 ```
 
@@ -58,7 +56,6 @@ public class Leaf extends Component {
 	void operation() {
 		
 	}
-
 }
 ```
 

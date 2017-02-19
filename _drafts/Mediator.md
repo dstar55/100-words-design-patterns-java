@@ -57,8 +57,7 @@ abstract class Colleague {
 
 	protected void setReceivedMessage(String receivedMessage) {
 		this.receivedMessage = receivedMessage;
-	}
-	
+	}	
 }
 ```
 
@@ -83,8 +82,7 @@ public class ConcreteColleague1 extends Colleague {
 
 	public void receive(String message) {
 		this.setReceivedMessage(message);
-	}
-		
+	}	
 }
 ```
 
@@ -160,9 +158,6 @@ public class ConcreteMediator implements Mediator{
 			}
 		}
 	}
-	
-	
-	
 }
 ```
 

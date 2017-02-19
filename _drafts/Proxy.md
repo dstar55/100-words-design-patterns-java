@@ -37,7 +37,6 @@ package com.hundredwordsgof.proxy;
 public interface Subject {
 
 	void doOperation();
-	
 }
 ```
 
@@ -53,7 +52,6 @@ public class RealSubject implements Subject {
 
 	public void doOperation() {
 	}
-
 }
 ```
 
@@ -73,17 +71,13 @@ public class Proxy implements Subject {
 	private RealSubject realSubject;
 		
 	public void doOperation() {
-		
 		this.realSubject = new RealSubject();		
-		this.realSubject.doOperation();
-		
+		this.realSubject.doOperation();	
 	}
 
 	public RealSubject getRealSubject() {
 		return realSubject;
 	}
-
-	
 }
 ```
 

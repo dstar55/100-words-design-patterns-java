@@ -47,8 +47,7 @@ abstract class Handler {
 
 	public void setSuccesor(Handler succesor) {
 		this.succesor = succesor;
-	}
-	
+	}	
 }
 ```
 
@@ -80,7 +79,6 @@ public class ConcreteHandler1 extends Handler {
 		return handleRequestInvoked;
 	}
 
-	
 }
 ```
 
@@ -105,7 +103,6 @@ public class ConcreteHandler2 extends Handler {
 	protected boolean isHandleRequestInvoked() {
 		return handleRequestInvoked;
 	}
-	
 }
 ```
 
