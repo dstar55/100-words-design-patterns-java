@@ -15,5 +15,4 @@ public class ConcreteState2 implements State {
 	protected boolean isHandleInvoked() {
 		return handleInvoked;
 	}
-	
 }

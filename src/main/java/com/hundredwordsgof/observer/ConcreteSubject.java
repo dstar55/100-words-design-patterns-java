@@ -17,6 +17,4 @@ public class ConcreteSubject extends Subject {
 		this.state = state;
 		this.notifyObervers();
 	}
-	
-	
 }

@@ -7,5 +7,4 @@ package com.hundredwordsgof.observer;
 public interface Observer {
 
 	void update();
-	
 }

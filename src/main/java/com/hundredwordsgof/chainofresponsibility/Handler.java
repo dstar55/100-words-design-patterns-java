@@ -14,6 +14,5 @@ abstract class Handler {
 
 	public void setSuccesor(Handler succesor) {
 		this.succesor = succesor;
-	}
-	
+	}	
 }

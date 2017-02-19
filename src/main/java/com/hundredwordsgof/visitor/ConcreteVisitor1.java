@@ -7,7 +7,6 @@ package com.hundredwordsgof.visitor;
  */
 public class ConcreteVisitor1 implements Visitor {
 
-
 	public void visitConcreteElementA(ConcreteElementA concreteElementA) {		
 		concreteElementA.operationA();
 	}
@@ -16,5 +15,4 @@ public class ConcreteVisitor1 implements Visitor {
 	public void visitConcreteElementB(ConcreteElementB concreteElementB) {		
 		concreteElementB.operationB();
 	}
-
 }

@@ -16,5 +16,4 @@ public class ConcreteCommand implements Command {
 	public void execute() {
 		this.receiver.action();
 	}
-
 }

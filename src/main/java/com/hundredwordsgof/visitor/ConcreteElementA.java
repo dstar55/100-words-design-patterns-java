@@ -19,6 +19,4 @@ public class ConcreteElementA implements Element {
 	protected int getCounter() {
 		return counter;
 	}
-	
-	
 }

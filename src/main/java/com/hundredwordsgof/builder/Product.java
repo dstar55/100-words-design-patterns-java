@@ -1,6 +1,5 @@
 package com.hundredwordsgof.builder;
 
-
 /** 
  * Product class, represents complex object
  */
@@ -25,6 +24,4 @@ public class Product {
 	public String getPart2() {
 		return part2;
 	}
-	
-	
 }

@@ -7,6 +7,5 @@ package com.hundredwordsgof.adapter.object;
  */
 public interface Target {
 
-	String request();
-	
+	String request();	
 }

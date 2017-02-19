@@ -24,6 +24,5 @@ abstract class Colleague {
 
 	protected void setReceivedMessage(String receivedMessage) {
 		this.receivedMessage = receivedMessage;
-	}
-	
+	}	
 }

@@ -15,7 +15,5 @@ public class Memento {
 	
 	public int getState() {
 		return state;
-	}
-
-	
+	}	
 }

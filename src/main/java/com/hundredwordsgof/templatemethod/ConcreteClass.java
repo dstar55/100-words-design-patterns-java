@@ -7,13 +7,11 @@ package com.hundredwordsgof.templatemethod;
  */
 public class ConcreteClass extends AbstractClass{
 
-	String primitiveOperation1() {
+	public String primitiveOperation1() {
 		return "Template";
 	}
 
-
-	String primitiveOperation2() {
+	public String primitiveOperation2() {
 		return "Method";
 	}
-
 }

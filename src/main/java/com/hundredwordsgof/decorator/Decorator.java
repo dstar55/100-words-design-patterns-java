@@ -14,6 +14,4 @@ abstract class Decorator implements Component{
 	public void setComponent(Component component) {
 		this.component = component;
 	}
-
-	
 }

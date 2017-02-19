@@ -21,6 +21,4 @@ public class ConcreteDecoratorB extends Decorator {
 	protected boolean isBehaviorMethodInvoked() {
 		return behaviorMethodInvoked;
 	}
-
-	
 }

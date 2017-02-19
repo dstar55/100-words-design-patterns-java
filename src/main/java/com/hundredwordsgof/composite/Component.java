@@ -8,6 +8,4 @@ package com.hundredwordsgof.composite;
 abstract class Component {
 
 	abstract void operation();
-	
-	
 }

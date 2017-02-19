@@ -19,6 +19,5 @@ public class Tokenizer {
 			tokens.add((String)stringTokenizer.nextElement());
 		}
 		return tokens;
-		
 	}
 }

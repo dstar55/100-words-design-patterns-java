@@ -10,7 +10,6 @@ public class ExpressionNode extends Node {
 	private Node left;
 	private Node right;
 
-	
 	public char getOperator() {
 		return operator;
 	}
@@ -34,7 +33,4 @@ public class ExpressionNode extends Node {
 	public void setRight(Node right) {
 		this.right = right;
 	}
-	
-	
-
 }

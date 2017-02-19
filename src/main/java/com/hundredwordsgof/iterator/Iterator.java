@@ -13,6 +13,5 @@ public interface Iterator {
 	
 	boolean isDone();
 	
-	Object currentItem();
-	
+	Object currentItem();	
 }

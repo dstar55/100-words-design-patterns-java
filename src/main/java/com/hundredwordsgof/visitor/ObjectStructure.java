@@ -25,7 +25,6 @@ public class ObjectStructure {
 		return children.get(index);
 	}	
 	
-
 	public void acceptAll(Visitor visitor) {
 		for (Iterator iterator = children.iterator(); iterator.hasNext();) {
 			Element element = (Element) iterator.next();

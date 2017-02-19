@@ -7,5 +7,4 @@ package com.hundredwordsgof.state;
 public interface State {
 
 	void handle();
-	
 }

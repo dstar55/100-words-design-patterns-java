@@ -2,11 +2,10 @@ package com.hundredwordsgof.flyweight;
 
 /**
  * 
- * Flyweight, interface through flyweight can recieve and act on extrinic state
- *
+ * Flyweight, interface through flyweight can receive and act on extrinsic state
+ *i
  */
 public interface Flyweight {
 
 	void operation(Object extrinsicState);
-	
 }

@@ -15,5 +15,4 @@ public class Client {
 	public Prototype operation() throws CloneNotSupportedException{
 		return prototype.copyMe();
 	}
-
 }

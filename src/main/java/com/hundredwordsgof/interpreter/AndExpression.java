@@ -2,7 +2,6 @@ package com.hundredwordsgof.interpreter;
 
 import java.util.List;
 
-
 /**
  * 
  * AndExpression implements AbstractExpression for logical AND grammar expression.
@@ -31,8 +30,5 @@ public class AndExpression extends AbstractExpression {
 		Boolean result = firstOperand &&  secondOperand;
 		context.setResult(result);
 				
-	}
-
-	
-	
+	}	
 }

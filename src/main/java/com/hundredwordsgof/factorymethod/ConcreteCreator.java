@@ -7,7 +7,6 @@ package com.hundredwordsgof.factorymethod;
  */
 public class ConcreteCreator extends Creator {
 
-	
 	public Product factoryMethod(String type) {
 		
 		if(type.equals("A")){

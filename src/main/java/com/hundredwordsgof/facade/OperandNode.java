@@ -14,5 +14,4 @@ public class OperandNode extends Node {
 	public void setValue(int value) {
 		this.value = value;
 	}
-	
 }

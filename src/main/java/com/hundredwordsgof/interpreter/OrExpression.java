@@ -28,7 +28,6 @@ public class OrExpression extends AbstractExpression{
 		Boolean secondOperand = operands.get(1);
 	
 		Boolean result = firstOperand || secondOperand;
-		context.setResult(result);
-				
+		context.setResult(result);			
 	}
 }

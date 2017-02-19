@@ -16,5 +16,4 @@ public class Adapter implements Target {
 	public String request() {
 		return adaptee.specialRequest();
 	}
-
 }

@@ -17,5 +17,4 @@ public class ConcreteHandler2 extends Handler {
 	protected boolean isHandleRequestInvoked() {
 		return handleRequestInvoked;
 	}
-	
 }

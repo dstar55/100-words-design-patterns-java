@@ -30,7 +30,4 @@ public class ConcreteMediator implements Mediator{
 			}
 		}
 	}
-	
-	
-	
 }

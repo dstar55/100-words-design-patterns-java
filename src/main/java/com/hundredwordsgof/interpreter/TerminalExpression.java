@@ -17,5 +17,4 @@ public class TerminalExpression extends AbstractExpression {
 		// add operand to context
 		context.addOperand(this.data);
 	}
-
 }

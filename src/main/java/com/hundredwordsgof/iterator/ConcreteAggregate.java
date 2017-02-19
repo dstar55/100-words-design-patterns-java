@@ -16,6 +16,4 @@ public class ConcreteAggregate implements Aggregate {
 	protected String[] getRecords() {
 		return records;
 	}
-
-	
 }

@@ -8,5 +8,4 @@ package com.hundredwordsgof.iterator;
 public interface Aggregate {
 
 	Iterator createIterator();
-	
 }

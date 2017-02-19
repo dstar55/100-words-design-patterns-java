@@ -35,6 +35,4 @@ public class ConcreteIterator implements Iterator {
 	public Object currentItem() {
 		return concreteAggregate.getRecords()[index];
 	}
-	
-
 }

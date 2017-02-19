@@ -8,5 +8,4 @@ package com.hundredwordsgof.command;
 public interface Command {
 
 	void execute();
-	
 }

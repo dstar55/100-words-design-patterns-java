@@ -17,6 +17,5 @@ public class ConcreteColleague1 extends Colleague {
 
 	public void receive(String message) {
 		this.setReceivedMessage(message);
-	}
-		
+	}	
 }

@@ -31,5 +31,4 @@ public class Context {
 	public void setResult(Boolean result) {
 		this.result = result;
 	}
-	
 }

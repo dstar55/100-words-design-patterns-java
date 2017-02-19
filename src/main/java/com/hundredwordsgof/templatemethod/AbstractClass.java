@@ -13,9 +13,7 @@ abstract class AbstractClass {
 	 * @return result of the primitive operations 
 	 */
 	public String templateMethod(){
-		
 		return this.primitiveOperation1() + this.primitiveOperation2();
-		
 	}
 	
 	abstract String primitiveOperation1();

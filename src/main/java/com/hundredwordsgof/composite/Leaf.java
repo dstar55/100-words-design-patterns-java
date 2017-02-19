@@ -10,5 +10,4 @@ public class Leaf extends Component {
 	void operation() {
 		
 	}
-
 }

@@ -7,5 +7,4 @@ package com.hundredwordsgof.factorymethod;
 abstract class Creator {
 
 	abstract Product factoryMethod(String type);
-	
 }

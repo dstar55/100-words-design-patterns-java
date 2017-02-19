@@ -11,5 +11,4 @@ abstract class Builder {
 	public abstract Builder buildPart1(String part);
 	
 	public abstract Builder buildPart2(String part);
-	
 }

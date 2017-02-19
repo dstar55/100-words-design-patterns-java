@@ -22,8 +22,6 @@ public class Generator {
 			
 		}else{
 			throw new Exception("Error in generator");
-		}
-		
+		}		
 	}
-
 }

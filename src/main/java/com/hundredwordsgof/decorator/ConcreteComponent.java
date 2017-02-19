@@ -7,8 +7,6 @@ package com.hundredwordsgof.decorator;
  */
 public class ConcreteComponent implements Component {
 
-
 	public void operation() {
 	}
-
 }

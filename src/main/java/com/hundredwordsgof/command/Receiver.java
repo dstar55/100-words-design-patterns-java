@@ -16,5 +16,4 @@ public class Receiver {
 	protected boolean isOperationPerfomed() {
 		return operationPerfomed;
 	}
-		
 }

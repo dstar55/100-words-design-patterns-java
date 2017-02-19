@@ -22,6 +22,4 @@ public class ConcreteObserver implements Observer{
 	protected int getObserverState() {
 		return observerState;
 	}
-
-	
 }

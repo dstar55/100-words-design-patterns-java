@@ -14,7 +14,5 @@ public class Context {
 
 	public void setState(State state) {
 		this.state = state;
-	}
-	
-	
+	}	
 }

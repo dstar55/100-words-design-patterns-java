@@ -20,5 +20,4 @@ public class UnsharedConcreteFlyweight implements Flyweight{
 	public Object getState() {
 		return state;
 	}
-	
 }

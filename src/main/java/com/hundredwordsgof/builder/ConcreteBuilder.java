@@ -25,5 +25,4 @@ public class ConcreteBuilder extends Builder {
 	public Product getResult(){
 		return product;
 	}
-
 }

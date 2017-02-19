@@ -17,13 +17,10 @@ public class ConcreteFlyweight implements Flyweight{
 	public void operation(Object extrinsicState) {
 	}
 
-	
 	/**
 	 * @return intrinsic state
 	 */
 	public Object getIntrinsicState() {
 		return intrinsicState;
 	}
-
-	
 }
