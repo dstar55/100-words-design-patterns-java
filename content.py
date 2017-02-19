@@ -14,6 +14,7 @@ from fileinput import filename
 def createContent(arrayList):
     #print arrayList
     
+    print "Generating content ..."
     # create page files for each pattern and put that file under LOCAL_GH_PAGES_REPOSITORY_PATH/_drafts
     filePath = constants.LOCAL_GH_PAGES_REPOSITORY_PATH + '/' + constants.DRAFTS_FOLDER + '/'
     
@@ -31,10 +32,12 @@ def createContent(arrayList):
         except IOError as e:
             print e    
     
-
+    print "Generating content ... done"
+        
 # create a content for one page(pattern)
 def createPage(aFile, dict):
     
+    print "Generating page ... " + str(aFile.name)
     #TODO refactor function should return string and than write into aFile(aFile should not be argument for belowed functions)
     createPageHeaderSection(aFile, dict)    
     createPageTableOfContentSection(aFile)
