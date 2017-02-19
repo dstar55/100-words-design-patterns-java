@@ -14,7 +14,7 @@ orderedPatternFilesDict = {"Singleton":( "Singleton.java",), # note that if ther
                             "FactoryMethod":( "Product.java", "ConcreteProductA.java", "ConcreteProductB.java", "Creator.java", "ConcreteCreator.java"),
                             "AbstractFactory":( "AbstractProductA.java", "ProductA1.java",  "ProductA2.java", "AbstractProductB.java", "ProductB1.java", "ProductB2.java", "AbstractFactory.java" ,  "ConcreteFactory1.java", "ConcreteFactory2.java" ),
                             "Adapter":(),
-                            "Bridge":("Implementor.java", "ConcreteImplementorA.java", "ConcreteImplementorB.java", "RefinedAbstraction.java", "Abstraction.java"),
+                            "Bridge":("Implementor.java", "ConcreteImplementorA.java", "ConcreteImplementorB.java", "Abstraction.java", "RefinedAbstraction.java"),
                             "Composite":("Component.java", "Leaf.java", "Composite.java" ),
                             "Decorator":("Component.java", "ConcreteComponent.java", "Decorator.java", "ConcreteDecoratorA.java", "ConcreteDecoratorB.java" ),
                             "Facade":("Compiler.java", "Tokenizer.java", "Generator.java", "Node.java", "ExpressionNode.java",  "OperandNode.java", "Parser.java"  ),

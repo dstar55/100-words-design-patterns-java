@@ -13,6 +13,9 @@ import parser
 import content
 
 def main():
+
+
+    # TODO add following commands: clean, clone, generate, publish
            
     # clone repos
     clone.cloneRepo(constants.REMOTE_REPOSITORY_PATH, constants.MASTER_BRANCH, constants.LOCAL_MASTER_REPOSITORY_PATH)
