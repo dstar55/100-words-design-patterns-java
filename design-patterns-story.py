@@ -12,6 +12,7 @@ import clone
 import parser
 import content
 import deletedir
+import publish
 import shutil 
 import os
 import argparse
@@ -49,7 +50,7 @@ def main_generate():
     content.createContent(parser.parseReadme(constants.LOCAL_MASTER_REPOSITORY_PATH + constants.SLASH + constants.README_FILE_NAME))
     
 def main_publish():
-    print "publish"
+    publish.publish()
     
 def main_delete():
     deletedir.removeDirs()

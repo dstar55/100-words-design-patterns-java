@@ -7,7 +7,6 @@ Created on 5 Oct 2016
 
 import os
 
-
 """
  clone git repository
  
