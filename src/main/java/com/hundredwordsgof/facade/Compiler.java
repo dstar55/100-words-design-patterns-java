@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * 
  * Compiler has subclasses like Tokenizer, Parser, Generator, etc.
- * Client which use compiler do not call subclasses in order to compile.
+ * Client which use a compiler do not deal with subclasses in order to compile.
  * Compiler class represents a facade.
  * Facade hides low-level functionality from client.
  *
