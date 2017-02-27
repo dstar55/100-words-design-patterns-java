@@ -7,13 +7,13 @@ package com.hundredwordsgof.adapter.object;
  */
 public class Adapter implements Target {
 
-	private Adaptee adaptee;
+  private Adaptee adaptee;
 
-	public Adapter(Adaptee adaptee){
-		this.adaptee = adaptee;		
-	}
-	
-	public String request() {
-		return adaptee.specialRequest();
-	}
+  public Adapter(Adaptee adaptee) {
+    this.adaptee = adaptee;
+  }
+
+  public String request() {
+    return adaptee.specialRequest();
+  }
 }
