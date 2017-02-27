@@ -35,7 +35,7 @@ package com.hundredwordsgof.abstractfactory;
 /**
  * 
  * AbstractProductA, define interface for ProductA objects
- *
+ * 
  */
 abstract class AbstractProductA {
 
@@ -77,7 +77,7 @@ package com.hundredwordsgof.abstractfactory;
 /**
  * 
  * AbstractProductB, define interface for ProductB objects
- *
+ * 
  */
 abstract class AbstractProductB {
 
@@ -118,14 +118,15 @@ package com.hundredwordsgof.abstractfactory;
 
 /**
  * 
- * Abstract Factory, defines interface for creation of the abstract product objects
- *
+ * Abstract Factory, defines interface for creation of the abstract product
+ * objects
+ * 
  */
 public interface AbstractFactory {
 
-	AbstractProductA createProductA();
-	
-	AbstractProductB createProductB();
+  AbstractProductA createProductA();
+
+  AbstractProductB createProductB();
 }
 ```
 
@@ -140,13 +141,13 @@ package com.hundredwordsgof.abstractfactory;
  */
 public class ConcreteFactory1 implements AbstractFactory {
 
-	public AbstractProductA createProductA() {
-		return new ProductA1();
-	}
+  public AbstractProductA createProductA() {
+    return new ProductA1();
+  }
 
-	public AbstractProductB createProductB() {
-		return new ProductB1();
-	}
+  public AbstractProductB createProductB() {
+    return new ProductB1();
+  }
 }
 ```
 
@@ -160,14 +161,14 @@ package com.hundredwordsgof.abstractfactory;
  *
  */
 public class ConcreteFactory2 implements AbstractFactory {
-	
-	public AbstractProductA createProductA() {
-		return new ProductA2();
-	}
 
-	public AbstractProductB createProductB() {
-		return new ProductB2();
-	}
+  public AbstractProductA createProductA() {
+    return new ProductA2();
+  }
+
+  public AbstractProductB createProductB() {
+    return new ProductB2();
+  }
 }
 ```
 
