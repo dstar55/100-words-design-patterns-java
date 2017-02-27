@@ -8,7 +8,7 @@ package com.hundredwordsgof.abstractfactory;
  */
 public interface AbstractFactory {
 
-	AbstractProductA createProductA();
+  AbstractProductA createProductA();
 
-	AbstractProductB createProductB();
+  AbstractProductB createProductB();
 }
