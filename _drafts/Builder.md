@@ -138,7 +138,6 @@ public class Director {
 package com.hundredwordsgof.builder;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**

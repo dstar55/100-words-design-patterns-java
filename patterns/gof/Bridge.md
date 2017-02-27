@@ -126,7 +126,6 @@ public class RefinedAbstraction extends Abstraction{
 package com.hundredwordsgof.bridge;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**

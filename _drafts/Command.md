@@ -117,7 +117,6 @@ public class Invoker {
 package com.hundredwordsgof.command;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**
@@ -125,22 +124,22 @@ import org.junit.Test;
  */
 public class CommandTest {
 
-	@Test
-	public void testCommand(){
+  @Test
+  public void testCommand() {
 
-		Receiver receiver = new Receiver();
-		Command command = new ConcreteCommand(receiver);		
-		Invoker invoker = new Invoker(command);
+    Receiver receiver = new Receiver();
+    Command command = new ConcreteCommand(receiver);
+    Invoker invoker = new Invoker(command);
 
-		// operation on receiver is not performed
-		assertEquals(false, receiver.isOperationPerfomed());
-		
-		// this will invoke method action on receiver
-		invoker.execute();
-		
-		// operation on receiver is performed 
-		assertEquals(true, receiver.isOperationPerfomed());
-	}	
+    // operation on receiver is not performed
+    assertEquals(false, receiver.isOperationPerfomed());
+
+    // this will invoke method action on receiver
+    invoker.execute();
+
+    // operation on receiver is performed
+    assertEquals(true, receiver.isOperationPerfomed());
+  }
 }
 ```
 
