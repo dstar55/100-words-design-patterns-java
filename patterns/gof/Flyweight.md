@@ -31,12 +31,13 @@ package com.hundredwordsgof.flyweight;
 
 /**
  * 
- * Flyweight, interface through flyweight can receive and act on extrinsic state
- *i
+ * Flyweight, interface through flyweight can receive and act on extrinsic
+ * state.
+ *
  */
 public interface Flyweight {
 
-	void operation(Object extrinsicState);
+  void operation(Object extrinsicState);
 }
 ```
 
@@ -46,27 +47,27 @@ package com.hundredwordsgof.flyweight;
 
 /**
  * 
- * ConcreteFlyweight,implements Flyweight, and add storage for intrisnic state 
+ * ConcreteFlyweight,implements Flyweight, and add storage for intrisnic state.
  *
  */
-public class ConcreteFlyweight implements Flyweight{
+public class ConcreteFlyweight implements Flyweight {
 
-	private Object intrinsicState;
+  private Object intrinsicState;
 
-	public ConcreteFlyweight(Object intrinsicState){
-		this.intrinsicState = intrinsicState;
-	}
-	
-	// Using extrinsicState as context and does NOT modify intrinsic state.
-	public void operation(Object extrinsicState) {
-	}
+  public ConcreteFlyweight(Object intrinsicState) {
+    this.intrinsicState = intrinsicState;
+  }
 
-	/**
-	 * @return intrinsic state
-	 */
-	public Object getIntrinsicState() {
-		return intrinsicState;
-	}
+  // Using extrinsicState as context and does NOT modify intrinsic state.
+  public void operation(Object extrinsicState) {
+  }
+
+  /**
+   * @return intrinsic state
+   */
+  public Object getIntrinsicState() {
+    return intrinsicState;
+  }
 }
 ```
 
@@ -75,25 +76,24 @@ public class ConcreteFlyweight implements Flyweight{
 package com.hundredwordsgof.flyweight;
 
 /**
- * 
- * UnsharedConcreteFlyweight, defines objects which are not shared
+ * UnsharedConcreteFlyweight, defines objects which are not shared.
  *
  */
-public class UnsharedConcreteFlyweight implements Flyweight{
+public class UnsharedConcreteFlyweight implements Flyweight {
 
-	private Object state;
+  private Object state;
 
-	public UnsharedConcreteFlyweight(Object state){
-		this.state = state;
-	}
-	
-	public void operation(Object extrinsicState) {
+  public UnsharedConcreteFlyweight(Object state) {
+    this.state = state;
+  }
 
-	}
+  public void operation(Object extrinsicState) {
 
-	public Object getState() {
-		return state;
-	}
+  }
+
+  public Object getState() {
+    return state;
+  }
 }
 ```
 
@@ -106,41 +106,34 @@ import java.util.Map;
 
 /**
  * 
- * FlyweightFactory, creates and manages the flyweight objects
+ * FlyweightFactory, creates and manages the flyweight objects.
  *
  */
 public class FlyweightFactory {
 
-	private static Map<String, Flyweight> flyweights=new HashMap<String, Flyweight>();
-	/*static
-	{
-		flyweights.put("firstKey", new ConcreteFlyweight("firstValue"));
-		flyweights.put("secondKey", new ConcreteFlyweight("secondValue"));
+  private static Map<String, Flyweight> flyweights = new HashMap<String, Flyweight>();
 
-	}*/
-	
-	
-	/**
-	 * Returns Flyweight object. 
-	 * Just for sake of example following logic is applied, if key starts with phrase:unshared than UnsharedConcreteFlyweight object is created.
-	 * Otherwise ConcreteFlyweight object is created.
-	 * 
-	 * @param key
-	 * @return Flyweight
-	 * 
-	 */
-	public static Flyweight getFlyweight(String key, String value){
-		
-		if(key.startsWith("unshared")){			
-			flyweights.put(key, new UnsharedConcreteFlyweight(value));
-		}else{		
-			if(!flyweights.containsKey(key)){
-				flyweights.put(key, new ConcreteFlyweight(value));				
-			}						
-		}
-		
-		return (Flyweight)flyweights.get(key);
-	}
+  /**
+   * Returns Flyweight object. Just for sake of example following logic is
+   * applied, if key starts with phrase:unshared than UnsharedConcreteFlyweight
+   * object is created. Otherwise ConcreteFlyweight object is created.
+   * 
+   * @param key
+   * @return Flyweight
+   * 
+   */
+  public static Flyweight getFlyweight(String key, String value) {
+
+    if (key.startsWith("unshared")) {
+      flyweights.put(key, new UnsharedConcreteFlyweight(value));
+    } else {
+      if (!flyweights.containsKey(key)) {
+        flyweights.put(key, new ConcreteFlyweight(value));
+      }
+    }
+
+    return (Flyweight) flyweights.get(key);
+  }
 }
 ```
 
@@ -215,7 +208,6 @@ public class FlyweightTest {
           ((com.hundredwordsgof.flyweight.UnsharedConcreteFlyweight) unsharedFlyweight3)
               .getState());
     }
-
   }
 }
 ```

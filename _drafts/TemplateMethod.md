@@ -40,18 +40,19 @@ package com.hundredwordsgof.templatemethod;
  */
 abstract class AbstractClass {
 
-	/**
-	 * Template method, implementation of algorithm which consists of primitiveOperations
-	 * 
-	 * @return result of the primitive operations 
-	 */
-	public String templateMethod(){
-		return this.primitiveOperation1() + this.primitiveOperation2();
-	}
-	
-	abstract String primitiveOperation1();
-	
-	abstract String primitiveOperation2();
+  /**
+   * Template method, implementation of algorithm which consists of
+   * primitiveOperations
+   * 
+   * @return result of the primitive operations
+   */
+  public String templateMethod() {
+    return this.primitiveOperation1() + this.primitiveOperation2();
+  }
+
+  abstract String primitiveOperation1();
+
+  abstract String primitiveOperation2();
 }
 ```
 
@@ -61,18 +62,19 @@ package com.hundredwordsgof.templatemethod;
 
 /**
  * 
- * Implements the primitive operations to carry out subclass-specific steps of the algorithm.
+ * Implements the primitive operations to carry out subclass-specific steps of
+ * the algorithm.
  *
  */
-public class ConcreteClass extends AbstractClass{
+public class ConcreteClass extends AbstractClass {
 
-	public String primitiveOperation1() {
-		return "Template";
-	}
+  public String primitiveOperation1() {
+    return "Template";
+  }
 
-	public String primitiveOperation2() {
-		return "Method";
-	}
+  public String primitiveOperation2() {
+    return "Method";
+  }
 }
 ```
 
@@ -96,7 +98,6 @@ public class TemplateTest {
     ConcreteClass template = new ConcreteClass();
     assertEquals("TemplateMethod", template.templateMethod());
   }
-
 }
 ```
 

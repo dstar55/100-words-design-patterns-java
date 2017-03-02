@@ -32,15 +32,14 @@ The user must choose the Strategy based on his possibilities, preferences.
 package com.hundredwordsgof.strategy;
 
 /**
- * Declares an interface common to all supported algorithms. 
- * Context uses this interface to call the algorithm defined by a ConcreteStrategy. 
+ * Declares an interface common to all supported algorithms. Context uses this
+ * interface to call the algorithm defined by a ConcreteStrategy.
  * 
  */
 public interface Strategy {
 
-	String algorithmInterface();
+  String algorithmInterface();
 }
-
 ```
 
 #### *ConcreteStrategyA.java* 
@@ -48,15 +47,14 @@ public interface Strategy {
 package com.hundredwordsgof.strategy;
 
 /**
- * Implements the algorithm defined in Strategy interface. 
+ * Implements the algorithm defined in Strategy interface.
  *
  */
-public class ConcreteStrategyA implements Strategy{
+public class ConcreteStrategyA implements Strategy {
 
-
-	public String algorithmInterface() {
-		return "Go to airport with ConcreteStrategyA, take a taxi";
-	}
+  public String algorithmInterface() {
+    return "Go to airport with ConcreteStrategyA, take a taxi";
+  }
 }
 ```
 
@@ -65,15 +63,14 @@ public class ConcreteStrategyA implements Strategy{
 package com.hundredwordsgof.strategy;
 
 /**
- * Implements the algorithm defined in Strategy interface. 
+ * Implements the algorithm defined in Strategy interface.
  *
  */
-public class ConcreteStrategyB implements Strategy{
+public class ConcreteStrategyB implements Strategy {
 
-
-	public String algorithmInterface() {
-		return "Go to airport with ConcreteStrategyB, take a bus";
-	}
+  public String algorithmInterface() {
+    return "Go to airport with ConcreteStrategyB, take a bus";
+  }
 }
 ```
 
@@ -82,15 +79,14 @@ public class ConcreteStrategyB implements Strategy{
 package com.hundredwordsgof.strategy;
 
 /**
- * Implements the algorithm defined in Strategy interface. 
+ * Implements the algorithm defined in Strategy interface.
  *
  */
-public class ConcreteStrategyC implements Strategy{
+public class ConcreteStrategyC implements Strategy {
 
-
-	public String algorithmInterface() {
-		return "Go to airport with ConcreteStrategyC, take a metro";
-	}
+  public String algorithmInterface() {
+    return "Go to airport with ConcreteStrategyC, take a metro";
+  }
 }
 ```
 
@@ -99,23 +95,22 @@ public class ConcreteStrategyC implements Strategy{
 package com.hundredwordsgof.strategy;
 
 /**
- * Maintains a reference to a Strategy object.
- * Invokes algorithm implemented in ConcreteStrategy.
+ * Maintains a reference to a Strategy object. Invokes algorithm implemented in
+ * ConcreteStrategy.
  *
  */
 public class Context {
 
-	private Strategy strategy;
-	
-	public Context(Strategy strategy){
-		this.strategy = strategy;
-	}
+  private Strategy strategy;
 
-	protected String contextInterface(){
-		return this.strategy.algorithmInterface();
-	}
+  public Context(Strategy strategy) {
+    this.strategy = strategy;
+  }
+
+  protected String contextInterface() {
+    return this.strategy.algorithmInterface();
+  }
 }
-
 ```
 
 ###  <a id="Usage"></a>Usage 
@@ -146,7 +141,6 @@ public class StrategyTest {
     context = new Context(new ConcreteStrategyC());
     assertEquals("Go to airport with ConcreteStrategyC, take a metro",
         context.contextInterface());
-
   }
 }
 ```

@@ -33,12 +33,12 @@ package com.hundredwordsgof.composite;
 
 /**
  * 
- * Component declares the interface for objects in the composition 
+ * Component declares the interface for objects in the composition
  *
  */
 abstract class Component {
 
-	abstract void operation();
+  abstract void operation();
 }
 ```
 
@@ -53,9 +53,9 @@ package com.hundredwordsgof.composite;
  */
 public class Leaf extends Component {
 
-	void operation() {
-		
-	}
+  void operation() {
+
+  }
 }
 ```
 
@@ -68,32 +68,32 @@ import java.util.List;
 
 /**
  * 
- * Composite class  defines behavior for components having children, stores child components, 
- * implements child-related operations in the Component interface
+ * Composite class defines behavior for components having children, stores child
+ * components, implements child-related operations in the Component interface
  * 
  */
 public class Composite extends Component {
 
-	private List<Component> children = new ArrayList<Component>();
-	
-	public void operation() {
+  private List<Component> children = new ArrayList<Component>();
 
-		for (Component component : children) {
-			component.operation();
-		}
-	}
+  public void operation() {
 
-	public void add(Component component){
-		children.add(component);
-	}
-	
-	public void remove(Component component){
-		children.remove(component);
-	}
+    for (Component component : children) {
+      component.operation();
+    }
+  }
 
-	public Component getChild(int index){
-		return children.get(index);
-	}	
+  public void add(Component component) {
+    children.add(component);
+  }
+
+  public void remove(Component component) {
+    children.remove(component);
+  }
+
+  public Component getChild(int index) {
+    return children.get(index);
+  }
 }
 ```
 
@@ -133,7 +133,6 @@ public class CompositeTest {
 
     assertEquals(leaf2, composite.getChild(0));
     assertEquals(leaf3, composite.getChild(1));
-
   }
 }
 ```

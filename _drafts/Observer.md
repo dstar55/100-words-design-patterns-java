@@ -31,12 +31,13 @@ Subscribers can subscribe or unsubscribe to the newsletters.
 package com.hundredwordsgof.observer;
 
 /**
- * Observer defines an updating interface for objects that should be notified of changes in a subject.
+ * Observer defines an updating interface for objects that should be notified of
+ * changes in a subject.
  *
  */
 public interface Observer {
 
-	void update();
+  void update();
 }
 ```
 
@@ -45,27 +46,28 @@ public interface Observer {
 package com.hundredwordsgof.observer;
 
 /**
- * ConcreteObserver maintains a reference to a ConcreteSubject object, stores state that should stay consistent with the subject's, 
- * implements the Observer updating interface to keep its state consistent with the subject's.
+ * ConcreteObserver maintains a reference to a ConcreteSubject object, stores
+ * state that should stay consistent with the subject's, implements the Observer
+ * updating interface to keep its state consistent with the subject's.
  *
  */
-public class ConcreteObserver implements Observer{
+public class ConcreteObserver implements Observer {
 
-	private int observerState;
-	
-	private ConcreteSubject subject;
-	
-	public ConcreteObserver(ConcreteSubject subject){
-		this.subject = subject;
-	}
-	
-	public void update() {
-		observerState = subject.getState();
-	}
+  private int observerState;
 
-	protected int getObserverState() {
-		return observerState;
-	}
+  private ConcreteSubject subject;
+
+  public ConcreteObserver(ConcreteSubject subject) {
+    this.subject = subject;
+  }
+
+  public void update() {
+    observerState = subject.getState();
+  }
+
+  protected int getObserverState() {
+    return observerState;
+  }
 }
 ```
 
@@ -78,27 +80,28 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * Subject knows its observers. Any number of Observer objects may observe a subject.
+ * Subject knows its observers. Any number of Observer objects may observe a
+ * subject.
  *
  */
 abstract class Subject {
 
-	private List<Observer> observers = new ArrayList<Observer>(); 
+  private List<Observer> observers = new ArrayList<Observer>();
 
-	public void attach(Observer observer){
-		observers.add(observer);
-	}
-	
-	public void dettach(Observer observer){
-		observers.remove(observer);
-	}
-	
-	public void notifyObervers(){
-		for (Iterator iterator = observers.iterator(); iterator.hasNext();) {
-			Observer observer = (Observer) iterator.next();
-			observer.update();
-		}
-	}
+  public void attach(Observer observer) {
+    observers.add(observer);
+  }
+
+  public void dettach(Observer observer) {
+    observers.remove(observer);
+  }
+
+  public void notifyObervers() {
+    for (Iterator iterator = observers.iterator(); iterator.hasNext();) {
+      Observer observer = (Observer) iterator.next();
+      observer.update();
+    }
+  }
 }
 ```
 
@@ -106,23 +109,23 @@ abstract class Subject {
 ```java 
 package com.hundredwordsgof.observer;
 
-
 /**
- * ConcreteSubject stores state of interest to ConcreteObserver objects, sends a notification to its observers when its state changes.
+ * ConcreteSubject stores state of interest to ConcreteObserver objects, sends a
+ * notification to its observers when its state changes.
  *
  */
 public class ConcreteSubject extends Subject {
 
-	private int state;
+  private int state;
 
-	public int getState() {
-		return state;
-	}
+  public int getState() {
+    return state;
+  }
 
-	public void setState(int state) {
-		this.state = state;
-		this.notifyObervers();
-	}
+  public void setState(int state) {
+    this.state = state;
+    this.notifyObervers();
+  }
 }
 ```
 
@@ -157,7 +160,6 @@ public class ObserverTest {
 
     // observer is detached so changes are not propageted
     assertEquals(1, ((ConcreteObserver) observer).getObserverState());
-
   }
 }
 ```

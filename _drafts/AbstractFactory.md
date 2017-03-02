@@ -201,7 +201,6 @@ public class AbstractFactoryTest {
         abstractFactory2.createProductA().getClass().getName());
     assertEquals("com.hundredwordsgof.abstractfactory.ProductB2",
         abstractFactory2.createProductB().getClass().getName());
-
   }
 }
 ```

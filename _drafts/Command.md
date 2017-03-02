@@ -32,12 +32,12 @@ package com.hundredwordsgof.command;
 
 /**
  * 
- * Command interface, declares an interface for executing an operation 
+ * Command interface, declares an interface for executing an operation
  *
  */
 public interface Command {
 
-	void execute();
+  void execute();
 }
 ```
 
@@ -47,20 +47,21 @@ package com.hundredwordsgof.command;
 
 /**
  * 
- * ConcreteCommand class, defines a binding between a Receiver object and an operation
+ * ConcreteCommand class, defines a binding between a Receiver object and an
+ * operation
  *
  */
 public class ConcreteCommand implements Command {
 
-	private Receiver receiver;
-	
-	public ConcreteCommand(Receiver receiver){
-		this.receiver = receiver;
-	}
-	
-	public void execute() {
-		this.receiver.action();
-	}
+  private Receiver receiver;
+
+  public ConcreteCommand(Receiver receiver) {
+    this.receiver = receiver;
+  }
+
+  public void execute() {
+    this.receiver.action();
+  }
 }
 ```
 
@@ -70,20 +71,21 @@ package com.hundredwordsgof.command;
 
 /**
  * 
- * Receiver class, knows how to perform the operations associated with carrying out a request 
+ * Receiver class, knows how to perform the operations associated with carrying
+ * out a request
  *
  */
 public class Receiver {
 
-	private boolean operationPerfomed = false;
-	
-	public void action(){	
-		operationPerfomed = true;
-	}
+  private boolean operationPerfomed = false;
 
-	protected boolean isOperationPerfomed() {
-		return operationPerfomed;
-	}
+  public void action() {
+    operationPerfomed = true;
+  }
+
+  protected boolean isOperationPerfomed() {
+    return operationPerfomed;
+  }
 }
 ```
 
@@ -98,15 +100,15 @@ package com.hundredwordsgof.command;
  */
 public class Invoker {
 
-	private Command command;
+  private Command command;
 
-	public Invoker(Command command){
-		this.command = command;
-	}
-	
-	public void execute(){
-		command.execute();
-	}
+  public Invoker(Command command) {
+    this.command = command;
+  }
+
+  public void execute() {
+    command.execute();
+  }
 }
 ```
 

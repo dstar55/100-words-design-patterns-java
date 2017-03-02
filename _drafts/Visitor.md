@@ -36,7 +36,7 @@ package com.hundredwordsgof.visitor;
  */
 public interface Element {
 
-	void accept(Visitor visitor);
+  void accept(Visitor visitor);
 }
 ```
 
@@ -50,19 +50,19 @@ package com.hundredwordsgof.visitor;
  */
 public class ConcreteElementA implements Element {
 
-	private int counter = 0;
-	
-	public void accept(Visitor visitor) {
-		visitor.visitConcreteElementA(this);
-	}
+  private int counter = 0;
 
-	public void operationA(){
-		counter++;
-	}
+  public void accept(Visitor visitor) {
+    visitor.visitConcreteElementA(this);
+  }
 
-	protected int getCounter() {
-		return counter;
-	}
+  public void operationA() {
+    counter++;
+  }
+
+  protected int getCounter() {
+    return counter;
+  }
 }
 ```
 
@@ -76,19 +76,19 @@ package com.hundredwordsgof.visitor;
  */
 public class ConcreteElementB implements Element {
 
-	private int counter = 0;
-	
-	public void accept(Visitor visitor) {
-		visitor.visitConcreteElementB(this);
-	}
+  private int counter = 0;
 
-	public void operationB(){
-		counter++;
-	}
+  public void accept(Visitor visitor) {
+    visitor.visitConcreteElementB(this);
+  }
 
-	protected int getCounter() {
-		return counter;
-	}	
+  public void operationB() {
+    counter++;
+  }
+
+  protected int getCounter() {
+    return counter;
+  }
 }
 ```
 
@@ -96,16 +96,16 @@ public class ConcreteElementB implements Element {
 ```java 
 package com.hundredwordsgof.visitor;
 
-
 /**
- * Declares a Visit operation for each class of ConcreteElement in the object structure
+ * Declares a Visit operation for each class of ConcreteElement in the object
+ * structure
  * 
  */
 public interface Visitor {
 
-	void visitConcreteElementA(ConcreteElementA concreteElementA);
-	
-	void visitConcreteElementB(ConcreteElementB concreteElementB);
+  void visitConcreteElementA(ConcreteElementA concreteElementA);
+
+  void visitConcreteElementB(ConcreteElementB concreteElementB);
 }
 ```
 
@@ -114,20 +114,20 @@ public interface Visitor {
 package com.hundredwordsgof.visitor;
 
 /**
- * Implements operation declared by Visitor. 
- * Each operation implements a fragment of the algorithm defined for the corresponding class of object in the structure.
+ * Implements operation declared by Visitor. Each operation implements a
+ * fragment of the algorithm defined for the corresponding class of object in
+ * the structure.
  *
  */
 public class ConcreteVisitor1 implements Visitor {
 
-	public void visitConcreteElementA(ConcreteElementA concreteElementA) {		
-		concreteElementA.operationA();
-	}
+  public void visitConcreteElementA(ConcreteElementA concreteElementA) {
+    concreteElementA.operationA();
+  }
 
-
-	public void visitConcreteElementB(ConcreteElementB concreteElementB) {		
-		concreteElementB.operationB();
-	}
+  public void visitConcreteElementB(ConcreteElementB concreteElementB) {
+    concreteElementB.operationB();
+  }
 }
 ```
 
@@ -136,19 +136,20 @@ public class ConcreteVisitor1 implements Visitor {
 package com.hundredwordsgof.visitor;
 
 /**
- * Implements operation declared by Visitor. 
- * Each operation implements a fragment of the algorithm defined for the corresponding class of object in the structure.
+ * Implements operation declared by Visitor. Each operation implements a
+ * fragment of the algorithm defined for the corresponding class of object in
+ * the structure.
  *
  */
 public class ConcreteVisitor2 implements Visitor {
 
-	public void visitConcreteElementA(ConcreteElementA concreteElementA) {
-		concreteElementA.operationA();
-	}
+  public void visitConcreteElementA(ConcreteElementA concreteElementA) {
+    concreteElementA.operationA();
+  }
 
-	public void visitConcreteElementB(ConcreteElementB concreteElementB) {
-		concreteElementB.operationB();
-	}
+  public void visitConcreteElementB(ConcreteElementB concreteElementB) {
+    concreteElementB.operationB();
+  }
 }
 ```
 
@@ -161,32 +162,32 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * Holds objects in structure. 
- * Provides interface to allow visitors to visit its elements.
+ * Holds objects in structure. Provides interface to allow visitors to visit its
+ * elements.
  * 
  */
 public class ObjectStructure {
-	
-	private List<Element> children = new ArrayList<Element>();
-	
-	public void add(Element element){
-		children.add(element);
-	}
-	
-	public void remove(Element element){
-		children.remove(element);
-	}
 
-	public Element getChild(int index){
-		return children.get(index);
-	}	
-	
-	public void acceptAll(Visitor visitor) {
-		for (Iterator iterator = children.iterator(); iterator.hasNext();) {
-			Element element = (Element) iterator.next();
-			element.accept(visitor);
-		}
-	}	
+  private List<Element> children = new ArrayList<Element>();
+
+  public void add(Element element) {
+    children.add(element);
+  }
+
+  public void remove(Element element) {
+    children.remove(element);
+  }
+
+  public Element getChild(int index) {
+    return children.get(index);
+  }
+
+  public void acceptAll(Visitor visitor) {
+    for (Iterator iterator = children.iterator(); iterator.hasNext();) {
+      Element element = (Element) iterator.next();
+      element.accept(visitor);
+    }
+  }
 }
 ```
 

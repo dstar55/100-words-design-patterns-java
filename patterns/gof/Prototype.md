@@ -32,15 +32,17 @@ package com.hundredwordsgof.prototype;
 /**
  * Declares interface to copy it self.
  */
-public abstract class Prototype implements Cloneable  {
+public abstract class Prototype implements Cloneable {
 
-	/**
-	 * Copy method.
-	 * @return copy of the object
-	 * @throws CloneNotSupportedException exception
-	 */
-	abstract Prototype copyMe() throws CloneNotSupportedException;
-	
+  /**
+   * Copy method.
+   * 
+   * @return copy of the object
+   * @throws CloneNotSupportedException
+   *           exception
+   */
+  abstract Prototype copyMe() throws CloneNotSupportedException;
+
 }
 ```
 
@@ -50,12 +52,12 @@ package com.hundredwordsgof.prototype;
 
 public class ConcretePrototype extends Prototype {
 
-	/**
-	 * Implements Prototype, meaning clone method.
-	 */
-	public Prototype copyMe() throws CloneNotSupportedException {
-		return (Prototype)this.clone();
-	}
+  /**
+   * Implements Prototype, meaning clone method.
+   */
+  public Prototype copyMe() throws CloneNotSupportedException {
+    return (Prototype) this.clone();
+  }
 }
 ```
 
@@ -64,20 +66,20 @@ public class ConcretePrototype extends Prototype {
 package com.hundredwordsgof.prototype;
 
 /**
- * Creates a new object by asking a Prototype to clone itself(invokes copyMe() method.
+ * Creates a new object by asking a Prototype to clone itself.
  */
 public class Client {
 
-	private Prototype prototype;
-	
-	public Client(Prototype prototype){
-		
-		this.prototype = prototype;		
-	}
-	
-	public Prototype operation() throws CloneNotSupportedException{
-		return prototype.copyMe();
-	}
+  private Prototype prototype;
+
+  public Client(Prototype prototype) {
+
+    this.prototype = prototype;
+  }
+
+  public Prototype operation() throws CloneNotSupportedException {
+    return prototype.copyMe();
+  }
 }
 ```
 
@@ -108,7 +110,6 @@ public class PrototypeTest {
 
     // ensure that prototype and it's own clone are not same objects
     assertNotEquals(prototype, prototypeClone);
-
   }
 }
 ```

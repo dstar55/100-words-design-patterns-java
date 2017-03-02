@@ -36,7 +36,7 @@ package com.hundredwordsgof.decorator;
  */
 public interface Component {
 
-	void operation();
+  void operation();
 }
 ```
 
@@ -51,8 +51,8 @@ package com.hundredwordsgof.decorator;
  */
 public class ConcreteComponent implements Component {
 
-	public void operation() {
-	}
+  public void operation() {
+  }
 }
 ```
 
@@ -65,15 +65,15 @@ package com.hundredwordsgof.decorator;
  * Decorator, keep reference to Component object
  *
  */
-abstract class Decorator implements Component{
+abstract class Decorator implements Component {
 
-	protected Component component;
-	
-	public abstract void operation();
+  protected Component component;
 
-	public void setComponent(Component component) {
-		this.component = component;
-	}
+  public abstract void operation();
+
+  public void setComponent(Component component) {
+    this.component = component;
+  }
 }
 ```
 
@@ -88,16 +88,16 @@ package com.hundredwordsgof.decorator;
  */
 public class ConcreteDecoratorA extends Decorator {
 
-	private boolean state;
-	
-	public void operation() {
-		state = true;
-		this.component.operation();	
-	}
+  private boolean state;
 
-	public boolean isState() {
-		return state;
-	}
+  public void operation() {
+    state = true;
+    this.component.operation();
+  }
+
+  public boolean isState() {
+    return state;
+  }
 }
 ```
 
@@ -112,20 +112,20 @@ package com.hundredwordsgof.decorator;
  */
 public class ConcreteDecoratorB extends Decorator {
 
-	private boolean behaviorMethodInvoked = false;
-	
-	public void operation() {
-		this.component.operation();
-		addedBehavior();
-	}
+  private boolean behaviorMethodInvoked = false;
 
-	private void addedBehavior() {
-		behaviorMethodInvoked = true;
-	}
+  public void operation() {
+    this.component.operation();
+    addedBehavior();
+  }
 
-	protected boolean isBehaviorMethodInvoked() {
-		return behaviorMethodInvoked;
-	}
+  private void addedBehavior() {
+    behaviorMethodInvoked = true;
+  }
+
+  protected boolean isBehaviorMethodInvoked() {
+    return behaviorMethodInvoked;
+  }
 }
 ```
 
@@ -164,7 +164,6 @@ public class DecoratorTest {
 
     assertEquals(true,
         ((ConcreteDecoratorB) decoratorB).isBehaviorMethodInvoked());
-
   }
 }
 ```

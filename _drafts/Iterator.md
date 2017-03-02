@@ -35,13 +35,13 @@ package com.hundredwordsgof.iterator;
  */
 public interface Iterator {
 
-	Object first();
-	
-	Object next();
-	
-	boolean isDone();
-	
-	Object currentItem();	
+  Object first();
+
+  Object next();
+
+  boolean isDone();
+
+  Object currentItem();
 }
 ```
 
@@ -50,40 +50,41 @@ public interface Iterator {
 package com.hundredwordsgof.iterator;
 
 /**
-* 
-* ConcreteIterator implements the Iterator interface, keeps track of the current position in the traversal of the aggregate.
-*
-*/
+ * 
+ * ConcreteIterator implements the Iterator interface. Keeps track of the
+ * current position in the traversal of the aggregate.
+ *
+ */
 public class ConcreteIterator implements Iterator {
-	
-	private ConcreteAggregate concreteAggregate;
-	private int index = -1;
-	
-	public ConcreteIterator(ConcreteAggregate concreteAggregate){
-		this.concreteAggregate = concreteAggregate;
-	}
 
-	public Object first() {
-		index = 0;
-		return concreteAggregate.getRecords()[index];
-	}
+  private ConcreteAggregate concreteAggregate;
+  private int index = -1;
 
-	public Object next() {
-		index++;
-		return concreteAggregate.getRecords()[index];
-	}
+  public ConcreteIterator(ConcreteAggregate concreteAggregate) {
+    this.concreteAggregate = concreteAggregate;
+  }
 
-	public boolean isDone() {
+  public Object first() {
+    index = 0;
+    return concreteAggregate.getRecords()[index];
+  }
 
-		if(concreteAggregate.getRecords().length == (index+1)){
-			return true;
-		}
-		return false;
-	}
+  public Object next() {
+    index++;
+    return concreteAggregate.getRecords()[index];
+  }
 
-	public Object currentItem() {
-		return concreteAggregate.getRecords()[index];
-	}
+  public boolean isDone() {
+
+    if (concreteAggregate.getRecords().length == (index + 1)) {
+      return true;
+    }
+    return false;
+  }
+
+  public Object currentItem() {
+    return concreteAggregate.getRecords()[index];
+  }
 }
 ```
 
@@ -92,13 +93,13 @@ public class ConcreteIterator implements Iterator {
 package com.hundredwordsgof.iterator;
 
 /**
-* 
-* Aggregate defines an interface for creating an Iterator object.
-*
-*/
+ * 
+ * Aggregate defines an interface for creating an Iterator object.
+ *
+ */
 public interface Aggregate {
 
-	Iterator createIterator();
+  Iterator createIterator();
 }
 ```
 
@@ -108,20 +109,21 @@ package com.hundredwordsgof.iterator;
 
 /**
  * 
- * ConcreteAgregate implements the Iterator creation interface to return an instance of the proper ConcreteIterator.
+ * ConcreteAgregate implements the Iterator creation interface to return an
+ * instance of the proper ConcreteIterator.
  *
  */
 public class ConcreteAggregate implements Aggregate {
 
-	private final String records[] = { "first", "second", "third", "fourth" };
-	
-	public Iterator createIterator() {
-		return new ConcreteIterator(this);
-	}
+  private final String records[] = { "first", "second", "third", "fourth" };
 
-	protected String[] getRecords() {
-		return records;
-	}
+  public Iterator createIterator() {
+    return new ConcreteIterator(this);
+  }
+
+  protected String[] getRecords() {
+    return records;
+  }
 }
 ```
 
@@ -161,9 +163,7 @@ public class IteratorTest {
     assertEquals("fourth", iterator.next());
     assertEquals("fourth", iterator.currentItem());
     assertEquals(true, iterator.isDone());
-
   }
-
 }
 ```
 

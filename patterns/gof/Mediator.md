@@ -34,30 +34,31 @@ The call center will contact the available taxi nearest to customer’s location
 package com.hundredwordsgof.mediator;
 
 /**
- * Colleague defines an interface for communication with another Colleague via mediator.
+ * Colleague defines an interface for communication with another Colleague via
+ * mediator.
  *
  */
 abstract class Colleague {
 
-	protected Mediator mediator;
-	
-	private String receivedMessage;
-	
-	public Colleague(Mediator mediator){
-		this.mediator = mediator;
-	}
-	
-	abstract void notifyColleague(String message);
+  protected Mediator mediator;
 
-	abstract void receive(String message);
+  private String receivedMessage;
 
-	protected String getReceivedMessage() {
-		return this.receivedMessage;
-	}
+  public Colleague(Mediator mediator) {
+    this.mediator = mediator;
+  }
 
-	protected void setReceivedMessage(String receivedMessage) {
-		this.receivedMessage = receivedMessage;
-	}	
+  abstract void notifyColleague(String message);
+
+  abstract void receive(String message);
+
+  protected String getReceivedMessage() {
+    return this.receivedMessage;
+  }
+
+  protected void setReceivedMessage(String receivedMessage) {
+    this.receivedMessage = receivedMessage;
+  }
 }
 ```
 
@@ -65,24 +66,23 @@ abstract class Colleague {
 ```java 
 package com.hundredwordsgof.mediator;
 
-
 /**
  * ConcreteColleague1 implements Colleague interface.
  *
  */
 public class ConcreteColleague1 extends Colleague {
-	
-	public ConcreteColleague1(Mediator mediator) {
-		super(mediator);
-	}
 
-	public void notifyColleague(String message){
-		this.mediator.notifyColleague(this, message);
-	}
+  public ConcreteColleague1(Mediator mediator) {
+    super(mediator);
+  }
 
-	public void receive(String message) {
-		this.setReceivedMessage(message);
-	}	
+  public void notifyColleague(String message) {
+    this.mediator.notifyColleague(this, message);
+  }
+
+  public void receive(String message) {
+    this.setReceivedMessage(message);
+  }
 }
 ```
 
@@ -96,17 +96,17 @@ package com.hundredwordsgof.mediator;
  */
 public class ConcreteColleague2 extends Colleague {
 
-	public ConcreteColleague2(Mediator mediator) {
-		super(mediator);
-	}
+  public ConcreteColleague2(Mediator mediator) {
+    super(mediator);
+  }
 
-	public void notifyColleague(String message){
-		this.mediator.notifyColleague(this, message);
-	}
+  public void notifyColleague(String message) {
+    this.mediator.notifyColleague(this, message);
+  }
 
-	public void receive(String message) {
-		this.setReceivedMessage(message);	
-	}
+  public void receive(String message) {
+    this.setReceivedMessage(message);
+  }
 }
 ```
 
@@ -120,7 +120,7 @@ package com.hundredwordsgof.mediator;
  */
 public interface Mediator {
 
-	void notifyColleague(Colleague colleague, String message);
+  void notifyColleague(Colleague colleague, String message);
 }
 ```
 
@@ -133,31 +133,31 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
-* ConcreteMediator implements Mediator, coordinates between Colleague objects.
-*
-*/
-public class ConcreteMediator implements Mediator{
+ * ConcreteMediator implements Mediator, coordinates between Colleague objects.
+ *
+ */
+public class ConcreteMediator implements Mediator {
 
-	private List<Colleague> colleagues;
-	
-	public ConcreteMediator(){	
-		colleagues = new ArrayList<Colleague>();
-	}
-	
-	public void addColleague(Colleague colleague){
-		colleagues.add(colleague);
-	}
-	
-	public void notifyColleague(Colleague colleague, String message) {
+  private List<Colleague> colleagues;
 
-		for (Iterator iterator = colleagues.iterator(); iterator.hasNext();) {
-			Colleague receiverColleague = (Colleague) iterator.next();
-		
-			if(colleague != receiverColleague){
-				receiverColleague.receive(message);
-			}
-		}
-	}
+  public ConcreteMediator() {
+    colleagues = new ArrayList<Colleague>();
+  }
+
+  public void addColleague(Colleague colleague) {
+    colleagues.add(colleague);
+  }
+
+  public void notifyColleague(Colleague colleague, String message) {
+
+    for (Iterator iterator = colleagues.iterator(); iterator.hasNext();) {
+      Colleague receiverColleague = (Colleague) iterator.next();
+
+      if (colleague != receiverColleague) {
+        receiverColleague.receive(message);
+      }
+    }
+  }
 }
 ```
 

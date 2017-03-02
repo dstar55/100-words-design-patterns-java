@@ -29,7 +29,8 @@ package com.hundredwordsgof.factorymethod;
 
 /**
  * 
- * Product interface defines the interface of objects the factory method creates 
+ * Product interface, defines the interface of the objects which factory method
+ * creates.
  *
  */
 public interface Product {
@@ -69,13 +70,12 @@ public class ConcreteProductB implements Product {
 ```java 
 package com.hundredwordsgof.factorymethod;
 
-
 /**
- *  Creator class declares factory method
+ * Creator class declares factory method
  */
 abstract class Creator {
 
-	abstract Product factoryMethod(String type);
+  abstract Product factoryMethod(String type);
 }
 ```
 
@@ -90,17 +90,16 @@ package com.hundredwordsgof.factorymethod;
  */
 public class ConcreteCreator extends Creator {
 
-	public Product factoryMethod(String type) {
-		
-		if(type.equals("A")){
-			return new ConcreteProductA();	
-		}else if(type.equals("B")){
-			return new ConcreteProductB();
-		}
-		
-		return null;
-	}
+  public Product factoryMethod(String type) {
 
+    if (type.equals("A")) {
+      return new ConcreteProductA();
+    } else if (type.equals("B")) {
+      return new ConcreteProductB();
+    }
+
+    return null;
+  }
 }
 ```
 
@@ -132,7 +131,6 @@ public class FactoryMethodTest {
         productB.getClass().getName());
 
     assertEquals(null, factory.factoryMethod(""));
-
   }
 }
 ```

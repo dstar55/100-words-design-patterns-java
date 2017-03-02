@@ -32,12 +32,13 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 package com.hundredwordsgof.state;
 
 /**
- * The interface for encapsulating the behavior associated with a particular state of the Context.
+ * The interface for encapsulating the behavior associated with a particular
+ * state of the Context.
  *
  */
 public interface State {
 
-	void handle();
+  void handle();
 }
 ```
 
@@ -45,21 +46,21 @@ public interface State {
 ```java 
 package com.hundredwordsgof.state;
 
-/** 
+/**
  * ConcreteState1 implements a behavior associated with a state of the Context.
  *
  */
 public class ConcreteState1 implements State {
 
-	private boolean handleInvoked = false;
-	
-	public void handle() {
-		this.handleInvoked = true;
-	}
+  private boolean handleInvoked = false;
 
-	protected boolean isHandleInvoked() {
-		return handleInvoked;
-	}
+  public void handle() {
+    this.handleInvoked = true;
+  }
+
+  protected boolean isHandleInvoked() {
+    return handleInvoked;
+  }
 }
 ```
 
@@ -67,21 +68,21 @@ public class ConcreteState1 implements State {
 ```java 
 package com.hundredwordsgof.state;
 
-/** 
+/**
  * ConcreteState2 implements a behavior associated with a state of the Context.
  *
  */
 public class ConcreteState2 implements State {
 
-	private boolean handleInvoked = false;
-	
-	public void handle() {
-		this.handleInvoked = true;		
-	}
+  private boolean handleInvoked = false;
 
-	protected boolean isHandleInvoked() {
-		return handleInvoked;
-	}
+  public void handle() {
+    this.handleInvoked = true;
+  }
+
+  protected boolean isHandleInvoked() {
+    return handleInvoked;
+  }
 }
 ```
 
@@ -89,21 +90,22 @@ public class ConcreteState2 implements State {
 ```java 
 package com.hundredwordsgof.state;
 
-/** 
- * Context maintains an instance of a ConcreteState subclass that defines the current state.
+/**
+ * Context maintains an instance of a ConcreteState subclass that defines the
+ * current state.
  *
  */
 public class Context {
 
-	private State state;
-	
-	public void request(){
-		state.handle();
-	}
+  private State state;
 
-	public void setState(State state) {
-		this.state = state;
-	}	
+  public void request() {
+    state.handle();
+  }
+
+  public void setState(State state) {
+    this.state = state;
+  }
 }
 ```
 
@@ -140,7 +142,6 @@ public class StateTest {
     context.request();
 
     assertEquals(true, ((ConcreteState2) state2).isHandleInvoked());
-
   }
 }
 ```

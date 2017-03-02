@@ -36,7 +36,7 @@ package com.hundredwordsgof.proxy;
  */
 public interface Subject {
 
-	void doOperation();
+  void doOperation();
 }
 ```
 
@@ -45,13 +45,13 @@ public interface Subject {
 package com.hundredwordsgof.proxy;
 
 /**
- * RealSubject class is a real object which is represented by Proxy 
+ * RealSubject class is a real object which is represented by Proxy
  * 
  */
 public class RealSubject implements Subject {
 
-	public void doOperation() {
-	}
+  public void doOperation() {
+  }
 }
 ```
 
@@ -60,24 +60,24 @@ public class RealSubject implements Subject {
 package com.hundredwordsgof.proxy;
 
 /**
- * Proxy class keep reference on a real subject, define interface which represents Subject, so he can:
- * - act as a surogate  
- * - controll acces to real subject 
- * - can be responisble for creation and maintainence of the real subject
+ * Proxy class keep reference on a real subject, define interface which
+ * represents Subject, so he can: - act as a surogate - controll acces to real
+ * subject - can be responisble for creation and maintainence of the real
+ * subject
  * 
  */
 public class Proxy implements Subject {
 
-	private RealSubject realSubject;
-		
-	public void doOperation() {
-		this.realSubject = new RealSubject();		
-		this.realSubject.doOperation();	
-	}
+  private RealSubject realSubject;
 
-	public RealSubject getRealSubject() {
-		return realSubject;
-	}
+  public void doOperation() {
+    this.realSubject = new RealSubject();
+    this.realSubject.doOperation();
+  }
+
+  public RealSubject getRealSubject() {
+    return realSubject;
+  }
 }
 ```
 
@@ -108,7 +108,6 @@ public class ProxyTest {
     proxy.doOperation();
 
     assertNotNull(proxy.getRealSubject());
-
   }
 }
 ```

@@ -33,21 +33,20 @@ Correct handler of request is only known during execution of the request when re
 ```java 
 package com.hundredwordsgof.chainofresponsibility;
 
-
 /**
  * 
- * Handler interface, declares an interface for request handling 
+ * Handler interface, declares an interface for request handling
  *
  */
 abstract class Handler {
 
-	protected Handler succesor;
-	
-	abstract void handleRequest();
+  protected Handler succesor;
 
-	public void setSuccesor(Handler succesor) {
-		this.succesor = succesor;
-	}	
+  abstract void handleRequest();
+
+  public void setSuccesor(Handler succesor) {
+    this.succesor = succesor;
+  }
 }
 ```
 
@@ -57,28 +56,27 @@ package com.hundredwordsgof.chainofresponsibility;
 
 /**
  * 
- * ConcreteHandler1 class, handles the request, can access 
- *  to the next object in a chain and forward the request if necessary.
+ * ConcreteHandler1 class, handles the request, can access to the next object in
+ * a chain and forward the request if necessary.
  * 
  */
 public class ConcreteHandler1 extends Handler {
 
-	private boolean handleRequestInvoked = false;
-	
-	void handleRequest() {
+  private boolean handleRequestInvoked = false;
 
-		handleRequestInvoked = true;
-		
-		// if some condition call handleRequest on successor
-		if(handleRequestInvoked){
-			succesor.handleRequest();
-		}
-	}
+  void handleRequest() {
 
-	protected boolean isHandleRequestInvoked() {
-		return handleRequestInvoked;
-	}
+    handleRequestInvoked = true;
 
+    // if some condition call handleRequest on successor
+    if (handleRequestInvoked) {
+      succesor.handleRequest();
+    }
+  }
+
+  protected boolean isHandleRequestInvoked() {
+    return handleRequestInvoked;
+  }
 }
 ```
 
@@ -88,21 +86,21 @@ package com.hundredwordsgof.chainofresponsibility;
 
 /**
  * 
- * ConcreteHandler2 class, handles the request, can access 
- *  to the next object in a chain and forward the request if necessary.
+ * ConcreteHandler2 class, handles the request, can access to the next object in
+ * a chain and forward the request if necessary.
  * 
  */
 public class ConcreteHandler2 extends Handler {
 
-	private boolean handleRequestInvoked = false;
-	
-	void handleRequest() {
-		handleRequestInvoked = true;
-	}
+  private boolean handleRequestInvoked = false;
 
-	protected boolean isHandleRequestInvoked() {
-		return handleRequestInvoked;
-	}
+  void handleRequest() {
+    handleRequestInvoked = true;
+  }
+
+  protected boolean isHandleRequestInvoked() {
+    return handleRequestInvoked;
+  }
 }
 ```
 
@@ -142,7 +140,6 @@ public class ChainOfResponsabilityTest {
         ((ConcreteHandler1) concreteHandler1).isHandleRequestInvoked());
     assertEquals(true,
         ((ConcreteHandler2) concreteHandler2).isHandleRequestInvoked());
-
   }
 }
 ```

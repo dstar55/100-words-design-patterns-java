@@ -37,7 +37,7 @@ package com.hundredwordsgof.bridge;
  *
  */
 public interface Implementor {
-	String implementation();
+  String implementation();
 }
 ```
 
@@ -52,9 +52,9 @@ package com.hundredwordsgof.bridge;
  */
 public class ConcreteImplementorA implements Implementor {
 
-	public String implementation() {
-		return this.getClass().getName();
-	}
+  public String implementation() {
+    return this.getClass().getName();
+  }
 }
 ```
 
@@ -69,9 +69,9 @@ package com.hundredwordsgof.bridge;
  */
 public class ConcreteImplementorB implements Implementor {
 
-	public String implementation() {
-		return this.getClass().getName();
-	}
+  public String implementation() {
+    return this.getClass().getName();
+  }
 }
 ```
 
@@ -79,21 +79,21 @@ public class ConcreteImplementorB implements Implementor {
 ```java 
 package com.hundredwordsgof.bridge;
 
-
 /**
  * 
- * Abstraction, defines abstraction interface, maintains a reference to object of type Implementator
+ * Abstraction, defines abstraction interface, maintains a reference to object
+ * of type Implementator
  * 
  */
 abstract class Abstraction {
 
-	protected Implementor implementor;
-	
-	public Abstraction(Implementor implementor){
-		this.implementor = implementor;		
-	}
-	
-	abstract String operation();	
+  protected Implementor implementor;
+
+  public Abstraction(Implementor implementor) {
+    this.implementor = implementor;
+  }
+
+  abstract String operation();
 }
 ```
 
@@ -106,16 +106,15 @@ package com.hundredwordsgof.bridge;
  * Refined Abstraction, extends the interface defined by Abstraction
  *
  */
-public class RefinedAbstraction extends Abstraction{
+public class RefinedAbstraction extends Abstraction {
 
-	public RefinedAbstraction(Implementor implementor) {
-		super(implementor);
-	}
+  public RefinedAbstraction(Implementor implementor) {
+    super(implementor);
+  }
 
-	public String operation() {
-		return this.implementor.implementation();
-	}
-
+  public String operation() {
+    return this.implementor.implementation();
+  }
 }
 ```
 

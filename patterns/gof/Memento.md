@@ -34,21 +34,22 @@ This mechanism of rolling back uses the memento design pattern.
 package com.hundredwordsgof.memento;
 
 /**
-* 
-* Memento stores internal state of the Originator object, protects against access by objects other than the Originator.
-*
-*/
+ * 
+ * Memento stores internal state of the Originator object, protects against
+ * access by objects other than the Originator.
+ *
+ */
 public class Memento {
 
-	private int state;
+  private int state;
 
-	public Memento(int state){
-		this.state = state;
-	}
-	
-	public int getState() {
-		return state;
-	}	
+  public Memento(int state) {
+    this.state = state;
+  }
+
+  public int getState() {
+    return state;
+  }
 }
 ```
 
@@ -58,32 +59,30 @@ package com.hundredwordsgof.memento;
 
 /**
  * 
- * Originator creates a Memento containing a snapshot of its current internal state.
- * Originator use Memento to restore its internal state.
+ * Originator creates a Memento containing a snapshot of its current internal
+ * state. Originator use Memento to restore its internal state.
  * 
- *
  */
 public class Originator {
 
-	private int state;
-	
-	public void setMemento(Memento memento){
-		this.state = memento.getState();
-	}
-	
-	public Memento createMemento(){
-		return new Memento(this.state);
-	}
+  private int state;
 
-	public int getState() {
-		return state;
-	}
+  public void setMemento(Memento memento) {
+    this.state = memento.getState();
+  }
 
-	public void setState(int state) {
-		this.state = state;
-	}
-	
-	
+  public Memento createMemento() {
+    return new Memento(this.state);
+  }
+
+  public int getState() {
+    return state;
+  }
+
+  public void setState(int state) {
+    this.state = state;
+  }
+
 }
 ```
 
@@ -98,15 +97,15 @@ package com.hundredwordsgof.memento;
  */
 public class Caretaker {
 
-	private Memento memento;
+  private Memento memento;
 
-	public Memento getMemento() {
-		return memento;
-	}
+  public Memento getMemento() {
+    return memento;
+  }
 
-	public void setMemento(Memento memento) {
-		this.memento = memento;
-	}
+  public void setMemento(Memento memento) {
+    this.memento = memento;
+  }
 }
 ```
 
@@ -144,7 +143,6 @@ public class MementoTest {
     // undo Originator's initial state
     originator.setMemento(caretaker.getMemento());
     assertEquals(1, originator.getState());
-
   }
 }
 ```
