@@ -24,7 +24,6 @@ public class InterpreterTest {
 
     // expected result, false
     assertEquals(false, context.isResult());
-
   }
 
   @Test
@@ -43,7 +42,6 @@ public class InterpreterTest {
 
     // expected result, false
     assertEquals(false, context.isResult());
-
   }
 
   @Test
@@ -62,7 +60,6 @@ public class InterpreterTest {
 
     // expected result, false
     assertEquals(false, context.isResult());
-
   }
 
   @Test
@@ -81,7 +78,6 @@ public class InterpreterTest {
 
     // expected result, true
     assertEquals(true, context.isResult());
-
   }
 
   @Test
@@ -100,7 +96,6 @@ public class InterpreterTest {
 
     // expected result, false
     assertEquals(false, context.isResult());
-
   }
 
   @Test
@@ -119,7 +114,6 @@ public class InterpreterTest {
 
     // expected result, true
     assertEquals(true, context.isResult());
-
   }
 
   @Test
@@ -138,7 +132,6 @@ public class InterpreterTest {
 
     // expected result, false
     assertEquals(true, context.isResult());
-
   }
 
   @Test
@@ -157,7 +150,5 @@ public class InterpreterTest {
 
     // expected result, true
     assertEquals(true, context.isResult());
-
   }
-
 }

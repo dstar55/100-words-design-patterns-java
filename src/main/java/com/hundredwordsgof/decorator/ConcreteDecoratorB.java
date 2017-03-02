@@ -7,18 +7,18 @@ package com.hundredwordsgof.decorator;
  */
 public class ConcreteDecoratorB extends Decorator {
 
-	private boolean behaviorMethodInvoked = false;
-	
-	public void operation() {
-		this.component.operation();
-		addedBehavior();
-	}
+  private boolean behaviorMethodInvoked = false;
 
-	private void addedBehavior() {
-		behaviorMethodInvoked = true;
-	}
+  public void operation() {
+    this.component.operation();
+    addedBehavior();
+  }
 
-	protected boolean isBehaviorMethodInvoked() {
-		return behaviorMethodInvoked;
-	}
+  private void addedBehavior() {
+    behaviorMethodInvoked = true;
+  }
+
+  protected boolean isBehaviorMethodInvoked() {
+    return behaviorMethodInvoked;
+  }
 }

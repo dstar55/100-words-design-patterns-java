@@ -7,5 +7,5 @@ package com.hundredwordsgof.decorator;
  */
 public interface Component {
 
-	void operation();
+  void operation();
 }

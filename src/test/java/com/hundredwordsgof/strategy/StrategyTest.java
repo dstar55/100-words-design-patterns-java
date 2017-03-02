@@ -22,6 +22,5 @@ public class StrategyTest {
     context = new Context(new ConcreteStrategyC());
     assertEquals("Go to airport with ConcreteStrategyC, take a metro",
         context.contextInterface());
-
   }
 }

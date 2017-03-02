@@ -30,7 +30,5 @@ public class IteratorTest {
     assertEquals("fourth", iterator.next());
     assertEquals("fourth", iterator.currentItem());
     assertEquals(true, iterator.isDone());
-
   }
-
 }

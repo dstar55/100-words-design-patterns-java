@@ -22,6 +22,5 @@ public class BuilderTest {
 
     assertEquals(product.getPart1(), "part1");
     assertEquals(product.getPart2(), "part2");
-
   }
 }

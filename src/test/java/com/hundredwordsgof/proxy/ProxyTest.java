@@ -21,6 +21,5 @@ public class ProxyTest {
     proxy.doOperation();
 
     assertNotNull(proxy.getRealSubject());
-
   }
 }

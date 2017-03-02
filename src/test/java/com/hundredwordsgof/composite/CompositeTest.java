@@ -30,6 +30,5 @@ public class CompositeTest {
 
     assertEquals(leaf2, composite.getChild(0));
     assertEquals(leaf3, composite.getChild(1));
-
   }
 }

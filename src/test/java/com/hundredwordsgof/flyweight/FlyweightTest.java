@@ -65,6 +65,5 @@ public class FlyweightTest {
           ((com.hundredwordsgof.flyweight.UnsharedConcreteFlyweight) unsharedFlyweight3)
               .getState());
     }
-
   }
 }

@@ -14,5 +14,4 @@ public class TemplateTest {
     ConcreteClass template = new ConcreteClass();
     assertEquals("TemplateMethod", template.templateMethod());
   }
-
 }

@@ -6,5 +6,5 @@ package com.hundredwordsgof.visitor;
  */
 public interface Element {
 
-	void accept(Visitor visitor);
+  void accept(Visitor visitor);
 }

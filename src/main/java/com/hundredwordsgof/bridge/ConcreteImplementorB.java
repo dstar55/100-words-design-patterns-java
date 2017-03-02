@@ -7,7 +7,7 @@ package com.hundredwordsgof.bridge;
  */
 public class ConcreteImplementorB implements Implementor {
 
-	public String implementation() {
-		return this.getClass().getName();
-	}
+  public String implementation() {
+    return this.getClass().getName();
+  }
 }

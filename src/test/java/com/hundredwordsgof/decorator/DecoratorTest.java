@@ -29,6 +29,5 @@ public class DecoratorTest {
 
     assertEquals(true,
         ((ConcreteDecoratorB) decoratorB).isBehaviorMethodInvoked());
-
   }
 }

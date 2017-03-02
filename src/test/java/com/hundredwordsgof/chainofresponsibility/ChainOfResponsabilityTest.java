@@ -30,6 +30,5 @@ public class ChainOfResponsabilityTest {
         ((ConcreteHandler1) concreteHandler1).isHandleRequestInvoked());
     assertEquals(true,
         ((ConcreteHandler2) concreteHandler2).isHandleRequestInvoked());
-
   }
 }

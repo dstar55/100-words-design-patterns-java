@@ -6,5 +6,5 @@ package com.hundredwordsgof.proxy;
  */
 public interface Subject {
 
-	void doOperation();
+  void doOperation();
 }

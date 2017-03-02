@@ -27,6 +27,5 @@ public class StateTest {
     context.request();
 
     assertEquals(true, ((ConcreteState2) state2).isHandleInvoked());
-
   }
 }

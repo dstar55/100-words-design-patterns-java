@@ -28,6 +28,5 @@ public class MementoTest {
     // undo Originator's initial state
     originator.setMemento(caretaker.getMemento());
     assertEquals(1, originator.getState());
-
   }
 }

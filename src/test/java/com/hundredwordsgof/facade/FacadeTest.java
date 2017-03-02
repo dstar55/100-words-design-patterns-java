@@ -29,6 +29,5 @@ public class FacadeTest {
       fail("Exception must be thrown");
     } catch (Exception e) {
     }
-
   }
 }

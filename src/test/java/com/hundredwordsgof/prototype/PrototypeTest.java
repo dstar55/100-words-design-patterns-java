@@ -21,6 +21,5 @@ public class PrototypeTest {
 
     // ensure that prototype and it's own clone are not same objects
     assertNotEquals(prototype, prototypeClone);
-
   }
 }

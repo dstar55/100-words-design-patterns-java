@@ -7,16 +7,17 @@ package com.hundredwordsgof.templatemethod;
  */
 abstract class AbstractClass {
 
-	/**
-	 * Template method, implementation of algorithm which consists of primitiveOperations
-	 * 
-	 * @return result of the primitive operations 
-	 */
-	public String templateMethod(){
-		return this.primitiveOperation1() + this.primitiveOperation2();
-	}
-	
-	abstract String primitiveOperation1();
-	
-	abstract String primitiveOperation2();
+  /**
+   * Template method, implementation of algorithm which consists of
+   * primitiveOperations
+   * 
+   * @return result of the primitive operations
+   */
+  public String templateMethod() {
+    return this.primitiveOperation1() + this.primitiveOperation2();
+  }
+
+  abstract String primitiveOperation1();
+
+  abstract String primitiveOperation2();
 }

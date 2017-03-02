@@ -7,11 +7,11 @@ package com.hundredwordsgof.iterator;
  */
 public interface Iterator {
 
-	Object first();
-	
-	Object next();
-	
-	boolean isDone();
-	
-	Object currentItem();	
+  Object first();
+
+  Object next();
+
+  boolean isDone();
+
+  Object currentItem();
 }

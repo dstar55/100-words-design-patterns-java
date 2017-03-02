@@ -6,17 +6,17 @@ package com.hundredwordsgof.visitor;
  */
 public class ConcreteElementB implements Element {
 
-	private int counter = 0;
-	
-	public void accept(Visitor visitor) {
-		visitor.visitConcreteElementB(this);
-	}
+  private int counter = 0;
 
-	public void operationB(){
-		counter++;
-	}
+  public void accept(Visitor visitor) {
+    visitor.visitConcreteElementB(this);
+  }
 
-	protected int getCounter() {
-		return counter;
-	}	
+  public void operationB() {
+    counter++;
+  }
+
+  protected int getCounter() {
+    return counter;
+  }
 }

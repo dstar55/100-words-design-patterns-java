@@ -6,5 +6,5 @@ package com.hundredwordsgof.mediator;
  */
 public interface Mediator {
 
-	void notifyColleague(Colleague colleague, String message);
+  void notifyColleague(Colleague colleague, String message);
 }

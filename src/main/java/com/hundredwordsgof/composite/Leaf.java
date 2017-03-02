@@ -7,7 +7,7 @@ package com.hundredwordsgof.composite;
  */
 public class Leaf extends Component {
 
-	void operation() {
-		
-	}
+  void operation() {
+
+  }
 }

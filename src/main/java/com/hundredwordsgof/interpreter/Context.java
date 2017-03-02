@@ -10,25 +10,25 @@ import java.util.List;
  */
 public class Context {
 
-	// holds a list of operands which are in fact TerminalExpressions
-	private List<Boolean> operands = new ArrayList<Boolean>();
-	
-	// holds result of expression 
-	private Boolean result = null;
-	
-	public List<Boolean> getOperands() {
-		return operands;
-	}
+  // holds a list of operands which are in fact TerminalExpressions
+  private List<Boolean> operands = new ArrayList<Boolean>();
 
-	public void addOperand(Boolean operand){
-		operands.add(operand);
-	}
-	
-	public boolean isResult() {
-		return result;
-	}
+  // holds result of expression
+  private Boolean result = null;
 
-	public void setResult(Boolean result) {
-		this.result = result;
-	}
+  public List<Boolean> getOperands() {
+    return operands;
+  }
+
+  public void addOperand(Boolean operand) {
+    operands.add(operand);
+  }
+
+  public boolean isResult() {
+    return result;
+  }
+
+  public void setResult(Boolean result) {
+    this.result = result;
+  }
 }

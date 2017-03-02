@@ -25,6 +25,5 @@ public class ObserverTest {
 
     // observer is detached so changes are not propageted
     assertEquals(1, ((ConcreteObserver) observer).getObserverState());
-
   }
 }

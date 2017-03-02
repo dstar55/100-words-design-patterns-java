@@ -7,14 +7,14 @@ package com.hundredwordsgof.decorator;
  */
 public class ConcreteDecoratorA extends Decorator {
 
-	private boolean state;
-	
-	public void operation() {
-		state = true;
-		this.component.operation();	
-	}
+  private boolean state;
 
-	public boolean isState() {
-		return state;
-	}
+  public void operation() {
+    state = true;
+    this.component.operation();
+  }
+
+  public boolean isState() {
+    return state;
+  }
 }

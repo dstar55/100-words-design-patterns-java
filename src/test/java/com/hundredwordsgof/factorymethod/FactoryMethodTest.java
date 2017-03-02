@@ -22,6 +22,5 @@ public class FactoryMethodTest {
         productB.getClass().getName());
 
     assertEquals(null, factory.factoryMethod(""));
-
   }
 }

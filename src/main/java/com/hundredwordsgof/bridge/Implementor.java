@@ -6,5 +6,5 @@ package com.hundredwordsgof.bridge;
  *
  */
 public interface Implementor {
-	String implementation();
+  String implementation();
 }
