@@ -78,6 +78,7 @@ Clone itself.
 
 Sheep Dolly is the first mammal to be cloned, so Dolly is a duplicate.
 
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/prototype.jpg "Sheep Dolly")
 
 * Implementation
 
