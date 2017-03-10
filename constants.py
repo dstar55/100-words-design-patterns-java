@@ -8,11 +8,15 @@ SLASH = '/'
 
 MASTER_BRANCH = "master"
 GH_PAGES_BRANCH = "gh-pages"
+GH_PAGES_RESOURCES_BRANCH = "gh-pages-resources"
+
 
 README_FILE_NAME = "README.MD"
 REMOTE_REPOSITORY_PATH = "https://github.com/dstar55/100-words-design-patterns-java"
 LOCAL_MASTER_REPOSITORY_PATH = "./100-words-design-patterns-java"
 LOCAL_GH_PAGES_REPOSITORY_PATH = "./gh-pages"
+LOCAL_GH_PAGES_RESOURCES_REPOSITORY_PATH = "./gh-pages-resources"
+
 DRAFTS_FOLDER = "_drafts"
 
 DICT_KEY_PATTERN_ID = "patternId"

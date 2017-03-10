@@ -44,6 +44,7 @@ def main():
 def main_clone():
     clone.cloneRepo(constants.REMOTE_REPOSITORY_PATH, constants.MASTER_BRANCH, constants.LOCAL_MASTER_REPOSITORY_PATH)
     clone.cloneRepo(constants.REMOTE_REPOSITORY_PATH, constants.GH_PAGES_BRANCH, constants.LOCAL_GH_PAGES_REPOSITORY_PATH)
+    clone.cloneRepo(constants.REMOTE_REPOSITORY_PATH, constants.GH_PAGES_RESOURCES_BRANCH, constants.LOCAL_GH_PAGES_RESOURCES_REPOSITORY_PATH)
     
 # parse readme.md from master and create a content    
 def main_generate():
