@@ -6,6 +6,7 @@ tag: pattern
 ---
 
 * [Story](#Story)
+* [Image](#Image)
 * [UML](#UML)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
@@ -17,7 +18,8 @@ Clone itself.
 
 Sheep Dolly is the first mammal to be cloned, so Dolly is a duplicate.
 
-![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/prototype.jpg "Sheep Dolly")  
+###  <a id="Image"></a>Image
+[![](/assets/img/prototype.jpg)](/assets/img/prototype.jpg)  
 ###### Geni, <a href="https://commons.wikimedia.org/wiki/File:Dolly_the_sheep_2016.JPG">Dolly the sheep 2016</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>
 
 
