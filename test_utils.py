@@ -126,8 +126,8 @@ class TestUtils(unittest.TestCase):
         self.assertEquals(1, utils.getFilePosition("Bridge", "Implementor.java"))
         self.assertEquals(2, utils.getFilePosition("Bridge", "ConcreteImplementorA.java"))
         self.assertEquals(3, utils.getFilePosition("Bridge", "ConcreteImplementorB.java"))
-        self.assertEquals(4, utils.getFilePosition("Bridge", "RefinedAbstraction.java"))
-        self.assertEquals(5, utils.getFilePosition("Bridge", "Abstraction.java"))
+        self.assertEquals(4, utils.getFilePosition("Bridge", "Abstraction.java"))
+        self.assertEquals(5, utils.getFilePosition("Bridge", "RefinedAbstraction.java"))
         
         self.assertEquals(1, utils.getFilePosition("Iterator", "Iterator.java"))
         self.assertEquals(2, utils.getFilePosition("Iterator", "ConcreteIterator.java"))
