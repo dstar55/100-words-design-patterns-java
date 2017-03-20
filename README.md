@@ -196,6 +196,15 @@ Adapters are often used in daily life, for example eletrical adapter is a device
 converts attributes of one electrical device or system to those of an otherwise incompatible device or system. 
 Some modify power or signal attributes, while others merely adapt the physical form of one electrical connector to another.
 
+* Image
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/adapter.jpg "Adapter")  
+###### * Image
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/prototype.jpg "Sheep Dolly")  
+###### Geni, <a href="https://commons.wikimedia.org/wiki/File:Dolly_the_sheep_2016.JPG">Dolly the sheep 2016</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>
+
+
 * Implementation
 
 UML: 
