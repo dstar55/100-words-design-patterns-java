@@ -598,6 +598,12 @@ Newslettter subscription demonstrate Observer pattern.
 A newsletter is a regularly distributed publication that is generally about one main topic of interest to its subscribers. 
 Subscribers can subscribe or unsubscribe to the newsletters.
 
+* Image
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/observer.jpg "Newsletter")  
+###### <a href="https://commons.wikimedia.org/wiki/User:Stevie_Benton_(WMUK)">Stevie Benton</a>, <a href="https://commons.wikimedia.org/wiki/File:Newsletter-banner-v2.jpg">Newsletter-banner-v2</a>, 
+<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">CC BY-SA 3.0</a>
+
 * Implementation
 
 UML: 
