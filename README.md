@@ -357,6 +357,10 @@ If this is to much for you than you can find event manager which will organize e
 
 This is a typical example for Facade. 
 
+* Image
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/facade.jpg "Wedding Event Management")  
+###### By WeMaxx1248 (Own work) [<a href="http://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File%3AEvent_management_in_pune.jpg">via Wikimedia Commons</a>
 
 * Implementation
 
