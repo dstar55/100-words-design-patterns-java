@@ -385,6 +385,10 @@ Remove duplicates.
 Flyweight pattern is used to reduce memory by loading only the data necessary to perform action.
 Database normalization is flyweight. Normalisation, is the process of organizing the columns (attributes) and tables (relations) of a relational database to minimize data redundancy.
 
+* Image
+
+![alt text]By 04hutts (Own work) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3ANormalFormDiagram.png">via Wikimedia Commons</a>
+
 * Implementation
 
 UML: 
@@ -416,8 +420,6 @@ He is an accredited messenger, agent, or representative who is sent by one gover
 
 ![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/proxy.jpg "The Envoy Extraordinary")  
 ###### By John Watkins (Kenwoon Mengyee, Burmese ambassador, The Envoy Extraordinary and Minister Plenipotentiary) [Public domain or Public domain], <a href="https://commons.wikimedia.org/wiki/File%3AKinwun_Mingyi.jpg">via Wikimedia Commons</a>
-
-
 
 * Implementation
 
