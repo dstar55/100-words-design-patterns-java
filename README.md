@@ -387,7 +387,8 @@ Database normalization is flyweight. Normalisation, is the process of organizing
 
 * Image
 
-![alt text]By 04hutts (Own work) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3ANormalFormDiagram.png">via Wikimedia Commons</a>
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/flyweight.jpg "Database Normalization")  
+###### By 04hutts (Own work) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3ANormalFormDiagram.png">via Wikimedia Commons</a>
 
 * Implementation
 
