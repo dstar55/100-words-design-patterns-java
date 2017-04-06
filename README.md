@@ -544,7 +544,7 @@ Process of browsing is example of Iterator pattern.
 * Image
 
 ![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/iterator.jpg "Iterate book page by page")  
-###### CC0 Public Domain
+###### <div about='https://farm2.static.flickr.com/1190/5099718716_2f066cebc7_m.jpg'><a href='https://www.flickr.com/photos/davedugdale/5099718716/' target='_blank'><img xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/StillImage' rel='dct:type' src='https://farm2.static.flickr.com/1190/5099718716_2f066cebc7_m.jpg' alt='Open Book by Dave Dugdale, on Flickr' title='Open Book by Dave Dugdale, on Flickr' border='0'/></a><br/>&quot;<a href='https://www.flickr.com/photos/davedugdale/5099718716/' target='_blank'>Open Book</a>&quot;&nbsp;(<a rel='license' href='https://creativecommons.org/licenses/by-sa/2.0/' target='_blank'>CC BY-SA 2.0</a>)&nbsp;by&nbsp;<a xmlns:cc='http://creativecommons.org/ns#' rel='cc:attributionURL' property='cc:attributionName' href='https://www.flickr.com/people/davedugdale/' target='_blank'>Dave Dugdale</a></div>
 
 * Implementation
 
