@@ -541,6 +541,11 @@ Book is a set of written, printed sheets bound together into a volume.
 You can browse through the book page by page, or quickly jump to interesting chapter.
 Process of browsing is example of Iterator pattern.
 
+* Image
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/iterator.jpg "Iterate book page by page")  
+###### CC0 Public Domain
+
 * Implementation
 
 UML: 
