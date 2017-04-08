@@ -515,12 +515,13 @@ $  cd /src/main/java/com/hundredwordsgof/command
 
 A person who translates orally from one language into another.
 
-* Implementation
-
 * Image
 
 ![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/interpreter.jpg "Polish Sign Language - letter C")  
 ######  Polish Sign Language - letter C, By Tomt87 (Own work) [CC BY-SA 4.0 (http://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons
+
+
+* Implementation
 
 UML: 
 
