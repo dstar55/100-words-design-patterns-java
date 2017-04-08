@@ -716,7 +716,6 @@ User can choose various payment options like Master Card, Amex or PayPal.
 Any of these payment options will pay items in Shopping Cart, and they can be used interchangeably. 
 The user must choose the Strategy based on his possibilities, preferences.
 
-
 * Image
 
 ![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/strategy.jpg "Credit Card")  
@@ -780,6 +779,11 @@ Allows for one or more operations to be applied to a set of objects at runtime, 
 Shopping in supermarket is example of the Visitor pattern. 
 You pick a products and put them in shopping cart. When you get to the checkout, the cashier acts as a visitor, taking the 
 disparate set of elements, some with prices and others that needs to be weighted, in order to provide you with total.
+
+* Image
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/visitor.jpg "Cashier in Supermarket")  
+###### Cashier in Supermarket, CC0 Public Domain
 
 * Implementation
 
