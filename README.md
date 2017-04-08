@@ -615,6 +615,11 @@ And if any operation fails, then the transaction would fail and all operations w
 
 This mechanism of rolling back uses the memento design pattern. 
 
+* Image
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/memento.jpg "States of transaction")  
+###### States of transaction 
+
 * Implementation
 
 UML: 
