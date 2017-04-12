@@ -13,6 +13,8 @@ There can be at most one active &#34;Men&#39;s 100 meters world record holder&#3
 Regardless of who that person is the title, &#34;Men&#39;s 100 meters world record holder&#34; is a global point of access that identifies the fastes person in the world.
 
 
---- UML
+---
+
+### UML
 
 ![Singleton UML](https://github.com/dstar55/100-words-design-patterns-java/raw/master/src/main/resources/singleton.png)
