@@ -1,12 +1,14 @@
-# Creational Patterns 
+# Flux 
 
-Singleton
+An application architecture for React
 
 ---
 
-### Story
+### Flux Design
 
-Singleton ensures that only one(single) object can be created from the class.
+- Dispatcher: Manages Data Flow
+- Stores: Handle State & Logic
+- Views: Render Data via React
 
 ---
 
