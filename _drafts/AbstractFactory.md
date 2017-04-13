@@ -38,7 +38,7 @@ Poker Cards Back</a>&nbsp;(<a rel='license' href='https://creativecommons.org/sh
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/abstractfactory.png)](/assets/img/abstractfactory.png)
+[![](/assets/img/uml/abstractfactory.png)](/assets/img/uml/abstractfactory.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

@@ -34,7 +34,7 @@ The user must choose the Strategy based on his possibilities, preferences.
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/strategy.png)](/assets/img/strategy.png)
+[![](/assets/img/uml/strategy.png)](/assets/img/uml/strategy.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

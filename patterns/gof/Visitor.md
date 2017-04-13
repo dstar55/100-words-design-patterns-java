@@ -33,7 +33,7 @@ disparate set of elements, some with prices and others that needs to be weighted
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/visitor.png)](/assets/img/visitor.png)
+[![](/assets/img/uml/visitor.png)](/assets/img/uml/visitor.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

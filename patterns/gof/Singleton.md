@@ -36,7 +36,7 @@ Martin Pettitt</a>
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/singleton.png)](/assets/img/singleton.png)
+[![](/assets/img/uml/singleton.png)](/assets/img/uml/singleton.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

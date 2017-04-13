@@ -23,7 +23,7 @@ Car Technician will receive a request and fix a problem.
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/command.png)](/assets/img/command.png)
+[![](/assets/img/uml/command.png)](/assets/img/uml/command.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

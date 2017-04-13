@@ -34,7 +34,7 @@ Whether a customer picks a classical hard disk or SSD for storage, the construct
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/builder.png)](/assets/img/builder.png)
+[![](/assets/img/uml/builder.png)](/assets/img/uml/builder.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

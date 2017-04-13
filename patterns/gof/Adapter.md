@@ -33,7 +33,7 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/adapter.png)](/assets/img/adapter.png)
+[![](/assets/img/uml/adapter.png)](/assets/img/uml/adapter.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

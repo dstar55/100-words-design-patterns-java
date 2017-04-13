@@ -36,7 +36,7 @@ This mechanism of rolling back uses the memento design pattern.
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/memento.png)](/assets/img/memento.png)
+[![](/assets/img/uml/memento.png)](/assets/img/uml/memento.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

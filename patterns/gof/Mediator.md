@@ -36,7 +36,7 @@ The call center will contact the available taxi nearest to customer’s location
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/mediator.png)](/assets/img/mediator.png)
+[![](/assets/img/uml/mediator.png)](/assets/img/uml/mediator.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

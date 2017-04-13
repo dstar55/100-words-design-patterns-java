@@ -37,7 +37,7 @@ This is a typical example for Facade.
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/facade.png)](/assets/img/facade.png)
+[![](/assets/img/uml/facade.png)](/assets/img/uml/facade.png)
 
 ###  <a id="Implementation"></a>Implementation 
 
