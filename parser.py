@@ -9,15 +9,14 @@ import utils
 
 
 # parses readme.md and creates array of dictionaries with key values pairs:
-# patternName, PatternCategory, patternStory, patternUMLPath, patternSourceCodePath     
+# patternName, patternCategory, patternStory, patternUMLPath, patternSourceCodePath, ...     
 def parseReadme(readmeLocalPath):
         
     lines = tuple(open(readmeLocalPath, 'r'))
     
     isInPatternDescriptionSection = False
     isInStory = False    
-    arrayList = []    
-    currentPatternName = ""
+    arrayList = []        
     currentPatternID = ""
     currentStory = ""
     
@@ -38,29 +37,26 @@ def parseReadme(readmeLocalPath):
             arrayList.append(dict)
         
         # find a description paragraph for each pattern
-        #  ##### <a id="Singleton"></a>Singleton
+        # ##### <a id="Singleton"></a>Singleton
         if "id=" in strLine:
             
             isInPatternDescriptionSection = True
             
             # strip text after between "" -> pattern id 
             currentPatternID = re.search(r'\"(.*)\"', strLine).group(1)
-            
-            # strip text after a> and remove last char -> pattern name
-            #currentPatternName = strLine.partition('a>')[2][:-1]            
-                        
+                                    
         # tag '* Implementation' telling us that story paragraph is finished
         if "* Implementation" in strLine: 
             isInStory = False 
-            
-            
-            # update dictionary with story            
-            # TODO refactor               
-            utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_STORY, currentStory)    
-            #for dict in arrayList:
-            #    if currentPatternID == dict.get(constants.DICT_KEY_PATTERN_ID):
-            #        dict.update({constants.DICT_KEY_PATTERN_STORY : currentStory})
-                
+                        
+            #  split the story text into two chunks, first is story part and second is image part if exists
+            if "* Image" in currentStory:
+                currentStorySplited = currentStory.split("* Image")
+                utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_STORY, currentStorySplited[0])
+                utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_IMAGE, currentStorySplited[1])
+            else:               
+                # update dictionary with story                                    
+                utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_STORY, currentStory)                    
                 
             # clean current text
             currentStory = ""
@@ -75,28 +71,18 @@ def parseReadme(readmeLocalPath):
             isInStory = True        
         
         # find a UML file name, data is in line which contains substring "alt text"                            
-        if isInPatternDescriptionSection == True and "alt text" in strLine:
+        if isInPatternDescriptionSection == True and isInStory == False and "alt text" in strLine:
             
             # update dictionary with pattern UML file name
-            # TODO refactor update
             utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_UML_FILE_NAME, currentPatternID.lower() + ".png")
-            #for dict in arrayList:
-            #    if currentPatternID == dict.get(constants.DICT_KEY_PATTERN_ID):
-            #        dict.update({constants.DICT_KEY_PATTERN_UML_FILE_NAME : currentPatternID.lower() + ".png"})        
                    
                    
         # find source code, data is in paragraph which contains substring "Source Code"
-        if isInPatternDescriptionSection == True and "Source Code" in strLine:
+        if isInPatternDescriptionSection == True and isInStory == False and "Source Code" in strLine:
 
-            # update dictionary with PATTERN_SOURCE_CODE_PACKAGE_NAME and DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME
-            # TODO refactor update 
+            # update dictionary with PATTERN_SOURCE_CODE_PACKAGE_NAME and DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME 
             utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
             utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_TEST_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
-            
-            #for dict in arrayList:
-            #    if currentPatternID == dict.get(constants.DICT_KEY_PATTERN_ID):                    
-            #        dict.update({constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME : constants.PATTERN_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower()})
-            #        dict.update({constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME : constants.PATTERN_TEST_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower()})
-                            
+                                        
              
     return arrayList
