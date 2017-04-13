@@ -30,7 +30,7 @@ This mechanism of rolling back uses the memento design pattern.
 ###  <a id="Image"></a>Image 
 
 
-![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/memento.jpg "States of transaction")  
+![alt text](/assets/img/memento.jpg "States of transaction")  
 ###### States of transaction 
 
 

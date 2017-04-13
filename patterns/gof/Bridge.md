@@ -27,7 +27,7 @@ There are different implementations of the steering wheels used in cars, buses, 
 ###  <a id="Image"></a>Image 
 
 
-![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/bridge.jpg "Bridge")  
+![alt text](/assets/img/bridge.jpg "Bridge")  
 ###### By Liftarn (Own work) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3A1924Stanley740-interior.jpg">via Wikimedia Commons</a>
 
 

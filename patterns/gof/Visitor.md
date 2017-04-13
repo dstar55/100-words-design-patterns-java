@@ -27,7 +27,7 @@ disparate set of elements, some with prices and others that needs to be weighted
 ###  <a id="Image"></a>Image 
 
 
-![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/visitor.jpg "Cashier in Supermarket")  
+![alt text](/assets/img/visitor.jpg "Cashier in Supermarket")  
 ###### Cashier in Supermarket, CC0 Public Domain
 
 

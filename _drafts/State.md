@@ -28,7 +28,7 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 ###  <a id="Image"></a>Image 
 
 
-![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/state.jpg "Human Pregnancy")  
+![alt text](/assets/img/state.jpg "Human Pregnancy")  
 ###### <a href="http://flickr.com/photos/19616008@N00">Petteri Sulonen from Helsinki, Finland</a>, <a href="https://commons.wikimedia.org/wiki/File:Pregnant_graffiti.jpg">Pregnant graffiti</a>, <a href="https://creativecommons.org/licenses/by/2.0/legalcode">CC BY 2.0</a>
 
 
