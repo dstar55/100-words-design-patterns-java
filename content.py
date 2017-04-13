@@ -26,8 +26,8 @@ def createContent(arrayList):
     for dict in arrayList:
         fileName = filePath + dict.get(constants.DICT_KEY_PATTERN_ID) + ".md"
         try:
-            with open(fileName, 'w') as aFile:
-                createPage(aFile, dict)
+            with open(fileName, 'w') as destFile:
+                createPage(destFile, dict)
                 
         except IOError as e:
             print e    
@@ -35,56 +35,67 @@ def createContent(arrayList):
     print "Generating content ... done"
         
 # create a content for one page(pattern)
-def createPage(aFile, dict):
+def createPage(destFile, dict):
     
-    print "Generating page ... " + str(aFile.name)
-    #TODO refactor function should return string and than write into aFile(aFile should not be argument for belowed functions)
-    createPageHeaderSection(aFile, dict)    
-    createPageTableOfContentSection(aFile)
-    createPageStorySection(aFile, dict)
-    createPageUMLImageSection(aFile, dict)
-    createPageImplementationSection(aFile, dict)        
-    createPageUsageSection(aFile, dict)
+    print "Generating page ... " + str(destFile.name)
+    #TODO refactor function should return string and than write into destFile(destFile should not be argument for belowed functions)
+    createPageHeaderSection(destFile, dict)    
+    createPageTableOfContentSection(destFile)
+    createPageStorySection(destFile, dict)
+    createPageImageSection(destFile, dict)
+    createPageUMLImageSection(destFile, dict)
+    createPageImplementationSection(destFile, dict)        
+    createPageUsageSection(destFile, dict)
 
 # add header
-def createPageHeaderSection(aFile, dict):
+def createPageHeaderSection(destFile, dict):
     
-    aFile.write('---\n')
-    aFile.write('layout: page\n')
-    aFile.write('title: ' + dict.get(constants.DICT_KEY_PATTERN_NAME) + '\n')
-    aFile.write('permalink: /patterns/' + dict.get(constants.DICT_KEY_PATTERN_ID) + '/\n')
-    aFile.write('tag: pattern\n')
-    aFile.write('---\n\n')
+    destFile.write('---\n')
+    destFile.write('layout: page\n')
+    destFile.write('title: ' + dict.get(constants.DICT_KEY_PATTERN_NAME) + '\n')
+    destFile.write('permalink: /patterns/' + dict.get(constants.DICT_KEY_PATTERN_ID) + '/\n')
+    destFile.write('tag: pattern\n')
+    destFile.write('---\n\n')
 
 #add content links
-def createPageTableOfContentSection(aFile):
+def createPageTableOfContentSection(destFile):
     
-    aFile.write('* [Story](#Story)\n')
-    aFile.write('* [UML](#UML)\n')
-    aFile.write('* [Implementation](#Implementation)\n')
-    aFile.write('* [Usage](#Usage)\n')
+    destFile.write('* [Story](#Story)\n')
+    destFile.write('* [Image](#Image)\n')
+    destFile.write('* [UML](#UML)\n')
+    destFile.write('* [Implementation](#Implementation)\n')
+    destFile.write('* [Usage](#Usage)\n')
 
 # add content -> story
-def createPageStorySection(aFile, dict):
+def createPageStorySection(destFile, dict):
     
-    aFile.write('\n\n')
-    aFile.write('###  <a id="Story"></a>Story \n')
-    aFile.write(dict.get(constants.DICT_KEY_PATTERN_STORY) + '\n')
-    aFile.write('\n')
+    destFile.write('\n\n')
+    destFile.write('###  <a id="Story"></a>Story \n')
+    destFile.write(dict.get(constants.DICT_KEY_PATTERN_STORY) + '\n')
+    destFile.write('\n')
+
+# add content -> image
+def createPageImageSection(destFile, dict):
+    
+    if dict.get(constants.DICT_KEY_PATTERN_IMAGE) != None:
+        destFile.write('\n\n')
+        destFile.write('###  <a id="Image"></a>Image \n')
+        destFile.write(dict.get(constants.DICT_KEY_PATTERN_IMAGE) + '\n')
+        destFile.write('\n')
 
 # add UML image
-def createPageUMLImageSection(aFile, dict):
+def createPageUMLImageSection(destFile, dict):
     
     imagePath = '/assets/img/' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)
      
-    aFile.write('###  <a id="UML"></a>UML \n')
-    aFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            
-    aFile.write('\n')
+    destFile.write('###  <a id="UML"></a>UML \n')
+    destFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            
+    destFile.write('\n')
 
 # add implementation details, source code
-def createPageImplementationSection(aFile, dict):
+def createPageImplementationSection(destFile, dict):
     
-    aFile.write('###  <a id="Implementation"></a>Implementation \n\n')
+    destFile.write('###  <a id="Implementation"></a>Implementation \n\n')
     sourcePath = constants.LOCAL_MASTER_REPOSITORY_PATH + dict.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME) + '/*.java'
        
     # declares an empty list 
@@ -105,30 +116,30 @@ def createPageImplementationSection(aFile, dict):
     for item in sortedList:
                 
         # item[1] is file name
-        aFile.write('#### *' + item[1] + '* \n')
-        aFile.write('```java \n')
+        destFile.write('#### *' + item[1] + '* \n')
+        destFile.write('```java \n')
         # copy code snippet, item[2] is absoluteFilePath
         for line in tuple(open(item[2], 'r')):
-            aFile.write(line)
+            destFile.write(line)
         
-        aFile.write('```\n\n')
+        destFile.write('```\n\n')
             
 #add usage
-def createPageUsageSection(aFile, dict):
+def createPageUsageSection(destFile, dict):
     
-    aFile.write('###  <a id="Usage"></a>Usage \n\n')
+    destFile.write('###  <a id="Usage"></a>Usage \n\n')
     sourcePath = constants.LOCAL_MASTER_REPOSITORY_PATH + dict.get(constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME) + '/*.java'
         
     for fileName in glob.glob(sourcePath):        
                     
-        aFile.write('#### *' + fileName[(fileName.rfind('/') + 1):] + '* \n')
-        aFile.write('```java \n')
+        destFile.write('#### *' + fileName[(fileName.rfind('/') + 1):] + '* \n')
+        destFile.write('```java \n')
         
         # copy code snippet
         for line in tuple(open(fileName, 'r')):
-            aFile.write(line)
+            destFile.write(line)
         
-        aFile.write('```\n\n')
+        destFile.write('```\n\n')
 
     
 

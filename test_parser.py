@@ -18,6 +18,9 @@ class TestParser(unittest.TestCase):
         # parse method returns arrayList which is 
         arrayList = parser.parseReadme('./TestReadme.md')
         
+        for element in arrayList:
+            print element.get(constants.DICT_KEY_PATTERN_IMAGE)
+            
         # check the number of elements in arrayList        
         self.assertEqual(23, len(arrayList))
         
@@ -26,13 +29,14 @@ class TestParser(unittest.TestCase):
         
         # check Singleton
         self.assertEqual("Singleton", singletonContent.get(constants.DICT_KEY_PATTERN_ID))        
-        self.assertEqual("Singleton", singletonContent.get(constants.DICT_KEY_PATTERN_NAME))
-        self.assertEqual("singleton.png", singletonContent.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME))        
+        self.assertEqual("Singleton", singletonContent.get(constants.DICT_KEY_PATTERN_NAME))                
         self.assertEqual(True, ("Singleton ensures that only one(single) object can be created from the class." in singletonContent.get(constants.DICT_KEY_PATTERN_STORY)))
-        self.assertEqual(True, ("Brick Lane Graffiti Usain Bolt" in singletonContent.get(constants.DICT_KEY_PATTERN_IMAGE)))        
+        self.assertEqual(True, ("Brick Lane Graffiti Usain Bolt" in singletonContent.get(constants.DICT_KEY_PATTERN_IMAGE)))
+        self.assertEqual("singleton.png", singletonContent.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME))        
         self.assertEqual("/src/main/java/com/hundredwordsgof/singleton", singletonContent.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME))
         self.assertEqual("/src/test/java/com/hundredwordsgof/singleton", singletonContent.get(constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME))
 
+        # template method: image is not defined
         templateMethodContent = arrayList[21]
 
         # check TemplateMethod
