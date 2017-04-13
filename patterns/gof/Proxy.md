@@ -6,6 +6,7 @@ tag: pattern
 ---
 
 * [Story](#Story)
+* [Image](#Image)
 * [UML](#UML)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
@@ -18,6 +19,15 @@ Provide a surrogate or placeholder for another object to control access to it.
 Envoy Extraordinary is a Proxy. 
 He is an accredited messenger, agent, or representative who is sent by one government to represent it in dealing with another government.
 
+
+
+
+
+###  <a id="Image"></a>Image 
+
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/proxy.jpg "The Envoy Extraordinary")  
+###### By John Watkins (Kenwoon Mengyee, Burmese ambassador, The Envoy Extraordinary and Minister Plenipotentiary) [Public domain or Public domain], <a href="https://commons.wikimedia.org/wiki/File%3AKinwun_Mingyi.jpg">via Wikimedia Commons</a>
 
 
 

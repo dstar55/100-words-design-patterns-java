@@ -6,6 +6,7 @@ tag: pattern
 ---
 
 * [Story](#Story)
+* [Image](#Image)
 * [UML](#UML)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
@@ -21,6 +22,16 @@ Taxi drivers communicate with the Mediator(Radio Taxi Call Center), rather than 
 When customer needs a taxi, he calls Radio Taxi Call Center. 
 All taxis have a GPS unit which tells where the taxi is present right now, also there is a central information system which tells which taxi is available to serve the customer. 
 The call center will contact the available taxi nearest to customer’s location and send them to serve the customer.
+
+
+
+
+
+###  <a id="Image"></a>Image 
+
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/mediator.jpg "Call Center Taxis Libres")  
+###### Call Center Taxis Libres,By Jquemba (Own work) [Public domain], via Wikimedia Commons 
 
 
 

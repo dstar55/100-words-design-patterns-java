@@ -6,6 +6,7 @@ tag: pattern
 ---
 
 * [Story](#Story)
+* [Image](#Image)
 * [UML](#UML)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
@@ -19,6 +20,15 @@ Steering wheel is an example of the Bridge.
 The purpose of a steering wheel is to transmit  driver's input to the steered wheels in order to dynamically change direction of the vehicle.
 There are different implementations of the steering wheels used in cars, buses, tracks, tractors and formulas.
 
+
+
+
+
+###  <a id="Image"></a>Image 
+
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/bridge.jpg "Bridge")  
+###### By Liftarn (Own work) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3A1924Stanley740-interior.jpg">via Wikimedia Commons</a>
 
 
 

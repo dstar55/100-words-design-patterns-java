@@ -6,6 +6,7 @@ tag: pattern
 ---
 
 * [Story](#Story)
+* [Image](#Image)
 * [UML](#UML)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
@@ -21,6 +22,16 @@ the transaction would commit and would be final.
 And if any operation fails, then the transaction would fail and all operations would rollback and leave the database as if nothing has happened.
 
 This mechanism of rolling back uses the memento design pattern. 
+
+
+
+
+
+###  <a id="Image"></a>Image 
+
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/memento.jpg "States of transaction")  
+###### States of transaction 
 
 
 
