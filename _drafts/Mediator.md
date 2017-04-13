@@ -30,7 +30,7 @@ The call center will contact the available taxi nearest to customer’s location
 ###  <a id="Image"></a>Image 
 
 
-![alt text](/assets/img/mediator.jpg "Call Center Taxis Libres")  
+![alt text](/assets/img/image/mediator.jpg "Call Center Taxis Libres")  
 ###### Call Center Taxis Libres,By Jquemba (Own work) [Public domain], via Wikimedia Commons 
 
 

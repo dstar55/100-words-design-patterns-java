@@ -28,7 +28,7 @@ The same machine is used to stamp French, Italian or German cards.
 ###  <a id="Image"></a>Image 
 
 
-![alt text](/assets/img/abstractfactory.jpg "Poker Cards Back")  
+![alt text](/assets/img/image/abstractfactory.jpg "Poker Cards Back")  
 ###### <a href='https://www.pexels.com/photo/cards-poker-cards-poker-back-21827/' target='_blank'>
 Poker Cards Back</a>&nbsp;(<a rel='license' href='https://creativecommons.org/share-your-work/public-domain/cc0/' target='_blank'>CC 0</a>)
 
