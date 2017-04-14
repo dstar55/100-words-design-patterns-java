@@ -32,10 +32,11 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 
 
-###  <a id="UML"></a>UML Class Adapter
+###  <a id="UML"></a>UML
+#### Class Adapter
 [![](/assets/img/uml/classadapter.png)](/assets/img/uml/classadapter.png)
 
-###  <a id="UML"></a>UML Object Adapter
+#### Object Adapter
 [![](/assets/img/uml/objectadapter.png)](/assets/img/uml/objectadapter.png)
 
 ###  <a id="Implementation"></a>Implementation 
