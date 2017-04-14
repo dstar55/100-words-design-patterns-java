@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Iterator
 permalink: /patterns/Iterator/
 tag: pattern

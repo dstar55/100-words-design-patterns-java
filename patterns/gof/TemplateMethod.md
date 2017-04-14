@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Template Method
 permalink: /patterns/TemplateMethod/
 tag: pattern

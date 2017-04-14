@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Mediator
 permalink: /patterns/Mediator/
 tag: pattern

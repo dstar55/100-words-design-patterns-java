@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Composite
 permalink: /patterns/Composite/
 tag: pattern

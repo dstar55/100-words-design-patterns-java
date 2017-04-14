@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Bridge
 permalink: /patterns/Bridge/
 tag: pattern

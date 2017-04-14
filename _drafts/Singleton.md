@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Singleton
 permalink: /patterns/Singleton/
 tag: pattern

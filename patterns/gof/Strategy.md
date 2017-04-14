@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Strategy
 permalink: /patterns/Strategy/
 tag: pattern

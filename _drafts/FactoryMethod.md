@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Factory Method
 permalink: /patterns/FactoryMethod/
 tag: pattern

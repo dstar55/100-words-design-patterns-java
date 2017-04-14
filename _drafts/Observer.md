@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Observer
 permalink: /patterns/Observer/
 tag: pattern

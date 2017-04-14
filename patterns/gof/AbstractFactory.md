@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Abstract Factory
 permalink: /patterns/AbstractFactory/
 tag: pattern

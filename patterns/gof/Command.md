@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Command
 permalink: /patterns/Command/
 tag: pattern

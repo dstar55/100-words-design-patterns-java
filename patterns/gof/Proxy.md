@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Proxy
 permalink: /patterns/Proxy/
 tag: pattern

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Builder
 permalink: /patterns/Builder/
 tag: pattern

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Memento
 permalink: /patterns/Memento/
 tag: pattern

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Adapter
 permalink: /patterns/Adapter/
 tag: pattern
