@@ -81,26 +81,60 @@ def createPageImageSection(destFile, dict):
         destFile.write('\n\n')
         destFile.write('###  <a id="Image"></a>Image \n')
         destFile.write(dict.get(constants.DICT_KEY_PATTERN_IMAGE) + '\n')
-        #imageContent = dict.get(constants.DICT_KEY_PATTERN_IMAGE)
-        #aImageContent = imageContent.replace("https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/", "/assets/img/image/")
-        #destFile.write(aImageContent + '\n')
         destFile.write('\n')
 
 # add UML image
 def createPageUMLImageSection(destFile, dict):
     
+    destFile.write('###  <a id="UML"></a>UML\n')
+    
+    #adapter is special case, while we have two implementations for one pattern, object adapter and class adapter
+    if dict.get(constants.DICT_KEY_PATTERN_ID) == 'Adapter':            
+        # class adapter             
+        createAdapterPageUMLImageSection(destFile, 'Class Adapter', '/assets/img/uml/class' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)) 
+        
+        # object adapter
+        createAdapterPageUMLImageSection(destFile, 'Object Adapter', '/assets/img/uml/object' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME))
+    else:
+        createStandardPageUMLImageSection(destFile, dict)
+
+def createStandardPageUMLImageSection(destFile, dict):
+
     imagePath = '/assets/img/uml/' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)
-     
-    destFile.write('###  <a id="UML"></a>UML \n')
+ 
     destFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            
     destFile.write('\n')
-
+        
+# add adapter UML -> special case
+def createAdapterPageUMLImageSection(destFile, title, imagePath):
+    
+    destFile.write('#### ' + title + '\n')
+    destFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            
+    destFile.write('\n')
+    
 # add implementation details, source code
 def createPageImplementationSection(destFile, dict):
     
     destFile.write('###  <a id="Implementation"></a>Implementation \n\n')
-    sourcePath = constants.LOCAL_MASTER_REPOSITORY_PATH + dict.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME) + '/*.java'
-       
+    
+    #adapter is special case, while we have two implementations for one pattern, object adapter and class adapter
+    if dict.get(constants.DICT_KEY_PATTERN_ID) == 'Adapter':
+        
+        destFile.write('#### Class Adapter\n')
+        sourcePath = constants.LOCAL_MASTER_REPOSITORY_PATH + dict.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME) + '/clazz/*.java'
+        createStandardPageImplementationSection(destFile, dict, sourcePath)
+
+        destFile.write('#### Object Adapter\n')
+        sourcePath = constants.LOCAL_MASTER_REPOSITORY_PATH + dict.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME) + '/object/*.java'
+        createStandardPageImplementationSection(destFile, dict, sourcePath)
+
+    else:
+        sourcePath = constants.LOCAL_MASTER_REPOSITORY_PATH + dict.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME) + '/*.java'
+        createStandardPageImplementationSection(destFile, dict, sourcePath)
+
+# create standard implementation content  
+def createStandardPageImplementationSection(destFile, dict, sourcePath):
+               
     # declares an empty list 
     lst = [] 
     
@@ -108,14 +142,17 @@ def createPageImplementationSection(destFile, dict):
     for absoluteFileName in glob.glob(sourcePath):
                 
         fileName = absoluteFileName[(absoluteFileName.rfind('/') + 1):]
-        # append to list tuple [postion of the file, file name, absolute file path]
+        # append to list tuple [position of the file, file name, absolute file path]
         lst.append([utils.getFilePosition(dict.get(constants.DICT_KEY_PATTERN_ID), fileName), fileName, absoluteFileName])
-        #lst.append([utils.getFilePosition(dict.get(constants.DICT_KEY_PATTERN_ID), fileName), fileName])
     
     # sort a list according to file position 
     sortedList = utils.sort(lst)
     
     # create content
+    createPageImplementationSectionContent(destFile, sortedList)
+     
+# create implementation content
+def createPageImplementationSectionContent(destFile, sortedList):
     for item in sortedList:
                 
         # item[1] is file name
@@ -126,7 +163,7 @@ def createPageImplementationSection(destFile, dict):
             destFile.write(line)
         
         destFile.write('```\n\n')
-            
+                
 #add usage
 def createPageUsageSection(destFile, dict):
     

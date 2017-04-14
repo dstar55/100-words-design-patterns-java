@@ -13,7 +13,7 @@ orderedPatternFilesDict = {"Singleton":( "Singleton.java",), # note that if ther
                             "Builder":( "Builder.java", "ConcreteBuilder.java", "Product.java", "Director.java" ),
                             "FactoryMethod":( "Product.java", "ConcreteProductA.java", "ConcreteProductB.java", "Creator.java", "ConcreteCreator.java"),
                             "AbstractFactory":( "AbstractProductA.java", "ProductA1.java",  "ProductA2.java", "AbstractProductB.java", "ProductB1.java", "ProductB2.java", "AbstractFactory.java" ,  "ConcreteFactory1.java", "ConcreteFactory2.java" ),
-                            "Adapter":(),
+                            "Adapter":("Target.java", "Adaptee.java", "Adapter.java"), # note, both ClassDapter and ObjectAdapter have same file names with same order
                             "Bridge":("Implementor.java", "ConcreteImplementorA.java", "ConcreteImplementorB.java", "Abstraction.java", "RefinedAbstraction.java"),
                             "Composite":("Component.java", "Leaf.java", "Composite.java" ),
                             "Decorator":("Component.java", "ConcreteComponent.java", "Decorator.java", "ConcreteDecoratorA.java", "ConcreteDecoratorB.java" ),
