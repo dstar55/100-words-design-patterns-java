@@ -64,7 +64,7 @@ Martin Pettitt</a>
 
 UML: 
 
-![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/singleton.png "UML Singleton")
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/master/src/main/resources/singleton.png "UML Singleton")
 
 Source Code:
 
