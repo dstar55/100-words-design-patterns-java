@@ -29,7 +29,7 @@ A person who translates orally from one language into another.
 
 
 
-###  <a id="UML"></a>UML 
+###  <a id="UML"></a>UML
 [![](/assets/img/uml/interpreter.png)](/assets/img/uml/interpreter.png)
 
 ###  <a id="Implementation"></a>Implementation 

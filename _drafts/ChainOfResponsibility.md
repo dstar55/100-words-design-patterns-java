@@ -25,7 +25,7 @@ Correct handler of request is only known during execution of the request when re
 
 
 
-###  <a id="UML"></a>UML 
+###  <a id="UML"></a>UML
 [![](/assets/img/uml/chainofresponsibility.png)](/assets/img/uml/chainofresponsibility.png)
 
 ###  <a id="Implementation"></a>Implementation 

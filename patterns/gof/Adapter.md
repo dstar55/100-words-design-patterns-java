@@ -41,6 +41,112 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 ###  <a id="Implementation"></a>Implementation 
 
+#### Class Adapter
+#### *Target.java* 
+```java 
+package com.hundredwordsgof.adapter.clazz;
+
+/**
+ * 
+ * Target interface, defines domain-specific interface to which Adaptee will be adapted 
+ *
+ */
+public interface Target {
+
+	String request();	
+}
+```
+
+#### *Adaptee.java* 
+```java 
+package com.hundredwordsgof.adapter.clazz;
+
+/**
+ * 
+ * Adaptee class, interface which will be adapted 
+ *
+ */
+public class Adaptee {
+
+	public String specialRequest(){
+		return "specialRequest";
+	}
+}
+```
+
+#### *Adapter.java* 
+```java 
+package com.hundredwordsgof.adapter.clazz;
+
+/**
+ * 
+ * Adapter class, adapts Adaptee to the Target interface
+ *
+ */
+public class Adapter extends Adaptee implements Target {
+	
+	public String request() {
+		return this.specialRequest();
+	}
+}
+```
+
+#### Object Adapter
+#### *Target.java* 
+```java 
+package com.hundredwordsgof.adapter.object;
+
+/**
+ * 
+ * Target interface, defines domain-specific interface to which Adaptee will be adapted 
+ *
+ */
+public interface Target {
+
+	String request();	
+}
+```
+
+#### *Adaptee.java* 
+```java 
+package com.hundredwordsgof.adapter.object;
+
+/**
+ * 
+ * Adaptee class, interface which will be adapted 
+ *
+ */
+public class Adaptee {
+
+	public String specialRequest(){
+		return "specialRequest";
+	}
+}
+```
+
+#### *Adapter.java* 
+```java 
+package com.hundredwordsgof.adapter.object;
+
+/**
+ * 
+ * Adapter class, adapts Adaptee to the Target interface
+ *
+ */
+public class Adapter implements Target {
+
+  private Adaptee adaptee;
+
+  public Adapter(Adaptee adaptee) {
+    this.adaptee = adaptee;
+  }
+
+  public String request() {
+    return adaptee.specialRequest();
+  }
+}
+```
+
 ###  <a id="Usage"></a>Usage 
 
 #### *ClazzAdapterTest.java* 

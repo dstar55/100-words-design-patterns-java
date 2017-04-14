@@ -33,7 +33,7 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 
 
 
-###  <a id="UML"></a>UML 
+###  <a id="UML"></a>UML
 [![](/assets/img/uml/state.png)](/assets/img/uml/state.png)
 
 ###  <a id="Implementation"></a>Implementation 

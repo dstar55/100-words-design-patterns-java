@@ -31,7 +31,7 @@ He is an accredited messenger, agent, or representative who is sent by one gover
 
 
 
-###  <a id="UML"></a>UML 
+###  <a id="UML"></a>UML
 [![](/assets/img/uml/proxy.png)](/assets/img/uml/proxy.png)
 
 ###  <a id="Implementation"></a>Implementation 

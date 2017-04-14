@@ -25,7 +25,7 @@ At the end of the day worker go home, have a dinner and go to sleep.
 
 
 
-###  <a id="UML"></a>UML 
+###  <a id="UML"></a>UML
 [![](/assets/img/uml/templatemethod.png)](/assets/img/uml/templatemethod.png)
 
 ###  <a id="Implementation"></a>Implementation 

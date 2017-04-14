@@ -33,7 +33,7 @@ The user must choose the Strategy based on his possibilities, preferences.
 
 
 
-###  <a id="UML"></a>UML 
+###  <a id="UML"></a>UML
 [![](/assets/img/uml/strategy.png)](/assets/img/uml/strategy.png)
 
 ###  <a id="Implementation"></a>Implementation 
