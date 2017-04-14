@@ -185,8 +185,7 @@ The same machine is used to stamp French, Italian or German cards.
 * Image
 
 ![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/abstractfactory.jpg "Poker Cards Back")  
-###### <a href='https://www.pexels.com/photo/cards-poker-cards-poker-back-21827/' target='_blank'>
-Poker Cards Back</a>&nbsp;(<a rel='license' href='https://creativecommons.org/share-your-work/public-domain/cc0/' target='_blank'>CC 0</a>)
+###### Poker Cards Back&nbsp;(<a rel='license' href='https://creativecommons.org/share-your-work/public-domain/cc0/' target='_blank'>CC 0</a>)
 
 
 
