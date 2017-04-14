@@ -35,12 +35,12 @@ orderedPatternFilesDict = {"Singleton":( "Singleton.java",), # note that if ther
 
 # update dictionary from arrayList(contains dictionaries)
 # first key is used to find correct dictionary(based on patternId) in a arrayList, second key is used to find a key in dictionary
-def updateDict(arrayList, dictKey, key, value):
-    for dict in arrayList:
+def updateDict(dictsArray, dictKey, key, value):
+    for dict in dictsArray:
         if dictKey == dict.get(constants.DICT_KEY_PATTERN_ID):
             dict.update({key : value})
     
-    return arrayList
+    return dictsArray
     
 # extract sub string between two chars in a string    
 def extractSubStringBetween(sourceStr, firstChar, secondChar):

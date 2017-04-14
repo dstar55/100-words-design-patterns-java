@@ -16,7 +16,7 @@ def parseReadme(readmeLocalPath):
     
     isInPatternDescriptionSection = False
     isInStory = False    
-    arrayList = []        
+    dictsArray = []        
     currentPatternID = ""
     currentStory = ""
     
@@ -34,7 +34,7 @@ def parseReadme(readmeLocalPath):
             # extracts substring between #) -> pattern id + updates dictionary
             dict.update({constants.DICT_KEY_PATTERN_ID: utils.extractSubStringBetween(strLine, '\#', '\)')})            
             
-            arrayList.append(dict)
+            dictsArray.append(dict)
         
         # find a description paragraph for each pattern
         # ##### <a id="Singleton"></a>Singleton
@@ -52,11 +52,11 @@ def parseReadme(readmeLocalPath):
             #  split the story text into two chunks, first is story part and second is image part if exists
             if "* Image" in currentStory:
                 currentStorySplited = currentStory.split("* Image")
-                utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_STORY, currentStorySplited[0])
-                utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_IMAGE, currentStorySplited[1])
+                utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_STORY, currentStorySplited[0])
+                utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_IMAGE, currentStorySplited[1])
             else:               
                 # update dictionary with story                                    
-                utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_STORY, currentStory)                    
+                utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_STORY, currentStory)                    
                 
             # clean current text
             currentStory = ""
@@ -74,15 +74,15 @@ def parseReadme(readmeLocalPath):
         if isInPatternDescriptionSection == True and isInStory == False and "alt text" in strLine:
             
             # update dictionary with pattern UML file name
-            utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_UML_FILE_NAME, currentPatternID.lower() + ".png")
+            utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_UML_FILE_NAME, currentPatternID.lower() + ".png")
                    
                    
         # find source code, data is in paragraph which contains substring "Source Code"
         if isInPatternDescriptionSection == True and isInStory == False and "Source Code" in strLine:
 
             # update dictionary with PATTERN_SOURCE_CODE_PACKAGE_NAME and DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME 
-            utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
-            utils.updateDict(arrayList, currentPatternID, constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_TEST_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
+            utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
+            utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_TEST_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
                                         
              
-    return arrayList
+    return dictsArray

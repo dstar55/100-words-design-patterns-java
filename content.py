@@ -11,8 +11,8 @@ from fileinput import filename
 
 
 # creates content for every element(dictionary which contains pattern details) in list 
-def createContent(arrayList):
-    #print arrayList
+def createContent(dictsArray):
+    #print dictsArray
     
     print "Generating content ..."
     # create page files for each pattern and put that file under LOCAL_GH_PAGES_REPOSITORY_PATH/_drafts
@@ -23,7 +23,7 @@ def createContent(arrayList):
         os.mkdir(filePath)
        
     # loop over elements of the list and create content file(jekyll page) for each element(pattern)    
-    for dict in arrayList:
+    for dict in dictsArray:
         fileName = filePath + dict.get(constants.DICT_KEY_PATTERN_ID) + ".md"
         try:
             with open(fileName, 'w') as destFile:
@@ -81,12 +81,15 @@ def createPageImageSection(destFile, dict):
         destFile.write('\n\n')
         destFile.write('###  <a id="Image"></a>Image \n')
         destFile.write(dict.get(constants.DICT_KEY_PATTERN_IMAGE) + '\n')
+        #imageContent = dict.get(constants.DICT_KEY_PATTERN_IMAGE)
+        #aImageContent = imageContent.replace("https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/", "/assets/img/image/")
+        #destFile.write(aImageContent + '\n')
         destFile.write('\n')
 
 # add UML image
 def createPageUMLImageSection(destFile, dict):
     
-    imagePath = '/assets/img/' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)
+    imagePath = '/assets/img/uml/' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)
      
     destFile.write('###  <a id="UML"></a>UML \n')
     destFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            

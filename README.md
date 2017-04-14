@@ -13,3 +13,8 @@ Test:
 $ python test_utils.py
 ``` 
  
+Run all tests:
+ 
+```
+$ python -m unittest discover .
+``` 

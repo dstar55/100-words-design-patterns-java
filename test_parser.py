@@ -15,17 +15,14 @@ class TestParser(unittest.TestCase):
 
     def test_parseReadme(self):
         
-        # parse method returns arrayList which is 
-        arrayList = parser.parseReadme('./TestReadme.md')
-        
-        for element in arrayList:
-            print element.get(constants.DICT_KEY_PATTERN_IMAGE)
-            
-        # check the number of elements in arrayList        
-        self.assertEqual(23, len(arrayList))
+        # parse method returns dictsArray which is 
+        dictsArray = parser.parseReadme('./TestReadme.md')
+                    
+        # check the number of elements in dictsArray        
+        self.assertEqual(23, len(dictsArray))
         
         # first member of the array is singleton dictionary
-        singletonContent = arrayList[0] 
+        singletonContent = dictsArray[0] 
         
         # check Singleton
         self.assertEqual("Singleton", singletonContent.get(constants.DICT_KEY_PATTERN_ID))        
@@ -35,9 +32,9 @@ class TestParser(unittest.TestCase):
         self.assertEqual("singleton.png", singletonContent.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME))        
         self.assertEqual("/src/main/java/com/hundredwordsgof/singleton", singletonContent.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME))
         self.assertEqual("/src/test/java/com/hundredwordsgof/singleton", singletonContent.get(constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME))
-
+        
         # template method: image is not defined
-        templateMethodContent = arrayList[21]
+        templateMethodContent = dictsArray[21]
 
         # check TemplateMethod
         self.assertEqual("TemplateMethod", templateMethodContent.get(constants.DICT_KEY_PATTERN_ID))        
@@ -48,7 +45,7 @@ class TestParser(unittest.TestCase):
         self.assertEqual(True, (templateMethodContent.get(constants.DICT_KEY_PATTERN_IMAGE) == None))        
         self.assertEqual("/src/main/java/com/hundredwordsgof/templatemethod", templateMethodContent.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME))
         self.assertEqual("/src/test/java/com/hundredwordsgof/templatemethod", templateMethodContent.get(constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME))
-        
+               
         
 if __name__ == '__main__':
     unittest.main()         

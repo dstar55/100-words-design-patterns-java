@@ -13,6 +13,7 @@ import parser
 import content
 import deletedir
 import publish
+import decorator
 import shutil 
 import os
 import argparse
@@ -48,7 +49,7 @@ def main_clone():
     
 # parse readme.md from master and create a content    
 def main_generate():
-    content.createContent(parser.parseReadme(constants.LOCAL_MASTER_REPOSITORY_PATH + constants.SLASH + constants.README_FILE_NAME))
+    content.createContent(decorator.decorate(parser.parseReadme(constants.LOCAL_MASTER_REPOSITORY_PATH + constants.SLASH + constants.README_FILE_NAME)))
     
 def main_publish():
     publish.publish()
