@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Chain Of Responsibility
 permalink: /patterns/ChainOfResponsibility/
 tag: pattern

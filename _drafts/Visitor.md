@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Visitor
 permalink: /patterns/Visitor/
 tag: pattern

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Interpreter
 permalink: /patterns/Interpreter/
 tag: pattern

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: State
 permalink: /patterns/State/
 tag: pattern

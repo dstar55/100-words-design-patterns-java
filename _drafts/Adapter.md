@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Adapter
 permalink: /patterns/Adapter/
 tag: pattern
@@ -33,7 +33,7 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 
 ###  <a id="UML"></a>UML 
-[![](/assets/img/uml/adapter.png)](/assets/img/uml/adapter.png)
+[![](/assets/img/uml/classadapter.png)](/assets/img/uml/classadapter.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

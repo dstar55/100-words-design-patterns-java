@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Prototype
 permalink: /patterns/Prototype/
 tag: pattern

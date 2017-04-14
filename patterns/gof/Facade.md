@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Facade
 permalink: /patterns/Facade/
 tag: pattern
