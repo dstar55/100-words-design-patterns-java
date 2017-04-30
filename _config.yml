@@ -9,7 +9,7 @@ baseurl: "/patterns" # the subpath of your site, e.g. /blog
 my_setting: "/"
 
 url: "https://dstar55.github.io" # the base hostname & protocol for your site
-twitter_username: design-patterns-strories
+twitter_username: PatternsStories
 github_username:  dstar55
 
 permalink: :categories/:title
