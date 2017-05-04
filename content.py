@@ -215,7 +215,8 @@ def createSlide(destFile, dict):
     
     print "Generating slide for ... " + str(destFile.name)
     
-    destFile.write(createSlideHeaderSection(dict))    
+    destFile.write(createSlideHeaderSection(dict))
+    destFile.write(createSlideStorySection(dict))    
     #createPageTableOfContentSection(destFile)
     #createPageStorySection(destFile, dict)
     #createPageImageSection(destFile, dict)
@@ -223,18 +224,22 @@ def createSlide(destFile, dict):
     #createPageImplementationSection(destFile, dict)        
     #createPageUsageSection(destFile, dict)
 
-# add page header
+# add slide header
 def createSlideHeaderSection(dict):
     
-    header = "# " + dict.get(constants.DICT_KEY_PATTERN_ID) 
+    header = "# " + dict.get(constants.DICT_KEY_PATTERN_NAME) 
     header = header + "\n\n"
     header = header + "---"
     header = header + "\n\n"
     return header
 
-    #destFile.write('---\n')
-    #destFile.write('layout: page\n')
-    #destFile.write('title: ' + dict.get(constants.DICT_KEY_PATTERN_NAME) + '\n')
-    #destFile.write('permalink: /patterns/' + dict.get(constants.DICT_KEY_PATTERN_ID) + '/\n')
-    #destFile.write('tag: pattern\n')
-    #destFile.write('---\n\n')
+# add slide story
+def createSlideStorySection(dict):
+    
+    header = "### Story" 
+    header = header + "\n\n"
+    header = "# " + dict.get(constants.DICT_KEY_PATTERN_STORY)
+    header = header + "\n\n"
+    header = header + "---"
+    header = header + "\n\n"
+    return header

@@ -30,7 +30,7 @@ class TestDecorator(unittest.TestCase):
         self.assertEqual(True, ("https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/singleton.jpg" in singletonContent.get(constants.DICT_KEY_PATTERN_IMAGE)))
                 
         # lets decorate  
-        dictsArray = decorator.decorate(dictsArray)
+        dictsArray = decorator.decorateGHPagesContent(dictsArray)
                     
         # number of elements in dictsArray should remain the same        
         self.assertEqual(23, len(dictsArray))
