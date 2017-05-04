@@ -23,10 +23,11 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description="This is a script for publishing content for www.design-pattern-stories.com site." \
                                      "User can clone necessary repositories, generate site content, publish content to the live site and clean all generated data.@" \
-                                     "It is expected that user follows proper orders in action: 1. clone, 2. generate, 3. publish, 4. delete")
+                                     "It is expected that user follows proper orders in action: 1. clone, 2. generate gh-pages, 3. publish, 4. generate slide 5. delete")
     parser.add_argument("-c","--clone", action='store_true', help="clone necessary github repositories")
     parser.add_argument("-g", "--generate", action='store_true', help="generate content for site: www.design-pattern-stories.com")
     parser.add_argument("-p", "--publish", action='store_true', help="publish content to the live site: www.design-pattern-stories.com")
+    parser.add_argument("-s", "--slides", action='store_true', help="generates slides content for https://gitpitch.com/dstar55/100-words-design-patterns-java")
     parser.add_argument("-d", "--delete", action='store_true', help="clean all generated data")
     
     args = parser.parse_args()
@@ -36,6 +37,8 @@ def main():
         main_generate()    
     elif args.publish:
         main_publish()
+    elif args.slides:
+        main_slides()        
     elif args.delete:
         main_delete()
     else:
@@ -47,9 +50,14 @@ def main_clone():
     clone.cloneRepo(constants.REMOTE_REPOSITORY_PATH, constants.GH_PAGES_BRANCH, constants.LOCAL_GH_PAGES_REPOSITORY_PATH)
     clone.cloneRepo(constants.REMOTE_REPOSITORY_PATH, constants.GH_PAGES_RESOURCES_BRANCH, constants.LOCAL_GH_PAGES_RESOURCES_REPOSITORY_PATH)
     
-# parse readme.md from master and create a content    
+# parse readme.md from master and creates content for gh-pages branch which is in fact site: www.design-pattern-stories.com     
 def main_generate():
-    content.createContent(decorator.decorate(parser.parseReadme(constants.LOCAL_MASTER_REPOSITORY_PATH + constants.SLASH + constants.README_FILE_NAME)))
+    content.createGHPagesContent(decorator.decorateGHPagesContent(parser.parseReadme(constants.LOCAL_MASTER_REPOSITORY_PATH + constants.SLASH + constants.README_FILE_NAME)))
+
+# parse readme.md from master and creates content https://gitpitch.com/dstar55/100-words-design-patterns-java     
+def main_slides():
+    print "slides ..."
+    content.createSlidesContent(parser.parseReadme(constants.LOCAL_MASTER_REPOSITORY_PATH + constants.SLASH + constants.README_FILE_NAME))
     
 def main_publish():
     publish.publish()

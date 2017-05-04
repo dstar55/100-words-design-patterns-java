@@ -18,6 +18,7 @@ LOCAL_GH_PAGES_REPOSITORY_PATH = "./gh-pages"
 LOCAL_GH_PAGES_RESOURCES_REPOSITORY_PATH = "./gh-pages-resources"
 
 DRAFTS_FOLDER = "_drafts"
+COURSE_FOLDER = "course"
 
 DICT_KEY_PATTERN_ID = "patternId"
 DICT_KEY_PATTERN_NAME = "patternName"

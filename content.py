@@ -10,8 +10,9 @@ import utils
 from fileinput import filename
 
 
-# creates content for every element(dictionary which contains pattern details) in list 
-def createContent(dictsArray):
+# creates content for the gh-pages branch
+# for every element(dictionary which contains pattern details) in list markdown file is created with appropriate structure under the /gh-pages/_drafts/ folder(branch:gh-pages) 
+def createGHPagesContent(dictsArray):
     #print dictsArray
     
     print "Generating content ..."
@@ -33,6 +34,31 @@ def createContent(dictsArray):
             print e    
     
     print "Generating content ... done"
+
+# creates slides for https://gitpitch.com/dstar55/100-words-design-patterns-java
+# for every element(dictionary which contains pattern details) in list markdown file is created with appropriate structure under the /course folder(branch:master) 
+def createSlidesContent(dictsArray):
+    #print dictsArray
+    
+    print "Generating slides content ..."
+    # create slide files for each pattern and put that file under MASTER_BRANCH/course
+    filePath = constants.LOCAL_MASTER_REPOSITORY_PATH + '/' + constants.COURSE_FOLDER + '/'
+    
+    # check if folder exists otherwise make it
+    if not os.path.exists(filePath):
+        os.mkdir(filePath)
+       
+    # loop over elements of the list and create content file(jekyll page) for each element(pattern)    
+    for dict in dictsArray:
+        fileName = filePath + dict.get(constants.DICT_KEY_PATTERN_ID) + ".md"
+        try:
+            with open(fileName, 'w') as destFile:
+                createSlide(destFile, dict)
+                
+        except IOError as e:
+            print e    
+    
+    print "Generating slides content ... done"
         
 # create a content for one page(pattern)
 def createPage(destFile, dict):
@@ -47,7 +73,7 @@ def createPage(destFile, dict):
     createPageImplementationSection(destFile, dict)        
     createPageUsageSection(destFile, dict)
 
-# add header
+# add page header
 def createPageHeaderSection(destFile, dict):
     
     destFile.write('---\n')
@@ -57,7 +83,7 @@ def createPageHeaderSection(destFile, dict):
     destFile.write('tag: pattern\n')
     destFile.write('---\n\n')
 
-#add content links
+#add page content links
 def createPageTableOfContentSection(destFile):
     
     destFile.write('* [Story](#Story)\n')
@@ -66,7 +92,7 @@ def createPageTableOfContentSection(destFile):
     destFile.write('* [Implementation](#Implementation)\n')
     destFile.write('* [Usage](#Usage)\n')
 
-# add content -> story
+# add page content -> story
 def createPageStorySection(destFile, dict):
     
     destFile.write('\n\n')
@@ -74,7 +100,7 @@ def createPageStorySection(destFile, dict):
     destFile.write(dict.get(constants.DICT_KEY_PATTERN_STORY) + '\n')
     destFile.write('\n')
 
-# add content -> image
+# add page content -> image
 def createPageImageSection(destFile, dict):
     
     if dict.get(constants.DICT_KEY_PATTERN_IMAGE) != None:
@@ -83,7 +109,7 @@ def createPageImageSection(destFile, dict):
         destFile.write(dict.get(constants.DICT_KEY_PATTERN_IMAGE) + '\n')
         destFile.write('\n')
 
-# add UML image
+# add page UML image
 def createPageUMLImageSection(destFile, dict):
     
     destFile.write('###  <a id="UML"></a>UML\n')
@@ -98,6 +124,7 @@ def createPageUMLImageSection(destFile, dict):
     else:
         createStandardPageUMLImageSection(destFile, dict)
 
+# add page standard UML
 def createStandardPageUMLImageSection(destFile, dict):
 
     imagePath = '/assets/img/uml/' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)
@@ -105,14 +132,14 @@ def createStandardPageUMLImageSection(destFile, dict):
     destFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            
     destFile.write('\n')
         
-# add adapter UML -> special case
+# add page adapter UML -> special case
 def createAdapterPageUMLImageSection(destFile, title, imagePath):
     
     destFile.write('#### ' + title + '\n')
     destFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            
     destFile.write('\n')
     
-# add implementation details, source code
+# add page implementation details, source code
 def createPageImplementationSection(destFile, dict):
     
     destFile.write('###  <a id="Implementation"></a>Implementation \n\n')
@@ -132,7 +159,7 @@ def createPageImplementationSection(destFile, dict):
         sourcePath = constants.LOCAL_MASTER_REPOSITORY_PATH + dict.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME) + '/*.java'
         createStandardPageImplementationSection(destFile, dict, sourcePath)
 
-# create standard implementation content  
+# create page standard implementation content  
 def createStandardPageImplementationSection(destFile, dict, sourcePath):
                
     # declares an empty list 
@@ -151,7 +178,7 @@ def createStandardPageImplementationSection(destFile, dict, sourcePath):
     # create content
     createPageImplementationSectionContent(destFile, sortedList)
      
-# create implementation content
+# create page implementation content
 def createPageImplementationSectionContent(destFile, sortedList):
     for item in sortedList:
                 
@@ -164,7 +191,7 @@ def createPageImplementationSectionContent(destFile, sortedList):
         
         destFile.write('```\n\n')
                 
-#add usage
+#add page usage
 def createPageUsageSection(destFile, dict):
     
     destFile.write('###  <a id="Usage"></a>Usage \n\n')
@@ -183,3 +210,31 @@ def createPageUsageSection(destFile, dict):
 
     
 
+# create a content for one slidee(pattern)
+def createSlide(destFile, dict):
+    
+    print "Generating slide for ... " + str(destFile.name)
+    
+    destFile.write(createSlideHeaderSection(dict))    
+    #createPageTableOfContentSection(destFile)
+    #createPageStorySection(destFile, dict)
+    #createPageImageSection(destFile, dict)
+    #createPageUMLImageSection(destFile, dict)
+    #createPageImplementationSection(destFile, dict)        
+    #createPageUsageSection(destFile, dict)
+
+# add page header
+def createSlideHeaderSection(dict):
+    
+    header = "# " + dict.get(constants.DICT_KEY_PATTERN_ID) 
+    header = header + "\n\n"
+    header = header + "---"
+    header = header + "\n\n"
+    return header
+
+    #destFile.write('---\n')
+    #destFile.write('layout: page\n')
+    #destFile.write('title: ' + dict.get(constants.DICT_KEY_PATTERN_NAME) + '\n')
+    #destFile.write('permalink: /patterns/' + dict.get(constants.DICT_KEY_PATTERN_ID) + '/\n')
+    #destFile.write('tag: pattern\n')
+    #destFile.write('---\n\n')
