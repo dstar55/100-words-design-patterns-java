@@ -27,7 +27,7 @@ Regardless of who that person is the title, "Men's 100 meters world record holde
 ###  <a id="Image"></a>Image 
 
 
-![alt text](/assets/img/image/singleton.jpg "Usain Bolt, Men's 100 meters world record holder")  
+![alt text](http://www.design-patterns-stories.com/assets/img/image/singleton.jpg "Usain Bolt, Men's 100 meters world record holder")  
 ###### Brick Lane Graffiti Usain Bolt&nbsp;(<a rel='license' href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>CC BY 2.0</a>)&nbsp;by&nbsp;<a xmlns:cc='http://creativecommons.org/ns#' rel='cc:attributionURL' property='cc:attributionName' href='https://www.flickr.com/people/mdpettitt/' target='_blank'>Martin Pettitt</a>
 
 

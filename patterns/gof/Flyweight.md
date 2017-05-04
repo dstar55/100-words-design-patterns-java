@@ -26,7 +26,7 @@ Database normalization is flyweight. Normalisation, is the process of organizing
 ###  <a id="Image"></a>Image 
 
 
-![alt text](/assets/img/image/flyweight.jpg "Database Normalization")  
+![alt text](http://www.design-patterns-stories.com/assets/img/image/flyweight.jpg "Database Normalization")  
 ###### By 04hutts (Own work) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3ANormalFormDiagram.png">via Wikimedia Commons</a>
 
 

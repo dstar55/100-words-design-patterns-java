@@ -27,7 +27,7 @@ disparate set of elements, some with prices and others that needs to be weighted
 ###  <a id="Image"></a>Image 
 
 
-![alt text](/assets/img/image/visitor.jpg "Cashier in Supermarket")  
+![alt text](http://www.design-patterns-stories.com/assets/img/image/visitor.jpg "Cashier in Supermarket")  
 ###### Cashier in Supermarket, CC0 Public Domain
 
 

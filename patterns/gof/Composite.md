@@ -27,7 +27,7 @@ A brick is a basic object, but on a same time brick is a container which can hol
 ###  <a id="Image"></a>Image 
 
 
-![alt text](/assets/img/image/composite.jpg "Composite")  
+![alt text](http://www.design-patterns-stories.com/assets/img/image/composite.jpg "Composite")  
 ###### By Priwo (photo taken by de:Benutzer:Priwo) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3ALEGO-01.jpg">via Wikimedia Commons</a>
 
 

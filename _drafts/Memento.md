@@ -30,7 +30,7 @@ This mechanism of rolling back uses the memento design pattern.
 ###  <a id="Image"></a>Image 
 
 
-![alt text](/assets/img/image/memento.jpg "States of transaction")  
+![alt text](http://www.design-patterns-stories.com/assets/img/image/memento.jpg "States of transaction")  
 ###### States of transaction 
 
 

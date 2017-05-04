@@ -31,7 +31,7 @@ This is a typical example for Facade.
 ###  <a id="Image"></a>Image 
 
 
-![alt text](/assets/img/image/facade.jpg "Wedding Event Management")  
+![alt text](http://www.design-patterns-stories.com/assets/img/image/facade.jpg "Wedding Event Management")  
 ###### By WeMaxx1248 (Own work) [<a href="http://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File%3AEvent_management_in_pune.jpg">via Wikimedia Commons</a>
 
 
