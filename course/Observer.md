@@ -1,8 +1,5 @@
 # Observer
-
----
-
-### Story 
+---### Story 
 
 
 Keep me updated.
@@ -12,6 +9,4 @@ A newsletter is a regularly distributed publication that is generally about one 
 Subscribers can subscribe or unsubscribe to the newsletters.
 
 
-
 ---
-

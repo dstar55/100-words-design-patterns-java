@@ -1,8 +1,5 @@
 # Bridge
-
----
-
-### Story 
+---### Story 
 
 
 Decouple an abstraction from its implementation so that the two can vary independently.
@@ -12,6 +9,4 @@ The purpose of a steering wheel is to transmit  driver's input to the steered wh
 There are different implementations of the steering wheels used in cars, buses, tracks, tractors and formulas.
 
 
-
 ---
-

@@ -1,8 +1,5 @@
 # State
-
----
-
-### Story 
+---### Story 
 
 
 Behavior depends on its state.
@@ -13,6 +10,4 @@ Partly the result of hormonal fluctuations and partly the physical strain of car
 search for ways to alleviate swollen ankles, gasp for breath after climbing a few stairs, and marvel at how quickly their nails grow.
 
 
-
 ---
-

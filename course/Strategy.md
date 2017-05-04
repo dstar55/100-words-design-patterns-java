@@ -1,8 +1,5 @@
 # Strategy
-
----
-
-### Story 
+---### Story 
 
 
 Select an algorithm at runtime.
@@ -13,6 +10,4 @@ Any of these payment options will pay items in Shopping Cart, and they can be us
 The user must choose the Strategy based on his possibilities, preferences.
 
 
-
 ---
-

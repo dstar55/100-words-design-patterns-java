@@ -1,8 +1,5 @@
 # Chain Of Responsibility
-
----
-
-### Story 
+---### Story 
 
 
 The Chain of Responsibility allows an object to send a command without knowing which object will receive and handle it. 
@@ -15,6 +12,4 @@ Correct handler of request is only known during execution of the request when re
 
 
 
-
 ---
-

@@ -1,8 +1,5 @@
 # Composite
-
----
-
-### Story 
+---### Story 
 
 
 Compose objects into tree structures to represent part-whole hierarchies. 
@@ -12,6 +9,4 @@ Lego brick represents Composite pattern.
 A brick is a basic object, but on a same time brick is a container which can hold other bricks in order to construct complex objects.
 
 
-
 ---
-

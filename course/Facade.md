@@ -1,8 +1,5 @@
 # Facade
-
----
-
-### Story 
+---### Story 
 
 
 Facade hides the complexity of the system and provides an interface to the client from where the client can access the system.
@@ -16,6 +13,4 @@ If this is to much for you than you can find event manager which will organize e
 This is a typical example for Facade. 
 
 
-
 ---
-

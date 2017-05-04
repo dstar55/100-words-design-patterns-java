@@ -1,8 +1,5 @@
 # Memento
-
----
-
-### Story 
+---### Story 
 
 
 Helps to restore an object’s state to it previous state.
@@ -15,6 +12,4 @@ And if any operation fails, then the transaction would fail and all operations w
 This mechanism of rolling back uses the memento design pattern. 
 
 
-
 ---
-
