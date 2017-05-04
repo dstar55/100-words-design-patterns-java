@@ -1,7 +1,5 @@
 # Singleton
 
-Singleton
-
 ---
 
 ### Story
