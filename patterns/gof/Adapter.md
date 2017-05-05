@@ -34,10 +34,10 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 ###  <a id="UML"></a>UML
 #### Class Adapter
-[![](/assets/img/uml/classadapter.png)](/assets/img/uml/classadapter.png)
+[![](/assets/img/uml/classhttp://www.design-patterns-stories.com/assets/img/uml/adapter.png)](/assets/img/uml/classhttp://www.design-patterns-stories.com/assets/img/uml/adapter.png)
 
 #### Object Adapter
-[![](/assets/img/uml/objectadapter.png)](/assets/img/uml/objectadapter.png)
+[![](/assets/img/uml/objecthttp://www.design-patterns-stories.com/assets/img/uml/adapter.png)](/assets/img/uml/objecthttp://www.design-patterns-stories.com/assets/img/uml/adapter.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

@@ -32,7 +32,7 @@ The spoilers do not change the car itself, but adds additional functionality whi
 
 
 ###  <a id="UML"></a>UML
-[![](/assets/img/uml/decorator.png)](/assets/img/uml/decorator.png)
+[![](http://www.design-patterns-stories.com/assets/img/uml/decorator.png)](http://www.design-patterns-stories.com/assets/img/uml/decorator.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

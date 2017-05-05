@@ -31,7 +31,7 @@ Sheep Dolly is the first mammal to be cloned, so Dolly is a duplicate.
 
 
 ###  <a id="UML"></a>UML
-[![](/assets/img/uml/prototype.png)](/assets/img/uml/prototype.png)
+[![](http://www.design-patterns-stories.com/assets/img/uml/prototype.png)](http://www.design-patterns-stories.com/assets/img/uml/prototype.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

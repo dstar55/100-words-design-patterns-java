@@ -33,7 +33,7 @@ Subscribers can subscribe or unsubscribe to the newsletters.
 
 
 ###  <a id="UML"></a>UML
-[![](/assets/img/uml/observer.png)](/assets/img/uml/observer.png)
+[![](http://www.design-patterns-stories.com/assets/img/uml/observer.png)](http://www.design-patterns-stories.com/assets/img/uml/observer.png)
 
 ###  <a id="Implementation"></a>Implementation 
 

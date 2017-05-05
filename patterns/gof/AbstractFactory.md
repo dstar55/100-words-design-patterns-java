@@ -37,7 +37,7 @@ The same machine is used to stamp French, Italian or German cards.
 
 
 ###  <a id="UML"></a>UML
-[![](/assets/img/uml/abstractfactory.png)](/assets/img/uml/abstractfactory.png)
+[![](http://www.design-patterns-stories.com/assets/img/uml/abstractfactory.png)](http://www.design-patterns-stories.com/assets/img/uml/abstractfactory.png)
 
 ###  <a id="Implementation"></a>Implementation 
 
