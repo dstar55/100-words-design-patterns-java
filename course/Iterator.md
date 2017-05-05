@@ -1,5 +1,8 @@
 # Iterator
----### Story 
+
+---
+
+### Story 
 
 
 Book is a set of written, printed sheets bound together into a volume.
@@ -7,8 +10,9 @@ You can browse through the book page by page, or quickly jump to interesting cha
 Process of browsing is example of Iterator pattern.
 
 
----### Image 
+---
 
+### Image 
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/iterator.jpg "Iterate book page by page")  

@@ -1,12 +1,16 @@
 # Interpreter
----### Story 
+
+---
+
+### Story 
 
 
 A person who translates orally from one language into another.
 
 
----### Image 
+---
 
+### Image 
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/interpreter.jpg "Polish Sign Language - letter C")  

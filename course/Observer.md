@@ -1,5 +1,8 @@
 # Observer
----### Story 
+
+---
+
+### Story 
 
 
 Keep me updated.
@@ -9,8 +12,9 @@ A newsletter is a regularly distributed publication that is generally about one 
 Subscribers can subscribe or unsubscribe to the newsletters.
 
 
----### Image 
+---
 
+### Image 
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/observer.jpg "Newsletter")  

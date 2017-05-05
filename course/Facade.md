@@ -1,5 +1,8 @@
 # Facade
----### Story 
+
+---
+
+### Story 
 
 
 Facade hides the complexity of the system and provides an interface to the client from where the client can access the system.
@@ -13,8 +16,9 @@ If this is to much for you than you can find event manager which will organize e
 This is a typical example for Facade. 
 
 
----### Image 
+---
 
+### Image 
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/facade.jpg "Wedding Event Management")  

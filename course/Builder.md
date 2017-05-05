@@ -1,5 +1,8 @@
 # Builder
----### Story 
+
+---
+
+### Story 
 
 
 Separates the construction of a complex object from its representation so that the same construction process can create different representations.
@@ -10,8 +13,9 @@ To build a PC same construction process is used even for each part we have diffe
 Whether a customer picks a classical hard disk or SSD for storage, the construction process is the same. 
 
 
----### Image 
+---
 
+### Image 
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/builder.jpg "The Antec P180, a popular computer case, suitable for use as a silent PC")  

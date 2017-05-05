@@ -1,13 +1,17 @@
 # Factory Method
----### Story 
+
+---
+
+### Story 
 
 
 Defines an interface for creating objects, but lets subclasses decides which class to instantiate.
 Plasticine is used for children's play. Plasticine is injected into predefined molds. The class of end product(ball, toy, sculpture, cake) is determined by the mold.
 
 
----### Image 
+---
 
+### Image 
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/factorymethod.jpg "Cake molds, Han people, metal - Museum of Vietnamese History - Ho Chi Minh City")  

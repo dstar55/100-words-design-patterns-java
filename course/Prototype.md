@@ -1,5 +1,8 @@
 # Prototype
----### Story 
+
+---
+
+### Story 
 
 
 Clone itself.
@@ -7,8 +10,9 @@ Clone itself.
 Sheep Dolly is the first mammal to be cloned, so Dolly is a duplicate.
 
 
----### Image 
+---
 
+### Image 
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/prototype.jpg "Sheep Dolly")  

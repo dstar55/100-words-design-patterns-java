@@ -1,5 +1,8 @@
 # Abstract Factory
----### Story 
+
+---
+
+### Story 
 
 
 Provides an interface for creating families of related objects, without specifying concrete classes. 
@@ -10,8 +13,9 @@ Cards stamping machine is an Abstract Factory which produces a cards.
 The same machine is used to stamp French, Italian or German cards. 
 
 
----### Image 
+---
 
+### Image 
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/abstractfactory.jpg "Poker Cards Back")  

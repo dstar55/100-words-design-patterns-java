@@ -1,5 +1,8 @@
 # Mediator
----### Story 
+
+---
+
+### Story 
 
 
 Defines an object that controls how a set of objects interact.
@@ -12,8 +15,9 @@ All taxis have a GPS unit which tells where the taxi is present right now, also 
 The call center will contact the available taxi nearest to customer’s location and send them to serve the customer.
 
 
----### Image 
+---
 
+### Image 
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/mediator.jpg "Call Center Taxis Libres")  
