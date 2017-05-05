@@ -22,3 +22,7 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/adapter.png)](http://www.design-patterns-stories.com/assets/img/uml/adapter.png)
+

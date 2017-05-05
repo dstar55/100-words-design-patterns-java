@@ -23,3 +23,7 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/state.png)](http://www.design-patterns-stories.com/assets/img/uml/state.png)
+

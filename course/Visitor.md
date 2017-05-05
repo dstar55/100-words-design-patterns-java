@@ -22,3 +22,7 @@ disparate set of elements, some with prices and others that needs to be weighted
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/visitor.png)](http://www.design-patterns-stories.com/assets/img/uml/visitor.png)
+

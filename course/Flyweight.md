@@ -21,3 +21,7 @@ Database normalization is flyweight. Normalisation, is the process of organizing
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/flyweight.png)](http://www.design-patterns-stories.com/assets/img/uml/flyweight.png)
+

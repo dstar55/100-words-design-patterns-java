@@ -22,3 +22,7 @@ There are different implementations of the steering wheels used in cars, buses, 
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/bridge.png)](http://www.design-patterns-stories.com/assets/img/uml/bridge.png)
+

@@ -23,3 +23,7 @@ Whether a customer picks a classical hard disk or SSD for storage, the construct
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/builder.png)](http://www.design-patterns-stories.com/assets/img/uml/builder.png)
+

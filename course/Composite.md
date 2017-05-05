@@ -22,3 +22,7 @@ A brick is a basic object, but on a same time brick is a container which can hol
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/composite.png)](http://www.design-patterns-stories.com/assets/img/uml/composite.png)
+

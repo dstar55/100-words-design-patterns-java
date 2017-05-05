@@ -25,3 +25,7 @@ The call center will contact the available taxi nearest to customer’s location
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/mediator.png)](http://www.design-patterns-stories.com/assets/img/uml/mediator.png)
+

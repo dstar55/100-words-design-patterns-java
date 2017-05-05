@@ -23,3 +23,7 @@ The user must choose the Strategy based on his possibilities, preferences.
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/strategy.png)](http://www.design-patterns-stories.com/assets/img/uml/strategy.png)
+

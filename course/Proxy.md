@@ -21,3 +21,7 @@ He is an accredited messenger, agent, or representative who is sent by one gover
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/proxy.png)](http://www.design-patterns-stories.com/assets/img/uml/proxy.png)
+

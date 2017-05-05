@@ -21,3 +21,7 @@ Process of browsing is example of Iterator pattern.
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/iterator.png)](http://www.design-patterns-stories.com/assets/img/uml/iterator.png)
+

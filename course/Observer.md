@@ -22,3 +22,7 @@ Subscribers can subscribe or unsubscribe to the newsletters.
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/observer.png)](http://www.design-patterns-stories.com/assets/img/uml/observer.png)
+

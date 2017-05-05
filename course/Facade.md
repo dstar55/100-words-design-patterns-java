@@ -26,3 +26,7 @@ This is a typical example for Facade.
 
 
 ---
+
+### UML 
+[![](http://www.design-patterns-stories.com/assets/img/uml/facade.png)](http://www.design-patterns-stories.com/assets/img/uml/facade.png)
+
