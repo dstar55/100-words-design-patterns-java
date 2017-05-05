@@ -10,4 +10,15 @@ Cards stamping machine is an Abstract Factory which produces a cards.
 The same machine is used to stamp French, Italian or German cards. 
 
 
+---### Image 
+
+
+
+![alt text](http://www.design-patterns-stories.com/assets/img/image/abstractfactory.jpg "Poker Cards Back")  
+###### Poker Cards Back&nbsp;(<a rel='license' href='https://creativecommons.org/share-your-work/public-domain/cc0/' target='_blank'>CC 0</a>)
+
+
+
+
+
 ---

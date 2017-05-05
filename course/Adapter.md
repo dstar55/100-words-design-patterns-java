@@ -9,4 +9,12 @@ converts attributes of one electrical device or system to those of an otherwise 
 Some modify power or signal attributes, while others merely adapt the physical form of one electrical connector to another.
 
 
+---### Image 
+
+
+
+![alt text](http://www.design-patterns-stories.com/assets/img/image/adapter.jpg "Adapter")  
+###### <a href="https://commons.wikimedia.org/wiki/User:Lionel_Allorge">Lionel Allorge</a>, <a href="https://commons.wikimedia.org/wiki/File:Adaptateur_de_prise_française_en_prise_suisse_2.jpg">Adaptateur de prise française en prise suisse 2</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">CC BY-SA 3.0</a>
+
+
 ---
