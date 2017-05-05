@@ -57,7 +57,7 @@ def main_generate():
 # parse readme.md from master and creates content https://gitpitch.com/dstar55/100-words-design-patterns-java     
 def main_slides():
     print "slides ..."
-    content.createSlidesContent(parser.parseReadme(constants.LOCAL_MASTER_REPOSITORY_PATH + constants.SLASH + constants.README_FILE_NAME))
+    content.createSlidesContent(decorator.decorateGHPagesContent(parser.parseReadme(constants.LOCAL_MASTER_REPOSITORY_PATH + constants.SLASH + constants.README_FILE_NAME)))
     
 def main_publish():
     publish.publish()

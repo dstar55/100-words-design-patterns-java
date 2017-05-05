@@ -10,7 +10,7 @@ import constants
 
 class TestParser(unittest.TestCase):
     
-    def setup(self):
+    def setUp(self):
         pass
 
     def test_parseReadme(self):

@@ -9,7 +9,7 @@ import utils
 
 class TestUtils(unittest.TestCase):
     
-    def setup(self):
+    def setUp(self):
         pass
 
     def test_updateDict(self):

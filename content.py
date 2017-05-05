@@ -117,10 +117,10 @@ def createPageUMLImageSection(destFile, dict):
     #adapter is special case, while we have two implementations for one pattern, object adapter and class adapter
     if dict.get(constants.DICT_KEY_PATTERN_ID) == 'Adapter':            
         # class adapter             
-        createAdapterPageUMLImageSection(destFile, 'Class Adapter', '/assets/img/uml/class' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)) 
+        createAdapterPageUMLImageSection(destFile, 'Class Adapter', dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME).replace("adapter.png", "classadapter.png")) 
         
         # object adapter
-        createAdapterPageUMLImageSection(destFile, 'Object Adapter', '/assets/img/uml/object' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME))
+        createAdapterPageUMLImageSection(destFile, 'Object Adapter', dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME).replace("adapter.png", "objectadapter.png"))
     else:
         createStandardPageUMLImageSection(destFile, dict)
 
@@ -129,7 +129,7 @@ def createStandardPageUMLImageSection(destFile, dict):
 
     imagePath = '/assets/img/uml/' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME)
  
-    destFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            
+    destFile.write('[![](' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME) + ')](' + dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME) + ')\n')            
     destFile.write('\n')
         
 # add page adapter UML -> special case
@@ -215,31 +215,65 @@ def createSlide(destFile, dict):
     
     print "Generating slide for ... " + str(destFile.name)
     
-    destFile.write(createSlideHeaderSection(dict))
-    destFile.write(createSlideStorySection(dict))    
-    #createPageTableOfContentSection(destFile)
-    #createPageStorySection(destFile, dict)
-    #createPageImageSection(destFile, dict)
-    #createPageUMLImageSection(destFile, dict)
-    #createPageImplementationSection(destFile, dict)        
-    #createPageUsageSection(destFile, dict)
+    destFile.write(createSlideHeaderSection(dict.get(constants.DICT_KEY_PATTERN_NAME)))
+    destFile.write(createSlideStorySection(dict.get(constants.DICT_KEY_PATTERN_STORY)))    
+    destFile.write(createSlideImageSection(dict.get(constants.DICT_KEY_PATTERN_IMAGE)))
+    
+    #adapter is special case, while we have two implementations for one pattern, object adapter and class adapter
+    if dict.get(constants.DICT_KEY_PATTERN_ID) == 'Adapter':            
+        # class adapter             
+        destFile.write(createSlideUMLImageSection(dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME).replace("adapter.png", "classadapter.png"), 'Class Adapter'))
+        
+        # new slide 
+        destFile.write("---\n\n")
+        
+        # object adapter
+        destFile.write(createSlideUMLImageSection(dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME).replace("adapter.png", "objectadapter.png"), 'Object Adapter'))
+    else:
+        destFile.write(createSlideUMLImageSection(dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME), ""))
+
+    
 
 # add slide header
-def createSlideHeaderSection(dict):
+def createSlideHeaderSection(value):
     
-    header = "# " + dict.get(constants.DICT_KEY_PATTERN_NAME) 
+    header = "# " + value 
     header = header + "\n\n"
     header = header + "---"
-    header = header + "\n\n"
     return header
 
 # add slide story
-def createSlideStorySection(dict):
+def createSlideStorySection(value):
     
-    header = "### Story" 
+    header = "\n\n"
+    header = header + "### Story " 
     header = header + "\n\n"
-    header = "# " + dict.get(constants.DICT_KEY_PATTERN_STORY)
-    header = header + "\n\n"
+    header = header + value
+    header = header + "\n"
     header = header + "---"
-    header = header + "\n\n"
+
     return header
+
+def createSlideImageSection(value):
+    
+    header = "\n\n"
+    
+    if value != None:
+        header = header + "### Image " 
+        header = header + "\n"
+        header = header + value
+        header = header + "\n"
+        header = header + "---"
+    
+    return header   
+
+def createSlideUMLImageSection(value, title):
+    
+    header = "\n\n"    
+    header = header + "### UML " + title
+    header = header + "\n"
+    header = header + '[![](' + value + ')](' + value + ')\n'
+    header = header + "\n"
+    #header = header + "---"
+    
+    return header   
