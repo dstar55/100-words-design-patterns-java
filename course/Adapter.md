@@ -23,6 +23,13 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 ---
 
-### UML 
-[![](http://www.design-patterns-stories.com/assets/img/uml/adapter.png)](http://www.design-patterns-stories.com/assets/img/uml/adapter.png)
+### UML Class Adapter
+[![](http://www.design-patterns-stories.com/assets/img/uml/classadapter.png)](http://www.design-patterns-stories.com/assets/img/uml/classadapter.png)
+
+---
+
+
+
+### UML Object Adapter
+[![](http://www.design-patterns-stories.com/assets/img/uml/objectadapter.png)](http://www.design-patterns-stories.com/assets/img/uml/objectadapter.png)
 

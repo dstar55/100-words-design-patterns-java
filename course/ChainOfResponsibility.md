@@ -20,5 +20,5 @@ Correct handler of request is only known during execution of the request when re
 
 
 ### UML 
-[![](chainofresponsibility.png)](chainofresponsibility.png)
+[![](http://www.design-patterns-stories.com/assets/img/uml/chainofresponsibility.png)](http://www.design-patterns-stories.com/assets/img/uml/chainofresponsibility.png)
 

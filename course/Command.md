@@ -17,5 +17,5 @@ Car Technician will receive a request and fix a problem.
 
 
 ### UML 
-[![](command.png)](command.png)
+[![](http://www.design-patterns-stories.com/assets/img/uml/command.png)](http://www.design-patterns-stories.com/assets/img/uml/command.png)
 

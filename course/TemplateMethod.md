@@ -20,5 +20,5 @@ At the end of the day worker go home, have a dinner and go to sleep.
 
 
 ### UML 
-[![](templatemethod.png)](templatemethod.png)
+[![](http://www.design-patterns-stories.com/assets/img/uml/templatemethod.png)](http://www.design-patterns-stories.com/assets/img/uml/templatemethod.png)
 
