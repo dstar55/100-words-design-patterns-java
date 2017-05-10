@@ -1,6 +1,10 @@
 [![Build Status](https://travis-ci.org/dstar55/100-words-design-patterns-java.svg?branch=master)](https://travis-ci.org/dstar55)
 [![Coverage Status](https://coveralls.io/repos/github/dstar55/100-words-design-patterns-java/badge.svg?branch=master)](https://coveralls.io/github/dstar55/100-words-design-patterns-java?branch=master) 
 [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/dstar55/100-words-design-patterns-java/master?grs=github&t=white)
+<a href="https://scan.coverity.com/projects/dstar55-100-words-design-patterns-java">
+  <img alt="Coverity Scan Build Status"
+       src="https://scan.coverity.com/projects/12673/badge.svg"/>
+</a>
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://gus.mit-license.org/)
 
 # 100 words GoF Design Patterns in Java
