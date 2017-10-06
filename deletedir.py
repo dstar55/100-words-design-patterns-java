@@ -18,6 +18,7 @@ def removeDirs():
     removeDir(constants.LOCAL_MASTER_REPOSITORY_PATH)
     removeDir(constants.LOCAL_GH_PAGES_REPOSITORY_PATH)
     removeDir(constants.LOCAL_GH_PAGES_RESOURCES_REPOSITORY_PATH)
+    removeDir(constants.FRACTUS_FOLDER)
     print  "deleting ... done"
     
 def removeDir(sourcePath):

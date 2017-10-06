@@ -19,6 +19,7 @@ LOCAL_GH_PAGES_RESOURCES_REPOSITORY_PATH = "./gh-pages-resources"
 
 DRAFTS_FOLDER = "_drafts"
 COURSE_FOLDER = "course"
+FRACTUS_FOLDER = "fractus"
 
 DICT_KEY_PATTERN_ID = "patternId"
 DICT_KEY_PATTERN_NAME = "patternName"

@@ -60,6 +60,32 @@ def createSlidesContent(dictsArray):
     
     print "Generating slides content ... done"
         
+# creates content for the gh-pages branch
+# for every element(dictionary which contains pattern details) in list markdown file is created with appropriate structure under the /fractus/ folder(branch:gh-pages) 
+def createFractusTutorialsContent(dictsArray):
+    #print dictsArray
+    
+    print "Generating content for fractus tutorials ..."
+    # create page files for each pattern and put that file under /fractus/
+    filePath = constants.FRACTUS_FOLDER + '/' 
+    
+    # check if folder exists otherwise make it
+    if not os.path.exists(filePath):
+        print filePath
+        os.mkdir(filePath)
+       
+    # loop over elements of the list and create content file(jekyll page) for each element(pattern)    
+    for dict in dictsArray:
+        fileName = filePath + dict.get(constants.DICT_KEY_PATTERN_ID) + ".md"
+        try:
+            with open(fileName, 'w') as destFile:
+                createFractusPage(destFile, dict)
+                
+        except IOError as e:
+            print e    
+    
+    print "Generating content ... done"
+    
 # create a content for one page(pattern)
 def createPage(destFile, dict):
     
@@ -73,6 +99,19 @@ def createPage(destFile, dict):
     createPageImplementationSection(destFile, dict)        
     createPageUsageSection(destFile, dict)
 
+# create a content for one fractus page(pattern)
+def createFractusPage(destFile, dict):
+    
+    print "Generating page ... " + str(destFile.name)
+    #TODO refactor function should return string and than write into destFile(destFile should not be argument for belowed functions)
+    createFractusPageHeaderSection(destFile, dict)    
+    createPageTableOfContentSection(destFile)
+    createPageStorySection(destFile, dict)
+    createPageImageSection(destFile, dict)
+    createPageUMLImageSection(destFile, dict)
+    createPageImplementationSection(destFile, dict)        
+    createPageUsageSection(destFile, dict)
+    
 # add page header
 def createPageHeaderSection(destFile, dict):
     
@@ -83,6 +122,17 @@ def createPageHeaderSection(destFile, dict):
     destFile.write('tag: pattern\n')
     destFile.write('---\n\n')
 
+# add page header
+def createFractusPageHeaderSection(destFile, dict):
+    
+    destFile.write('---\n')
+    destFile.write('layout: tutorialpage\n')
+    destFile.write('title: ' + dict.get(constants.DICT_KEY_PATTERN_NAME) + '\n')
+    destFile.write('permalink: /tutorials/design-patterns/' + dict.get(constants.DICT_KEY_PATTERN_ID) + '/\n')
+    destFile.write('path: /tutorials/design-patterns/\n')
+    destFile.write('tags: ' + dict.get(constants.DICT_KEY_PATTERN_ID) + '\n')
+    destFile.write('---\n\n')
+    
 #add page content links
 def createPageTableOfContentSection(destFile):
     
