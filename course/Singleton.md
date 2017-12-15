@@ -31,5 +31,3 @@ Regardless of who that person is the title, "Men's 100 meters world record holde
 ---?code=src/main/java/com/hundredwordsgof/singleton/Singleton.java&lang=java&title=Singleton
 
 @[1,3-6](Present code found within any repo source file.)
-@[8-18](Without ever leaving your slideshow.)
-@[19-28](Using GitPitch code-presenting with (optional) annotations.)
