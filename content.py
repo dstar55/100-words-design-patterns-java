@@ -275,7 +275,7 @@ def createSlide(destFile, dict):
         destFile.write(createSlideUMLImageSection(dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME).replace("adapter.png", "classadapter.png"), 'Class Adapter'))
         
         # new slide 
-        destFile.write("---\n\n")
+        destFile.write("+++\n\n")
         
         # object adapter
         destFile.write(createSlideUMLImageSection(dict.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME).replace("adapter.png", "objectadapter.png"), 'Object Adapter'))
@@ -289,7 +289,7 @@ def createSlideHeaderSection(value):
     
     header = "# " + value 
     header = header + "\n\n"
-    header = header + "---"
+    header = header + "+++"
     return header
 
 # add slide story
@@ -300,7 +300,7 @@ def createSlideStorySection(value):
     header = header + "\n\n"
     header = header + value
     header = header + "\n"
-    header = header + "---"
+    header = header + "+++"
 
     return header
 
@@ -313,7 +313,7 @@ def createSlideImageSection(value):
         header = header + "\n"
         header = header + value
         header = header + "\n"
-        header = header + "---"
+        header = header + "+++"
     
     return header   
 

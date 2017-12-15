@@ -28,7 +28,7 @@ def main():
     parser.add_argument("-c","--clone", action='store_true', help="clone necessary github repositories")
     parser.add_argument("-g", "--generate", action='store_true', help="generate content for site: www.design-pattern-stories.com")
     parser.add_argument("-p", "--publish", action='store_true', help="publish content to the live site: www.design-pattern-stories.com")
-    parser.add_argument("-s", "--slides", action='store_true', help="generates slides content for https://gitpitch.com/dstar55/100-words-design-patterns-java")
+    parser.add_argument("-s", "--slides", action='store_true', help="generates initial slides content for https://gitpitch.com/dstar55/100-words-design-patterns-java")
     parser.add_argument("-f", "--fractus", action='store_true', help="generates content for https://fractus-io.github.io/tutorials/design-patterns/")
     parser.add_argument("-d", "--delete", action='store_true', help="clean all generated data")
     
