@@ -1,6 +1,6 @@
 # Chain Of Responsibility
 
----
++++
 
 ### Story 
 
@@ -15,7 +15,7 @@ Correct handler of request is only known during execution of the request when re
 
 
 
----
++++
 
 
 

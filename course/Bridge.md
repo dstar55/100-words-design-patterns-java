@@ -1,6 +1,6 @@
 # Bridge
 
----
++++
 
 ### Story 
 
@@ -12,7 +12,7 @@ The purpose of a steering wheel is to transmit  driver's input to the steered wh
 There are different implementations of the steering wheels used in cars, buses, tracks, tractors and formulas.
 
 
----
++++
 
 ### Image 
 
@@ -21,7 +21,7 @@ There are different implementations of the steering wheels used in cars, buses, 
 ###### By Liftarn (Own work) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3A1924Stanley740-interior.jpg">via Wikimedia Commons</a>
 
 
----
++++
 
 ### UML 
 [![](http://www.design-patterns-stories.com/assets/img/uml/bridge.png)](http://www.design-patterns-stories.com/assets/img/uml/bridge.png)

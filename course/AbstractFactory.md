@@ -1,6 +1,6 @@
 # Abstract Factory
 
----
++++
 
 ### Story 
 
@@ -13,7 +13,7 @@ Cards stamping machine is an Abstract Factory which produces a cards.
 The same machine is used to stamp French, Italian or German cards. 
 
 
----
++++
 
 ### Image 
 
@@ -25,7 +25,7 @@ The same machine is used to stamp French, Italian or German cards.
 
 
 
----
++++
 
 ### UML 
 [![](http://www.design-patterns-stories.com/assets/img/uml/abstractfactory.png)](http://www.design-patterns-stories.com/assets/img/uml/abstractfactory.png)

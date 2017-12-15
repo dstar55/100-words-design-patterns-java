@@ -1,6 +1,6 @@
 # Facade
 
----
++++
 
 ### Story 
 
@@ -16,7 +16,7 @@ If this is to much for you than you can find event manager which will organize e
 This is a typical example for Facade. 
 
 
----
++++
 
 ### Image 
 
@@ -25,7 +25,7 @@ This is a typical example for Facade.
 ###### By WeMaxx1248 (Own work) [<a href="http://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File%3AEvent_management_in_pune.jpg">via Wikimedia Commons</a>
 
 
----
++++
 
 ### UML 
 [![](http://www.design-patterns-stories.com/assets/img/uml/facade.png)](http://www.design-patterns-stories.com/assets/img/uml/facade.png)

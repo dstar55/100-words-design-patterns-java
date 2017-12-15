@@ -1,6 +1,6 @@
 # Template Method
 
----
++++
 
 ### Story 
 
@@ -15,7 +15,7 @@ During work engineer will fix machines while teacher will teach childern how to 
 At the end of the day worker go home, have a dinner and go to sleep.
 
 
----
++++
 
 
 

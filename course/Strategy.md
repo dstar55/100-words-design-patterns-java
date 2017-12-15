@@ -1,6 +1,6 @@
 # Strategy
 
----
++++
 
 ### Story 
 
@@ -13,7 +13,7 @@ Any of these payment options will pay items in Shopping Cart, and they can be us
 The user must choose the Strategy based on his possibilities, preferences.
 
 
----
++++
 
 ### Image 
 
@@ -22,7 +22,7 @@ The user must choose the Strategy based on his possibilities, preferences.
 ###### Credit Card&nbsp;(<a rel='license' href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>CC BY 2.0</a>)&nbsp;by&nbsp;<a xmlns:cc='http://creativecommons.org/ns#' rel='cc:attributionURL' property='cc:attributionName' href='https://www.flickr.com/people/mecklenburg/' target='_blank'>ThomasKohler</a>
 
 
----
++++
 
 ### UML 
 [![](http://www.design-patterns-stories.com/assets/img/uml/strategy.png)](http://www.design-patterns-stories.com/assets/img/uml/strategy.png)

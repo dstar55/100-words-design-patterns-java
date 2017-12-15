@@ -1,6 +1,6 @@
 # Iterator
 
----
++++
 
 ### Story 
 
@@ -10,7 +10,7 @@ You can browse through the book page by page, or quickly jump to interesting cha
 Process of browsing is example of Iterator pattern.
 
 
----
++++
 
 ### Image 
 
@@ -20,7 +20,7 @@ Process of browsing is example of Iterator pattern.
 
 
 
----
++++
 
 ### UML 
 [![](http://www.design-patterns-stories.com/assets/img/uml/iterator.png)](http://www.design-patterns-stories.com/assets/img/uml/iterator.png)

@@ -1,6 +1,6 @@
 # Memento
 
----
++++
 
 ### Story 
 
@@ -15,7 +15,7 @@ And if any operation fails, then the transaction would fail and all operations w
 This mechanism of rolling back uses the memento design pattern. 
 
 
----
++++
 
 ### Image 
 
@@ -24,7 +24,7 @@ This mechanism of rolling back uses the memento design pattern.
 ###### States of transaction 
 
 
----
++++
 
 ### UML 
 [![](http://www.design-patterns-stories.com/assets/img/uml/memento.png)](http://www.design-patterns-stories.com/assets/img/uml/memento.png)

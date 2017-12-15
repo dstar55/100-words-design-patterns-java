@@ -1,6 +1,6 @@
 # Mediator
 
----
++++
 
 ### Story 
 
@@ -15,7 +15,7 @@ All taxis have a GPS unit which tells where the taxi is present right now, also 
 The call center will contact the available taxi nearest to customer’s location and send them to serve the customer.
 
 
----
++++
 
 ### Image 
 
@@ -24,7 +24,7 @@ The call center will contact the available taxi nearest to customer’s location
 ###### Call Center Taxis Libres,By Jquemba (Own work) [Public domain], via Wikimedia Commons 
 
 
----
++++
 
 ### UML 
 [![](http://www.design-patterns-stories.com/assets/img/uml/mediator.png)](http://www.design-patterns-stories.com/assets/img/uml/mediator.png)

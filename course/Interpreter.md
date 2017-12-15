@@ -1,6 +1,6 @@
 # Interpreter
 
----
++++
 
 ### Story 
 
@@ -8,7 +8,7 @@
 A person who translates orally from one language into another.
 
 
----
++++
 
 ### Image 
 
@@ -18,7 +18,7 @@ A person who translates orally from one language into another.
 
 
 
----
++++
 
 ### UML 
 [![](http://www.design-patterns-stories.com/assets/img/uml/interpreter.png)](http://www.design-patterns-stories.com/assets/img/uml/interpreter.png)
