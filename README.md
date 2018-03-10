@@ -113,6 +113,11 @@ Move to prototype folder:
 $  cd /src/main/java/com/hundredwordsgof/prototype
 ```
 
+* Known uses
+  * [java.lang.Object#clone()](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#clone--)
+  * [java.lang.Cloneable](https://docs.oracle.com/javase/7/docs/api/java/lang/Cloneable.html)
+
+
 ##### <a id="Builder"></a>Builder
 * Story
 
@@ -146,6 +151,20 @@ Move to builder folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/builder
 ```
+
+* Known uses
+  * [java.lang.StringBuilder.append()](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html#append-boolean-)
+  * [java.lang.StringBuffer.append()](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#append-boolean-)
+  * [java.lang.Appendable](https://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html)
+  * [javax.swing.GroupLayout.group.addComponent()](https://docs.oracle.com/javase/8/docs/api/javax/swing/GroupLayout.Group.html#addComponent-java.awt.Component-)
+  * [java.nio.ByteBuffer.put()](https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html#put-byte-)
+  * [java.nio.CharBuffer.put()](https://docs.oracle.com/javase/8/docs/api/java/nio/CharBuffer.html#put-byte-)
+  * [java.nio.ShortBuffer.put()](https://docs.oracle.com/javase/8/docs/api/java/nio/ShortBuffer.html#put-byte-)
+  * [java.nio.IntBuffer.put()](https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html#put-byte-)
+  * [java.nio.LongBuffer.put()](https://docs.oracle.com/javase/8/docs/api/java/nio/LongBuffer.html#put-byte-)
+  * [java.nio.FloatBuffer.put()](https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html#put-byte-)
+  * [java.nio.DoubleBuffer.put()](https://docs.oracle.com/javase/8/docs/api/java/nio/DoubleBuffer.html#put-byte-)
+  
 
 
 ##### <a id="FactoryMethod"></a>Factory Method
