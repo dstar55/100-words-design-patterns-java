@@ -242,6 +242,11 @@ Move to abstractfactory folder:
 $  cd /src/main/java/com/hundredwordsgof/abstractfactory
 ```
 
+* Known uses
+  * [javax.xml.parsers.DocumentBuilderFactory#newInstance()](https://docs.oracle.com/javase/8/docs/api/javax/xml/parsers/DocumentBuilderFactory.html#newInstance--)
+  * [javax.xml.transform.TransformerFactory#newInstance()](https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/TransformerFactory.html#newInstance--)
+  * [javax.xml.xpath.XPathFactory#newInstance()](https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html#newInstance--)
+
 ##### <a id="Adapter"></a>Adapter
 * Story
 
