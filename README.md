@@ -328,6 +328,10 @@ Move to bridge folder:
 $  cd /src/main/java/com/hundredwordsgof/bridge
 ```
 
+* Known uses
+  * [JDBC-ODBC Bridge](https://docs.oracle.com/javase/7/docs/technotes/guides/jdbc/bridge.html)
+  * [AWT](https://docs.oracle.com/javase/8/docs/technotes/guides/awt/), it provides an abstraction layer which maps onto the native OS the windowing support.
+
 ##### <a id="Composite"></a>Composite
 * Story
 
@@ -360,6 +364,11 @@ Move to composite folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/composite
 ```
+* Known uses 
+  * [java.awt.Container#add(Component)](https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#add-java.awt.Component-)
+  * [javax.faces.component.UIComponent#getChildren()](https://docs.oracle.com/javaee/7/api/javax/faces/component/UIComponent.html#getChildren--)
+
+
 
 ##### <a id="Decorator"></a>Decorator
 * Story
