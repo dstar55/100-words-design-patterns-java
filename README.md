@@ -495,6 +495,17 @@ Move to flyweight folder:
 $  cd /src/main/java/com/hundredwordsgof/flyweight
 ```
 
+* Known uses 
+
+  * [java.lang.Integer#valueOf(int)](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#valueOf-int-)
+  * [java.lang.Boolean#valueOf(int)](https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html#valueOf-boolean-)
+  * [java.lang.Byte#valueOf(int)](https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html#valueOf-byte-)
+  * [java.lang.Character#valueOf(int)](https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#valueOf-char-)
+  * [java.lang.Short#valueOf(int)](https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html#valueOf-short-)
+  * [java.lang.Long#valueOf(int)](https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html#valueOf-long-)
+  * [java.lang.BigDecimal#valueOf(int)](https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#valueOf-long-int-)
+
+
 ##### <a id="Proxy"></a>Proxy
 * Story
 
