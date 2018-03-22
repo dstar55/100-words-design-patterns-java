@@ -401,6 +401,25 @@ Move to decorator folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/decorator
 ```
+* Known uses 
+  all subclases of the:
+  * [java.io.InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html) 
+  * [java.io.OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)
+  * [java.io.Reader](https://docs.oracle.com/javase/7/docs/api/java/io/Reader.html)
+  * [java.io.Writer](https://docs.oracle.com/javase/7/docs/api/java/io/Writer.html)
+  e.g.
+  * [java.io.BufferedInputStream(InputStream)](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedInputStream.html)
+  * [java.io.DataInputStream(InputStream)](https://docs.oracle.com/javase/7/docs/api/java/io/DataInputStream.html)
+  * [java.io.BufferedOutputStream(OutputStream)](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedOutputStream.html)
+  * [java.util.zip.ZipOutputStream(OutputStream)](https://docs.oracle.com/javase/7/docs/api/java/util/zip/ZipOutputStream.html)
+
+  * [javax.servlet.http.HttpServletRequestWrapper](https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequestWrapper.html)
+  * [javax.servlet.http.HttpServletResponseWrapper](https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletResponseWrapper.html)
+
+  * [java.util.Collections#checked[List|Map|Set|SortedSet|SortedMap]()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#checkedCollection-java.util.Collection-java.lang.Class-)
+  * [java.util.Collections#synchronized[List|Map|Set|SortedSet|SortedMap]()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#synchronizedCollection-java.util.Collection-)
+  * [java.util.Collections#unmodifiable[List|Map|Set|SortedSet|SortedMap]()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#unmodifiableCollection-java.util.Collection-)
+
 
 ##### <a id="Facade"></a>Facade
 * Story
