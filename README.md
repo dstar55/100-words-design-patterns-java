@@ -538,6 +538,12 @@ Move to proxy folder:
 $  cd /src/main/java/com/hundredwordsgof/proxy
 ```
 
+* Known uses
+  * [java.lang.reflect.Proxy](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Proxy.html)
+  * [java.rmi.*](https://docs.oracle.com/javase/8/docs/api/java/rmi/package-summary.html)
+  * [javax.persistence.PersistenceContext](https://docs.oracle.com/javaee/7/api/javax/persistence/PersistenceContext.html)
+
+  
 ##### <a id="ChainOfResponsibility"></a>Chain Of Responsibility
 * Story
 
