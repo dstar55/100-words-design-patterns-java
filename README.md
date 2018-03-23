@@ -607,6 +607,10 @@ Move to command folder:
 $  cd /src/main/java/com/hundredwordsgof/command
 ```
 
+* Known uses 
+  * [java.lang.Runnable](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html)
+  * [javax.swing.Action](https://docs.oracle.com/javase/8/docs/api/javax/swing/Action.html)
+
 ##### <a id="Interpreter"></a>Interpreter
 * Story
 
