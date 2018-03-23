@@ -550,10 +550,10 @@ $  cd /src/main/java/com/hundredwordsgof/proxy
 The Chain of Responsibility allows an object to send a command without knowing which object will receive and handle it. 
 The request is sent from one object to another making them parts of a chain and each object in this chain can handle the command, pass it on or do both. 
 
-Service request to call center is example of the Chain of Responsibility. 
-Request can be handled at front desk level, supervisor level or any higher level. 
-Correct handler of request is only known during execution of the request when request is traversing at various levels. 
-
+A King and his army is example of the Chain of Responsibility. 
+King gives the orders to his army. 
+The closest element to react would be the commander, then the officer and then the soldier and those three elements would form a 
+Chain of Responsibility.
 
 
 * Implementation
@@ -574,7 +574,10 @@ Move to chainofresponsability folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/chainofresponsibility
 ```
-
+* Known uses
+  * [java.util.logging.Logger#log()](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log-java.util.logging.Level-java.lang.String-)
+  * [javax.servlet.Filter#doFilter()](https://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
+  * [java.awt.AWTEventMulticaster](https://docs.oracle.com/javase/7/docs/api/java/awt/AWTEventMulticaster.html)
 
 ##### <a id="Command"></a>Command
 * Story
