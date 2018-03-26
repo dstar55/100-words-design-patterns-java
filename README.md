@@ -555,6 +555,10 @@ King gives the orders to his army.
 The closest element to react would be the commander, then the officer and then the soldier and those three elements would form a 
 Chain of Responsibility.
 
+* Image
+
+![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/chainofresponsibility.jpg "Zulu Soldiers of King Panda’s Army, 1847")  
+###### By George French Angas, 1822-1886 (Bibliothèque numérique mondiale) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3AZulu_soldiers_of_the_army_of_King_Umpande_(Panda)%2C_1847.png">via Wikimedia Commons</a>
 
 * Implementation
 
