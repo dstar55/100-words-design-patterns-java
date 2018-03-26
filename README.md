@@ -416,9 +416,9 @@ $  cd /src/main/java/com/hundredwordsgof/decorator
   * [javax.servlet.http.HttpServletRequestWrapper](https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequestWrapper.html)
   * [javax.servlet.http.HttpServletResponseWrapper](https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletResponseWrapper.html)
 
-  * [java.util.Collections#checked[List|Map|Set|SortedSet|SortedMap]()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#checkedCollection-java.util.Collection-java.lang.Class-)
-  * [java.util.Collections#synchronized[List|Map|Set|SortedSet|SortedMap]()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#synchronizedCollection-java.util.Collection-)
-  * [java.util.Collections#unmodifiable[List|Map|Set|SortedSet|SortedMap]()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#unmodifiableCollection-java.util.Collection-)
+  * [java.util.Collections#checked()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#checkedCollection-java.util.Collection-java.lang.Class-)
+  * [java.util.Collections#synchronized()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#synchronizedCollection-java.util.Collection-)
+  * [java.util.Collections#unmodifiable()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#unmodifiableCollection-java.util.Collection-)
 
 
 ##### <a id="Facade"></a>Facade
