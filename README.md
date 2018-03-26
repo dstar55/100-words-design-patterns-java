@@ -645,7 +645,13 @@ Move to command folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/interpreter
 ```
+* Known uses 
+  * [java.util.Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
+  * [java.text.Normalizer](https://docs.oracle.com/javase/8/docs/api/java/text/Normalizer.html)
+  * All subclasses of [java.text.Format](https://docs.oracle.com/javase/8/docs/api/java/text/Format.html)
+  * All subclasses of [javax.el.ELResolver](https://docs.oracle.com/javaee/7/api/javax/el/ELResolver.html)
 
+  
 ##### <a id="Iterator"></a>Iterator
 * Story
 
