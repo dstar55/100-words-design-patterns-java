@@ -8,6 +8,6 @@ branches:
   only:
     - master
     - davidc
-
+    - michaelL
 after_success:
   - mvn clean test jacoco:report coveralls:report
