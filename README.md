@@ -369,7 +369,6 @@ $  cd /src/main/java/com/hundredwordsgof/composite
   * [javax.faces.component.UIComponent#getChildren()](https://docs.oracle.com/javaee/7/api/javax/faces/component/UIComponent.html#getChildren--)
 
 
-
 ##### <a id="Decorator"></a>Decorator
 * Story
 
@@ -401,6 +400,7 @@ Move to decorator folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/decorator
 ```
+
 * Known uses 
   all subclases of the:
   * [java.io.InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html) 
@@ -683,6 +683,10 @@ Move to iterator folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/iterator
 ```
+* Known uses 
+  * All implementations of [java.util.Iterator](https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html)
+  * All implementations of [java.util.Enumeration](https://docs.oracle.com/javase/8/docs/api/java/util/Enumeration.html)
+
 
 ##### <a id="Mediator"></a>Mediator
 * Story
