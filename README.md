@@ -558,7 +558,8 @@ Chain of Responsibility.
 * Image
 
 ![alt text](https://github.com/dstar55/100-words-design-patterns-java/blob/gh-pages-resources/chainofresponsibility.jpg "Zulu Soldiers of King Panda’s Army, 1847")  
-###### By George French Angas, 1822-1886 (Bibliothèque numérique mondiale) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3AZulu_soldiers_of_the_army_of_King_Umpande_(Panda)%2C_1847.png">via Wikimedia Commons</a>
+###### By George French Angas, 1822-1886 (Bibliothèque numérique mondiale), Zulu Soldiers of King Panda’s Army, 1847 [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3AZulu_soldiers_of_the_army_of_King_Umpande_(Panda)%2C_1847.png">via Wikimedia Commons</a>
+
 
 * Implementation
 
