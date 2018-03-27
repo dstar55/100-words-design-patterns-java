@@ -9,5 +9,6 @@ branches:
     - master
     - davidc
     - michaelL
+    - kevinK
 after_success:
   - mvn clean test jacoco:report coveralls:report
