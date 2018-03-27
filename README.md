@@ -767,6 +767,10 @@ Move to memento folder:
 $  cd /src/main/java/com/hundredwordsgof/memento
 ```
 
+* Known uses 
+  * All implementations of [java.io.Serializable](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html)
+  * All implementations of [javax.faces.component.StateHolder](https://docs.oracle.com/javaee/7/api/javax/faces/component/StateHolder.html)
+
 ##### <a id="Observer"></a>Observer
 * Story
 
@@ -800,6 +804,14 @@ Move to observer folder:
 $  cd /src/main/java/com/hundredwordsgof/observer
 ```
 
+* Known uses 
+  * [java.util.Observer](https://docs.oracle.com/javase/8/docs/api/java/util/Observer.html)
+  * [java.util.Observable](https://docs.oracle.com/javase/8/docs/api/java/util/Observable.html)
+  * [java.util.EventListener](https://docs.oracle.com/javase/8/docs/api/java/util/EventListener.html)
+  * [javax.servlet.http.HttpSessionBindingListener](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSessionBindingListener.html)
+  * [javax.servlet.http.HttpSessionAttributeListener](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSessionAttributeListener.html)
+  * [javax.faces.event.PhaseListenerl](https://docs.oracle.com/javaee/7/api/javax/faces/event/PhaseListener.html)
+  
 ##### <a id="State"></a>State
 * Story
 
