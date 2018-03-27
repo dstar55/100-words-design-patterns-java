@@ -846,6 +846,10 @@ Move to state folder:
 $  cd /src/main/java/com/hundredwordsgof/state
 ```
 
+* Known uses 
+  * [javax.faces.lifecycle.LifeCycle#execute()](https://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/Lifecycle.html#execute-javax.faces.context.FacesContext-)
+  
+  
 ##### <a id="Strategy"></a>Strategy
 * Story
 
@@ -874,12 +878,16 @@ Clone repo:
 $  git clone https://github.com/dstar55/100-words-design-patterns-java.git .
 ```
 
-Move to state folder:
+Move to strategy folder:
 
 ```
 $  cd /src/main/java/com/hundredwordsgof/strategy
 ```
 
+* Known uses 
+  * [java.util.Comparator#compare()](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#compare-T-T-), executed by among others [Collections#sort()]()
+  * [javax.servlet.Filter#doFilter()](https://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
+  
 ##### <a id="TemplateMethod"></a>TemplateMethod
 * Story
 
