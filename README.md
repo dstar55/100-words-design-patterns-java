@@ -919,6 +919,11 @@ Move to template folder:
 $  cd /src/main/java/com/hundredwordsgof/templatemethod
 ```
 
+* Known uses 
+  * All non-abstract methods of [java.io.InputStream](https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html), [java.io.OutputStream](https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html), [java.io.Reader](https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html) and [java.io.Writer](https://docs.oracle.com/javase/8/docs/api/java/io/Writer.html).
+  * All non-abstract methods of [java.util.AbstractList](https://docs.oracle.com/javase/8/docs/api/java/util/AbstractList.html), [java.util.AbstractSet](https://docs.oracle.com/javase/8/docs/api/java/util/AbstractSet.html) and [java.util.AbstractMap](https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.html)
+
+
 ##### <a id="Visitor"></a>Visitor
 * Story
 
