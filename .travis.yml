@@ -10,5 +10,6 @@ branches:
     - davidc
     - michaelL
     - kevinK
+    - teamDev
 after_success:
   - mvn clean test jacoco:report coveralls:report
