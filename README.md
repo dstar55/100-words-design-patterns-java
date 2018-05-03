@@ -898,7 +898,7 @@ Daily routine is example of the Template method.
 Every day workers get up(common part), go to work(specialized part), go home and go to sleep.
 There are workers with different professions like enginners, teachers, etc.
 During work engineer will fix machines while teacher will teach childern how to read and write.
-At the end of the day worker go home, have a dinner and go to sleep.
+At the end of the day they go home, have a dinner and go to sleep.
 
 * Implementation
 
