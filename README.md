@@ -45,6 +45,8 @@ Each pattern will be described with following structure:
 * [Visitor](#Visitor)
 
 ##### <a id="Singleton"></a>Singleton
+* Motivation
+
 * Story
 
 Singleton ensures that only one(single) object can be created from the class.
@@ -84,6 +86,8 @@ $  cd /src/main/java/com/hundredwordsgof/singleton
 
 
 ##### <a id="Prototype"></a>Prototype
+* Motivation
+
 * Story
 
 Clone itself.
@@ -120,6 +124,8 @@ $  cd /src/main/java/com/hundredwordsgof/prototype
 
 
 ##### <a id="Builder"></a>Builder
+* Motivation
+
 * Story
 
 Separates the construction of a complex object from its representation so that the same construction process can create different representations.
@@ -169,6 +175,8 @@ $  cd /src/main/java/com/hundredwordsgof/builder
 
 
 ##### <a id="FactoryMethod"></a>Factory Method
+* Motivation
+
 * Story
 
 Defines an interface for creating objects, but lets subclasses decides which class to instantiate.
@@ -207,6 +215,8 @@ $  cd /src/main/java/com/hundredwordsgof/factorymethod
 
 
 ##### <a id="AbstractFactory"></a>Abstract Factory
+* Motivation
+
 * Story
 
 Provides an interface for creating families of related objects, without specifying concrete classes. 
@@ -249,6 +259,8 @@ $  cd /src/main/java/com/hundredwordsgof/abstractfactory
   * [javax.xml.xpath.XPathFactory#newInstance()](https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html#newInstance--)
 
 ##### <a id="Adapter"></a>Adapter
+* Motivation
+
 * Story
 
 Allows that interface of an existing class to be used from another interface.
@@ -296,6 +308,8 @@ $  cd /src/main/java/com/hundredwordsgof/adapter
   * [javax.xml.bind.annotation.adapters.XmlAdapter#unmarshal()](https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/XmlAdapter.html#unmarshal-ValueType-)
 
 ##### <a id="Bridge"></a>Bridge
+* Motivation
+
 * Story
 
 Decouple an abstraction from its implementation so that the two can vary independently.
@@ -333,6 +347,8 @@ $  cd /src/main/java/com/hundredwordsgof/bridge
   * [AWT](https://docs.oracle.com/javase/8/docs/technotes/guides/awt/), it provides an abstraction layer which maps onto the native OS the windowing support.
 
 ##### <a id="Composite"></a>Composite
+* Motivation
+
 * Story
 
 Compose objects into tree structures to represent part-whole hierarchies. 
@@ -370,6 +386,8 @@ $  cd /src/main/java/com/hundredwordsgof/composite
 
 
 ##### <a id="Decorator"></a>Decorator
+* Motivation
+
 * Story
 
 Attach additional responsibilities to an object dynamically. 
@@ -422,6 +440,8 @@ $  cd /src/main/java/com/hundredwordsgof/decorator
 
 
 ##### <a id="Facade"></a>Facade
+* Motivation
+
 * Story
 
 Facade hides the complexity of the system and provides an interface to the client from where the client can access the system.
@@ -507,6 +527,8 @@ $  cd /src/main/java/com/hundredwordsgof/flyweight
 
 
 ##### <a id="Proxy"></a>Proxy
+* Motivation
+
 * Story
 
 Provide a surrogate or placeholder for another object to control access to it.
@@ -545,6 +567,8 @@ $  cd /src/main/java/com/hundredwordsgof/proxy
 
   
 ##### <a id="ChainOfResponsibility"></a>Chain Of Responsibility
+* Motivation
+
 * Story
 
 The Chain of Responsibility allows an object to send a command without knowing which object will receive and handle it. 
@@ -585,6 +609,8 @@ $  cd /src/main/java/com/hundredwordsgof/chainofresponsibility
   * [java.awt.AWTEventMulticaster](https://docs.oracle.com/javase/7/docs/api/java/awt/AWTEventMulticaster.html)
 
 ##### <a id="Command"></a>Command
+* Motivation
+
 * Story
 
 Issue requests to objects without knowing anything about the operation being requested or the receiver of the request.
@@ -617,6 +643,8 @@ $  cd /src/main/java/com/hundredwordsgof/command
   * [javax.swing.Action](https://docs.oracle.com/javase/8/docs/api/javax/swing/Action.html)
 
 ##### <a id="Interpreter"></a>Interpreter
+* Motivation
+
 * Story
 
 A person who translates orally from one language into another.
@@ -653,6 +681,8 @@ $  cd /src/main/java/com/hundredwordsgof/interpreter
 
   
 ##### <a id="Iterator"></a>Iterator
+* Motivation
+
 * Story
 
 Book is a set of written, printed sheets bound together into a volume.
@@ -689,6 +719,8 @@ $  cd /src/main/java/com/hundredwordsgof/iterator
 
 
 ##### <a id="Mediator"></a>Mediator
+* Motivation
+
 * Story
 
 Defines an object that controls how a set of objects interact.
@@ -732,6 +764,8 @@ $  cd /src/main/java/com/hundredwordsgof/mediator
   * [java.lang.reflect.Method#invoke()](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html#invoke-java.lang.Object-java.lang.Object...-)
 
 ##### <a id="Memento"></a>Memento
+* Motivation
+
 * Story
 
 Helps to restore an object’s state to it previous state.
@@ -813,6 +847,8 @@ $  cd /src/main/java/com/hundredwordsgof/observer
   * [javax.faces.event.PhaseListenerl](https://docs.oracle.com/javaee/7/api/javax/faces/event/PhaseListener.html)
   
 ##### <a id="State"></a>State
+* Motivation
+
 * Story
 
 Behavior depends on its state.
@@ -851,6 +887,8 @@ $  cd /src/main/java/com/hundredwordsgof/state
   
   
 ##### <a id="Strategy"></a>Strategy
+* Motivation
+
 * Story
 
 Select an algorithm at runtime.
@@ -889,6 +927,8 @@ $  cd /src/main/java/com/hundredwordsgof/strategy
   * [javax.servlet.Filter#doFilter()](https://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
   
 ##### <a id="TemplateMethod"></a>TemplateMethod
+* Motivation
+
 * Story
 
 Defines a skeleton of an algorithm in an operation.
@@ -925,6 +965,8 @@ $  cd /src/main/java/com/hundredwordsgof/templatemethod
 
 
 ##### <a id="Visitor"></a>Visitor
+* Motivation
+
 * Story
 
 Allows for one or more operations to be applied to a set of objects at runtime, decoupling the operations from object structure.
