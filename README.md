@@ -47,6 +47,15 @@ Each pattern will be described with following structure:
 ##### <a id="Singleton"></a>Singleton
 * Motivation
 
+Objects resides inside Heap memory and we can instantiate as many objects as we have physical space in heap memory.
+But in some cases we can face situation that we want to have only one instance of a class.
+
+Window managers, print spoolers, filesystems, database connections are typical examples.
+
+The Singleton design pattern addresses all of these concerns. With the Singleton design pattern you can:
+
+Ensure that only one instance of a class is created Provide a global point of access to the object Allow multiple instances in the future without affecting a singleton class's clients.
+
 * Story
 
 Singleton ensures that only one(single) object can be created from the class.
@@ -88,6 +97,17 @@ $  cd /src/main/java/com/hundredwordsgof/singleton
 ##### <a id="Prototype"></a>Prototype
 * Motivation
 
+In Singleton pattern we showed how to tackle situation when we should instantiate only one object of the class.
+On another side we can have situation that we want to copy object that already exists in a memory, particulary if object is complex. 
+
+So imagine that we are developing software which can work with spreadsheets. 
+Spreadsheet consist of the cells, and cell is complex object with lot of attributes like, borded, content, format, color etc. 
+Now if we want to split a cell, we can develop a method which will copy each attribute of the object.
+This method can became very complex, so we should consider more eleganth solution.
+
+It will be nice if we can copy object with one method, for example cloneMe().
+This solution is Prototype pattern.
+
 * Story
 
 Clone itself.
@@ -125,6 +145,20 @@ $  cd /src/main/java/com/hundredwordsgof/prototype
 
 ##### <a id="Builder"></a>Builder
 * Motivation
+
+Builder, as the name suggests builds complex objects from simple ones step-by-step.
+
+Let’s say, we order child meal at a fast food restaurant. What is it comprised of? Well, a burger, a cold drink, a fries and a toy. In fact childer meal consist of main item, side item, drink and toy.
+
+Every time a children’s meal is ordered, the service boy will take a burger, a fries, a cold drink and a toy. Now suppose, there are 3 types of burgers available, 
+Cheese, Beef and Chicken, 2 types of cold drinks available, Cola and Orange and 2 types of toys available, a car and a doll.
+
+So, the order might be a combination of one of these, but the process will be the same. One burger, one cold drink, one fries and one toy. 
+All these items are placed in a paper bag and is given to the customer.
+
+So, Builder pattern, separates the construction of a complex object from its representation so that the same construction process can create different representations.
+
+Builder pattern can be seen in another real life situation, like assemblng the PC.
 
 * Story
 
@@ -177,6 +211,18 @@ $  cd /src/main/java/com/hundredwordsgof/builder
 ##### <a id="FactoryMethod"></a>Factory Method
 * Motivation
 
+Imagine that you are creating a booking application. The basic version of your app can handle only the renting of the rooms, so the majority of your code lives in a Room class.
+
+After a while, your app becomes so popular that you requests to rent houses and apartments as well.
+
+Great news, right?! But how about the code? It looks that most of your code is coupled to the Room class. Adding House would require making changes to the entire codebase. Moreover, if you decide to add another type of transportation to the app, you will probably need to make all of those change again.
+
+You will end up with nasty code riddled with conditionals, which select behaviors depending on classes of renting objects.
+
+So, the solution for this situation is Factory Method.
+
+Factory Method defines an interface for creating objects, but lets subclasses decides which class to instantiate.
+
 * Story
 
 Defines an interface for creating objects, but lets subclasses decides which class to instantiate.
@@ -216,6 +262,30 @@ $  cd /src/main/java/com/hundredwordsgof/factorymethod
 
 ##### <a id="AbstractFactory"></a>Abstract Factory
 * Motivation
+
+Imagine that you are creating a simulator of a furniture shop. Your code consists of:
+
+Family of related products, say: Chair + Sofa + CoffeeTable.
+
+Several variants of this family. For example, products Chair + Sofa + CoffeeTable available in these variants: IKEA, VictorianStyle, ArtDeco.
+
+You need a way to create individual furniture objects so that they match other objects of the same family. Customers get quite frustrated when they receive non-matching furniture.
+
+Also, you do not want to change existing code when adding new products or families of products to the program. Furniture vendors update their catalogs very often, and you do not want to change the core code each time it happens.
+
+The first thing that Abstract Factory pattern suggests is to go over all distinct products and force their variants to follow common interfaces. For example, all chair variants must follow the Chair interface; all coffee tables must implement the CoffeeTable interface, etc.
+
+The second step is to create the AbstractFactory, a base interface that declares methods for creating all products that make a product family (i.e. createChair, createSofa and createCoffeeTable). The important thing here is to make these methods to return abstract product types represented by interfaces we extracted previously: Chair, Sofa, CoffeeTable, etc.
+
+The third step is to implement concrete factories. Factories are classes that return products of a particular kind. For example, IKEAFactory, will only return IKEAChair, IKEASofa and IKEACoffeeTable objects. All factories must follow the AbstractFactory interface while creating the same variety of products.
+
+Client code has to work with factories and products only through their abstract interfaces. This way you can alter the type of products used in client code by passing it a different factory object.
+
+So, when client code asks a factory to produce a chair, it must not be aware of the factory's concrete class. It must not be aware of the concrete class of chair it will get either. Whether it will be a modern IKEA model or a Victorian style chair, it must work with all chairs in the same way, using the abstract Chair interface. The thing that the client code will know is that the resulting chair implements the sit method, declared in the interface. It also knows that whichever chair will be returned, it will match the type of sofa and coffee table, produced by the same factory.
+
+Okay, but who creates the actual factory objects? Usually, the program creates a concrete factory object at initialization stage, and the factory type is picked depending on the configuration or environment.
+
+Abstract Factory an interface for creating families of related objects, without specifying concrete classes.
 
 * Story
 
@@ -260,6 +330,22 @@ $  cd /src/main/java/com/hundredwordsgof/abstractfactory
 
 ##### <a id="Adapter"></a>Adapter
 * Motivation
+
+Adapter, as the name suggests adapts existing interface.
+
+Imagine that we need to build graphical editor which should be able to draw various graphical shapes like line, circle, rectangle and text.
+
+All of our graphical elements are subclass of the base class Shape. So we will have LineShape, CircleShape RectangeShape and Text Shape.
+
+Implementation of the TextShape is not easy, while we need to implement lot of complex functionalities like buffering, text bolding, text coloring, undo, redo and "what you see is what you get".
+
+We have found open source text editing library which implements pretty much all of the text functionality which we are looking for.
+
+Why not adapt existing text editing library, so that we can reuse that functionality for our graphical editor.
+
+So, we can use Adapter design pattern.
+
+Adapter, allows us that interface of an existing class can be used from another interface.
 
 * Story
 
@@ -310,6 +396,20 @@ $  cd /src/main/java/com/hundredwordsgof/adapter
 ##### <a id="Bridge"></a>Bridge
 * Motivation
 
+Let's imagine that we have Shape class with a two subclasses: Line and Rectangle. We want to extend this hierarchy to incorporate colors by creating Red and Blue shapes subclasses. But since we already have subclasses, we need to create 4 class combinations such as Red and BlueLine and Red and BlueRectangle.
+
+Adding more shape types and colors will make this hierarchy even bigger. For example, to add Triangles you have to create two subclasses, one for each color. And after that, adding new color will require creating three subclasses, one for each shape type. Further we go, worse it becomes.
+
+This problem happens each time we extend the class hierarchy into several independent dimensions.
+
+The Bridge pattern attempts to solve it by replacing inheritance with delegations. You have to extract one of these "dimensions" into separate class hierarchy. Original classes will contain a reference to an object of the new hierarchy, instead of storing all of its state and behaviors inside of one class.
+
+This way we will extract Color into its own class with two child classes, Red and Blue. The Shape class will get a reference field to one of the color classes. Using that reference, it will be able to delegate work to color objects when needed. This reference will serve as a bridge between Shapes and Color.
+
+From now on, adding new colors will not require changing shape classes and vice versa.
+
+So, Bridge pattern decouples an abstraction from its implementation so that the two can vary independently.
+
 * Story
 
 Decouple an abstraction from its implementation so that the two can vary independently.
@@ -349,6 +449,12 @@ $  cd /src/main/java/com/hundredwordsgof/bridge
 ##### <a id="Composite"></a>Composite
 * Motivation
 
+Imagine that we want to calculate total salary paid to all employees of the organization. It is nothing but the salary of CEO + the salary paid to all the departments.
+
+What is the salary of a department? It is the salary of the department head + the salary of all projects. What is the total salary of a project? It is the salary of the project manager + the salary of all the project members. In short, the salary of anything is the salary of self + the salary of all its sub groups.
+
+This problem can be solved using Composite pattern. Composite pattern composes objects into tree structures to represent part-whole hierarchies. Group of objects is to be treated in the same way as a single instance of an object.
+
 * Story
 
 Compose objects into tree structures to represent part-whole hierarchies. 
@@ -387,6 +493,14 @@ $  cd /src/main/java/com/hundredwordsgof/composite
 
 ##### <a id="Decorator"></a>Decorator
 * Motivation
+
+Suppose that we are working on a user interface toolkit and we want to be able to add borders and scroll bars to the windows. We can do that using inheritance, so we will subclasses of Window class like WindowVerticalScrollBar, WindowHorizontalScrollBar, WindowBorder, etc.
+
+Solution with inheritance is not flexible while we will end up in too many subclasses. Such a hierarchy is hard to maintain, hard to extend and hard to use.
+
+So, in we enclose window in object which can add new features like scroll and border we will have much more flexible solution. "Enclosed" object is a decorator.
+
+Decorator patterns, attaches additional responsibilities to an object dynamically.
 
 * Story
 
@@ -442,6 +556,16 @@ $  cd /src/main/java/com/hundredwordsgof/decorator
 ##### <a id="Facade"></a>Facade
 * Motivation
 
+Let's say that we need to develop compiler for brand new programming language.
+
+The process of compiling consist of the steps like scanning, tokenizing, parsing, building abstract syntax tree, code generation etc. For each of the step we need to develop subcomponents which are complex. Usage of the subcomponents is complex as well.
+
+The client which use compiler will not call subcomponents in order to compile.
+
+We will define uniform interface which presents compiler functionality, a Compiler class. Compiler class represents a facade, which hides "low-level" functionality from the client.
+
+Facade hides the complexity of the system and provides an interface to the client from where the client can access the system.
+
 * Story
 
 Facade hides the complexity of the system and provides an interface to the client from where the client can access the system.
@@ -484,6 +608,24 @@ $  cd /src/main/java/com/hundredwordsgof/facade
   * [java.lang.Class](https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html), acts as a facade for [Reflection API](https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/package-summary.html)(getConstructors(), getMethods())
 
 ##### <a id="Flyweight"></a>Flyweight
+* Motivation
+
+Imagine that we are implementing simple video game.
+
+In the game players will be moving around the map and shoot each other.
+
+So, in game in addition to the players and map, we need to have various graphical object like bullets, missiles, and shrapnel from explosions,etc.
+
+When we run a game it is obvious that we will have large number of graphical objects, where each requires an amount of memory. In a alpha version of the game we will leave that situation as it is.
+
+Alpha version of the game was running flawlessly on my machine, but on the another machine we were able to play. The game kept crashing soon after launching and after troubleshooting we realized that there is not enough memory, meaning that our game is not using memory on a proper way.
+
+So, it is obvious that we need to memory on a smarter way. If graphical objects includes information that is duplicated(e.g Color, Texture) then flyweight pattern can be used.
+
+When this pattern is applied, the properties of the objects that are shared and are reasonably unchanging are moved into flyweight objects. For each of the main objects that use the shared data, only a reference to the appropriate flyweight object is required. This can drastically reduce the memory used by each of the main objects.
+
+So, Flyweight patterns removes duplicates and reduces memory by loading only the data necessary to perform action.
+
 * Story
 
 Remove duplicates.
@@ -529,6 +671,17 @@ $  cd /src/main/java/com/hundredwordsgof/flyweight
 ##### <a id="Proxy"></a>Proxy
 * Motivation
 
+Imagine that we are implementing Viewer which will show Microsoft word document.
+
+Opening the document must be fast, but we do not know is there any heavy object inside a document. Heavy object can be image on 10th page of the document.
+
+So, in order to ensure fast loading of the document, heavy objects will be loaded on demand, in fact image will be loaded when user is on 10th page of the document. Meanwhile heavy object will be presented with another object which acts as original.
+
+That is a Proxy pattern.
+
+Provides a surrogate or placeholder for another object to control access to it.
+
+
 * Story
 
 Provide a surrogate or placeholder for another object to control access to it.
@@ -568,6 +721,18 @@ $  cd /src/main/java/com/hundredwordsgof/proxy
   
 ##### <a id="ChainOfResponsibility"></a>Chain Of Responsibility
 * Motivation
+
+Service request to call center is example of the Chain of Responsibility. Request can be handled at front desk level, supervisor level or any higher level. Correct handler of request is only known during execution of the request when request is traversing at various levels.
+
+Imagine that you just have bought a new mobile phone. You unpack a phone from the box, put the SIM card and you switch on yours brand new mobile phone. But phone is not able to establish a phone call. After checking technical manuals and playing with phone setting, you gave up you finally call telecom operator's call center.
+
+The first thing you hear is a robot's voice of the auto responder. It suggests dozen of the possible solutions to various problems, but none of these is related to yours. After a while, robot connects you to the live operator. After short discussion operator realized that he can not help you either. So, he connects you to engineer who finally fixes the problem.
+
+That was example of the Chain of Responsibility.
+
+In essence, we pass an object along a "chain" of potential handlers for that object until one of the handlers tackle the request.
+
+The Chain of Responsibility allows an object to send a command without knowing which object will receive and handle it. The request is sent from one object to another making them parts of a chain and each object in this chain can handle the command, pass it on or do both.
 
 * Story
 
@@ -610,6 +775,19 @@ $  cd /src/main/java/com/hundredwordsgof/chainofresponsibility
 
 ##### <a id="Command"></a>Command
 * Motivation
+
+Imagine that we are developing graphical editor. User can add new text and delete or update existing text.
+
+What to do in a case when user hits wrong action. We should be able to return back to the state of the text before wrong action has been executed.
+
+How to implement such behavior.
+
+One solution would be to holds a list of the text states. This solution is not appropriate while text can be big and if we store a lot of states of such a big text, we can run out of memory.
+
+Another solution would be to use Command pattern. Command object holds inside action and data for specific commands. 
+Application calls execute method on Command object. So application do not need to store different states of the text.
+
+This solution is Command pattern. Issue requests to objects without knowing anything about the operation being requested or the receiver of the request.
 
 * Story
 
@@ -683,6 +861,18 @@ $  cd /src/main/java/com/hundredwordsgof/interpreter
 ##### <a id="Iterator"></a>Iterator
 * Motivation
 
+In computer science, a data structure is a particular way of organizing and storing data in a computer so that it can be accessed and modified efficiently. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
+
+There are numerous types of data structures linked linked lists, arrays, vectors, maps, etc.
+
+Each collection of the data structure has its own structure and its own way how to access elements of the collection.
+
+In practice it is not convenient to access each type of collections on a different way, so it will be nice to have common interface for element-by-element access to a collection, independent of the collection’s shape.
+
+The Iterator pattern lets you do all this. The key idea is to take the responsibility for access and traversal out of the aggregate object and put it into an Iterator object that defines a standard traversal protocol.
+
+So, Iterator pattern, provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation
+
 * Story
 
 Book is a set of written, printed sheets bound together into a volume.
@@ -720,6 +910,16 @@ $  cd /src/main/java/com/hundredwordsgof/iterator
 
 ##### <a id="Mediator"></a>Mediator
 * Motivation
+
+During peak air travel times in the United States, there are about 5,000 airplanes in the sky every hour. This translates to approximately 50,000 aircraft operating in our skies each day. How do these aircraft keep from colliding with each other? How does air traffic move into and out of an airport or across the country?
+
+Imagine scenario when one particular aircraft is landing, then he will need to talk to each aircraft which close to that airport. This idea will fail, therefore we should introduce a mediator, and aircrafts will talk only to mediator.
+
+The task of ensuring safe operations of commercial and private aircraft falls on air traffic controllers which are mediators. They must coordinate the movements of thousands of aircraft, keep them at safe distances from each other, direct them during takeoff and landing from airports, direct them around bad weather and ensure that traffic flows smoothly with minimal delays.
+
+Explained solution is in fact Mediator pattern.
+
+The colleague objects need to communicate only with the mediator objects. Practically the mediator pattern reduce the required communication channels(protocols) from many to many to one to many and many to one.
 
 * Story
 
@@ -766,6 +966,18 @@ $  cd /src/main/java/com/hundredwordsgof/mediator
 ##### <a id="Memento"></a>Memento
 * Motivation
 
+Modern cars have brakes on all four wheels, operated by a hydraulic system. The brakes may be disc type or drum type.
+
+The front brakes play a greater part in stopping the car than the rear ones, because braking throws the car weight forward on to the front wheels.
+
+Many cars therefore have disc brakes, which are generally more efficient, at the front and drum brakes at the rear.
+
+Imagine a scenario that we need to replace drum brakes at the rear by ourself ? How we will ensure that new drum brake has all necessary pieces at proper pace. One solution can be that we use Memento.
+
+The drums are removed from both sides, exposing both the right and left brakes. Only one side is disassembled and the other serves as a Memento of how the brake parts fit together. Only after the job has been completed on one side is the other side disassembled. When the second side is disassembled, the first side acts as the Memento.
+
+So, Memento design pattern, helps to restore an object’s state to it previous state.
+
 * Story
 
 Helps to restore an object’s state to it previous state.
@@ -806,6 +1018,24 @@ $  cd /src/main/java/com/hundredwordsgof/memento
   * All implementations of [javax.faces.component.StateHolder](https://docs.oracle.com/javaee/7/api/javax/faces/component/StateHolder.html)
 
 ##### <a id="Observer"></a>Observer
+* Motivation
+
+Imagine that we are developing a computer game.
+
+One feature of our game will be achievements system. It will feature dozens of different badges players can earn for completing specific milestones during game.
+
+When player pass or reach some points in the game, for example jumps over complex fence, then we need to catch that part of the code and calculate the achievements. In fact we are talking about achievements events.
+
+But, how we will implement such a code ?
+
+One approach would be to find a places in a game code base where achievements events happens and extend those places with a code which implements achievements system. This approach is not flexible, not intuitive, violets the single responsibility principle.
+
+Another approach would be that achievements events announce that something interesting happened without actually caring who receives the notification. Now we can implement achievements on a separated code base, we just needs to ensure that achievements system is listening to all achievements events.
+
+This solution is Observer pattern.
+
+Observer pattern define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+
 * Story
 
 Keep me updated.
@@ -849,6 +1079,20 @@ $  cd /src/main/java/com/hundredwordsgof/observer
 ##### <a id="State"></a>State
 * Motivation
 
+Imagine that we need to implement state machine. We started with few states, and few simple conditions how to reach those states. Our initial State machine is implemented using if/else blocks, which are checking current state and perform appropriate behavior.
+
+But over the time, number of states increased. In addition the conditions how to reach certain state became more complex. Our if/else based state machine has more if/else blocks and it became really hard to maintain, to extent, to debug such a code base.
+
+Is there more elegant way to implement State Machine ?
+
+One approach would be that we create new class for every possible states of a and that we extract the state-related behaviors into these classes.
+
+The context will contain a reference to a state object that represents its current state. Instead of performing a behavior on its own, the context will delegate the execution to a state object.
+
+To change the context's state, one would pass another state object to the context. But to make states interchangeable, all states classes must follow the common interface, and the context must communicate with its state object via that interface.
+
+This solution is State pattern. State pattern, allow an object to alter its behavior when its internal state changes.
+
 * Story
 
 Behavior depends on its state.
@@ -888,6 +1132,18 @@ $  cd /src/main/java/com/hundredwordsgof/state
   
 ##### <a id="Strategy"></a>Strategy
 * Motivation
+
+Imagine that we need to implement network load balancer. Load balancer serves as the single point of contact for clients. The load balancer distributes incoming traffic across multiple targets, which increases the availability and capability of your application.
+
+The question is how load balancer will distribute the incoming traffic ? We can have various algorithms like, round robin, ip-hash, least connected, etc. During a time new algorithms can be introduced. It is obvious that algorithm for traffic distributionc can be implemented on a various ways.
+
+Straight solution would be to implement few algorithms and hide the invocation of the algorithm in a if/then or in switch statement.
+
+But, above solution is not flexible ?
+
+Another solution would be that we encapsulates the behavior as objects, so that we can select which object to use and, thereby, which behavior to implement based upon some external inputs or state. We further allow for many different behaviors to be implemented without creating huge if/then or switch statements.
+
+This solution is Strategy pattern. Strategy pattern, defines a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
 * Story
 
@@ -929,6 +1185,19 @@ $  cd /src/main/java/com/hundredwordsgof/strategy
 ##### <a id="TemplateMethod"></a>TemplateMethod
 * Motivation
 
+Imagine that we need to implement application which does various operations on a database. You decided to use JDBC, which is standard Java interface for accessing the relational database. Using JDBC, for every database operation, let's say read operation using select SQL statement, you must execute following steps:
+
+connect to database
+execute SQL statement
+process data which are gathered from database
+close database connection
+handle errors if something goes wrong
+If you implement such a database operation few times for a various read operations, you will see that we are repeating same steps. Also you can see that some steps are always the same like connect to database, close database connection, handle errors. Remaining steps like execute SQL statement, and process data which are gathered from database, are different for every read operation. So, let's call steps which are the same invariant and remaining steps are variant.
+
+The invariant steps are implemented in an abstract base class, while the variant steps are either given a default implementation, or no implementation at all. The variant steps represent "hooks", or "placeholders", that can, or must, be supplied by the component's client in a concrete derived class.
+
+The explained solution is Template Method design pattern.
+
 * Story
 
 Defines a skeleton of an algorithm in an operation.
@@ -966,6 +1235,20 @@ $  cd /src/main/java/com/hundredwordsgof/templatemethod
 
 ##### <a id="Visitor"></a>Visitor
 * Motivation
+
+Imagine that we need to implement a compiler. A compiler is computer program that transforms computer code written in one programming language (the source language) into another programming language (the target language).
+
+Compiler functionality is divided into two major blocks: a front-end and a back-end. Front-end block is comprised of a sequence of several phases with each stage taking input from its previous stage, modifying it and producing its own representation of source program and passing it to the next phase. The front-end includes three main stages called lexical, syntax and semantic analysis. The first phase takes the source code as a stream of characters and identifies distinct words (tokens) such as variable names, keywords and punctuators. The second phase determines the validity of syntactic organization of the program and produces Abstract Syntax Tree (AST). Semantic analysis checks whether the AST follows the rules of a language (type checking, name resolution).
+
+As you can see, Abstract Syntax Tree, which represents the program written in source code, is created during second phase.
+
+AST is used in later a phases of the compiling process for a operations like, type-checking, code generation, code optimization, flow analysis, pretty-printing, code instrumentation, etc.
+
+Most of these operations will need to treat nodes that represent assignment statements differently from nodes that represent variables or arithmetic expressions. Distributing all these operations across the various node classes leads to a system that's hard to understand, maintain and change.
+
+It would be better if each new operation could be added separately, and the node classes were independent of the operations that apply to them. If we package related operations in a separate object, called a visitor, and pass it to elements of the AST as it's traversed, then when an element of the AST "accepts" the visitor, it sends a request to the visitor that encodes the element's class
+
+The explained solution is Visitor design pattern.
 
 * Story
 
