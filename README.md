@@ -47,14 +47,19 @@ Each pattern will be described with following structure:
 ##### <a id="Singleton"></a>Singleton
 * Motivation
 
-Objects resides inside Heap memory and we can instantiate as many objects as we have physical space in heap memory.
-But in some cases we can face situation that we want to have only one instance of a class.
+Objects resides inside heap memory and we can instantiate as many objects as there is a physical space in heap memory.
+But, in some cases we can have situation that only one instance of an class can be instantiated.
 
-Window managers, print spoolers, filesystems, database connections are typical examples.
+So, imagine that we are developing a progam which is playing audio files.
+Inside that program we need to have a class which handles audio output. 
+Usaully computer has one audio output, so no more than one sound can be played at a time. 
+Therefore a class that handles the computer's audio device should have exactly one instance. 
 
-The Singleton design pattern addresses all of these concerns. With the Singleton design pattern you can:
+How we can ensure that only one instance in created, each java class has default public constructor, which can be invoked from any part of the code ?
+If we implement in a class, constructor with scope private, then only methods from that class can invoke that constructor, meaning that we can't instantiate that class from other classes.
+This is a basis for the Singleton pattern.
 
-Ensure that only one instance of a class is created Provide a global point of access to the object Allow multiple instances in the future without affecting a singleton class's clients.
+Singleton ensures that only one(single) object can be created from the class.
 
 * Story
 
