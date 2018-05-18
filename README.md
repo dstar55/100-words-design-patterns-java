@@ -103,14 +103,15 @@ $  cd /src/main/java/com/hundredwordsgof/singleton
 * Motivation
 
 In Singleton pattern we showed how to tackle situation when we should instantiate only one object of the class.
-On another side we can have situation that we want to copy object that already exists in a memory, particulary if object is complex. 
+On another side we can have situation that during runtime, we want to copy an object that already exists in a memory, particulary if object is complex. 
 
 So imagine that we are developing software which can work with spreadsheets. 
-Spreadsheet consist of the cells, and cell is complex object with lot of attributes like, borded, content, format, color etc. 
-Now if we want to split a cell, we can develop a method which will copy each attribute of the object.
+Spreadsheet consist of the cells, and cell is complex object with lot of attributes like, borders, content, format, color etc. 
+Now if we want to split a cell, we can develop a method which will copy each attribute of that object.
 This method can became very complex, so we should consider more eleganth solution.
 
 It will be nice if we can copy object with one method, for example cloneMe().
+
 This solution is Prototype pattern.
 
 * Story
