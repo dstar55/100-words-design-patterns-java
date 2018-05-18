@@ -154,21 +154,18 @@ $  cd /src/main/java/com/hundredwordsgof/prototype
 
 Builder, as the name suggests builds complex objects from simple ones step-by-step.
 
-Let’s say, we order child meal at a fast food restaurant. What is it comprised of? Well, a burger, a cold drink, a fries and a toy. In fact childer meal consist of main item, side item, drink and toy.
+Let’s say, we order child meal at a fast food restaurant. What is it comprised of? Well, a burger, a cold drink, a fries and a toy. 
+In fact child meal consist of main item, side item, drink and toy.
 
 Every time a children’s meal is ordered, the service boy will take a burger, a fries, a cold drink and a toy. Now suppose, there are 3 types of burgers available, 
 Cheese, Beef and Chicken, 2 types of cold drinks available, Cola and Orange and 2 types of toys available, a car and a doll.
 
-So, the order might be a combination of one of these, but the process will be the same. One burger, one cold drink, one fries and one toy. 
-All these items are placed in a paper bag and is given to the customer.
+So, the order might be a combination of one of these, but the process how to build child meal, will be the same. One burger, one cold drink, one fries and one toy. All these items are placed in a paper bag and is given to the customer.
+The process of the producing child meal is example of the Builder pattern.
 
-So, Builder pattern, separates the construction of a complex object from its representation so that the same construction process can create different representations.
-
-Builder pattern can be seen in another real life situation, like assemblng the PC.
+Builder pattern, separates the construction of a complex object from its representation so that the same construction process can create different representations.
 
 * Story
-
-Separates the construction of a complex object from its representation so that the same construction process can create different representations.
 
 This pattern is used by PC shops to contruct PC's.
 PC is combination of various parts like CPU, motherboard, memory, storage, power supply, video card, etc.
