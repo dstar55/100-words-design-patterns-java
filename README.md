@@ -669,15 +669,25 @@ $  cd /src/main/java/com/hundredwordsgof/flyweight
 ##### <a id="Proxy"></a>Proxy
 * Motivation
 
-Imagine that we are implementing Viewer which will show Microsoft word document.
+Imagine that we are implementing Viewer which will show Microsoft word document in read only mode.
 
-Opening the document must be fast, but we do not know is there any heavy object inside a document. Heavy object can be image on 10th page of the document.
+The Viewer must open and load document quickly, but the problem is that during loading of the document we do not know is there any "heavy" object inside a document. 
+Heavy object can be image which is injected in word document on let's say, 10th page of the document.
 
-So, in order to ensure fast loading of the document, heavy objects will be loaded on demand, in fact image will be loaded when user is on 10th page of the document. Meanwhile heavy object will be presented with another object which acts as original.
+So, straight solution where we will simply load everything what is inside document can be slow.
 
-That is a Proxy pattern.
+Another solution would be that heavy objects are loaded on demand, in our example, image will be loaded when user is on 10th page of the document. 
+Meanwhile heavy object will be presented with another lite object which acts as original.
 
-Provides a surrogate or placeholder for another object to control access to it.
+That solution is Proxy.
+
+Proxy pattern, orovides a surrogate or placeholder for another object to control access to it.
+
+
+* Story
+
+Envoy Extraordinary is a Proxy. 
+He is an accredited messenger, agent, or representative who is sent by one government to represent it in dealing with another government.
 
 
 * Story
