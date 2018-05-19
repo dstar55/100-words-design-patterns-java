@@ -492,17 +492,17 @@ $  cd /src/main/java/com/hundredwordsgof/composite
 ##### <a id="Decorator"></a>Decorator
 * Motivation
 
-Suppose that we are working on a user interface toolkit and we want to be able to add borders and scroll bars to the windows. We can do that using inheritance, so we will subclasses of Window class like WindowVerticalScrollBar, WindowHorizontalScrollBar, WindowBorder, etc.
+Suppose that we are working on a user interface toolkit and we want to be able to add borders and scroll bars to the windows. 
+If we are using inheritance, we will extend Window class with new classes like, WindowVerticalScrollBar, WindowHorizontalScrollBar, WindowBorder, etc.
 
 Solution with inheritance is not flexible while we will end up in too many subclasses. Such a hierarchy is hard to maintain, hard to extend and hard to use.
 
-So, in we enclose window in object which can add new features like scroll and border we will have much more flexible solution. "Enclosed" object is a decorator.
+But, if we enclose window in object which can add new features like scroll bar and border dynamically we will have much more flexible solution. 
+"Enclosed" object is an decorator.
 
-Decorator patterns, attaches additional responsibilities to an object dynamically.
+Decorator pattern, attaches additional responsibilities to an object dynamically.
 
 * Story
-
-Attach additional responsibilities to an object dynamically. 
 
 The spoilers that are added to a car are examples of the Decorator.
 The spoilers do not change the car itself, but adds additional functionality which is to 'spoil' unfavorable air movement across a body of a vehicle in motion, usually described as turbulence or drag.  
