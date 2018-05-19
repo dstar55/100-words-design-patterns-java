@@ -871,18 +871,25 @@ $  cd /src/main/java/com/hundredwordsgof/interpreter
 ##### <a id="Iterator"></a>Iterator
 * Motivation
 
-In computer science, a data structure is a particular way of organizing and storing data in a computer so that it can be accessed and modified efficiently. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
+In computer science, a data structure is a particular way of organizing and storing data, so that it can be accessed and modified efficiently. 
+More precisely, a data structure is a collection of data values, the relationships amongs them, and the functions or operations that can be applied to the data.
 
-There are numerous types of data structures linked linked lists, arrays, vectors, maps, etc.
-
+There are numerous types of data structures like linked lists, arrays, vectors, maps, etc.
 Each collection of the data structure has its own structure and its own way how to access elements of the collection.
 
-In practice it is not convenient to access each type of collections on a different way, so it will be nice to have common interface for element-by-element access to a collection, independent of the collection’s shape.
+In practice it is not convenient to access each type of collections on a different way, 
+so it will be nice to have common interface for element-by-element access to a collection, independent of the collection’s shape.
 
-The Iterator pattern lets you do all this. The key idea is to take the responsibility for access and traversal out of the aggregate object and put it into an Iterator object that defines a standard traversal protocol.
+The Iterator pattern lets you do all this. 
+The key idea is to take the responsibility for access and traversal out of the aggregate object and put it into an Iterator object that defines a standard traversal protocol.
 
-So, Iterator pattern, provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation
+So, Iterator pattern, provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
+* Story
+
+Book is a set of written, printed sheets bound together into a volume.
+You can browse through the book page by page, or quickly jump to interesting chapter.
+Process of browsing is example of Iterator pattern.
 * Story
 
 Book is a set of written, printed sheets bound together into a volume.
