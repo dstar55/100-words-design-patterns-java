@@ -556,17 +556,17 @@ $  cd /src/main/java/com/hundredwordsgof/decorator
 
 Let's say that we need to develop compiler for brand new programming language.
 
-The process of compiling consist of the steps like scanning, tokenizing, parsing, building abstract syntax tree, code generation etc. For each of the step we need to develop subcomponents which are complex. Usage of the subcomponents is complex as well.
+The process of compiling consist of the steps like scanning, tokenizing, parsing, building abstract syntax tree, code generation etc. 
+For each step we need to develop seprate subcomponent. In principle each subcomponent is complex, and the usage of the subcomponents is complex as well.
 
-The client which use compiler will not call subcomponents in order to compile.
+It does not make sense that the client which want to compile a code is invoking complex subcomponents in order to compile.
 
-We will define uniform interface which presents compiler functionality, a Compiler class. Compiler class represents a facade, which hides "low-level" functionality from the client.
+Better approach would be to define uniform interface which presents compiler functionality, a Compiler class. 
+Compiler class hides "low-level" functionality from the client, so we can say that Compiler class is a facade.
 
-Facade hides the complexity of the system and provides an interface to the client from where the client can access the system.
+Facade deisgn pattern, hides the complexity of the system and provides an interface to the client from where the client can access the system.
 
 * Story
-
-Facade hides the complexity of the system and provides an interface to the client from where the client can access the system.
 
 You want to organize a marriage reception with dinner for 100 people. 
 So in order to organize such event, you need to find and decorate a hall where the event will happen, 
