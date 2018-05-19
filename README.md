@@ -334,25 +334,20 @@ $  cd /src/main/java/com/hundredwordsgof/abstractfactory
 ##### <a id="Adapter"></a>Adapter
 * Motivation
 
-Adapter, as the name suggests adapts existing interface.
+Imagine that we need to develop graphical editor which should be able to draw various graphical shapes like line, circle, rectangle and text.
+All of our graphical elements are subclass of the base class Shape. So we will have LineShape, CircleShape, RectangeShape and TextShape.
 
-Imagine that we need to build graphical editor which should be able to draw various graphical shapes like line, circle, rectangle and text.
+Implementation of the TextShape is not easy. We need to implement lot of complex functionalities like text buffering, text bolding, text coloring, undo, redo, "what you see is what you get", etc.
+We have found open source text library which implements pretty much all of the text functionality which we are looking for.
 
-All of our graphical elements are subclass of the base class Shape. So we will have LineShape, CircleShape RectangeShape and Text Shape.
+Why not adapt existing text library, so that we can reuse already implemented functionality for our graphical editor.
+But, in order to use existing text library, we must adopt interfaces from existing text library towarsd our intefaces.
 
-Implementation of the TextShape is not easy, while we need to implement lot of complex functionalities like buffering, text bolding, text coloring, undo, redo and "what you see is what you get".
-
-We have found open source text editing library which implements pretty much all of the text functionality which we are looking for.
-
-Why not adapt existing text editing library, so that we can reuse that functionality for our graphical editor.
-
-So, we can use Adapter design pattern.
+The process of adaptation of the existing interafces is example of the Adapter pattern.
 
 Adapter, allows us that interface of an existing class can be used from another interface.
 
 * Story
-
-Allows that interface of an existing class to be used from another interface.
 
 Adapters are often used in daily life, for example eletrical adapter is a device that 
 converts attributes of one electrical device or system to those of an otherwise incompatible device or system. 
