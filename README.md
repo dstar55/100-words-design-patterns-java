@@ -928,19 +928,22 @@ $  cd /src/main/java/com/hundredwordsgof/iterator
 ##### <a id="Mediator"></a>Mediator
 * Motivation
 
-During peak air travel times in the United States, there are about 5,000 airplanes in the sky every hour. This translates to approximately 50,000 aircraft operating in our skies each day. How do these aircraft keep from colliding with each other? How does air traffic move into and out of an airport or across the country?
 
-Imagine scenario when one particular aircraft is landing, then he will need to talk to each aircraft which close to that airport. This idea will fail, therefore we should introduce a mediator, and aircrafts will talk only to mediator.
+Imagine that we need to develop flight simulator. Our flight simulator will have base artifacts, like airport and aircraft.
+Aircraft can take off from the airport, fly in the sky and land to the airport.
 
-The task of ensuring safe operations of commercial and private aircraft falls on air traffic controllers which are mediators. They must coordinate the movements of thousands of aircraft, keep them at safe distances from each other, direct them during takeoff and landing from airports, direct them around bad weather and ensure that traffic flows smoothly with minimal delays.
+Imagine a scenario when one particular aircraft is landing to an airport, how that aircraft will be sure that other aircrafts are not trying to land on same airport at same time ?
+It is obvious that our aircraft can't to talk to each aircraft which are in the sky at the moment.
 
-Explained solution is in fact Mediator pattern.
+Better approach would be that we introduce a mediator, which is "man in the middle" and aircrafts will talk only to mediator.
+The task of ensuring safe operations of the aircrafts falls on air traffic controllers which are mediators. 
+They must coordinate the movements of the aircrafts, keep them at safe distances from each other, direct them during takeoff and landing from airports, 
+direct them around bad weather and ensure that traffic flows smoothly with minimal delays.
 
-The colleague objects need to communicate only with the mediator objects. Practically the mediator pattern reduce the required communication channels(protocols) from many to many to one to many and many to one.
+The explained solution is Mediator pattern.
+Mediator pattern, defines an object that controls how a set of objects interacts.
 
 * Story
-
-Defines an object that controls how a set of objects interact.
 
 Radio Taxi is an example of the Mediator pattern.
 Taxi drivers communicate with the Mediator(Radio Taxi Call Center), rather than with each other. 
