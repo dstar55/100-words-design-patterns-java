@@ -1223,28 +1223,37 @@ $  cd /src/main/java/com/hundredwordsgof/strategy
 ##### <a id="TemplateMethod"></a>TemplateMethod
 * Motivation
 
-Imagine that we need to implement application which does various operations on a database. You decided to use JDBC, which is standard Java interface for accessing the relational database. Using JDBC, for every database operation, let's say read operation using select SQL statement, you must execute following steps:
+Imagine that we need to implement application which does various operations on a database. 
+We decided to use JDBC, which is standard Java interface for accessing the relational database. 
+Using JDBC, for database operation, let's say read operation via select SQL statement, user must execute following steps:
 
-connect to database
-execute SQL statement
-process data which are gathered from database
-close database connection
-handle errors if something goes wrong
-If you implement such a database operation few times for a various read operations, you will see that we are repeating same steps. Also you can see that some steps are always the same like connect to database, close database connection, handle errors. Remaining steps like execute SQL statement, and process data which are gathered from database, are different for every read operation. So, let's call steps which are the same invariant and remaining steps are variant.
+* connect to database   
+* execute SQL statement   
+* process data which are gathered from database   
+* close database connection   
+* handle errors if something goes wrong   
 
-The invariant steps are implemented in an abstract base class, while the variant steps are either given a default implementation, or no implementation at all. The variant steps represent "hooks", or "placeholders", that can, or must, be supplied by the component's client in a concrete derived class.
+If we implement such a database operation few times for a various read operations, 
+we will see that we are repeating same steps. 
+Also we can see that some steps are always the same, like connect to database, close database connection, handle errors. 
+Remaining steps like execute SQL statement, and process data which are gathered from database, are different for every read operation. 
+So, let's call steps which are the same invariant and remaining steps are variant.
+
+Now if we implement invariant steps inside abstract base class, 
+while the variant steps are either given a default implementation, or no implementation at all. 
+The variant steps represent "hooks", or "placeholders", that can, or must, be supplied by the component's client in a concrete derived class.
 
 The explained solution is Template Method design pattern.
 
+Template Method, defines a skeleton of an algorithm in an operation.
+Algorithm will have common and specialized part
+
 * Story
 
-Defines a skeleton of an algorithm in an operation.
-Algorithm will have common and specialized part.
-
-Daily routine is example of the Template method.
-Every day workers get up(common part), go to work(specialized part), go home and go to sleep.
-There are workers with different professions like enginners, teachers, etc.
-During work engineer will fix machines while teacher will teach childern how to read and write.
+Daily routine is example of the Template Method.
+Every day workers get up(common part), go to work(common part), do his job(specialized part), go home(common part) and go to sleep(common part).
+There are workers with different professions like engineers, teachers, etc.
+During work engineer will fix machines while teacher will teach children how to read and write.
 At the end of the day they go home, have a dinner and go to sleep.
 
 * Implementation
