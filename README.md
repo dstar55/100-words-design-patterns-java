@@ -1283,23 +1283,35 @@ $  cd /src/main/java/com/hundredwordsgof/templatemethod
 ##### <a id="Visitor"></a>Visitor
 * Motivation
 
-Imagine that we need to implement a compiler. A compiler is computer program that transforms computer code written in one programming language (the source language) into another programming language (the target language).
+Imagine that we need to implement a compiler. A compiler is program wich transforms code written in 
+one programming language (the source language) into another programming language (the target language).
 
-Compiler functionality is divided into two major blocks: a front-end and a back-end. Front-end block is comprised of a sequence of several phases with each stage taking input from its previous stage, modifying it and producing its own representation of source program and passing it to the next phase. The front-end includes three main stages called lexical, syntax and semantic analysis. The first phase takes the source code as a stream of characters and identifies distinct words (tokens) such as variable names, keywords and punctuators. The second phase determines the validity of syntactic organization of the program and produces Abstract Syntax Tree (AST). Semantic analysis checks whether the AST follows the rules of a language (type checking, name resolution).
+Compiler functionality is divided into two major blocks: a front-end and a back-end. 
+Front-end block is comprised of a sequence of several phases with each stage taking input from its previous stage, 
+modifying it and producing its own representation of source program and passing it to the next phase. 
+The front-end includes three main stages called lexical, syntax and semantic analysis. 
 
-As you can see, Abstract Syntax Tree, which represents the program written in source code, is created during second phase.
+The first phase takes the source code as a stream of characters and identifies distinct words (tokens) such as variable names, keywords and punctuators.
+The second phase determines the validity of syntactic organization of the program and produces Abstract Syntax Tree (AST). 
+Semantic analysis checks whether the AST follows the rules of a language (type checking, name resolution, etc.).
 
-AST is used in later a phases of the compiling process for a operations like, type-checking, code generation, code optimization, flow analysis, pretty-printing, code instrumentation, etc.
+AST, which represents the program written in source code, is created during second phase and is used in later a phases of the compiling process 
+for a operations like, type-checking, code generation, code optimization, flow analysis, pretty-printing, code instrumentation, etc.
 
-Most of these operations will need to treat nodes that represent assignment statements differently from nodes that represent variables or arithmetic expressions. Distributing all these operations across the various node classes leads to a system that's hard to understand, maintain and change.
+Most of these operations will need to treat nodes that represent assignment statements differently from nodes that represent 
+variables or arithmetic expressions. 
+Distributing all these operations across the various node classes leads to a system that's hard to understand, maintain and change.
 
-It would be better if each new operation could be added separately, and the node classes were independent of the operations that apply to them. If we package related operations in a separate object, called a visitor, and pass it to elements of the AST as it's traversed, then when an element of the AST "accepts" the visitor, it sends a request to the visitor that encodes the element's class
+It would be better if each new operation could be added separately, and the node classes were independent of the operations that apply to them. 
+If we package related operations in a separate object, called a visitor, and pass it to elements of the AST as it's traversed, 
+then when an element of the AST "accepts" the visitor, it sends a request to the visitor that encodes the element's class.
 
 The explained solution is Visitor design pattern.
 
-* Story
+Visitor allows for one or more operations to be applied to a set of objects at runtime, decoupling the operations from object structure.
 
-Allows for one or more operations to be applied to a set of objects at runtime, decoupling the operations from object structure.
+
+* Story
 
 Shopping in supermarket is example of the Visitor pattern. 
 You pick a products and put them in shopping cart. When you get to the checkout, the cashier acts as a visitor, taking the 
