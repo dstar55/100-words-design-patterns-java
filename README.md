@@ -1106,19 +1106,22 @@ $  cd /src/main/java/com/hundredwordsgof/observer
 ##### <a id="State"></a>State
 * Motivation
 
-Imagine that we need to implement state machine. We started with few states, and few simple conditions how to reach those states. Our initial State machine is implemented using if/else blocks, which are checking current state and perform appropriate behavior.
+Imagine that we need to implement state machine. We started with few states, and few simple conditions for those states. 
+Our initial State machine is implemented using if/else blocks, which are checking current state and perform appropriate behavior.
 
-But over the time, number of states increased. In addition the conditions how to reach certain state became more complex. Our if/else based state machine has more if/else blocks and it became really hard to maintain, to extent, to debug such a code base.
+But over the time, number of states increased. In addition the conditions how to reach certain state became more complex. 
+Our if/else based state machine has more and more if/else blocks and it became really hard to maintain, to extent, to debug such a code base.
 
 Is there more elegant way to implement State Machine ?
 
-One approach would be that we create new class for every possible states of a and that we extract the state-related behaviors into these classes.
+Another approach would be that for every possible state, separate class where state related behavior over the common interface will be implemented.
+The Context class will contain a reference to an state object that represents its current state. 
+Instead of performing a behavior on its own, the context will delegate the execution to the state object.
+To change the context's state, one would pass another state object to the context.
 
-The context will contain a reference to a state object that represents its current state. Instead of performing a behavior on its own, the context will delegate the execution to a state object.
+This solution is example of the State pattern. 
 
-To change the context's state, one would pass another state object to the context. But to make states interchangeable, all states classes must follow the common interface, and the context must communicate with its state object via that interface.
-
-This solution is State pattern. State pattern, allow an object to alter its behavior when its internal state changes.
+State pattern, allow an object to alter its behavior when its internal state changes.
 
 * Story
 
@@ -1128,6 +1131,7 @@ Pregnancy is time of great physical and emotional change for women.
 Everything from the size of her belly to the speed at which her heart beats will change over the nine months leading up to childbirth. 
 Partly the result of hormonal fluctuations and partly the physical strain of carrying extra body weight, pregnant women can expect to buy new bras, 
 search for ways to alleviate swollen ankles, gasp for breath after climbing a few stairs, and marvel at how quickly their nails grow.
+
 
 * Image
 
