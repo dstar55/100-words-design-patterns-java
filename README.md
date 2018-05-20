@@ -1042,27 +1042,34 @@ $  cd /src/main/java/com/hundredwordsgof/memento
 
 Imagine that we are developing a computer game.
 
-One feature of our game will be achievements system. It will feature dozens of different badges players can earn for completing specific milestones during game.
+One feature of our game will be awards system. 
+Players will earn dozens of different badges for completing specific milestones during game.
 
-When player pass or reach some points in the game, for example jumps over complex fence, then we need to catch that part of the code and calculate the achievements. In fact we are talking about achievements events.
+When player pass or reach some points in the game, for example jumps over complex fence, 
+then we need to catch that part of the code and calculate the award. 
 
-But, how we will implement such a code ?
+But, how we will implement such a feature ?
 
-One approach would be to find a places in a game code base where achievements events happens and extend those places with a code which implements achievements system. This approach is not flexible, not intuitive, violets the single responsibility principle.
+One approach would be to find a places in a code where specific milestones are completed and extend those places with a code which 
+calculates the awards. This approach is not flexible, not intuitive, makes our code complex and heavy and violets the single responsibility principle.
 
-Another approach would be that achievements events announce that something interesting happened without actually caring who receives the notification. Now we can implement achievements on a separated code base, we just needs to ensure that achievements system is listening to all achievements events.
+Another approach would be that we create award events in a code where specific milestones are completed, 
+award events are then published as notifications, without caring who receives the notification. 
+Awards system is listening to all award events and implements all necessary logic.
 
 This solution is Observer pattern.
 
-Observer pattern define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+Observer pattern define a one-to-many dependency between objects so that when one object changes state, 
+all its dependents are notified and updated automatically.
 
 * Story
 
 Keep me updated.
 
-Newslettter subscription demonstrate Observer pattern.
+Newsletter subscription demonstrate Observer pattern.
 A newsletter is a regularly distributed publication that is generally about one main topic of interest to its subscribers. 
 Subscribers can subscribe or unsubscribe to the newsletters.
+
 
 * Image
 
