@@ -1164,17 +1164,24 @@ $  cd /src/main/java/com/hundredwordsgof/state
 ##### <a id="Strategy"></a>Strategy
 * Motivation
 
-Imagine that we need to implement network load balancer. Load balancer serves as the single point of contact for clients. The load balancer distributes incoming traffic across multiple targets, which increases the availability and capability of your application.
+Imagine that we need to implement network load balancer. Load balancer serves as the single point of contact for clients. 
+The load balancer distributes incoming traffic across multiple targets, which increases the availability and capability of your application.
 
-The question is how load balancer will distribute the incoming traffic ? We can have various algorithms like, round robin, ip-hash, least connected, etc. During a time new algorithms can be introduced. It is obvious that algorithm for traffic distributionc can be implemented on a various ways.
+The question is how load balancer will distribute the incoming traffic ? 
+We can have various algorithms like, round robin, ip-hash, least connected, etc. 
+During a time new algorithms can be introduced. So, it is obvious that algorithm for traffic distribution can be implemented on a various ways.
 
-Straight solution would be to implement few algorithms and hide the invocation of the algorithm in a if/then or in switch statement.
+Straight solution would be to implement few algorithms and hide the invocation of the algorithm in if/then or in switch statement.
 
-But, above solution is not flexible ?
+Is proposed solution flexible enough ?
 
-Another solution would be that we encapsulates the behavior as objects, so that we can select which object to use and, thereby, which behavior to implement based upon some external inputs or state. We further allow for many different behaviors to be implemented without creating huge if/then or switch statements.
+Another solution would be that we define common interface for our algorithm and then 
+we encapsulates the behavior of an algorithm as object which implements common interface.
+During runtime we can select which object to use, many different behaviors can be implemented without creating huge if/then or switch statements.
 
-This solution is Strategy pattern. Strategy pattern, defines a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+This solution is Strategy pattern. 
+Strategy pattern, defines a family of algorithms, encapsulate each one, and make them interchangeable. 
+Strategy lets the algorithm vary independently from clients that use it.
 
 * Story
 
