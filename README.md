@@ -998,13 +998,12 @@ Many cars therefore have disc brakes, which are generally more efficient, at the
 
 Imagine a scenario that we need to replace drum brakes at the rear by ourself ? How we will ensure that new drum brake has all necessary pieces at proper pace. One solution can be that we use Memento.
 
-The drums are removed from both sides, exposing both the right and left brakes. Only one side is disassembled and the other serves as a Memento of how the brake parts fit together. Only after the job has been completed on one side is the other side disassembled. When the second side is disassembled, the first side acts as the Memento.
+The drums are removed from both sides, exposing both the right and left brakes. Only one side is disassembled and the other serves as a Memento of how the brake parts fit together. Only after the job has been completed on one side, the other side is disassembled. When the second side is disassembled, the first side acts as the Memento.
 
-So, Memento design pattern, helps to restore an object’s state to it previous state.
+So, that we an example of the Memento design pattern.
+Memento design pattern, helps to restore an object’s state to it previous state.
 
 * Story
-
-Helps to restore an object’s state to it previous state.
 
 Transactions are operations on the database that occur in an atomic, consistent, durable, and isolated fashion. 
 A transaction can contain multiple operations on the database, each operation can succeed or fail, however a transaction guarantees that if all operations succeed, 
