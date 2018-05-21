@@ -447,16 +447,20 @@ $  cd /src/main/java/com/hundredwordsgof/bridge
 ##### <a id="Composite"></a>Composite
 * Motivation
 
-Imagine that we want to calculate total salary paid to all employees of the organization. It is nothing but the salary of CEO + the salary paid to all the departments.
+Imagine that we need to develop graphical framework which should speed up the development of the bussiness applications, where user works with the data using graphical forms.
+Graphical form is made up of the basic graphical elements like label, text, input field, button, list etc.
 
-What is the salary of a department? It is the salary of the department head + the salary of all projects. What is the total salary of a project? It is the salary of the project manager + the salary of all the project members. In short, the salary of anything is the salary of self + the salary of all its sub groups.
+In order to draw something on the screen, every graphical element should implement common interace with **draw** method.
+But, some graphical elements in addition to draw interface must act as a container for other graphical elements.
+So, for example form is a container for labels, input fields and buttons.
 
-This problem can be solved using Composite pattern. Composite pattern composes objects into tree structures to represent part-whole hierarchies. Group of objects is to be treated in the same way as a single instance of an object.
+It looks that tree structure can be basis for such a graphical framework, but problem is that we must treat leaf node and internal node on same way.
+This problem can be solved using Composite pattern. 
+
+Composite pattern composes objects into tree structures to represent part-whole hierarchies. 
+Group of objects is to be treated in the same way as a single instance of an object.
 
 * Story
-
-Compose objects into tree structures to represent part-whole hierarchies. 
-Group of objects is to be treated in the same way as a single instance of an object. 
 
 Lego brick represents Composite pattern. 
 A brick is a basic object, but on a same time brick is a container which can hold other bricks in order to construct complex objects.
