@@ -790,22 +790,22 @@ $  cd /src/main/java/com/hundredwordsgof/chainofresponsibility
 ##### <a id="Command"></a>Command
 * Motivation
 
-Imagine that we are developing graphical editor. User can add new text and delete or update existing text.
+Imagine that we are developing graphical editor. User can add new text, delete or update existing text.
 
-What to do in a case when user hits wrong action. We should be able to return back to the state of the text before wrong action has been executed.
+What to do in a case when user hits wrong action. The user should have posibility return back to the state of the text before wrong action has been executed.
 
-How to implement such behavior.
+How to implement such behavior ?
 
-One solution would be to holds a list of the text states. This solution is not appropriate while text can be big and if we store a lot of states of such a big text, we can run out of memory.
+One solution would be to hold a list of the text states. If text is big and if we store a lot of states of that big text, we can run out of memory, so this solution is not appropriate for such a scenario.
 
-Another solution would be to use Command pattern. Command object holds inside action and data for specific commands. 
-Application calls execute method on Command object. So application do not need to store different states of the text.
+What if we consider idea, where the current state of text is a result of execution of the sequence of operations. 
+These operations can be undone, with the effect that the text reverts to a previous state. Operations that have been undone become redoable, so that later model states can be reached again if necessary.
+So, we will no longer invokes operations on text directly, but we will create Command objects that invoke the operations. Each text operation will have appropriate Command object.
 
-This solution is Command pattern. Issue requests to objects without knowing anything about the operation being requested or the receiver of the request.
+This solution is Command pattern. 
+Command pattern, issue requests to objects without knowing anything about the operation being requested or the receiver of the request.
 
 * Story
-
-Issue requests to objects without knowing anything about the operation being requested or the receiver of the request.
 
 When your car needs service you visit Car Service Center. On reception you explain a problem and you leave a car.
 The person at reception encapsulates the problem in to order for Car Technician. The order is queued internaly.
