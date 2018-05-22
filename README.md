@@ -734,14 +734,11 @@ $  cd /src/main/java/com/hundredwordsgof/proxy
 ##### <a id="ChainOfResponsibility"></a>Chain Of Responsibility
 * Motivation
 
-Service request to call center is example of the Chain of Responsibility. Request can be handled at front desk level, supervisor level or any higher level. 
-Correct handler of request is only known during execution of the request when request is traversing at various levels.
+Imagine that you just have bought a new wireless router from local Internet Service Provide. You unpack a router from the box, plug the necessary cables and you switch on yours new wireless router. 
+But router is not able to establish internet connection. After checking technical manuals and playing with router settings, you gave up and you finally call ISP operator's call center.
 
-Imagine that you just have bought a new mobile phone. You unpack a phone from the box, put the SIM card and you switch on yours brand new mobile phone. 
-But phone is not able to establish a phone call. After checking technical manuals and playing with phone setting, you gave up and you finally call telecom operator's call center.
-
-The first thing you hear is a robot's voice of the auto responder. It suggests dozen of the possible solutions to various problems, but none of these is related to yours. 
-After a while, robot connects you to the live operator. After short discussion operator realized that he can not help you either. 
+The first thing you hear is a machine voice of the auto responder. It suggests dozen of the possible solutions to various problems, but none of these is related to yours. 
+After a while, machine connects you to the live operator. After short discussion operator realized that he can not help you either. 
 So, he connects you to engineer who finally fixes the problem.
 
 That was example of the Chain of Responsibility.
