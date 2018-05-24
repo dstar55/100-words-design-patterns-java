@@ -394,23 +394,29 @@ $  cd /src/main/java/com/hundredwordsgof/adapter
 ##### <a id="Bridge"></a>Bridge
 * Motivation
 
-Let's imagine that we have Shape class with a two subclasses: Line and Rectangle. We want to extend this hierarchy to incorporate colors by creating Red and Blue shapes subclasses. But since we already have subclasses, we need to create 4 class combinations such as Red and BlueLine and Red and BlueRectangle.
+Let's imagine that we want to develop audio player on our Windows OS.
+We define base class, Audio, which has two subclasses MP3Audio and WavAudio.
+First version of the player on Windows is running well, but after some time we want to implement same player on Linux OS.
 
-Adding more shape types and colors will make this hierarchy even bigger. For example, to add Triangles you have to create two subclasses, one for each color. And after that, adding new color will require creating three subclasses, one for each shape type. Further we go, worse it becomes.
+How we will tackle this situation ?
 
-This problem happens each time we extend the class hierarchy into several independent dimensions.
+If we incorporate OS specifics in our hierarchy we will end up with 4 class combinations such as
+WindowsMP3Audio, LinuxMP3Audio, WindowsWavAudio and LinuxWavAudio.
+Adding more codec types and more operating systems will make hierarchy even bigger. 
 
-The Bridge pattern attempts to solve it by replacing inheritance with delegations. You have to extract one of these "dimensions" into separate class hierarchy. Original classes will contain a reference to an object of the new hierarchy, instead of storing all of its state and behaviors inside of one class.
+Appropriate solution would be that we extract our structure into two separated hierarchies.
 
-This way we will extract Color into its own class with two child classes, Red and Blue. The Shape class will get a reference field to one of the color classes. Using that reference, it will be able to delegate work to color objects when needed. This reference will serve as a bridge between Shapes and Color.
+Original audio structure classes will remain a same and it will contain a reference to an object of the new hierarchy, the OS hierarchy.
+This way we will extract OS specifics into its own class with two child classes, Windows and Linux. 
+The Audio class will get a reference field to one of the OS classes. 
+Using that reference, it will be able to delegate work to OS objects when needed. 
+This reference will serve as a bridge between Audio and OS hierarchies.
 
-From now on, adding new colors will not require changing shape classes and vice versa.
+Explained solution is example of the Bridge pattern.
 
 So, Bridge pattern decouples an abstraction from its implementation so that the two can vary independently.
 
 * Story
-
-Decouple an abstraction from its implementation so that the two can vary independently.
 
 Steering wheel is an example of the Bridge.
 The purpose of a steering wheel is to transmit  driver's input to the steered wheels in order to dynamically change direction of the vehicle.
