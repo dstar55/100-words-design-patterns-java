@@ -618,28 +618,33 @@ $  cd /src/main/java/com/hundredwordsgof/facade
 ##### <a id="Flyweight"></a>Flyweight
 * Motivation
 
-Imagine that we are implementing simple video game.
+Let's imagine that you are teaching youngsters programing. 
+You decided to start with simple but exciting example, so during a course graphical editor which can draw a line will be developed.
 
-In the game players will be moving around the map and shoot each other.
+Base artifact is a class Line with start and end point. Now draw method needs to be implemented and voila our simple graphical editor implemented.
+After first usage, we decided that new feature will be implemented, in fact we want that our line has a basic colors.
 
-So, in game in addition to the players and map, we need to have various graphical object like bullets, missiles, and shrapnel from explosions,etc.
+Line class will be extended with new attribute(Color class) which holds information's about the color and draw method will be extended accordingly.
+Now we have new version of our editor, and some users wants to test the edge of the editor, so they draw few thousand lines.
+Few thousand lines means that we have few thousand Line objects in memory, but we have few thousand Color objects in a memory as well, even our editor 
+is drawing lines only with basic colors.
 
-When we run a game it is obvious that we will have large number of graphical objects, where each requires an amount of memory. In a alpha version of the game we will leave that situation as it is.
+Can we use memory more efficiently ?
+Color objects includes information's that are duplicated.
+Why not set up a pool of the basic color objects and share those colors, when Line object need it ?
 
-Alpha version of the game was running flawlessly on my machine, but on the another machine we were able to play. The game kept crashing soon after launching and after troubleshooting we realized that there is not enough memory, meaning that our game is not using memory on a proper way.
+The properties of the objects that are shared and are reasonably unchanging are moved into flyweight objects. 
+For each of the Line objects that use the shared data, only a reference to the appropriate flyweight object is required. 
+This will drastically reduce the memory used by each of the Line objects.
 
-So, it is obvious that we need to memory on a smarter way. If graphical objects includes information that is duplicated(e.g Color, Texture) then flyweight pattern can be used.
+Explained solution is example of the Flyweight pattern.
+Flyweight patterns removes duplicates and reduces memory by loading only the data necessary to perform action.
 
-When this pattern is applied, the properties of the objects that are shared and are reasonably unchanging are moved into flyweight objects. For each of the main objects that use the shared data, only a reference to the appropriate flyweight object is required. This can drastically reduce the memory used by each of the main objects.
-
-So, Flyweight patterns removes duplicates and reduces memory by loading only the data necessary to perform action.
 
 * Story
 
-Remove duplicates.
-
-Flyweight pattern is used to reduce memory by loading only the data necessary to perform action.
-Database normalization is flyweight. Normalisation, is the process of organizing the columns (attributes) and tables (relations) of a relational database to minimize data redundancy.
+Database normalization is flyweight. 
+Normalization, is the process of organizing the columns (attributes) and tables (relations) of a relational database to minimize data redundancy.
 
 * Image
 
