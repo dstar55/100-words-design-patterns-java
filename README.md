@@ -216,15 +216,15 @@ $  cd /src/main/java/com/hundredwordsgof/builder
 
 Imagine that we need to develop a reporting library. 
 Two basic abstractions in this library are the classes Engine and Report. 
-Both classes are abstract, and clients have to subclass them to realize their application specific implementations. 
+Both classes are abstract, and clients have extend them in order to realize their application specific implementations. 
 
 The Engine class is responsible for managing Reports and will create them as required.
-Report subclases which Engine should instatiate are application specific and Engine will only knows when a new report should be created, but not what type of Report to create. 
+Report subclasses which Engine should instatiate are application specific and Engine will only knows when a new report should be created, but not what type of Report to create. 
 This leads us to situation that our library should instantiate classes, but it only knows about abstract classes, which it cannot instantiate.
 
 So how we can solve this ?
 
-If we encapsulate the knowledge of which Report subclasses to create and move this knowledge out of the library, then Engine subclass will be able to create Report objects.
+If we encapsulate the knowledge of which Report subclasses to create and move this knowledge outside of the library, then Engine subclass will be able to create Report objects.
 This solution is Factory Method pattern.
 
 Factory Method defines an interface for creating objects, but lets subclasses decides which class to instantiate.
