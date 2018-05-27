@@ -214,21 +214,23 @@ $  cd /src/main/java/com/hundredwordsgof/builder
 ##### <a id="FactoryMethod"></a>Factory Method
 * Motivation
 
-Imagine that you are creating a booking application. The basic version of your app can handle only the renting of the rooms, so the majority of your code lives in a Room class.
+Imagine that we need to develop a reporting library. 
+Two basic abstractions in this library are the classes Engine and Report. 
+Both classes are abstract, and clients have to subclass them to realize their application specific implementations. 
 
-After a while, your app becomes so popular that you requests to rent houses and apartments as well.
+The Engine class is responsible for managing Reports and will create them as required.
+Report subclases which Engine should instatiate are application specific and Engine will only knows when a new report should be created, but not what type of Report to create. 
+This leads us to situation that our library should instantiate classes, but it only knows about abstract classes, which it cannot instantiate.
 
-Great news, right?! But how about the code? It looks that most of your code is coupled to the Room class. Adding House would require making changes to the entire codebase. Moreover, if you decide to add another type of transportation to the app, you will probably need to make all of those change again.
+So how we can solve this ?
 
-You will end up with nasty code riddled with conditionals, which select behaviors depending on classes of renting objects.
-
-So, the solution for this situation is Factory Method.
+If we encapsulate the knowledge of which Report subclasses to create and move this knowledge out of the library, then Engine subclass will be able to create Report objects.
+This solution is Factory Method pattern.
 
 Factory Method defines an interface for creating objects, but lets subclasses decides which class to instantiate.
 
 * Story
 
-Defines an interface for creating objects, but lets subclasses decides which class to instantiate.
 Plasticine is used for children's play. Plasticine is injected into predefined molds. The class of end product(ball, toy, sculpture, cake) is determined by the mold.
 
 * Image
