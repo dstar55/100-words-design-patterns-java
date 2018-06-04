@@ -268,33 +268,26 @@ $  cd /src/main/java/com/hundredwordsgof/factorymethod
 ##### <a id="AbstractFactory"></a>Abstract Factory
 * Motivation
 
-Imagine that you are creating a simulator of a furniture shop. Your code consists of:
 
-Family of related products, say: Chair + Sofa + CoffeeTable.
+Imagine that we are developing 	framework for a GUI environment, were windows will be drawn on display device and user will 
+interact with GUI with a mouse and keyboard. 
 
-Several variants of this family. For example, products Chair + Sofa + CoffeeTable available in these variants: IKEA, VictorianStyle, ArtDeco.
+First version of the framework will support Window OS, so Factory method is used for creation of the graphical abstractions like, 
+Frame, Window, ScrollBar, etc.
 
-You need a way to create individual furniture objects so that they match other objects of the same family. Customers get quite frustrated when they receive non-matching furniture.
+In second version framework will be extended to Linux OS.
+So, how we will extend our factory method ?
 
-Also, you do not want to change existing code when adding new products or families of products to the program. Furniture vendors update their catalogs very often, and you do not want to change the core code each time it happens.
+One way would be to introduce factory abstraction where each OS will have dedicated factory for creation of the graphical abstractions.
+The proposed solution is example of the Abstract Factory.
+ 
+Abstract Factory is one level higher in abstraction than Factory Method. 
+Factory Method abstracts the way objects are created, while Abstract Factory also abstracts the way factories are created 
+which in turn abstracts the way objects are created.
 
-The first thing that Abstract Factory pattern suggests is to go over all distinct products and force their variants to follow common interfaces. For example, all chair variants must follow the Chair interface; all coffee tables must implement the CoffeeTable interface, etc.
-
-The second step is to create the AbstractFactory, a base interface that declares methods for creating all products that make a product family (i.e. createChair, createSofa and createCoffeeTable). The important thing here is to make these methods to return abstract product types represented by interfaces we extracted previously: Chair, Sofa, CoffeeTable, etc.
-
-The third step is to implement concrete factories. Factories are classes that return products of a particular kind. For example, IKEAFactory, will only return IKEAChair, IKEASofa and IKEACoffeeTable objects. All factories must follow the AbstractFactory interface while creating the same variety of products.
-
-Client code has to work with factories and products only through their abstract interfaces. This way you can alter the type of products used in client code by passing it a different factory object.
-
-So, when client code asks a factory to produce a chair, it must not be aware of the factory's concrete class. It must not be aware of the concrete class of chair it will get either. Whether it will be a modern IKEA model or a Victorian style chair, it must work with all chairs in the same way, using the abstract Chair interface. The thing that the client code will know is that the resulting chair implements the sit method, declared in the interface. It also knows that whichever chair will be returned, it will match the type of sofa and coffee table, produced by the same factory.
-
-Okay, but who creates the actual factory objects? Usually, the program creates a concrete factory object at initialization stage, and the factory type is picked depending on the configuration or environment.
-
-Abstract Factory an interface for creating families of related objects, without specifying concrete classes.
+Abstract Factory provides an interface for creating families of related objects, without specifying concrete classes.
 
 * Story
-
-Provides an interface for creating families of related objects, without specifying concrete classes. 
 
 This pattern is found in the cards stamping equipment used in the 
 manufacture in order to produce playing cards. 
