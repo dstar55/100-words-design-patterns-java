@@ -5,6 +5,7 @@ permalink: /patterns/State/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,14 +13,48 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Imagine that we need to implement a state machine. 
+We begin with a few states, and a few simple conditions for those states. 
+Our initial State machine is implemented using if/else blocks, which are checking the current state and which perform the appropriate actions.
+
+
+But, the number of states gradually increases over time. 
+In addition, the conditions for reaching certain states become more complex. 
+Our 'if/else' – based state machine has more and more 'if/else' blocks and it becomes really difficult to maintain and debug such a code base.
+
+
+Is there a more elegant way to implement the State Machine?
+
+
+Another approach would be that, for every possible state, a separate class is implemented over a common  interface, with the state related behavior. 
+The Context class will contain a reference to a state object, which represents its current state. 
+Instead of acting on its own, the context will delegate the execution to the state object. 
+To change the state of the context, one would pass another state object to the context.
+
+
+This solution is an example of the State pattern.
+
+
+The State pattern allows an object to alter its behavior when its internal state changes.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
 Behavior depends on its state.
 
-Pregnancy is time of great physical and emotional change for women. 
-Everything from the size of her belly to the speed at which her heart beats will change over the nine months leading up to childbirth. 
-Partly the result of hormonal fluctuations and partly the physical strain of carrying extra body weight, pregnant women can expect to buy new bras, 
-search for ways to alleviate swollen ankles, gasp for breath after climbing a few stairs, and marvel at how quickly their nails grow.
+
+Pregnancy is a time of great physical and emotional change for women. 
+Everything from the size of her belly to the speed at which her heart beats will change over the nine months leading up to the childbirth. 
+Partly as the result of hormonal fluctuations, and partly due to the physical strain of carrying extra body weight, 
+pregnant women can expect to buy new bras, search for ways to alleviate swollen ankles, gasp for breath after climbing a few stairs, 
+and marvel at how quickly their nails grow.
+
 
 
 
@@ -29,7 +64,7 @@ search for ways to alleviate swollen ankles, gasp for breath after climbing a fe
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/state.jpg "Human Pregnancy")  
-###### <a href="http://flickr.com/photos/19616008@N00">Petteri Sulonen from Helsinki, Finland</a>, <a href="https://commons.wikimedia.org/wiki/File:Pregnant_graffiti.jpg">Pregnant graffiti</a>, <a href="https://creativecommons.org/licenses/by/2.0/legalcode">CC BY 2.0</a>
+###### <a href="https://commons.wikimedia.org/wiki/File:Pregnant_graffiti.jpg">Pregnant graffiti</a> by, <a href="http://flickr.com/photos/19616008@N00">Petteri Sulonen from Helsinki, Finland</a>, <a href="https://creativecommons.org/licenses/by/2.0/legalcode">CC BY 2.0</a>
 
 
 

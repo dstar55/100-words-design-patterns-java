@@ -5,6 +5,7 @@ permalink: /patterns/Adapter/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,12 +13,36 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Imagine that we need to develop a graphical editor which should be able to draw various graphical shapes like line, circle, rectangle and text. 
+All of our graphical elements are subclass of the base class Shape. So, we will have LineShape, CircleShape, RectangeShape and TextShape.
+
+
+The implementation of the TextShape is not easy. 
+We need to implement a lot of complex functionalities, such as text buffering, text bolding, text coloring, undo, redo, 
+'what you see is what you get', etc. We have found an open source text library which implements pretty much all of the text functionality 
+which we are looking for.
+
+
+Why not adapt an existing text library, so that we can reuse already implemented functionality for our graphical editor? 
+But, in order to use the existing text library, we must adapt interfaces from the existing text library to our interfaces.
+
+
+The process of adaptation of the existing interfaces is an example of the Adapter pattern.
+
+
+The adapter allows us to access the interface of an existing class from another interface.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Allows that interface of an existing class to be used from another interface.
-
-Adapters are often used in daily life, for example eletrical adapter is a device that 
-converts attributes of one electrical device or system to those of an otherwise incompatible device or system. 
+Adapters are often used in daily life, for example, an electrical adapter is a device that converts attributes of one electrical device or 
+system to those of an otherwise incompatible device or system. 
 Some modify power or signal attributes, while others merely adapt the physical form of one electrical connector to another.
 
 

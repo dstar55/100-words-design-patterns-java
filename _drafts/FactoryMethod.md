@@ -5,6 +5,7 @@ permalink: /patterns/FactoryMethod/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,10 +13,38 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Imagine that we need to develop a reporting library. 
+Two basic abstractions in this library are the Engine and the Report classes. 
+Both classes are abstract, and clients have to extend them in order to realize their application specific implementations.
+
+
+The Engine class is responsible for managing Reports and will create them as required. 
+Report subclasses which Engine should instantiate are application–specific and Engine only knows when a new report should be created, 
+but not what type of Report to create. 
+This leads us to a situation in which our library should instantiate classes, but it only knows about abstract classes, which it cannot instantiate.
+
+
+So, how can we solve this?
+
+
+If we encapsulate the knowledge of which Report subclasses to create and move this knowledge outside of the library, then 
+Engine subclass will be able to create Report objects. This solution is the Factory Method pattern.
+
+
+The Factory Method defines an interface for creating objects, but lets subclasses decide which class to instantiate.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Defines an interface for creating objects, but lets subclasses decides which class to instantiate.
-Plasticine is used for children's play. Plasticine is injected into predefined molds. The class of end product(ball, toy, sculpture, cake) is determined by the mold.
+Plasticine is used as a toy for children. Plasticine is injected into predefined molds. 
+The class of end product (ball, toy, sculpture, cake) is determined by the mold.
+
 
 
 

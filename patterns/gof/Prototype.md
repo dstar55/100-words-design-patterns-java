@@ -5,6 +5,7 @@ permalink: /patterns/Prototype/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,11 +13,28 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+In Singleton pattern we saw how to tackle the situation when we should instantiate a single object of a class. 
+However, we may have a situation when, during runtime, we want to copy an object which already exists in memory, particularly if the object is complex.
+
+
+So, imagine that we are developing software which can work with spreadsheets. A spreadsheet consist of cells, and a cell is a complex object with lot of attributes, such as borders, content, format, color, etc. Now, if we want to split a cell, we can develop a method which will copy each attribute of that object. This method can became very complex, so we should consider a more elegant solution.
+It would be nice if we could copy an object with a single method, for example cloneMe().
+
+Such solution is a Prototype pattern.
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Clone itself.
+The Clone itself.
 
-Sheep Dolly is the first mammal to be cloned, so Dolly is a duplicate.
+
+Dolly the sheep was the first mammal to be cloned, so Dolly is a duplicate.
+
 
 
 
@@ -26,7 +44,7 @@ Sheep Dolly is the first mammal to be cloned, so Dolly is a duplicate.
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/prototype.jpg "Sheep Dolly")  
-###### Geni, <a href="https://commons.wikimedia.org/wiki/File:Dolly_the_sheep_2016.JPG">Dolly the sheep 2016</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>
+###### <a href="https://commons.wikimedia.org/wiki/File:Dolly_the_sheep_2016.JPG">Dolly the sheep 2016</a>, By Geni,<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>
 
 
 

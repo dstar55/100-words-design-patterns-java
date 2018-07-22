@@ -5,6 +5,7 @@ permalink: /patterns/AbstractFactory/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,13 +13,38 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+
+Imagine that we are developing a framework for a GUI environment, were windows will be drawn on a display device and the user will 
+interact with the GUI using a mouse and a keyboard.
+
+The first version of the framework will support Windows OS, so Factory method is used for creation of the graphical abstractions 
+like Frame, Window, ScrollBar, etc.
+
+
+In the next version, the framework will be extended to Linux OS. So, how should we extend our factory method?
+
+
+One way would be to introduce factory abstraction, where each OS will have dedicated factory for creation of the graphical abstractions. 
+The proposed solution is an example of the Abstract Factory.
+
+The Abstract Factory is one level higher in abstraction than the Factory Method. 
+The Factory Method abstracts the way objects are created, while the Abstract Factory also abstracts the way factories are created, 
+which in turn abstracts the way objects are created.
+
+
+The Abstract Factory provides an interface for creating families of related objects, without specifying concrete classes.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Provides an interface for creating families of related objects, without specifying concrete classes. 
-
-This pattern is found in the cards stamping equipment used in the 
-manufacture in order to produce playing cards. 
-Cards stamping machine is an Abstract Factory which produces a cards. 
+This pattern is found in the cards stamping equipment, used in manufacturing of playing cards. 
+A card stamping machine is an Abstract Factory which produces cards. 
 The same machine is used to stamp French, Italian or German cards. 
 
 

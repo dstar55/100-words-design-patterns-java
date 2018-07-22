@@ -5,6 +5,7 @@ permalink: /patterns/Mediator/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,16 +13,41 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Imagine that we need to develop a flight simulator. Our flight simulator will have base artifacts, like airport and aircraft. 
+An aircraft can take off from the airport, fly in the sky and land on the airport.
+
+
+Imagine a scenario when one particular aircraft is landing on the airport: how can that aircraft be sure that the other aircrafts are not 
+trying to land on the same airport at the same time? It is obvious that our aircraft can't talk to each and every aircraft which is currently 
+approaching the airport.
+
+
+A better approach would be to introduce a mediator, which is a "man in the middle", meaning that all the aircrafts will communicate only with the mediator. 
+The task of ensuring the safe operations of the aircrafts belongs to air traffic controllers, who are mediators. 
+They must coordinate the movements of all the aircrafts, keep them at safe distances from each other, direct them during takeoff and landing, 
+direct them around bad weather and ensure that the air traffic flows smoothly with minimal delays.
+
+
+The example above is a Mediator pattern. The Mediator pattern defines an object that controls how a set of objects interacts.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Defines an object that controls how a set of objects interact.
+A Radio Taxi is an example of the Mediator pattern. 
+The taxi drivers communicate with the Mediator (Radio Taxi Call Center), rather than with each other.
 
-Radio Taxi is an example of the Mediator pattern.
-Taxi drivers communicate with the Mediator(Radio Taxi Call Center), rather than with each other. 
 
-When customer needs a taxi, he calls Radio Taxi Call Center. 
-All taxis have a GPS unit which tells where the taxi is present right now, also there is a central information system which tells which taxi is available to serve the customer. 
-The call center will contact the available taxi nearest to customer’s location and send them to serve the customer.
+When a customer needs a taxi, he calls the Radio Taxi Call Center. 
+All taxis have GPS units, which tell the Radio Taxi Call Center the taxis' current locations; there is also a central information system, 
+which tells which taxi is currently available to serve the customer. 
+The call center will contact the available taxi nearest to customer’s location and send it to serve the customer.
+
 
 
 

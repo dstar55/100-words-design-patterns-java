@@ -5,6 +5,7 @@ permalink: /patterns/Decorator/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,12 +13,33 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Suppose that we are working on a user interface toolkit and we want to be able to add borders and scroll bars to the windows. 
+If we use inheritance, we will extend Window class with new classes, such as WindowVerticalScrollBar, WindowHorizontalScrollBar, WindowBorder, etc.
+
+
+The solution with the inheritance is not flexible, since we will end up with too many subclasses. 
+Such a hierarchy is difficult to maintain, difficult to extend and difficult to use.
+
+But, if we enclose a window in an object which can add new features, such as scroll bar and border dynamically, 
+we will have a much more flexible solution. The "enclosed" object is a decorator.
+
+
+The Decorator pattern attaches additional responsibilities to an object dynamically.
+
+
+Decorator pattern, attaches additional responsibilities to an object dynamically.
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Attach additional responsibilities to an object dynamically. 
+The spoilers that are added to a car are examples of the Decorator. 
+The spoilers do not change the car itself, but add additional functionality which is to 'spoil' unfavorable air movement across a body of a vehicle in motion, usually described as turbulence or drag.
 
-The spoilers that are added to a car are examples of the Decorator.
-The spoilers do not change the car itself, but adds additional functionality which is to 'spoil' unfavorable air movement across a body of a vehicle in motion, usually described as turbulence or drag.  
 
 
 
@@ -26,8 +48,8 @@ The spoilers do not change the car itself, but adds additional functionality whi
 ###  <a id="Image"></a>Image 
 
 
-![alt text](http://www.design-patterns-stories.com/assets/img/image/decorator.jpg "Decorator")  
-###### <a href="http://www.flickr.com/people/15779944@N00">steve lyon</a> from los angeles, ca, usa, <a href="https://commons.wikimedia.org/wiki/File:2013_Porsche_911_Carrera_S_(8233337583).jpg">2013 Porsche 911 Carrera S (8233337583)</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a>
+![alt text](http://www.design-patterns-stories.com/assets/img/image/decorator.jpg "013 Porsche 911 Carrera S (8233337583)")  
+######  <a href="https://commons.wikimedia.org/wiki/File:2013_Porsche_911_Carrera_S_(8233337583).jpg">2013 Porsche 911 Carrera S (8233337583)</a>, by <a href="http://www.flickr.com/people/15779944@N00">steve lyon</a> from los angeles, ca, usa,<a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a>
 
 
 

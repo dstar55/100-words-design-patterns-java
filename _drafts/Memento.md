@@ -5,6 +5,7 @@ permalink: /patterns/Memento/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,16 +13,47 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+ModerModern cars have brakes on all four wheels, operated by a hydraulic system. 
+The brakes may be disc type or drum type.
+
+
+The front brakes play a greater part in stopping the car than the rear ones, because braking throws the car weight forward on to the front wheels.
+
+
+Many cars therefore have disc brakes, which are generally more efficient, at the front, and drum brakes at the rear.
+
+
+Imagine a scenario in which we need to replace the drum brakes at the rear by ourselves? 
+How  do we ensure that the new drum brake has all the necessary pieces in their proper places? 
+One solution might be to use the Memento.
+
+
+The drums are removed from both sides, exposing both the right and left brakes. 
+Only one side is disassembled and the other serves as a Memento of how the brake parts fit together. 
+The other side is disassembled only after the job has been completed on one side. 
+When the second side is disassembled, the first side acts as the Memento.
+
+
+Thus we have an example of the Memento design pattern. 
+Memento design pattern helps to restore an object’s state to it previous state.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Helps to restore an object’s state to it previous state.
+Transactions are operations on the database which occur in an atomic, consistent, durable, and isolated fashion. 
+A transaction can contain multiple operations on the database; each operation can succeed or fail – however, a transaction guarantees that, 
+if all operations succeed, the transaction would commit and would be final. 
+And if any operation fails, then the transaction would fail and all operations would roll back and leave the database in its original state, 
+as if nothing has happened.
 
-Transactions are operations on the database that occur in an atomic, consistent, durable, and isolated fashion. 
-A transaction can contain multiple operations on the database; each operation can succeed or fail, however a transaction guarantees that if all operations succeed, 
-the transaction would commit and would be final. 
-And if any operation fails, then the transaction would fail and all operations would rollback and leave the database as if nothing has happened.
-
-This mechanism of rolling back uses the memento design pattern. 
+This rollback mechanism uses the Memento design pattern.
+ 
 
 
 

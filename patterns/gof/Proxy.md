@@ -5,6 +5,7 @@ permalink: /patterns/Proxy/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,12 +13,37 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Imagine that we are implementing a Viewer application, which will show a Microsoft Word document in read only mode.
+
+The Viewer must open and load document quickly, but the problem is that during loading of the document, 
+we don't know if there are any "heavy" objects inside a document. 
+A heavy object can be an image which is injected in a Word document on, let's say, page 10 of the document.
+
+So, a straight solution where we simply load everything that is inside the document can be slow.
+
+
+Another solution would be that heavy objects are loaded on demand: in our example, 
+an image will be loaded when the user is on the page 10 of the document. 
+Meanwhile, the heavy object will be presented by another, "lighter" object, which acts as original.
+
+
+That solution is a Proxy.
+
+
+The Proxy pattern provides a surrogate or a placeholder for another object to control access to it.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Provide a surrogate or placeholder for another object to control access to it.
+An Envoy Extraordinary is a Proxy. 
+He is an accredited messenger, agent, or representative, who is sent by one government to represent it in dealings with another government.
 
-Envoy Extraordinary is a Proxy. 
-He is an accredited messenger, agent, or representative who is sent by one government to represent it in dealing with another government.
 
 
 
@@ -27,7 +53,7 @@ He is an accredited messenger, agent, or representative who is sent by one gover
 
 
 ![alt text](http://www.design-patterns-stories.com/assets/img/image/proxy.jpg "The Envoy Extraordinary")  
-###### By John Watkins (Kenwoon Mengyee, Burmese ambassador, The Envoy Extraordinary and Minister Plenipotentiary) [Public domain or Public domain], <a href="https://commons.wikimedia.org/wiki/File%3AKinwun_Mingyi.jpg">via Wikimedia Commons</a>
+###### Burmese ambassador, The Envoy Extraordinary and Minister Plenipotentiary, By John Watkins (Kenwoon Mengyee) [Public domain or Public domain], <a href="https://commons.wikimedia.org/wiki/File%3AKinwun_Mingyi.jpg">via Wikimedia Commons</a>
 
 
 

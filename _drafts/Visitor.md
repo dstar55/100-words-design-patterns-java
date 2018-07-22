@@ -5,6 +5,7 @@ permalink: /patterns/Visitor/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,13 +13,52 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Imagine that we need to implement a compiler. 
+A compiler is a program which transforms code written in one programming language (the source language) into another programming 
+language (the target language).
+
+The compiler functionality is divided into two major blocks: a front-end and a back-end. 
+The front-end block comprises of a sequence of several phases, with each stage taking input from its previous stage, 
+modifying it and producing its own representation of the source program and passing it to the next phase. 
+The front-end includes three main stages, which are called the lexical, the syntax and the semantic analysis.
+
+
+The first phase takes the source code as a stream of characters and identifies distinct words (tokens), such as variable names, keywords and 
+punctuators. 
+The second phase determines the validity of syntactic organization of the program and produces the Abstract Syntax Tree (AST). 
+The semantic analysis checks whether the AST follows the rules of a language (type checking, name resolution, etc.).
+
+
+AST, which represents the program written in source code, is created during the second phase and is used in later phases of the compiling process 
+for operations such as type-checking, code generation, code optimization, flow analysis, pretty-printing, code instrumentation, etc.
+
+
+Most of these operations will need to treat nodes that represent assignment statements differently from nodes that represent variables or 
+arithmetic expressions. 
+Distributing all these operations across the various node classes leads to a system that's hard to understand, maintain and change.
+
+
+It would be better if each new operation could be added separately, and if the node classes were independent of the operations that apply to them. 
+If we package related operations in a separate object, called a visitor, and pass it to elements of the AST as it is traversed, 
+then when an element of the AST "accepts" the visitor, it sends a request to the visitor that encodes the element's class.
+
+
+The solution in the above example is a Visitor design pattern.
+
+The Visitor allows one or more operations to be applied to a set of objects at runtime, decoupling the operations from the object structure.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Allows for one or more operations to be applied to a set of objects at runtime, decoupling the operations from object structure.
-
-Shopping in supermarket is example of the Visitor pattern. 
-You pick a products and put them in shopping cart. When you get to the checkout, the cashier acts as a visitor, taking the 
-disparate set of elements, some with prices and others that needs to be weighted, in order to provide you with total.
+Shopping in a supermarket is an example of the Visitor pattern. You pick products and put them in a shopping cart. 
+When you get to the checkout, the cashier acts as a visitor, taking the disparate set of elements, some with prices and others that need to be 
+weighted, in order to provide you with the total to be paid.
 
 
 

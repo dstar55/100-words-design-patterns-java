@@ -5,6 +5,7 @@ permalink: /patterns/Interpreter/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,9 +13,15 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-A person who translates orally from one language into another.
+A person who provides an oral translation from one language into another.
 
 
 

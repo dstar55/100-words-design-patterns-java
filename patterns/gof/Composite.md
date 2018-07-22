@@ -5,6 +5,7 @@ permalink: /patterns/Composite/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,13 +13,34 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Imagine that we need to develop a graphical framework which should speed up the development of business applications, 
+where the user works with data using graphical forms. 
+A graphical form is made up of the basic graphical elements, such as label, text, input field, button, list, etc.
+
+
+In order to draw something on the screen, each graphical element should implement a common interface with the draw method. 
+But, in addition to the draw interface, some graphical elements must act as containers for other graphical elements. 
+So, for example, a form is a container for labels, input fields and buttons.
+
+
+It seems that a tree structure can be the basis for such a graphical framework, but the problem is that we must treat a leaf node and an internal 
+node the same way. This problem can be solved by using the Composite pattern.
+
+
+The Composite pattern composes objects into tree structures to represent part-whole hierarchies. 
+A group of objects is to be treated the same way as a single instance of an object.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Compose objects into tree structures to represent part-whole hierarchies. 
-Group of objects is to be treated in the same way as a single instance of an object. 
-
-Lego brick represents Composite pattern. 
-A brick is a basic object, but on a same time brick is a container which can hold other bricks in order to construct complex objects.
+Lego brick represents a Composite pattern. 
+A brick is a basic object, but at the same time, a brick is a container which can hold other bricks in order to construct complex objects.
 
 
 
@@ -27,8 +49,8 @@ A brick is a basic object, but on a same time brick is a container which can hol
 ###  <a id="Image"></a>Image 
 
 
-![alt text](http://www.design-patterns-stories.com/assets/img/image/composite.jpg "Composite")  
-###### By Priwo (photo taken by de:Benutzer:Priwo) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3ALEGO-01.jpg">via Wikimedia Commons</a>
+![alt text](http://www.design-patterns-stories.com/assets/img/image/composite.jpg "Lego Bricks")  
+###### Lego Bricks, By Priwo (photo taken by de:Benutzer:Priwo) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3ALEGO-01.jpg">via Wikimedia Commons</a>
 
 
 

@@ -5,6 +5,7 @@ permalink: /patterns/Iterator/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,11 +13,37 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+In computer science, a data structure is a particular way of organizing and storing data, so that it can be accessed and modified efficiently. 
+More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations 
+which can be applied to the data.
+
+
+There are numerous types of data structures, such as linked lists, arrays, vectors, maps, etc. 
+Each collection of the data structure has its own structure and its own way of accessing elements of the collection.
+
+
+In practice, it is not convenient to access each type of collection in a different way, so it would be nice to have a common interface for 
+element-by-element access to a collection, independent of the collection’s shape.
+
+
+The Iterator pattern lets you do all this. 
+The key idea is to take the responsibility for access and traversal out of the aggregate object and put it into an Iterator object which 
+defines a standard traversal protocol.
+
+So, an Iterator pattern provides a way of accessing the elements of an aggregate object sequentially, without exposing its underlying representation.
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Book is a set of written, printed sheets bound together into a volume.
-You can browse through the book page by page, or quickly jump to interesting chapter.
-Process of browsing is example of Iterator pattern.
+A book is a set of written, printed sheets bound together into a volume. 
+You can browse through the book page by page, or quickly jump to an interesting chapter. 
+The process of browsing is an example of the Iterator pattern.
+
 
 
 

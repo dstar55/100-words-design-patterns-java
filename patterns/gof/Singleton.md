@@ -5,6 +5,7 @@ permalink: /patterns/Singleton/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,13 +13,33 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Objects reside inside heap memory, and we can instantiate as many objects as the physical space in the heap memory will allow. 
+But, in some cases, we can have a situation when only one instance of a class can be instantiated.
+So, imagine that we are developing a program which is playing audio files. Inside that program, we need to have a class which handles audio output. 
+A computer usually has one audio output, so no more than one sound can be played at a time. 
+Therefore, a class that handles the computer audio device should have exactly one instance.
+
+How can we ensure that only one instance is created?
+Each java class has default public constructor, which can be invoked from any part of the code.
+If we implement a class where default constructor has scope 'private', 
+then only the methods from that class can invoke that constructor, meaning that we can't instantiate that class from other classes. 
+This is a basis of the Singleton pattern.
+
+The Singleton ensures that only one (single) object can be created from the class.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Singleton ensures that only one(single) object can be created from the class.
-
-Men's 100 meters world record holder is a singleton.
-There can be at most one active "Men's 100 meters world record holder" at any given time. 
-Regardless of who that person is the title, "Men's 100 meters world record holder" is a global point of access that identifies the fastes person in the world.
+Men's 100 meters world record holder is a singleton. 
+There can be only one active "Men's 100 meters world record holder" at any given time. 
+Regardless of the actual person who holds this title, "Men's 100 meters world record holder" is a global point of access that 
+identifies the fastest person in the world.
 
 
 

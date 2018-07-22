@@ -5,6 +5,7 @@ permalink: /patterns/Flyweight/
 tag: pattern
 ---
 
+* [Motivation](#Motivation)
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
@@ -12,12 +13,45 @@ tag: pattern
 * [Usage](#Usage)
 
 
+###  <a id="Motivation"></a>Motivation 
+
+Let's imagine that you are teaching youngsters programming. 
+You decided to start with simple but exciting example, so during the course, a graphical editor which can draw a line will be developed.
+
+
+The Base artifact is a Line class, with start and end point. 
+Now a draw method needs to be implemented – and voila, our simple graphical editor is implemented. 
+After using the editor for a while, we decide that a new feature should be implemented: in fact, we want our line to have basic colors.
+
+
+The Line class will be extended with a new attribute (Color class), which holds information about the color, and the draw method will be 
+extended accordingly. Now we have a new version of our editor, and some users want to test-drive the editor to its limits, 
+so they draw several thousand lines. Drawing several thousand lines means that we have several thousand Line objects in memory, 
+but we also have several thousand Color objects in memory, even if our editor is drawing lines with basic colors only.
+
+
+Can we use memory more efficiently? 
+The Color objects include information that is duplicated. 
+Why not set up a pool of basic color objects and share those colors when a Line object needs it?
+
+
+The properties of the objects which are shared and are reasonably unchanging are moved into flyweight objects. 
+For each of the Line objects which use the shared data, only a reference to the appropriate flyweight object is required. 
+This will drastically reduce the memory used by each of the Line objects.
+
+
+The solution used in explanation is an example of the Flyweight pattern. 
+The Flyweight patterns remove duplicates and reduce memory by loading only the data necessary to perform action.
+
+
+
+
+
+
 ###  <a id="Story"></a>Story 
 
-Remove duplicates.
-
-Flyweight pattern is used to reduce memory by loading only the data necessary to perform action.
-Database normalization is flyweight. Normalisation, is the process of organizing the columns (attributes) and tables (relations) of a relational database to minimize data redundancy.
+Database normalization is flyweight. 
+Normalization is the process of organizing the columns (attributes) and the tables (relations) of a relational database to minimize data redundancy
 
 
 
@@ -26,8 +60,8 @@ Database normalization is flyweight. Normalisation, is the process of organizing
 ###  <a id="Image"></a>Image 
 
 
-![alt text](http://www.design-patterns-stories.com/assets/img/image/flyweight.jpg "Database Normalization")  
-###### By 04hutts (Own work) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3ANormalFormDiagram.png">via Wikimedia Commons</a>
+![alt text](http://www.design-patterns-stories.com/assets/img/image/flyweight.jpg "Normal Form Diagram")  
+###### Normal Form Diagram, By 04hutts (Own work) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3ANormalFormDiagram.png">via Wikimedia Commons</a>
 
 
 
