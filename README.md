@@ -45,6 +45,7 @@ Each pattern will be described with following structure:
 * [Visitor](#Visitor)
 
 ##### <a id="Singleton"></a>Singleton
+
 * Motivation
 
 Objects reside inside heap memory, and we can instantiate as many objects as the physical space in the heap memory will allow. 
@@ -93,6 +94,26 @@ Move to singleton folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/singleton
 ```
+
+* Structure
+
+The fact that every class has a public constructor in Java can be used in order to implement a Singleton. 
+The public constructor will be overridden with a new constructor which does nothing, but the scope of the constructor is private, 
+so other classes can't instantiate class objects.
+
+
+The object is created in the method getInstance(), and since an object is created when method getInstance() is invoked for first time, 
+we are talking about lazy instantiation technique.
+
+
+This technique ensures that singleton instances are created only when needed.
+
+
+This implementation may have issues in multithreaded environment, but in such situation we have synchronize method getInstance(), 
+or a block inside that method.
+
+
+
 * Known uses
   * [java.lang.Runtime#getRuntime()](https://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getRuntime--)
   * [java.awt.Desktop#getDesktop()](https://docs.oracle.com/javase/8/docs/api/java/awt/Desktop.html#getDesktop--)
@@ -143,12 +164,22 @@ Move to prototype folder:
 $  cd /src/main/java/com/hundredwordsgof/prototype
 ```
 
+* Structure
+
+The Prototype interface defines the cloneMe() method.  
+The ConcretePrototype implements a Prototype interface using java.lang.Object.clone() method.
+
+
+The prototype can be used to implement a copy constructor (deep or shallow).
+
+
 * Known uses
   * [java.lang.Object#clone()](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#clone--)
   * [java.lang.Cloneable](https://docs.oracle.com/javase/7/docs/api/java/lang/Cloneable.html)
 
 
 ##### <a id="Builder"></a>Builder
+
 * Motivation
 
 The Builder, as the name suggests, builds complex objects from simple ones, step-by-step.
@@ -201,6 +232,14 @@ Move to builder folder:
 $  cd /src/main/java/com/hundredwordsgof/builder
 ```
 
+* Structure
+
+The Product class represents a complex object. 
+The Builder specifies an abstract interface for creating parts of a Product object.  
+The ConcreteBuilder class constructs and assembles parts of the product, implementing the Builder interface.   
+The Director class constructs an object using the Builder interface.
+
+  
 * Known uses
   * [java.lang.StringBuilder.append()](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html#append-boolean-)
   * [java.lang.StringBuffer.append()](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#append-boolean-)
@@ -217,6 +256,7 @@ $  cd /src/main/java/com/hundredwordsgof/builder
 
 
 ##### <a id="FactoryMethod"></a>Factory Method
+
 * Motivation
 
 Imagine that we need to develop a reporting library. 
@@ -269,6 +309,14 @@ Move to factorymethod folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/factorymethod
 ```
+* Stucture
+
+The Product interface defines the interface of objects the factory method creates.   
+The ConcreteProduct class implements the Product interface.  
+The Creator abstract class declares the factory method interface.  
+The ConcreteCreator class implements the Creator's factory method and returns an instance of the ConcreteProduct.  
+
+
 
 * Known uses
   * [java.util.Calendar#getInstance()](https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance--)
@@ -336,6 +384,15 @@ Move to abstractfactory folder:
 $  cd /src/main/java/com/hundredwordsgof/abstractfactory
 ```
 
+* Structure
+
+The AbstractFactory defines the interface for creation of the abstract product objects. 
+The AbstractProduct defines the interface for product objects. 
+The ConcreteProduct class implements products based on AbstractProduct interfaces. 
+The ConcreteFactory class implements factories based on AbstractFactory interfaces. 
+The Client class uses AbstractFactory & AbstractProduct interfaces.
+
+
 * Known uses
   * [javax.xml.parsers.DocumentBuilderFactory#newInstance()](https://docs.oracle.com/javase/8/docs/api/javax/xml/parsers/DocumentBuilderFactory.html#newInstance--)
   * [javax.xml.transform.TransformerFactory#newInstance()](https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/TransformerFactory.html#newInstance--)
@@ -398,6 +455,21 @@ Move to adapter folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/adapter
 ```
+
+* Structure
+
+We can have two implementations, the Class adapter and the Object adapter.
+
+
+The Class adapter extends the Adaptee class. 
+The Object adapter injects Adaptee object into the Adapter class.
+
+
+The target interface defines the domain-specific interface used by the Client. 
+The Client class uses the target interface. 
+The Adaptee class defines an existing interface where adaption will be applied. 
+The Adapter class adapts interface Adaptee to the Target.
+
 
 * Known uses
   * [java.util.Arrays#asList()](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#asList-T...-)
@@ -468,6 +540,15 @@ Move to bridge folder:
 $  cd /src/main/java/com/hundredwordsgof/bridge
 ```
 
+* Structure
+
+The Implementator interface defines the interface for implementation classes (concrete implementers). 
+The ConcreteImplementator class implements the Implementator interface and defines its concrete implementation. 
+The Abstraction abstract class defines the abstraction interface, maintains a reference to an object of type Implementator, 
+and the link between the abstraction and the implementer is called a Bridge. 
+The RefinedAbstracion extends the interface defined by Abstraction.
+
+
 * Known uses
   * [JDBC-ODBC Bridge](https://docs.oracle.com/javase/7/docs/technotes/guides/jdbc/bridge.html)
   * [AWT](https://docs.oracle.com/javase/8/docs/technotes/guides/awt/), it provides an abstraction layer which maps onto the native OS the windowing support.
@@ -522,6 +603,19 @@ Move to composite folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/composite
 ```
+
+* Structure
+
+The Component abstract class declares the interface for objects in the composition, implements default behavior for the interface common to 
+all classes as appropriate, and declares an interface for accessing and managing its child components. 
+The Leaf class represents leaf objects in the composition. 
+The Composite class defines behavior for components having children, stores the child components and implements the child-related operations in the 
+Component interface.
+
+
+The Client class uses the Composite interface.
+
+
 * Known uses 
   * [java.awt.Container#add(Component)](https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#add-java.awt.Component-)
   * [javax.faces.component.UIComponent#getChildren()](https://docs.oracle.com/javaee/7/api/javax/faces/component/UIComponent.html#getChildren--)
@@ -576,6 +670,14 @@ Move to decorator folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/decorator
 ```
+
+* Structure
+
+The Component defines interfaces for new features which will be added dynamically. 
+The ConcreteComponent class defines object where new features can be added. 
+The Decorator abstract class holds reference to the Component object. 
+The ConcreteDecorator class adds new features to the Component object.
+
 
 * Known uses 
   all subclases of the:
@@ -652,6 +754,11 @@ Move to facade folder:
 $  cd /src/main/java/com/hundredwordsgof/facade
 ```
 
+* Structure
+
+The UML diagram consist of Facade and subsystem classes.
+
+
 * Known uses 
   * [javax.faces.context.FacesContext)](https://docs.oracle.com/javaee/7/api/javax/faces/context/FacesContext.html), internally uses [LifeCycle](https://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/Lifecycle.html), [ViewHandler](https://docs.oracle.com/javaee/7/api/javax/faces/application/ViewHandler.html), [NavigationHandler](https://docs.oracle.com/javaee/7/api/javax/faces/application/NavigationHandler.html) etc.
   * [javax.faces.context.ExternalContext](https://docs.oracle.com/javaee/7/api/javax/faces/component/UIComponent.html#getChildren--), internally uses [ServletContext](https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html), [HttpSession](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html), [HttpServletRequest](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html), [HttpServletResponse](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletResponse.html), etc.
@@ -719,6 +826,22 @@ Move to flyweight folder:
 $  cd /src/main/java/com/hundredwordsgof/flyweight
 ```
 
+* Structure
+
+The flyweight pattern uses the concepts of intrinsic and extrinsic data. 
+The intrinsic data is held in the properties of the flyweight objects, which are shared. 
+This information is stateless and generally remains unchanged, as any changes would be effectively replicated among all of the objects that reference 
+the flyweight. Extrinsic data can be state-full, as it is held outside of a flyweight object. 
+It can be passed to methods of a flyweight when needed, but should never be stored within a shared flyweight object.
+
+
+The Flyweight interface defines interfaces through which flyweight can receive and act on extrinsic states. 
+The ConcreteFlyweight class implements Flyweight and adds storage for intrinsic state (Character). 
+The UnsharedConcreteFlyweight class defines objects which are not shared. 
+The FlyweightFactory class creates and manages the flyweight objects. 
+The Client class keeps flyweight reference and stores extrinsic state.
+
+
 * Known uses 
 
   * [java.lang.Integer#valueOf(int)](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#valueOf-int-)
@@ -784,6 +907,25 @@ Move to proxy folder:
 $  cd /src/main/java/com/hundredwordsgof/proxy
 ```
 
+* Structure
+
+The Subject interface defines a common interface for the RealSubject and the Proxy RealSubject classes and points to the real object which the 
+Proxy represents. 
+The Proxy class keeps reference to the real subject: it can act as a surrogate, controlling access to the real subject and can be 
+responsible for creation and maintenance of the Real subject.
+
+
+The Proxy can be used in many situations, therefore we have the following Proxy types:
+The Remote Proxy - represents an object in a different address space. 
+The Virtual Proxy - creates "heavy" objects on demand. 
+The Protection Proxy - controls access to the object, protects the target from bad clients (Firewall proxy). 
+The Smart reference - replacement for a smart pointer, can be used as a counter of the created objects. 
+The Cache Proxy - stores the results of most frequently used target operations. 
+The Synchronization Proxy - allows safe concurrent accesses to the target object by different client objects. 
+The Counting Proxy - provides audit mechanism before executing a method on the target object.
+
+
+
 * Known uses
   * [java.lang.reflect.Proxy](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Proxy.html)
   * [java.rmi.*](https://docs.oracle.com/javase/8/docs/api/java/rmi/package-summary.html)
@@ -845,12 +987,21 @@ Move to chainofresponsability folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/chainofresponsibility
 ```
+
+* Structure
+
+A Handler defines interface for request handling. 
+The ConcreteHandler handles the request, can access the next object in the chain and forward the request if necessary. 
+A client initiates requests to the ConcreteHandler.
+
+
 * Known uses
   * [java.util.logging.Logger#log()](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log-java.util.logging.Level-java.lang.String-)
   * [javax.servlet.Filter#doFilter()](https://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
   * [java.awt.AWTEventMulticaster](https://docs.oracle.com/javase/7/docs/api/java/awt/AWTEventMulticaster.html)
 
 ##### <a id="Command"></a>Command
+
 * Motivation
 
 Imagine that we are developing a graphical editor. The user can add new text, delete or update existing text.
@@ -901,6 +1052,16 @@ Move to command folder:
 $  cd /src/main/java/com/hundredwordsgof/command
 ```
 
+* Structure
+
+The Command declares an interface for executing an operation. 
+The ConcreteCommand class defines the binding between a Receiver object and an action. 
+The Receiver class knows how to perform the operations associated with carrying out a request. 
+Any class may serve as a Receiver. 
+The Invoker class sends the command to carry out a request. 
+The Client class creates a ConcreteCommand object and sets its receiver.
+
+
 * Known uses 
   * [java.lang.Runnable](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html)
   * [javax.swing.Action](https://docs.oracle.com/javase/8/docs/api/javax/swing/Action.html)
@@ -936,6 +1097,23 @@ Move to command folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/interpreter
 ```
+
+* Structure
+
+Efficiency is a big concern for any implementation of this pattern. 
+Introducing your own grammar requires extensive error checking, which will be time consuming for the programmer to implement, 
+and needs careful design in order to run efficiently during runtime. 
+Also, as the grammar becomes more complicated, the maintenance effort increases.
+
+
+The AbstractExpresion defines interface for interpretation. 
+The TerminalExpresion implements the AbstractExpression for literal symbols in the grammar. 
+One object for each literal symbol. 
+The NonterminalExpresion implements AbstractExpression for grammar rules. 
+One class per grammar rule, e.g. the OrExpression Context class, holds global information for the Interpreter. 
+The Client class creates an Abstract Syntax Tree, which represents expression defined in grammar.
+
+
 * Known uses 
   * [java.util.Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
   * [java.text.Normalizer](https://docs.oracle.com/javase/8/docs/api/java/text/Normalizer.html)
@@ -944,6 +1122,7 @@ $  cd /src/main/java/com/hundredwordsgof/interpreter
 
   
 ##### <a id="Iterator"></a>Iterator
+
 * Motivation
 
 In computer science, a data structure is a particular way of organizing and storing data, so that it can be accessed and modified efficiently. 
@@ -996,12 +1175,22 @@ Move to iterator folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/iterator
 ```
+
+* Structure
+
+The Iterator defines an interface for accessing and traversing elements. 
+The ConcreteIterator implements the Iterator interface, keeps track of the current position in the traversal of the aggregate. 
+The Aggregate defines an interface for creating an Iterator object. 
+The ConcreteAgregate class implements the Iterator creation interface to return an instance of the proper ConcreteIterator.
+
+
 * Known uses 
   * All implementations of [java.util.Iterator](https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html)
   * All implementations of [java.util.Enumeration](https://docs.oracle.com/javase/8/docs/api/java/util/Enumeration.html)
 
 
 ##### <a id="Mediator"></a>Mediator
+
 * Motivation
 
 Imagine that we need to develop a flight simulator. Our flight simulator will have base artifacts, like airport and aircraft. 
@@ -1058,6 +1247,15 @@ Move to mediator folder:
 $  cd /src/main/java/com/hundredwordsgof/mediator
 ```
 
+* Structure
+
+A Colleague defines an interface for communication with another Colleague via the Mediator. 
+For the ConcreteColleague class, each Colleague class knows its Mediator object, and each Colleague communicates with its mediator 
+whenever it would have otherwise communicated with another colleague. 
+The Mediator defines an interface for communicating with Colleague objects. 
+The ConcreteMediator implements cooperative behavior by coordinating the Colleague objects.
+
+
 * Known uses 
   * [java.util.Timer](https://docs.oracle.com/javase/8/docs/api/java/util/Timer.html) (all scheduleXXX() methods)
   * [java.util.concurrent.Executor#execute()](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html#execute-java.lang.Runnable-)
@@ -1066,6 +1264,7 @@ $  cd /src/main/java/com/hundredwordsgof/mediator
   * [java.lang.reflect.Method#invoke()](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html#invoke-java.lang.Object-java.lang.Object...-)
 
 ##### <a id="Memento"></a>Memento
+
 * Motivation
 
 ModerModern cars have brakes on all four wheels, operated by a hydraulic system. 
@@ -1128,11 +1327,19 @@ Move to memento folder:
 $  cd /src/main/java/com/hundredwordsgof/memento
 ```
 
+* Memento
+
+The Originator creates a Memento containing a snapshot of its current internal state and uses the Memento to restore its previous internal state. 
+The Memento stores the internal state of the Originator object and protects against access by objects other than the Originator. 
+The Caretaker class is responsible for Memento's safekeeping.
+
+
 * Known uses 
   * All implementations of [java.io.Serializable](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html)
   * All implementations of [javax.faces.component.StateHolder](https://docs.oracle.com/javaee/7/api/javax/faces/component/StateHolder.html)
 
 ##### <a id="Observer"></a>Observer
+
 * Motivation
 
 Imagine that we are developing a computer game.
@@ -1199,6 +1406,16 @@ Move to observer folder:
 $  cd /src/main/java/com/hundredwordsgof/observer
 ```
 
+* Structure
+
+The Observer defines an updating interface for objects which should be notified of changes in a subject. 
+The Subject knows its observers. 
+A subject can be observed by any number of Observer objects. 
+The ConcreteSubject stores the state of interest to ConcreteObserver objects and sends notifications to its observers when its state changes. 
+The ConcreteObserver maintains a reference to a ConcreteSubject object, stores the state that should stay consistent with the subject's and 
+implements the Observer updating interface to keep its state consistent with the subject's.
+
+
 * Known uses 
   * [java.util.Observer](https://docs.oracle.com/javase/8/docs/api/java/util/Observer.html)
   * [java.util.Observable](https://docs.oracle.com/javase/8/docs/api/java/util/Observable.html)
@@ -1208,6 +1425,7 @@ $  cd /src/main/java/com/hundredwordsgof/observer
   * [javax.faces.event.PhaseListenerl](https://docs.oracle.com/javaee/7/api/javax/faces/event/PhaseListener.html)
   
 ##### <a id="State"></a>State
+
 * Motivation
 
 Imagine that we need to implement a state machine. 
@@ -1271,11 +1489,19 @@ Move to state folder:
 $  cd /src/main/java/com/hundredwordsgof/state
 ```
 
+* Structure
+
+The State defines an interface for encapsulating the behavior associated with a particular state of the Context. 
+The ConcreteState implements a behavior associated with the state of the Context. 
+The Context class maintains an instance of a ConcreteState subclass which defines the current state.
+
+
 * Known uses 
   * [javax.faces.lifecycle.LifeCycle#execute()](https://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/Lifecycle.html#execute-javax.faces.context.FacesContext-)
   
   
 ##### <a id="Strategy"></a>Strategy
+
 * Motivation
 
 Imagine that we need to implement a network load balancer. 
@@ -1342,11 +1568,19 @@ Move to strategy folder:
 $  cd /src/main/java/com/hundredwordsgof/strategy
 ```
 
+* Structure
+
+The Strategy declares an interface common to all supported algorithms. 
+The ConcreteStrategy implements the algorithm using the Strategy interface. 
+The Context uses this interface to call the algorithm defined by a ConcreteStrategy.
+
+
 * Known uses 
   * [java.util.Comparator#compare()](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#compare-T-T-), executed by among others [Collections#sort()]()
   * [javax.servlet.Filter#doFilter()](https://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
   
 ##### <a id="TemplateMethod"></a>TemplateMethod
+
 * Motivation
 
 Imagine that we need to implement an application which performs various operations on a database. We decide to use JDBC, which is a standard Java interface for accessing a relational database. 
@@ -1400,6 +1634,12 @@ Move to template folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/templatemethod
 ```
+
+* Structure
+
+The AbstractClass defines abstract primitive operations that concrete subclasses should implement. 
+The ConcreteClass implements the abstract primitive operations to carry out subclass-specific steps of the algorithm.
+
 
 * Known uses 
   * All non-abstract methods of [java.io.InputStream](https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html), [java.io.OutputStream](https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html), [java.io.Reader](https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html) and [java.io.Writer](https://docs.oracle.com/javase/8/docs/api/java/io/Writer.html).
@@ -1473,6 +1713,16 @@ Move to visitor folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/visitor
 ```
+
+* Structure
+
+The Visitor declares a Visit operation for each class of ConcreteElements in the object structure. 
+The ConcreteVisitor implements each operation declared by the Visitor. 
+Each operation implements a fragment of the algorithm defined for the corresponding class of objects in the structure.  
+The Element defines an Accept operation that takes a visitor as an argument. 
+The ConcreteElement implements an Accept operation that takes a visitor as an argument. 
+The ObjectStructure provides a composition or collection of the elements and allows the visitor to visit its elements.
+
 
 * Known uses 
   * [javax.lang.model.element.AnnotationValue](https://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/AnnotationValue.html) and [AnnotationValueVisitor](https://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/AnnotationValueVisitor.html)
