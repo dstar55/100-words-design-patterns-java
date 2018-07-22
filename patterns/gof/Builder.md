@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -59,6 +60,18 @@ Whether a customer picks a classical hard disk or SSD for storage, the construct
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/builder.png)](http://www.design-patterns-stories.com/assets/img/uml/builder.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The Product class represents a complex object. 
+The Builder specifies an abstract interface for creating parts of a Product object.  
+The ConcreteBuilder class constructs and assembles parts of the product, implementing the Builder interface.   
+The Director class constructs an object using the Builder interface.
+
+  
+
 
 ###  <a id="Implementation"></a>Implementation 
 

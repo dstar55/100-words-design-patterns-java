@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -50,6 +51,19 @@ Dolly the sheep was the first mammal to be cloned, so Dolly is a duplicate.
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/prototype.png)](http://www.design-patterns-stories.com/assets/img/uml/prototype.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The Prototype interface defines the cloneMe() method.  
+The ConcretePrototype implements a Prototype interface using java.lang.Object.clone() method.
+
+
+The prototype can be used to implement a copy constructor (deep or shallow).
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

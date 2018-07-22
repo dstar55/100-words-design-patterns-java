@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -64,6 +65,19 @@ The same machine is used to stamp French, Italian or German cards.
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/abstractfactory.png)](http://www.design-patterns-stories.com/assets/img/uml/abstractfactory.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The AbstractFactory defines the interface for creation of the abstract product objects. 
+The AbstractProduct defines the interface for product objects. 
+The ConcreteProduct class implements products based on AbstractProduct interfaces. 
+The ConcreteFactory class implements factories based on AbstractFactory interfaces. 
+The Client class uses AbstractFactory & AbstractProduct interfaces.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

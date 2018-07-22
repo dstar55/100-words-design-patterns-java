@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -63,6 +64,19 @@ The call center will contact the available taxi nearest to customer’s location
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/mediator.png)](http://www.design-patterns-stories.com/assets/img/uml/mediator.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+A Colleague defines an interface for communication with another Colleague via the Mediator. 
+For the ConcreteColleague class, each Colleague class knows its Mediator object, and each Colleague communicates with its mediator 
+whenever it would have otherwise communicated with another colleague. 
+The Mediator defines an interface for communicating with Colleague objects. 
+The ConcreteMediator implements cooperative behavior by coordinating the Colleague objects.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

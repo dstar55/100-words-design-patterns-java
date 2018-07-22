@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -61,6 +62,17 @@ then the officer and then the soldier – and those three elements would form a 
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/chainofresponsibility.png)](http://www.design-patterns-stories.com/assets/img/uml/chainofresponsibility.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+A Handler defines interface for request handling. 
+The ConcreteHandler handles the request, can access the next object in the chain and forward the request if necessary. 
+A client initiates requests to the ConcreteHandler.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

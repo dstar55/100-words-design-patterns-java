@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -56,6 +57,20 @@ A brick is a basic object, but at the same time, a brick is a container which ca
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/composite.png)](http://www.design-patterns-stories.com/assets/img/uml/composite.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The Component abstract class declares the interface for objects in the composition, implements default behavior for the interface common to 
+all classes as appropriate, and declares an interface for accessing and managing its child components. 
+The Leaf class represents leaf objects in the composition. 
+The Composite class defines behavior for components having children, stores the child components and implements the child-related operations in the 
+Component interface.
+The Client class uses the Composite interface.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

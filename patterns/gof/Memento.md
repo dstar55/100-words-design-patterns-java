@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -69,6 +70,17 @@ This rollback mechanism uses the Memento design pattern.
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/memento.png)](http://www.design-patterns-stories.com/assets/img/uml/memento.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The Originator creates a Memento containing a snapshot of its current internal state and uses the Memento to restore its previous internal state. 
+The Memento stores the internal state of the Originator object and protects against access by objects other than the Originator. 
+The Caretaker class is responsible for Memento's safekeeping.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -55,6 +56,29 @@ identifies the fastest person in the world.
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/singleton.png)](http://www.design-patterns-stories.com/assets/img/uml/singleton.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The fact that every class has a public constructor in Java can be used in order to implement a Singleton. 
+The public constructor will be overridden with a new constructor which does nothing, but the scope of the constructor is private, 
+so other classes can't instantiate class objects.
+
+
+The object is created in the method getInstance(), and since an object is created when method getInstance() is invoked for first time, 
+we are talking about lazy instantiation technique.
+
+
+This technique ensures that singleton instances are created only when needed.
+
+
+This implementation may have issues in multithreaded environment, but in such situation we have synchronize method getInstance(), 
+or a block inside that method.
+
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -63,6 +64,25 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 #### Object Adapter
 [![](http://www.design-patterns-stories.com/assets/img/uml/objectadapter.png)](http://www.design-patterns-stories.com/assets/img/uml/objectadapter.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+We can have two implementations, the Class adapter and the Object adapter.
+
+
+The Class adapter extends the Adaptee class. 
+The Object adapter injects Adaptee object into the Adapter class.
+
+
+The target interface defines the domain-specific interface used by the Client. 
+The Client class uses the target interface. 
+The Adaptee class defines an existing interface where adaption will be applied. 
+The Adapter class adapts interface Adaptee to the Target.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

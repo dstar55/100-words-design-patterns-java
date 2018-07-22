@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -38,6 +39,26 @@ A person who provides an oral translation from one language into another.
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/interpreter.png)](http://www.design-patterns-stories.com/assets/img/uml/interpreter.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+Efficiency is a big concern for any implementation of this pattern. 
+Introducing your own grammar requires extensive error checking, which will be time consuming for the programmer to implement, 
+and needs careful design in order to run efficiently during runtime. 
+Also, as the grammar becomes more complicated, the maintenance effort increases.
+
+
+The AbstractExpresion defines interface for interpretation. 
+The TerminalExpresion implements the AbstractExpression for literal symbols in the grammar. 
+One object for each literal symbol. 
+The NonterminalExpresion implements AbstractExpression for grammar rules. 
+One class per grammar rule, e.g. the OrExpression Context class, holds global information for the Interpreter. 
+The Client class creates an Abstract Syntax Tree, which represents expression defined in grammar.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

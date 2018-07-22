@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -60,6 +61,18 @@ The process of browsing is an example of the Iterator pattern.
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/iterator.png)](http://www.design-patterns-stories.com/assets/img/uml/iterator.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The Iterator defines an interface for accessing and traversing elements. 
+The ConcreteIterator implements the Iterator interface, keeps track of the current position in the traversal of the aggregate. 
+The Aggregate defines an interface for creating an Iterator object. 
+The ConcreteAgregate class implements the Iterator creation interface to return an instance of the proper ConcreteIterator.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

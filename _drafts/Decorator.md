@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -55,6 +56,18 @@ The spoilers do not change the car itself, but add additional functionality whic
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/decorator.png)](http://www.design-patterns-stories.com/assets/img/uml/decorator.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The Component defines interfaces for new features which will be added dynamically. 
+The ConcreteComponent class defines object where new features can be added. 
+The Decorator abstract class holds reference to the Component object. 
+The ConcreteDecorator class adds new features to the Component object.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

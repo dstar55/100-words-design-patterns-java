@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -70,6 +71,17 @@ and marvel at how quickly their nails grow.
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/state.png)](http://www.design-patterns-stories.com/assets/img/uml/state.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The State defines an interface for encapsulating the behavior associated with a particular state of the Context. 
+The ConcreteState implements a behavior associated with the state of the Context. 
+The Context class maintains an instance of a ConcreteState subclass which defines the current state.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

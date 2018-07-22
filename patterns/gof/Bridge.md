@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -66,6 +67,19 @@ There are different implementations of steering wheels used in cars, buses, truc
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/bridge.png)](http://www.design-patterns-stories.com/assets/img/uml/bridge.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The Implementator interface defines the interface for implementation classes (concrete implementers). 
+The ConcreteImplementator class implements the Implementator interface and defines its concrete implementation. 
+The Abstraction abstract class defines the abstraction interface, maintains a reference to an object of type Implementator, 
+and the link between the abstraction and the implementer is called a Bridge. 
+The RefinedAbstracion extends the interface defined by Abstraction.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

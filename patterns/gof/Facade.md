@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -60,6 +61,15 @@ This is a typical example for Facade.
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/facade.png)](http://www.design-patterns-stories.com/assets/img/uml/facade.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The UML diagram consist of Facade and subsystem classes.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 

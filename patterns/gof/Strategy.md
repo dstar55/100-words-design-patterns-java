@@ -9,6 +9,7 @@ tag: pattern
 * [Story](#Story)
 * [Image](#Image)
 * [UML](#UML)
+* [Structure](#Structure)
 * [Implementation](#Implementation)
 * [Usage](#Usage)
 
@@ -73,6 +74,17 @@ The user may choose the Strategy based on his possibilities and preferences.
 
 ###  <a id="UML"></a>UML
 [![](http://www.design-patterns-stories.com/assets/img/uml/strategy.png)](http://www.design-patterns-stories.com/assets/img/uml/strategy.png)
+
+
+
+###  <a id="Structure"></a>Structure 
+
+The Strategy declares an interface common to all supported algorithms. 
+The ConcreteStrategy implements the algorithm using the Strategy interface. 
+The Context uses this interface to call the algorithm defined by a ConcreteStrategy.
+
+
+
 
 ###  <a id="Implementation"></a>Implementation 
 
