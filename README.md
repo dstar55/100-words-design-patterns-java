@@ -313,7 +313,7 @@ Move to factorymethod folder:
 $  cd /src/main/java/com/hundredwordsgof/factorymethod
 ```
 
-* Stucture
+* Structure
 
 The Product interface defines the interface of objects the factory method creates.   
 The ConcreteProduct class implements the Product interface.  
