@@ -1343,7 +1343,7 @@ Move to memento folder:
 $  cd /src/main/java/com/hundredwordsgof/memento
 ```
 
-* Memento
+* Structure
 
 The Originator creates a Memento containing a snapshot of its current internal state and uses the Memento to restore its previous internal state. 
 The Memento stores the internal state of the Originator object and protects against access by objects other than the Originator. 
