@@ -23,9 +23,13 @@ FRACTUS_FOLDER = "fractus"
 
 DICT_KEY_PATTERN_ID = "patternId"
 DICT_KEY_PATTERN_NAME = "patternName"
+DICT_KEY_PATTERN_MOTIVATION = "patternMotivation"
 DICT_KEY_PATTERN_STORY = "patternStory"
 DICT_KEY_PATTERN_IMAGE = "patternImage"
 DICT_KEY_PATTERN_UML_FILE_NAME = "patternUMLFileName"
+DICT_KEY_PATTERN_STRUCTURE = "patternStructure"
+DICT_KEY_PATTERN_KNOWN_USES = "patternKnownUses"
+
 DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME = "patternSourceCodePackageName"
 DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME = "patternTestSourceCodePackageName"
 

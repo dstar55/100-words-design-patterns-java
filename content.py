@@ -93,6 +93,7 @@ def createPage(destFile, dict):
     #TODO refactor function should return string and than write into destFile(destFile should not be argument for belowed functions)
     createPageHeaderSection(destFile, dict)    
     createPageTableOfContentSection(destFile)
+    createPageMotivationSection(destFile, dict)    
     createPageStorySection(destFile, dict)
     createPageImageSection(destFile, dict)
     createPageUMLImageSection(destFile, dict)
@@ -106,6 +107,7 @@ def createFractusPage(destFile, dict):
     #TODO refactor function should return string and than write into destFile(destFile should not be argument for belowed functions)
     createFractusPageHeaderSection(destFile, dict)    
     createPageTableOfContentSection(destFile)
+    createPageMotivationSection(destFile, dict)
     createPageStorySection(destFile, dict)
     createPageImageSection(destFile, dict)
     createPageUMLImageSection(destFile, dict)
@@ -136,11 +138,21 @@ def createFractusPageHeaderSection(destFile, dict):
 #add page content links
 def createPageTableOfContentSection(destFile):
     
+    destFile.write('* [Motivation](#Motivation)\n')
     destFile.write('* [Story](#Story)\n')
     destFile.write('* [Image](#Image)\n')
     destFile.write('* [UML](#UML)\n')
     destFile.write('* [Implementation](#Implementation)\n')
     destFile.write('* [Usage](#Usage)\n')
+
+# add page motivation -> story
+def createPageMotivationSection(destFile, dict):
+    
+    destFile.write('\n\n')
+    destFile.write('###  <a id="Motivation"></a>Motivation \n')
+    destFile.write(dict.get(constants.DICT_KEY_PATTERN_MOTIVATION) + '\n')
+    destFile.write('\n')
+
 
 # add page content -> story
 def createPageStorySection(destFile, dict):

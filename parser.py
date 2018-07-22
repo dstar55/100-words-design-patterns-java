@@ -16,9 +16,11 @@ def parseReadme(readmeLocalPath):
     
     isInPatternDescriptionSection = False
     isInStory = False    
+    isInMotivation = False
     dictsArray = []        
     currentPatternID = ""
     currentStory = ""
+    currentMotivation = ""
     
     for line in lines:
         strLine = str(line)
@@ -60,6 +62,25 @@ def parseReadme(readmeLocalPath):
                 
             # clean current text
             currentStory = ""
+
+        # append motivation, since motivation is described in more lines 
+        if isInMotivation == True:
+            if "* Story" in strLine:
+                # end of the Motivation section
+                isInMotivation = False  
+                
+                #update dictionary with motivation
+                utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_MOTIVATION, currentMotivation)
+                
+                # clean the motivation text
+                currentMotivation = ""
+            else:    
+                currentMotivation = currentMotivation + strLine
+            #print(currentMotivation)
+                            
+        # find a story paragraph inside pattern description paragraph                            
+        if isInPatternDescriptionSection == True and "* Motivation" in strLine: 
+            isInMotivation = True        
             
 
         # append story, since story can be described in more lines 
@@ -68,8 +89,9 @@ def parseReadme(readmeLocalPath):
                             
         # find a story paragraph inside pattern description paragraph                            
         if isInPatternDescriptionSection == True and "* Story" in strLine: 
-            isInStory = True        
-        
+            isInStory = True      
+            
+            
         # find a UML file name, data is in line which contains substring "alt text"                            
         if isInPatternDescriptionSection == True and isInStory == False and "alt text" in strLine:
             

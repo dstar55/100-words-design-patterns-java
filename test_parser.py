@@ -27,7 +27,7 @@ class TestParser(unittest.TestCase):
         # check Singleton
         self.assertEqual("Singleton", singletonContent.get(constants.DICT_KEY_PATTERN_ID))        
         self.assertEqual("Singleton", singletonContent.get(constants.DICT_KEY_PATTERN_NAME))                
-        self.assertEqual(True, ("Singleton ensures that only one(single) object can be created from the class." in singletonContent.get(constants.DICT_KEY_PATTERN_STORY)))
+        self.assertEqual(True, ("100 meters world record holder is a singleton." in singletonContent.get(constants.DICT_KEY_PATTERN_STORY)))
         self.assertEqual(True, ("Brick Lane Graffiti Usain Bolt" in singletonContent.get(constants.DICT_KEY_PATTERN_IMAGE)))
         self.assertEqual("singleton.png", singletonContent.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME))        
         self.assertEqual("/src/main/java/com/hundredwordsgof/singleton", singletonContent.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME))
@@ -40,7 +40,7 @@ class TestParser(unittest.TestCase):
         self.assertEqual("TemplateMethod", templateMethodContent.get(constants.DICT_KEY_PATTERN_ID))        
         self.assertEqual("Template Method", templateMethodContent.get(constants.DICT_KEY_PATTERN_NAME))
         self.assertEqual("templatemethod.png", templateMethodContent.get(constants.DICT_KEY_PATTERN_UML_FILE_NAME))            
-        self.assertEqual(True, ("Defines a skeleton of an algorithm in an operation." in templateMethodContent.get(constants.DICT_KEY_PATTERN_STORY)))
+        self.assertEqual(True, ("Daily routine is example of the Template Method." in templateMethodContent.get(constants.DICT_KEY_PATTERN_STORY)))
         #image content is not define, dict.get(...) for key which does not exists returns None
         self.assertEqual(True, (templateMethodContent.get(constants.DICT_KEY_PATTERN_IMAGE) == None))        
         self.assertEqual("/src/main/java/com/hundredwordsgof/templatemethod", templateMethodContent.get(constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME))
