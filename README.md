@@ -115,6 +115,7 @@ or a block inside that method.
 
 
 * Known uses
+
   * [java.lang.Runtime#getRuntime()](https://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getRuntime--)
   * [java.awt.Desktop#getDesktop()](https://docs.oracle.com/javase/8/docs/api/java/awt/Desktop.html#getDesktop--)
   * [java.lang.System#getSecurityManager()](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#getSecurityManager--)
@@ -174,6 +175,7 @@ The prototype can be used to implement a copy constructor (deep or shallow).
 
 
 * Known uses
+
   * [java.lang.Object#clone()](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#clone--)
   * [java.lang.Cloneable](https://docs.oracle.com/javase/7/docs/api/java/lang/Cloneable.html)
 
@@ -241,6 +243,7 @@ The Director class constructs an object using the Builder interface.
 
   
 * Known uses
+
   * [java.lang.StringBuilder.append()](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html#append-boolean-)
   * [java.lang.StringBuffer.append()](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#append-boolean-)
   * [java.lang.Appendable](https://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html)
@@ -309,6 +312,7 @@ Move to factorymethod folder:
 ```
 $  cd /src/main/java/com/hundredwordsgof/factorymethod
 ```
+
 * Stucture
 
 The Product interface defines the interface of objects the factory method creates.   
@@ -317,8 +321,8 @@ The Creator abstract class declares the factory method interface.
 The ConcreteCreator class implements the Creator's factory method and returns an instance of the ConcreteProduct.  
 
 
-
 * Known uses
+
   * [java.util.Calendar#getInstance()](https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html#getInstance--)
   * [java.util.ResourceBundle#getBundle()](https://docs.oracle.com/javase/8/docs/api/java/util/ResourceBundle.html#getBundle-java.lang.String-)
   * [java.nio.charset.Charset#forName()](https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html#forName-java.lang.String-)
@@ -327,6 +331,7 @@ The ConcreteCreator class implements the Creator's factory method and returns an
 
 
 ##### <a id="AbstractFactory"></a>Abstract Factory
+
 * Motivation
 
 
@@ -394,11 +399,13 @@ The Client class uses AbstractFactory & AbstractProduct interfaces.
 
 
 * Known uses
+
   * [javax.xml.parsers.DocumentBuilderFactory#newInstance()](https://docs.oracle.com/javase/8/docs/api/javax/xml/parsers/DocumentBuilderFactory.html#newInstance--)
   * [javax.xml.transform.TransformerFactory#newInstance()](https://docs.oracle.com/javase/8/docs/api/javax/xml/transform/TransformerFactory.html#newInstance--)
   * [javax.xml.xpath.XPathFactory#newInstance()](https://docs.oracle.com/javase/8/docs/api/javax/xml/xpath/XPathFactory.html#newInstance--)
 
 ##### <a id="Adapter"></a>Adapter
+
 * Motivation
 
 Imagine that we need to develop a graphical editor which should be able to draw various graphical shapes like line, circle, rectangle and text. 
@@ -472,6 +479,7 @@ The Adapter class adapts interface Adaptee to the Target.
 
 
 * Known uses
+
   * [java.util.Arrays#asList()](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#asList-T...-)
   * [java.util.Collections#list()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#list-java.util.Enumeration-)
   * [java.util.Collections#enumeration()](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#enumeration-java.util.Collection-)
@@ -481,6 +489,7 @@ The Adapter class adapts interface Adaptee to the Target.
   * [javax.xml.bind.annotation.adapters.XmlAdapter#unmarshal()](https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/XmlAdapter.html#unmarshal-ValueType-)
 
 ##### <a id="Bridge"></a>Bridge
+
 * Motivation
 
 Let's say that that we want to develop an audio player on our Windows OS. We define the base class, Audio, which has two subclasses – MP3Audio and 
@@ -550,6 +559,7 @@ The RefinedAbstracion extends the interface defined by Abstraction.
 
 
 * Known uses
+
   * [JDBC-ODBC Bridge](https://docs.oracle.com/javase/7/docs/technotes/guides/jdbc/bridge.html)
   * [AWT](https://docs.oracle.com/javase/8/docs/technotes/guides/awt/), it provides an abstraction layer which maps onto the native OS the windowing support.
 
@@ -611,12 +621,11 @@ all classes as appropriate, and declares an interface for accessing and managing
 The Leaf class represents leaf objects in the composition. 
 The Composite class defines behavior for components having children, stores the child components and implements the child-related operations in the 
 Component interface.
-
-
 The Client class uses the Composite interface.
 
 
 * Known uses 
+
   * [java.awt.Container#add(Component)](https://docs.oracle.com/javase/8/docs/api/java/awt/Container.html#add-java.awt.Component-)
   * [javax.faces.component.UIComponent#getChildren()](https://docs.oracle.com/javaee/7/api/javax/faces/component/UIComponent.html#getChildren--)
 
@@ -680,6 +689,7 @@ The ConcreteDecorator class adds new features to the Component object.
 
 
 * Known uses 
+
   all subclases of the:
   * [java.io.InputStream](https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html) 
   * [java.io.OutputStream](https://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html)
@@ -760,6 +770,7 @@ The UML diagram consist of Facade and subsystem classes.
 
 
 * Known uses 
+
   * [javax.faces.context.FacesContext)](https://docs.oracle.com/javaee/7/api/javax/faces/context/FacesContext.html), internally uses [LifeCycle](https://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/Lifecycle.html), [ViewHandler](https://docs.oracle.com/javaee/7/api/javax/faces/application/ViewHandler.html), [NavigationHandler](https://docs.oracle.com/javaee/7/api/javax/faces/application/NavigationHandler.html) etc.
   * [javax.faces.context.ExternalContext](https://docs.oracle.com/javaee/7/api/javax/faces/component/UIComponent.html#getChildren--), internally uses [ServletContext](https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html), [HttpSession](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html), [HttpServletRequest](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html), [HttpServletResponse](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletResponse.html), etc.
   * [java.lang.Class](https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html), acts as a facade for [Reflection API](https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/package-summary.html)(getConstructors(), getMethods())
@@ -925,8 +936,8 @@ The Synchronization Proxy - allows safe concurrent accesses to the target object
 The Counting Proxy - provides audit mechanism before executing a method on the target object.
 
 
-
 * Known uses
+
   * [java.lang.reflect.Proxy](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Proxy.html)
   * [java.rmi.*](https://docs.oracle.com/javase/8/docs/api/java/rmi/package-summary.html)
   * [javax.persistence.PersistenceContext](https://docs.oracle.com/javaee/7/api/javax/persistence/PersistenceContext.html)
@@ -996,6 +1007,7 @@ A client initiates requests to the ConcreteHandler.
 
 
 * Known uses
+
   * [java.util.logging.Logger#log()](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log-java.util.logging.Level-java.lang.String-)
   * [javax.servlet.Filter#doFilter()](https://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
   * [java.awt.AWTEventMulticaster](https://docs.oracle.com/javase/7/docs/api/java/awt/AWTEventMulticaster.html)
@@ -1063,6 +1075,7 @@ The Client class creates a ConcreteCommand object and sets its receiver.
 
 
 * Known uses 
+
   * [java.lang.Runnable](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html)
   * [javax.swing.Action](https://docs.oracle.com/javase/8/docs/api/javax/swing/Action.html)
 
@@ -1115,6 +1128,7 @@ The Client class creates an Abstract Syntax Tree, which represents expression de
 
 
 * Known uses 
+
   * [java.util.Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
   * [java.text.Normalizer](https://docs.oracle.com/javase/8/docs/api/java/text/Normalizer.html)
   * All subclasses of [java.text.Format](https://docs.oracle.com/javase/8/docs/api/java/text/Format.html)
@@ -1185,6 +1199,7 @@ The ConcreteAgregate class implements the Iterator creation interface to return 
 
 
 * Known uses 
+
   * All implementations of [java.util.Iterator](https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html)
   * All implementations of [java.util.Enumeration](https://docs.oracle.com/javase/8/docs/api/java/util/Enumeration.html)
 
@@ -1257,6 +1272,7 @@ The ConcreteMediator implements cooperative behavior by coordinating the Colleag
 
 
 * Known uses 
+
   * [java.util.Timer](https://docs.oracle.com/javase/8/docs/api/java/util/Timer.html) (all scheduleXXX() methods)
   * [java.util.concurrent.Executor#execute()](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html#execute-java.lang.Runnable-)
   * [java.util.concurrent.ExecutorService](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html) (the invokeXXX() and submit() methods)
@@ -1335,6 +1351,7 @@ The Caretaker class is responsible for Memento's safekeeping.
 
 
 * Known uses 
+
   * All implementations of [java.io.Serializable](https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html)
   * All implementations of [javax.faces.component.StateHolder](https://docs.oracle.com/javaee/7/api/javax/faces/component/StateHolder.html)
 
@@ -1417,6 +1434,7 @@ implements the Observer updating interface to keep its state consistent with the
 
 
 * Known uses 
+
   * [java.util.Observer](https://docs.oracle.com/javase/8/docs/api/java/util/Observer.html)
   * [java.util.Observable](https://docs.oracle.com/javase/8/docs/api/java/util/Observable.html)
   * [java.util.EventListener](https://docs.oracle.com/javase/8/docs/api/java/util/EventListener.html)
@@ -1497,6 +1515,7 @@ The Context class maintains an instance of a ConcreteState subclass which define
 
 
 * Known uses 
+
   * [javax.faces.lifecycle.LifeCycle#execute()](https://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/Lifecycle.html#execute-javax.faces.context.FacesContext-)
   
   
@@ -1576,6 +1595,7 @@ The Context uses this interface to call the algorithm defined by a ConcreteStrat
 
 
 * Known uses 
+
   * [java.util.Comparator#compare()](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#compare-T-T-), executed by among others [Collections#sort()]()
   * [javax.servlet.Filter#doFilter()](https://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
   
@@ -1642,11 +1662,13 @@ The ConcreteClass implements the abstract primitive operations to carry out subc
 
 
 * Known uses 
+
   * All non-abstract methods of [java.io.InputStream](https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html), [java.io.OutputStream](https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html), [java.io.Reader](https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html) and [java.io.Writer](https://docs.oracle.com/javase/8/docs/api/java/io/Writer.html).
   * All non-abstract methods of [java.util.AbstractList](https://docs.oracle.com/javase/8/docs/api/java/util/AbstractList.html), [java.util.AbstractSet](https://docs.oracle.com/javase/8/docs/api/java/util/AbstractSet.html) and [java.util.AbstractMap](https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.html)
 
 
 ##### <a id="Visitor"></a>Visitor
+
 * Motivation
 
 Imagine that we need to implement a compiler. 
@@ -1725,6 +1747,7 @@ The ObjectStructure provides a composition or collection of the elements and all
 
 
 * Known uses 
+
   * [javax.lang.model.element.AnnotationValue](https://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/AnnotationValue.html) and [AnnotationValueVisitor](https://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/AnnotationValueVisitor.html)
   * [javax.lang.model.element.Element](https://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/Element.html) and [ElementVisitor](https://docs.oracle.com/javase/8/docs/api/javax/lang/model/element/ElementVisitor.html)
   * [javax.lang.model.type.TypeMirror](https://docs.oracle.com/javase/8/docs/api/javax/lang/model/type/TypeMirror.html) and [TypeVisitor](https://docs.oracle.com/javase/8/docs/api/javax/lang/model/type/TypeVisitor.html)
