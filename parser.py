@@ -17,10 +17,14 @@ def parseReadme(readmeLocalPath):
     isInPatternDescriptionSection = False
     isInStory = False    
     isInMotivation = False
+    isInStructure = False
+    
     dictsArray = []        
+    
     currentPatternID = ""
-    currentStory = ""
     currentMotivation = ""
+    currentStory = ""
+    currentStructure = ""
     
     for line in lines:
         strLine = str(line)
@@ -63,8 +67,9 @@ def parseReadme(readmeLocalPath):
             # clean current text
             currentStory = ""
 
-        # append motivation, since motivation is described in more lines 
+        # append motivation,  motivation is described in more lines 
         if isInMotivation == True:
+            # story tag means end of the motivation paragraph
             if "* Story" in strLine:
                 # end of the Motivation section
                 isInMotivation = False  
@@ -76,7 +81,7 @@ def parseReadme(readmeLocalPath):
                 currentMotivation = ""
             else:    
                 currentMotivation = currentMotivation + strLine
-            #print(currentMotivation)
+            
                             
         # find a story paragraph inside pattern description paragraph                            
         if isInPatternDescriptionSection == True and "* Motivation" in strLine: 
@@ -97,14 +102,32 @@ def parseReadme(readmeLocalPath):
             
             # update dictionary with pattern UML file name
             utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_UML_FILE_NAME, currentPatternID.lower() + ".png")
-                   
-                   
+                                      
+        # append structure,  structure is described in few lines 
+        if isInStructure == True:
+            # story tag means end of the motivation paragraph
+            if "* Known" in strLine:
+                # end of the Motivation section
+                isInStructure = False  
+                
+                #update dictionary with structure
+                utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_STRUCTURE, currentStructure)
+                
+                # clean the structure text
+                currentStructure = ""
+            else:    
+                currentStructure = currentStructure + strLine
+                
+        # find a story paragraph inside pattern description paragraph                            
+        if isInPatternDescriptionSection == True and "* Structure" in strLine: 
+            isInStructure = True        
+       
+           
         # find source code, data is in paragraph which contains substring "Source Code"
         if isInPatternDescriptionSection == True and isInStory == False and "Source Code" in strLine:
 
             # update dictionary with PATTERN_SOURCE_CODE_PACKAGE_NAME and DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME 
             utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
             utils.updateDict(dictsArray, currentPatternID, constants.DICT_KEY_PATTERN_TEST_SOURCE_CODE_PACKAGE_NAME, constants.PATTERN_TEST_SOURCE_CODE_PACKAGE_PREFIX + currentPatternID.lower())
-                                        
-             
+                                                
     return dictsArray

@@ -97,6 +97,7 @@ def createPage(destFile, dict):
     createPageStorySection(destFile, dict)
     createPageImageSection(destFile, dict)
     createPageUMLImageSection(destFile, dict)
+    createPageStructureSection(destFile, dict)
     createPageImplementationSection(destFile, dict)        
     createPageUsageSection(destFile, dict)
 
@@ -142,6 +143,7 @@ def createPageTableOfContentSection(destFile):
     destFile.write('* [Story](#Story)\n')
     destFile.write('* [Image](#Image)\n')
     destFile.write('* [UML](#UML)\n')
+    destFile.write('* [Structure](#Structure)\n')
     destFile.write('* [Implementation](#Implementation)\n')
     destFile.write('* [Usage](#Usage)\n')
 
@@ -201,6 +203,14 @@ def createAdapterPageUMLImageSection(destFile, title, imagePath):
     destFile.write('[![](' + imagePath + ')](' + imagePath + ')\n')            
     destFile.write('\n')
     
+# add page structure -> story
+def createPageStructureSection(destFile, dict):
+    
+    destFile.write('\n\n')
+    destFile.write('###  <a id="Structure"></a>Structure \n')
+    destFile.write(dict.get(constants.DICT_KEY_PATTERN_STRUCTURE) + '\n')
+    destFile.write('\n')
+        
 # add page implementation details, source code
 def createPageImplementationSection(destFile, dict):
     
