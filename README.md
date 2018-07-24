@@ -236,10 +236,10 @@ $  cd /src/main/java/com/hundredwordsgof/builder
 
 * Structure
 
-The Product class represents a complex object. 
-The Builder specifies an abstract interface for creating parts of a Product object.  
-The ConcreteBuilder class constructs and assembles parts of the product, implementing the Builder interface.   
-The Director class constructs an object using the Builder interface.
+The *Product* class represents a complex object.   
+The *Builder* specifies an abstract interface for creating parts of a *Product* object.     
+The *ConcreteBuilder* class constructs and assembles parts of the product, implementing the *Builder* interface.    
+The *Director* class constructs an object using the *Builder* interface.
 
   
 * Known uses
@@ -315,10 +315,10 @@ $  cd /src/main/java/com/hundredwordsgof/factorymethod
 
 * Structure
 
-The Product interface defines the interface of objects the factory method creates.   
-The ConcreteProduct class implements the Product interface.  
-The Creator abstract class declares the factory method interface.  
-The ConcreteCreator class implements the Creator's factory method and returns an instance of the ConcreteProduct.  
+The *Product* interface defines the interface of objects the factory method creates.    
+The *ConcreteProduct* class implements the *Product* interface.   
+The *Creator* abstract class declares the factory method interface.   
+The *ConcreteCreator* class implements the *Creator's factory method and returns an instance of the *ConcreteProduct*.  
 
 
 * Known uses
@@ -391,11 +391,11 @@ $  cd /src/main/java/com/hundredwordsgof/abstractfactory
 
 * Structure
 
-The AbstractFactory defines the interface for creation of the abstract product objects. 
-The AbstractProduct defines the interface for product objects. 
-The ConcreteProduct class implements products based on AbstractProduct interfaces. 
-The ConcreteFactory class implements factories based on AbstractFactory interfaces. 
-The Client class uses AbstractFactory & AbstractProduct interfaces.
+The *AbstractFactory* defines the interface for creation of the abstract product objects.  
+The *AbstractProduct* defines the interface for product objects.  
+The *ConcreteProduct* class implements products based on *AbstractProduct* interfaces.   
+The *ConcreteFactory* class implements factories based on *AbstractFactory* interfaces.   
+The *Client* class uses *AbstractFactory* & *AbstractProduct* interfaces.  
 
 
 * Known uses
@@ -465,17 +465,17 @@ $  cd /src/main/java/com/hundredwordsgof/adapter
 
 * Structure
 
-We can have two implementations, the Class adapter and the Object adapter.
+We can have two implementations, the *Class* adapter and the *Object* adapter.
 
 
-The Class adapter extends the Adaptee class. 
-The Object adapter injects Adaptee object into the Adapter class.
+The *Class* adapter extends the *Adaptee* class.   
+The *Object* adapter injects *Adaptee* object into the *Adapter* class.
 
 
-The target interface defines the domain-specific interface used by the Client. 
-The Client class uses the target interface. 
-The Adaptee class defines an existing interface where adaption will be applied. 
-The Adapter class adapts interface Adaptee to the Target.
+The target interface defines the domain-specific interface used by the *Client*.   
+The *Client* class uses the target interface.  
+The *Adaptee* class defines an existing interface where adaption will be applied.  
+The *Adapter* class adapts interface *Adaptee* to the *Target*.
 
 
 * Known uses
@@ -551,11 +551,11 @@ $  cd /src/main/java/com/hundredwordsgof/bridge
 
 * Structure
 
-The Implementator interface defines the interface for implementation classes (concrete implementers). 
-The ConcreteImplementator class implements the Implementator interface and defines its concrete implementation. 
-The Abstraction abstract class defines the abstraction interface, maintains a reference to an object of type Implementator, 
-and the link between the abstraction and the implementer is called a Bridge. 
-The RefinedAbstracion extends the interface defined by Abstraction.
+The *Implementator* interface defines the interface for implementation classes (concrete implementers).  
+The *ConcreteImplementator* class implements the *Implementator* interface and defines its concrete implementation.  
+The *Abstraction* abstract class defines the abstraction interface, maintains a reference to an object of type *Implementator*, 
+and the link between the abstraction and the implementer is called a *Bridge*.  
+The *RefinedAbstracion* extends the interface defined by *Abstraction*.
 
 
 * Known uses
@@ -616,12 +616,12 @@ $  cd /src/main/java/com/hundredwordsgof/composite
 
 * Structure
 
-The Component abstract class declares the interface for objects in the composition, implements default behavior for the interface common to 
-all classes as appropriate, and declares an interface for accessing and managing its child components. 
-The Leaf class represents leaf objects in the composition. 
-The Composite class defines behavior for components having children, stores the child components and implements the child-related operations in the 
-Component interface.
-The Client class uses the Composite interface.
+The *Component* abstract class declares the interface for objects in the composition, implements default behavior for the interface common to 
+all classes as appropriate, and declares an interface for accessing and managing its child components.  
+The *Leaf* class represents leaf objects in the composition.  
+The *Composite* class defines behavior for components having children, stores the child components and implements the child-related operations in the 
+*Component* interface.  
+The *Client* class uses the *Composite* interface.
 
 
 * Known uses 
@@ -682,10 +682,10 @@ $  cd /src/main/java/com/hundredwordsgof/decorator
 
 * Structure
 
-The Component defines interfaces for new features which will be added dynamically. 
-The ConcreteComponent class defines object where new features can be added. 
-The Decorator abstract class holds reference to the Component object. 
-The ConcreteDecorator class adds new features to the Component object.
+The *Component* defines interfaces for new features which will be added dynamically.  
+The *ConcreteComponent* class defines object where new features can be added.  
+The *Decorator* abstract class holds reference to the *Component* object.  
+The *ConcreteDecorator* class adds new features to the *Component* object.  
 
 
 * Known uses 
@@ -766,7 +766,7 @@ $  cd /src/main/java/com/hundredwordsgof/facade
 
 * Structure
 
-The UML diagram consist of Facade and subsystem classes.
+The UML diagram consist of *Facade* and subsystem classes.
 
 
 * Known uses 
@@ -839,18 +839,18 @@ $  cd /src/main/java/com/hundredwordsgof/flyweight
 
 * Structure
 
-The flyweight pattern uses the concepts of intrinsic and extrinsic data. 
-The intrinsic data is held in the properties of the flyweight objects, which are shared. 
+The Flyweight pattern uses the concepts of intrinsic and extrinsic data.  
+The intrinsic data is held in the properties of the flyweight objects, which are shared.  
 This information is stateless and generally remains unchanged, as any changes would be effectively replicated among all of the objects that reference 
 the flyweight. Extrinsic data can be state-full, as it is held outside of a flyweight object. 
 It can be passed to methods of a flyweight when needed, but should never be stored within a shared flyweight object.
 
 
-The Flyweight interface defines interfaces through which flyweight can receive and act on extrinsic states. 
-The ConcreteFlyweight class implements Flyweight and adds storage for intrinsic state (Character). 
-The UnsharedConcreteFlyweight class defines objects which are not shared. 
-The FlyweightFactory class creates and manages the flyweight objects. 
-The Client class keeps flyweight reference and stores extrinsic state.
+The *Flyweight* interface defines interfaces through which flyweight can receive and act on extrinsic states.   
+The *ConcreteFlyweight* class implements *Flyweight* and adds storage for intrinsic state (Character).   
+The *UnsharedConcreteFlyweight* class defines objects which are not shared.   
+The *FlyweightFactory* class creates and manages the flyweight objects.  
+The *Client* class keeps flyweight reference and stores extrinsic state.  
 
 
 * Known uses 
@@ -920,20 +920,21 @@ $  cd /src/main/java/com/hundredwordsgof/proxy
 
 * Structure
 
-The Subject interface defines a common interface for the RealSubject and the Proxy RealSubject classes and points to the real object which the 
-Proxy represents. 
-The Proxy class keeps reference to the real subject: it can act as a surrogate, controlling access to the real subject and can be 
-responsible for creation and maintenance of the Real subject.
+The *Subject* interface defines a common interface for the *RealSubject* and the *Proxy*.  
+*RealSubject* classes and points to the real object which the 
+*Proxy* represents.  
+The *Proxy* class keeps reference to the real subject: it can act as a surrogate, controlling access to the real subject and can be 
+responsible for creation and maintenance of the *Real* subject.
 
 
-The Proxy can be used in many situations, therefore we have the following Proxy types:
-The Remote Proxy - represents an object in a different address space. 
-The Virtual Proxy - creates "heavy" objects on demand. 
-The Protection Proxy - controls access to the object, protects the target from bad clients (Firewall proxy). 
-The Smart reference - replacement for a smart pointer, can be used as a counter of the created objects. 
-The Cache Proxy - stores the results of most frequently used target operations. 
-The Synchronization Proxy - allows safe concurrent accesses to the target object by different client objects. 
-The Counting Proxy - provides audit mechanism before executing a method on the target object.
+The *Proxy* can be used in many situations, therefore we have the following Proxy types:  
+The *Remote Proxy* - represents an object in a different address space.   
+The *Virtual Proxy* - creates "heavy" objects on demand.   
+The *Protection Proxy* - controls access to the object, protects the target from bad clients (Firewall proxy).   
+The *Smart reference* - replacement for a smart pointer, can be used as a counter of the created objects.   
+The *Cache Proxy* - stores the results of most frequently used target operations.   
+The *Synchronization Proxy* - allows safe concurrent accesses to the target object by different client objects.   
+The *Counting Proxy* - provides audit mechanism before executing a method on the target object.  
 
 
 * Known uses
@@ -1001,9 +1002,9 @@ $  cd /src/main/java/com/hundredwordsgof/chainofresponsibility
 
 * Structure
 
-A Handler defines interface for request handling. 
-The ConcreteHandler handles the request, can access the next object in the chain and forward the request if necessary. 
-A client initiates requests to the ConcreteHandler.
+A *Handler* defines interface for request handling.  
+The *ConcreteHandler* handles the request, can access the next object in the chain and forward the request if necessary.  
+A client initiates requests to the *ConcreteHandler*.  
 
 
 * Known uses
