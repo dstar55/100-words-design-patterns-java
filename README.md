@@ -97,12 +97,12 @@ $  cd /src/main/java/com/hundredwordsgof/singleton
 
 * Structure
 
-The fact that every class has a public constructor in Java can be used in order to implement a Singleton. 
+The fact that every class has a public constructor in Java can be used in order to implement a *Singleton*. 
 The public constructor will be overridden with a new constructor which does nothing, but the scope of the constructor is private, 
 so other classes can't instantiate class objects.
 
 
-The object is created in the method getInstance(), and since an object is created when method getInstance() is invoked for first time, 
+The object is created in the method *getInstance()*, and since an object is created when method *getInstance()* is invoked for first time, 
 we are talking about lazy instantiation technique.
 
 
@@ -129,7 +129,7 @@ However, we may have a situation when, during runtime, we want to copy an object
 
 
 So, imagine that we are developing software which can work with spreadsheets. A spreadsheet consist of cells, and a cell is a complex object with lot of attributes, such as borders, content, format, color, etc. Now, if we want to split a cell, we can develop a method which will copy each attribute of that object. This method can became very complex, so we should consider a more elegant solution.
-It would be nice if we could copy an object with a single method, for example cloneMe().
+It would be nice if we could copy an object with a single method, for example *cloneMe()*.
 
 Such solution is a Prototype pattern.
 
@@ -167,8 +167,8 @@ $  cd /src/main/java/com/hundredwordsgof/prototype
 
 * Structure
 
-The Prototype interface defines the cloneMe() method.  
-The ConcretePrototype implements a Prototype interface using java.lang.Object.clone() method.
+The *Prototype* interface defines the *cloneMe()* method.   
+The *ConcretePrototype* implements a *Prototype* interface using *java.lang.Object.clone()* method.
 
 
 The prototype can be used to implement a copy constructor (deep or shallow).
