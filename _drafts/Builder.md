@@ -65,10 +65,10 @@ Whether a customer picks a classical hard disk or SSD for storage, the construct
 
 ###  <a id="Structure"></a>Structure 
 
-The Product class represents a complex object. 
-The Builder specifies an abstract interface for creating parts of a Product object.  
-The ConcreteBuilder class constructs and assembles parts of the product, implementing the Builder interface.   
-The Director class constructs an object using the Builder interface.
+The *Product* class represents a complex object.   
+The *Builder* specifies an abstract interface for creating parts of a *Product* object.     
+The *ConcreteBuilder* class constructs and assembles parts of the product, implementing the *Builder* interface.    
+The *Director* class constructs an object using the *Builder* interface.
 
   
 

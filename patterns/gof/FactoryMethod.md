@@ -66,10 +66,10 @@ The class of end product (ball, toy, sculpture, cake) is determined by the mold.
 
 ###  <a id="Structure"></a>Structure 
 
-The Product interface defines the interface of objects the factory method creates.   
-The ConcreteProduct class implements the Product interface.  
-The Creator abstract class declares the factory method interface.  
-The ConcreteCreator class implements the Creator's factory method and returns an instance of the ConcreteProduct.  
+The *Product* interface defines the interface of objects the factory method creates.    
+The *ConcreteProduct* class implements the *Product* interface.   
+The *Creator* abstract class declares the factory method interface.   
+The *ConcreteCreator* class implements the *Creator's factory method and returns an instance of the *ConcreteProduct*.  
 
 
 

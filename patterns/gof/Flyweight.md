@@ -73,18 +73,18 @@ Normalization is the process of organizing the columns (attributes) and the tabl
 
 ###  <a id="Structure"></a>Structure 
 
-The flyweight pattern uses the concepts of intrinsic and extrinsic data. 
-The intrinsic data is held in the properties of the flyweight objects, which are shared. 
+The Flyweight pattern uses the concepts of intrinsic and extrinsic data.  
+The intrinsic data is held in the properties of the flyweight objects, which are shared.  
 This information is stateless and generally remains unchanged, as any changes would be effectively replicated among all of the objects that reference 
 the flyweight. Extrinsic data can be state-full, as it is held outside of a flyweight object. 
 It can be passed to methods of a flyweight when needed, but should never be stored within a shared flyweight object.
 
 
-The Flyweight interface defines interfaces through which flyweight can receive and act on extrinsic states. 
-The ConcreteFlyweight class implements Flyweight and adds storage for intrinsic state (Character). 
-The UnsharedConcreteFlyweight class defines objects which are not shared. 
-The FlyweightFactory class creates and manages the flyweight objects. 
-The Client class keeps flyweight reference and stores extrinsic state.
+The *Flyweight* interface defines interfaces through which flyweight can receive and act on extrinsic states.   
+The *ConcreteFlyweight* class implements *Flyweight* and adds storage for intrinsic state (Character).   
+The *UnsharedConcreteFlyweight* class defines objects which are not shared.   
+The *FlyweightFactory* class creates and manages the flyweight objects.  
+The *Client* class keeps flyweight reference and stores extrinsic state.  
 
 
 

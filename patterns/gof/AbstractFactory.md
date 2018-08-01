@@ -70,11 +70,11 @@ The same machine is used to stamp French, Italian or German cards.
 
 ###  <a id="Structure"></a>Structure 
 
-The AbstractFactory defines the interface for creation of the abstract product objects. 
-The AbstractProduct defines the interface for product objects. 
-The ConcreteProduct class implements products based on AbstractProduct interfaces. 
-The ConcreteFactory class implements factories based on AbstractFactory interfaces. 
-The Client class uses AbstractFactory & AbstractProduct interfaces.
+The *AbstractFactory* defines the interface for creation of the abstract product objects.  
+The *AbstractProduct* defines the interface for product objects.  
+The *ConcreteProduct* class implements products based on *AbstractProduct* interfaces.   
+The *ConcreteFactory* class implements factories based on *AbstractFactory* interfaces.   
+The *Client* class uses *AbstractFactory* & *AbstractProduct* interfaces.  
 
 
 

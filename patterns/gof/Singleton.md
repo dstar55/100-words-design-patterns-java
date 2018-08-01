@@ -61,12 +61,12 @@ identifies the fastest person in the world.
 
 ###  <a id="Structure"></a>Structure 
 
-The fact that every class has a public constructor in Java can be used in order to implement a Singleton. 
+The fact that every class has a public constructor in Java can be used in order to implement a *Singleton*. 
 The public constructor will be overridden with a new constructor which does nothing, but the scope of the constructor is private, 
 so other classes can't instantiate class objects.
 
 
-The object is created in the method getInstance(), and since an object is created when method getInstance() is invoked for first time, 
+The object is created in the method *getInstance()*, and since an object is created when method *getInstance()* is invoked for first time, 
 we are talking about lazy instantiation technique.
 
 

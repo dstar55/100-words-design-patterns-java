@@ -72,11 +72,11 @@ There are different implementations of steering wheels used in cars, buses, truc
 
 ###  <a id="Structure"></a>Structure 
 
-The Implementator interface defines the interface for implementation classes (concrete implementers). 
-The ConcreteImplementator class implements the Implementator interface and defines its concrete implementation. 
-The Abstraction abstract class defines the abstraction interface, maintains a reference to an object of type Implementator, 
-and the link between the abstraction and the implementer is called a Bridge. 
-The RefinedAbstracion extends the interface defined by Abstraction.
+The *Implementator* interface defines the interface for implementation classes (concrete implementers).  
+The *ConcreteImplementator* class implements the *Implementator* interface and defines its concrete implementation.  
+The *Abstraction* abstract class defines the abstraction interface, maintains a reference to an object of type *Implementator*, 
+and the link between the abstraction and the implementer is called a *Bridge*.  
+The *RefinedAbstracion* extends the interface defined by *Abstraction*.
 
 
 

@@ -69,17 +69,17 @@ Some modify power or signal attributes, while others merely adapt the physical f
 
 ###  <a id="Structure"></a>Structure 
 
-We can have two implementations, the Class adapter and the Object adapter.
+We can have two implementations, the *Class* adapter and the *Object* adapter.
 
 
-The Class adapter extends the Adaptee class. 
-The Object adapter injects Adaptee object into the Adapter class.
+The *Class* adapter extends the *Adaptee* class.   
+The *Object* adapter injects *Adaptee* object into the *Adapter* class.
 
 
-The target interface defines the domain-specific interface used by the Client. 
-The Client class uses the target interface. 
-The Adaptee class defines an existing interface where adaption will be applied. 
-The Adapter class adapts interface Adaptee to the Target.
+The target interface defines the domain-specific interface used by the *Client*.   
+The *Client* class uses the target interface.  
+The *Adaptee* class defines an existing interface where adaption will be applied.  
+The *Adapter* class adapts interface *Adaptee* to the *Target*.
 
 
 

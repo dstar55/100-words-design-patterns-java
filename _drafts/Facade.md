@@ -66,7 +66,7 @@ This is a typical example for Facade.
 
 ###  <a id="Structure"></a>Structure 
 
-The UML diagram consist of Facade and subsystem classes.
+The UML diagram consist of *Facade* and subsystem classes.
 
 
 

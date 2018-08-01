@@ -67,9 +67,9 @@ then the officer and then the soldier – and those three elements would form a 
 
 ###  <a id="Structure"></a>Structure 
 
-A Handler defines interface for request handling. 
-The ConcreteHandler handles the request, can access the next object in the chain and forward the request if necessary. 
-A client initiates requests to the ConcreteHandler.
+A *Handler* defines interface for request handling.  
+The *ConcreteHandler* handles the request, can access the next object in the chain and forward the request if necessary.  
+A client initiates requests to the *ConcreteHandler*.  
 
 
 

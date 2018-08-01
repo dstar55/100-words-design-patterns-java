@@ -61,10 +61,10 @@ The spoilers do not change the car itself, but add additional functionality whic
 
 ###  <a id="Structure"></a>Structure 
 
-The Component defines interfaces for new features which will be added dynamically. 
-The ConcreteComponent class defines object where new features can be added. 
-The Decorator abstract class holds reference to the Component object. 
-The ConcreteDecorator class adds new features to the Component object.
+The *Component* defines interfaces for new features which will be added dynamically.  
+The *ConcreteComponent* class defines object where new features can be added.  
+The *Decorator* abstract class holds reference to the *Component* object.  
+The *ConcreteDecorator* class adds new features to the *Component* object.  
 
 
 

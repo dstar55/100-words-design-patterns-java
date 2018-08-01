@@ -21,7 +21,7 @@ However, we may have a situation when, during runtime, we want to copy an object
 
 
 So, imagine that we are developing software which can work with spreadsheets. A spreadsheet consist of cells, and a cell is a complex object with lot of attributes, such as borders, content, format, color, etc. Now, if we want to split a cell, we can develop a method which will copy each attribute of that object. This method can became very complex, so we should consider a more elegant solution.
-It would be nice if we could copy an object with a single method, for example cloneMe().
+It would be nice if we could copy an object with a single method, for example *cloneMe()*.
 
 Such solution is a Prototype pattern.
 
@@ -56,8 +56,8 @@ Dolly the sheep was the first mammal to be cloned, so Dolly is a duplicate.
 
 ###  <a id="Structure"></a>Structure 
 
-The Prototype interface defines the cloneMe() method.  
-The ConcretePrototype implements a Prototype interface using java.lang.Object.clone() method.
+The *Prototype* interface defines the *cloneMe()* method.   
+The *ConcretePrototype* implements a *Prototype* interface using *java.lang.Object.clone()* method.
 
 
 The prototype can be used to implement a copy constructor (deep or shallow).

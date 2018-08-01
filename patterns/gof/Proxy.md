@@ -65,20 +65,21 @@ He is an accredited messenger, agent, or representative, who is sent by one gove
 
 ###  <a id="Structure"></a>Structure 
 
-The Subject interface defines a common interface for the RealSubject and the Proxy RealSubject classes and points to the real object which the 
-Proxy represents. 
-The Proxy class keeps reference to the real subject: it can act as a surrogate, controlling access to the real subject and can be 
-responsible for creation and maintenance of the Real subject.
+The *Subject* interface defines a common interface for the *RealSubject* and the *Proxy*.  
+*RealSubject* classes and points to the real object which the 
+*Proxy* represents.  
+The *Proxy* class keeps reference to the real subject: it can act as a surrogate, controlling access to the real subject and can be 
+responsible for creation and maintenance of the *Real* subject.
 
 
-The Proxy can be used in many situations, therefore we have the following Proxy types:
-The Remote Proxy - represents an object in a different address space. 
-The Virtual Proxy - creates "heavy" objects on demand. 
-The Protection Proxy - controls access to the object, protects the target from bad clients (Firewall proxy). 
-The Smart reference - replacement for a smart pointer, can be used as a counter of the created objects. 
-The Cache Proxy - stores the results of most frequently used target operations. 
-The Synchronization Proxy - allows safe concurrent accesses to the target object by different client objects. 
-The Counting Proxy - provides audit mechanism before executing a method on the target object.
+The *Proxy* can be used in many situations, therefore we have the following Proxy types:  
+The *Remote Proxy* - represents an object in a different address space.   
+The *Virtual Proxy* - creates "heavy" objects on demand.   
+The *Protection Proxy* - controls access to the object, protects the target from bad clients (Firewall proxy).   
+The *Smart reference* - replacement for a smart pointer, can be used as a counter of the created objects.   
+The *Cache Proxy* - stores the results of most frequently used target operations.   
+The *Synchronization Proxy* - allows safe concurrent accesses to the target object by different client objects.   
+The *Counting Proxy* - provides audit mechanism before executing a method on the target object.  
 
 
 
