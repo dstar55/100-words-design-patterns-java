@@ -921,7 +921,7 @@ $  cd /src/main/java/com/hundredwordsgof/proxy
 * Structure
 
 The *Subject* interface defines a common interface for the *RealSubject* and the *Proxy*.  
-*RealSubject* classes and points to the real object which the 
+The *RealSubject* class points to the real object which the 
 *Proxy* represents.  
 The *Proxy* class keeps reference to the real subject: it can act as a surrogate, controlling access to the real subject and can be 
 responsible for creation and maintenance of the *Real* subject.
@@ -1067,12 +1067,11 @@ $  cd /src/main/java/com/hundredwordsgof/command
 
 * Structure
 
-The Command declares an interface for executing an operation. 
-The ConcreteCommand class defines the binding between a Receiver object and an action. 
-The Receiver class knows how to perform the operations associated with carrying out a request. 
-Any class may serve as a Receiver. 
-The Invoker class sends the command to carry out a request. 
-The Client class creates a ConcreteCommand object and sets its receiver.
+The *Command* declares an interface for executing an operation. 
+The *ConcreteCommand* class defines the binding between a *Receiver* object and an action. 
+The *Receiver* class knows how to perform the operations associated with carrying out a request. 
+The *Invoker* class sends the command to carry out a request. 
+The *Client* class creates a *ConcreteCommand* object and sets its receiver.
 
 
 * Known uses 
@@ -1120,12 +1119,12 @@ and needs careful design in order to run efficiently during runtime.
 Also, as the grammar becomes more complicated, the maintenance effort increases.
 
 
-The AbstractExpresion defines interface for interpretation. 
-The TerminalExpresion implements the AbstractExpression for literal symbols in the grammar. 
-One object for each literal symbol. 
-The NonterminalExpresion implements AbstractExpression for grammar rules. 
-One class per grammar rule, e.g. the OrExpression Context class, holds global information for the Interpreter. 
-The Client class creates an Abstract Syntax Tree, which represents expression defined in grammar.
+The *AbstractExpresion* defines interface for interpretation. 
+The *TerminalExpresion* implements the *AbstractExpression* for literal symbols in the grammar. 
+One object is defined for each literal symbol. 
+The *NonterminalExpresion* implements *AbstractExpression* for grammar rules. 
+One class per grammar rule is defined. 
+The *Client* class creates an *Abstract Syntax Tree*, which represents expression defined in grammar.
 
 
 * Known uses 
@@ -1193,10 +1192,10 @@ $  cd /src/main/java/com/hundredwordsgof/iterator
 
 * Structure
 
-The Iterator defines an interface for accessing and traversing elements. 
-The ConcreteIterator implements the Iterator interface, keeps track of the current position in the traversal of the aggregate. 
-The Aggregate defines an interface for creating an Iterator object. 
-The ConcreteAgregate class implements the Iterator creation interface to return an instance of the proper ConcreteIterator.
+The *Iterator* defines an interface for accessing and traversing elements. 
+The *ConcreteIterator* implements the *Iterator* interface, keeps track of the current position in the traversal of the aggregate. 
+The *Aggregate* defines an interface for creating an *Iterator* object. 
+The *ConcreteAgregate* class implements the *Iterator* creation interface to return an instance of the proper *ConcreteIterator*.
 
 
 * Known uses 
@@ -1265,11 +1264,11 @@ $  cd /src/main/java/com/hundredwordsgof/mediator
 
 * Structure
 
-A Colleague defines an interface for communication with another Colleague via the Mediator. 
-For the ConcreteColleague class, each Colleague class knows its Mediator object, and each Colleague communicates with its mediator 
+A *Colleague* defines an interface for communication with another *Colleague* via the *Mediator*. 
+For the *ConcreteColleague* class, each *Colleague* class knows its *Mediator* object, and each *Colleague* communicates with its mediator 
 whenever it would have otherwise communicated with another colleague. 
-The Mediator defines an interface for communicating with Colleague objects. 
-The ConcreteMediator implements cooperative behavior by coordinating the Colleague objects.
+The *Mediator* defines an interface for communicating with *Colleague* objects. 
+The *ConcreteMediator* implements cooperative behavior by coordinating the *Colleague* objects.
 
 
 * Known uses 
@@ -1346,9 +1345,9 @@ $  cd /src/main/java/com/hundredwordsgof/memento
 
 * Structure
 
-The Originator creates a Memento containing a snapshot of its current internal state and uses the Memento to restore its previous internal state. 
-The Memento stores the internal state of the Originator object and protects against access by objects other than the Originator. 
-The Caretaker class is responsible for Memento's safekeeping.
+The *Originator* creates a *Memento* containing a snapshot of its current internal state and uses the *Memento* to restore its previous internal state. 
+The *Memento* stores the internal state of the *Originator* object and protects against access by objects other than the *Originator*. 
+The *Caretaker* class is responsible for *Memento's* safekeeping.
 
 
 * Known uses 
@@ -1426,12 +1425,12 @@ $  cd /src/main/java/com/hundredwordsgof/observer
 
 * Structure
 
-The Observer defines an updating interface for objects which should be notified of changes in a subject. 
-The Subject knows its observers. 
-A subject can be observed by any number of Observer objects. 
-The ConcreteSubject stores the state of interest to ConcreteObserver objects and sends notifications to its observers when its state changes. 
-The ConcreteObserver maintains a reference to a ConcreteSubject object, stores the state that should stay consistent with the subject's and 
-implements the Observer updating interface to keep its state consistent with the subject's.
+The *Observer* defines an updating interface for objects which should be notified of changes in a subject. 
+The *Subject* knows its observers. 
+A subject can be observed by any number of *Observer* objects. 
+The *ConcreteSubject* stores the state of interest to *ConcreteObserver* objects and sends notifications to its observers when its state changes. 
+The *ConcreteObserver* maintains a reference to a *ConcreteSubject* object, stores the state that should stay consistent with the subject's and 
+implements the *Observer* updating interface to keep its state consistent with the subject's.
 
 
 * Known uses 
@@ -1510,9 +1509,9 @@ $  cd /src/main/java/com/hundredwordsgof/state
 
 * Structure
 
-The State defines an interface for encapsulating the behavior associated with a particular state of the Context. 
-The ConcreteState implements a behavior associated with the state of the Context. 
-The Context class maintains an instance of a ConcreteState subclass which defines the current state.
+The *State* defines an interface for encapsulating the behavior associated with a particular state of the Context. 
+The *ConcreteState* implements a behavior associated with the state of the *Context*. 
+The *Context* class maintains an instance of a *ConcreteState* subclass which defines the current state.
 
 
 * Known uses 
@@ -1590,9 +1589,9 @@ $  cd /src/main/java/com/hundredwordsgof/strategy
 
 * Structure
 
-The Strategy declares an interface common to all supported algorithms. 
-The ConcreteStrategy implements the algorithm using the Strategy interface. 
-The Context uses this interface to call the algorithm defined by a ConcreteStrategy.
+The *Strategy* declares an interface common to all supported algorithms. 
+The *ConcreteStrategy* implements the algorithm using the *Strategy* interface. 
+The *Context* uses this interface to call the algorithm defined by a *ConcreteStrategy*.
 
 
 * Known uses 
@@ -1658,8 +1657,8 @@ $  cd /src/main/java/com/hundredwordsgof/templatemethod
 
 * Structure
 
-The AbstractClass defines abstract primitive operations that concrete subclasses should implement. 
-The ConcreteClass implements the abstract primitive operations to carry out subclass-specific steps of the algorithm.
+The *AbstractClass* defines abstract primitive operations that concrete subclasses should implement. 
+The *ConcreteClass* implements the abstract primitive operations to carry out subclass-specific steps of the algorithm.
 
 
 * Known uses 
@@ -1739,12 +1738,12 @@ $  cd /src/main/java/com/hundredwordsgof/visitor
 
 * Structure
 
-The Visitor declares a Visit operation for each class of ConcreteElements in the object structure. 
-The ConcreteVisitor implements each operation declared by the Visitor. 
+The *Visitor* declares a *Visit* operation for each class of *ConcreteElements* in the object structure. 
+The *ConcreteVisitor* implements each operation declared by the *Visitor*. 
 Each operation implements a fragment of the algorithm defined for the corresponding class of objects in the structure.  
-The Element defines an Accept operation that takes a visitor as an argument. 
-The ConcreteElement implements an Accept operation that takes a visitor as an argument. 
-The ObjectStructure provides a composition or collection of the elements and allows the visitor to visit its elements.
+The *Element* defines an *Accept* operation that takes a visitor as an argument. 
+The *ConcreteElement* implements an *Accept* operation that takes a visitor as an argument. 
+The *ObjectStructure* provides a composition or collection of the elements and allows the visitor to visit its elements.
 
 
 * Known uses 
