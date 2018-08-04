@@ -79,9 +79,9 @@ The user may choose the Strategy based on his possibilities and preferences.
 
 ###  <a id="Structure"></a>Structure 
 
-The Strategy declares an interface common to all supported algorithms. 
-The ConcreteStrategy implements the algorithm using the Strategy interface. 
-The Context uses this interface to call the algorithm defined by a ConcreteStrategy.
+The *Strategy* declares an interface common to all supported algorithms. 
+The *ConcreteStrategy* implements the algorithm using the *Strategy* interface. 
+The *Context* uses this interface to call the algorithm defined by a *ConcreteStrategy*.
 
 
 

@@ -66,7 +66,7 @@ He is an accredited messenger, agent, or representative, who is sent by one gove
 ###  <a id="Structure"></a>Structure 
 
 The *Subject* interface defines a common interface for the *RealSubject* and the *Proxy*.  
-*RealSubject* classes and points to the real object which the 
+The *RealSubject* class points to the real object which the 
 *Proxy* represents.  
 The *Proxy* class keeps reference to the real subject: it can act as a surrogate, controlling access to the real subject and can be 
 responsible for creation and maintenance of the *Real* subject.

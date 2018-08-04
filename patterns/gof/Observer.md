@@ -79,12 +79,12 @@ The subscribers can subscribe or unsubscribe to the newsletters.
 
 ###  <a id="Structure"></a>Structure 
 
-The Observer defines an updating interface for objects which should be notified of changes in a subject. 
-The Subject knows its observers. 
-A subject can be observed by any number of Observer objects. 
-The ConcreteSubject stores the state of interest to ConcreteObserver objects and sends notifications to its observers when its state changes. 
-The ConcreteObserver maintains a reference to a ConcreteSubject object, stores the state that should stay consistent with the subject's and 
-implements the Observer updating interface to keep its state consistent with the subject's.
+The *Observer* defines an updating interface for objects which should be notified of changes in a subject. 
+The *Subject* knows its observers. 
+A subject can be observed by any number of *Observer* objects. 
+The *ConcreteSubject* stores the state of interest to *ConcreteObserver* objects and sends notifications to its observers when its state changes. 
+The *ConcreteObserver* maintains a reference to a *ConcreteSubject* object, stores the state that should stay consistent with the subject's and 
+implements the *Observer* updating interface to keep its state consistent with the subject's.
 
 
 

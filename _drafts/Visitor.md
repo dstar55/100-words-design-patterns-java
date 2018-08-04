@@ -80,12 +80,12 @@ weighted, in order to provide you with the total to be paid.
 
 ###  <a id="Structure"></a>Structure 
 
-The Visitor declares a Visit operation for each class of ConcreteElements in the object structure. 
-The ConcreteVisitor implements each operation declared by the Visitor. 
+The *Visitor* declares a *Visit* operation for each class of *ConcreteElements* in the object structure. 
+The *ConcreteVisitor* implements each operation declared by the *Visitor*. 
 Each operation implements a fragment of the algorithm defined for the corresponding class of objects in the structure.  
-The Element defines an Accept operation that takes a visitor as an argument. 
-The ConcreteElement implements an Accept operation that takes a visitor as an argument. 
-The ObjectStructure provides a composition or collection of the elements and allows the visitor to visit its elements.
+The *Element* defines an *Accept* operation that takes a visitor as an argument. 
+The *ConcreteElement* implements an *Accept* operation that takes a visitor as an argument. 
+The *ObjectStructure* provides a composition or collection of the elements and allows the visitor to visit its elements.
 
 
 

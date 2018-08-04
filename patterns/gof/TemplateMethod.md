@@ -62,8 +62,8 @@ At the end of the day they go home, have dinner and go to sleep.
 
 ###  <a id="Structure"></a>Structure 
 
-The AbstractClass defines abstract primitive operations that concrete subclasses should implement. 
-The ConcreteClass implements the abstract primitive operations to carry out subclass-specific steps of the algorithm.
+The *AbstractClass* defines abstract primitive operations that concrete subclasses should implement. 
+The *ConcreteClass* implements the abstract primitive operations to carry out subclass-specific steps of the algorithm.
 
 
 
