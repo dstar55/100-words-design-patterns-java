@@ -113,7 +113,8 @@ This implementation may have issues in multi-threaded environment, but in such s
 or put that method inside synchronize block.
 
 In addition to lazy initialization technique, we can have eager initialization technique, where instance is created during class loading.
-Eager initialization can be implemented using static initialization or static block where exception can be handled.
+Eager initialization can be implemented using variable static initialization or static block where exception can be handled.
+
 
 * Known uses
 
