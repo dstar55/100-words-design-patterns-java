@@ -109,8 +109,8 @@ we are talking about lazy instantiation technique.
 This technique ensures that singleton instances are created only when needed.
 
 
-This implementation may have issues in multithreaded environment, but in such situation we have to synchronize method getInstance(), 
-or put that method inside synhronize block.
+This implementation may have issues in multi-threaded environment, but in such situation we have to synchronize method getInstance(), 
+or put that method inside synchronize block.
 
 
 
