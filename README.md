@@ -650,8 +650,6 @@ we will have a much more flexible solution. The "enclosed" object is a decorator
 The Decorator pattern attaches additional responsibilities to an object dynamically.
 
 
-Decorator pattern, attaches additional responsibilities to an object dynamically.
-
 * Story
 
 The spoilers that are added to a car are examples of the Decorator. 
