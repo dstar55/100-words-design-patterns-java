@@ -773,7 +773,7 @@ The UML diagram consist of *Facade* and subsystem classes.
 
 * Known uses 
 
-  * [javax.faces.context.FacesContext)](https://docs.oracle.com/javaee/7/api/javax/faces/context/FacesContext.html), internally uses [LifeCycle](https://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/Lifecycle.html), [ViewHandler](https://docs.oracle.com/javaee/7/api/javax/faces/application/ViewHandler.html), [NavigationHandler](https://docs.oracle.com/javaee/7/api/javax/faces/application/NavigationHandler.html) etc.
+  * [javax.faces.context.FacesContext](https://docs.oracle.com/javaee/7/api/javax/faces/context/FacesContext.html), internally uses [LifeCycle](https://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/Lifecycle.html), [ViewHandler](https://docs.oracle.com/javaee/7/api/javax/faces/application/ViewHandler.html), [NavigationHandler](https://docs.oracle.com/javaee/7/api/javax/faces/application/NavigationHandler.html) etc.
   * [javax.faces.context.ExternalContext](https://docs.oracle.com/javaee/7/api/javax/faces/component/UIComponent.html#getChildren--), internally uses [ServletContext](https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContext.html), [HttpSession](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html), [HttpServletRequest](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html), [HttpServletResponse](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletResponse.html), etc.
   * [java.lang.Class](https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html), acts as a facade for [Reflection API](https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/package-summary.html)(getConstructors(), getMethods())
 
