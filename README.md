@@ -789,7 +789,7 @@ After using the editor for a while, we decide that a new feature should be imple
 
 
 The Line class will be extended with a new attribute (Color class), which holds information about the color, and the draw method will be 
-extended accordingly. Now we have a new version of our editor, and some users want to test-drive the editor to its limits, 
+extended accordingly. Now we have a new version of our editor, and some users want to test the editor to its limits, 
 so they draw several thousand lines. Drawing several thousand lines means that we have several thousand Line objects in memory, 
 but we also have several thousand Color objects in memory, even if our editor is drawing lines with basic colors only.
 
