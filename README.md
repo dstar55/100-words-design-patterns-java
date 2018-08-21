@@ -951,7 +951,7 @@ The *Counting Proxy* - provides audit mechanism before executing a method on the
 Imagine that you just have bought a new wireless router from the local Internet Service Provider. 
 You unpack a router from the box, plug the necessary cables and you switch on your new wireless router. 
 But, the router is not able to establish an Internet connection. 
-After checking the technical manuals and playing with router settings, you finally give up and you call the ISP operator's call centre.
+After checking the technical manuals and playing with router settings, you finally give up and you call the ISP operator's call center.
 
 
 The first thing you hear is a machine voice of the auto responder. 
@@ -973,7 +973,7 @@ pass it on or do both.
 
 A King and his army is an example of the Chain of Responsibility. 
 The King gives orders to his army. The closest element to react would be the commander, 
-then the officer and then the soldier – and those three elements would form a Chain of Responsibility.
+then the officer and then the soldier and those three elements would form a Chain of Responsibility.
 
 * Image
 
