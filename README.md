@@ -1453,7 +1453,7 @@ Our initial State machine is implemented using if/else blocks, which are checkin
 
 But, the number of states gradually increases over time. 
 In addition, the conditions for reaching certain states become more complex. 
-Our 'if/else' – based state machine has more and more 'if/else' blocks and it becomes really difficult to maintain and debug such a code base.
+Our 'if/else' based state machine has more and more 'if/else' blocks and it becomes really difficult to maintain and debug such a code base.
 
 
 Is there a more elegant way to implement the State Machine?
@@ -1509,9 +1509,9 @@ $  cd /src/main/java/com/hundredwordsgof/state
 
 * Structure
 
-The *State* defines an interface for encapsulating the behavior associated with a particular state of the Context. 
-The *ConcreteState* implements a behavior associated with the state of the *Context*. 
-The *Context* class maintains an instance of a *ConcreteState* subclass which defines the current state.
+The *State* defines an interface for encapsulating the behavior associated with a particular state of the Context.  
+The *ConcreteState* implements a behavior associated with the state of the *Context*.  
+The *Context* class maintains an instance of a *ConcreteState* subclass which defines the current state.  
 
 
 * Known uses 
