@@ -1283,7 +1283,7 @@ The *ConcreteMediator* implements cooperative behavior by coordinating the *Coll
 
 * Motivation
 
-ModerModern cars have brakes on all four wheels, operated by a hydraulic system. 
+Modern cars have brakes on all four wheels, operated by a hydraulic system. 
 The brakes may be disc type or drum type.
 
 
