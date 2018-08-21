@@ -1119,12 +1119,12 @@ and needs careful design in order to run efficiently during runtime.
 Also, as the grammar becomes more complicated, the maintenance effort increases.
 
 
-The *AbstractExpresion* defines interface for interpretation. 
-The *TerminalExpresion* implements the *AbstractExpression* for literal symbols in the grammar. 
-One object is defined for each literal symbol. 
-The *NonterminalExpresion* implements *AbstractExpression* for grammar rules. 
-One class per grammar rule is defined. 
-The *Client* class creates an *Abstract Syntax Tree*, which represents expression defined in grammar.
+The *AbstractExpresion* defines interface for interpretation.  
+The *TerminalExpresion* implements the *AbstractExpression* for literal symbols in the grammar.   
+One object is defined for each literal symbol.   
+The *NonterminalExpresion* implements *AbstractExpression* for grammar rules.   
+One class per grammar rule is defined.   
+The *Client* class creates an *Abstract Syntax Tree*, which represents expression defined in grammar.  
 
 
 * Known uses 
