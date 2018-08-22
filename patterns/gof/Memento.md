@@ -16,7 +16,7 @@ tag: pattern
 
 ###  <a id="Motivation"></a>Motivation 
 
-ModerModern cars have brakes on all four wheels, operated by a hydraulic system. 
+Modern cars have brakes on all four wheels, operated by a hydraulic system. 
 The brakes may be disc type or drum type.
 
 
@@ -48,7 +48,7 @@ Memento design pattern helps to restore an object’s state to it previous state
 ###  <a id="Story"></a>Story 
 
 Transactions are operations on the database which occur in an atomic, consistent, durable, and isolated fashion. 
-A transaction can contain multiple operations on the database; each operation can succeed or fail – however, a transaction guarantees that, 
+A transaction can contain multiple operations on the database. Each operation can succeed or fail, however, a transaction guarantees that, 
 if all operations succeed, the transaction would commit and would be final. 
 And if any operation fails, then the transaction would fail and all operations would roll back and leave the database in its original state, 
 as if nothing has happened.
@@ -75,9 +75,9 @@ This rollback mechanism uses the Memento design pattern.
 
 ###  <a id="Structure"></a>Structure 
 
-The *Originator* creates a *Memento* containing a snapshot of its current internal state and uses the *Memento* to restore its previous internal state. 
-The *Memento* stores the internal state of the *Originator* object and protects against access by objects other than the *Originator*. 
-The *Caretaker* class is responsible for *Memento's* safekeeping.
+The *Originator* creates a *Memento* containing a snapshot of its current internal state and uses the *Memento* to restore its previous internal state.  
+The *Memento* stores the internal state of the *Originator* object and protects against access by objects other than the *Originator*.   
+The *Caretaker* class is responsible for *Memento's* safekeeping. 
 
 
 

@@ -58,11 +58,11 @@ The order is queued internally. The Car Technician will receive the request and 
 
 ###  <a id="Structure"></a>Structure 
 
-The *Command* declares an interface for executing an operation. 
-The *ConcreteCommand* class defines the binding between a *Receiver* object and an action. 
-The *Receiver* class knows how to perform the operations associated with carrying out a request. 
-The *Invoker* class sends the command to carry out a request. 
-The *Client* class creates a *ConcreteCommand* object and sets its receiver.
+The *Command* declares an interface for executing an operation.  
+The *ConcreteCommand* class defines the binding between a *Receiver* object and an action.  
+The *Receiver* class knows how to perform the operations associated with carrying out a request.  
+The *Invoker* class sends the command to carry out a request.  
+The *Client* class creates a *ConcreteCommand* object and sets its receiver.  
 
 
 

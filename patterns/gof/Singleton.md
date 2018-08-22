@@ -73,9 +73,11 @@ we are talking about lazy instantiation technique.
 This technique ensures that singleton instances are created only when needed.
 
 
-This implementation may have issues in multithreaded environment, but in such situation we have synchronize method getInstance(), 
-or a block inside that method.
+This implementation may have issues in multi-threaded environment, but in such situation we have to synchronize method getInstance(), 
+or put that method inside synchronize block.
 
+In addition to lazy initialization technique, we can have eager initialization technique, where instance is created during class loading.
+Eager initialization can be implemented using variable static initialization or static block where exception can be handled.
 
 
 

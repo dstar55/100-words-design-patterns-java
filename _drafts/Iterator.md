@@ -66,10 +66,10 @@ The process of browsing is an example of the Iterator pattern.
 
 ###  <a id="Structure"></a>Structure 
 
-The *Iterator* defines an interface for accessing and traversing elements. 
-The *ConcreteIterator* implements the *Iterator* interface, keeps track of the current position in the traversal of the aggregate. 
-The *Aggregate* defines an interface for creating an *Iterator* object. 
-The *ConcreteAgregate* class implements the *Iterator* creation interface to return an instance of the proper *ConcreteIterator*.
+The *Iterator* defines an interface for accessing and traversing elements.  
+The *ConcreteIterator* implements the *Iterator* interface, keeps track of the current position in the traversal of the aggregate.   
+The *Aggregate* defines an interface for creating an *Iterator* object.   
+The *ConcreteAgregate* class implements the *Iterator* creation interface to return an instance of the proper *ConcreteIterator*.  
 
 
 

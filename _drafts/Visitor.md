@@ -46,7 +46,7 @@ If we package related operations in a separate object, called a visitor, and pas
 then when an element of the AST "accepts" the visitor, it sends a request to the visitor that encodes the element's class.
 
 
-The solution in the above example is a Visitor design pattern.
+This solution is example of the Visitor design pattern.
 
 The Visitor allows one or more operations to be applied to a set of objects at runtime, decoupling the operations from the object structure.
 
@@ -80,12 +80,12 @@ weighted, in order to provide you with the total to be paid.
 
 ###  <a id="Structure"></a>Structure 
 
-The *Visitor* declares a *Visit* operation for each class of *ConcreteElements* in the object structure. 
-The *ConcreteVisitor* implements each operation declared by the *Visitor*. 
-Each operation implements a fragment of the algorithm defined for the corresponding class of objects in the structure.  
-The *Element* defines an *Accept* operation that takes a visitor as an argument. 
-The *ConcreteElement* implements an *Accept* operation that takes a visitor as an argument. 
-The *ObjectStructure* provides a composition or collection of the elements and allows the visitor to visit its elements.
+The *Visitor* declares a *Visit* operation for each class of *ConcreteElements* in the object structure.  
+The *ConcreteVisitor* implements each operation declared by the *Visitor*.  
+Each operation implements a fragment of the algorithm defined for the corresponding class of objects in the structure.   
+The *Element* defines an *Accept* operation that takes a visitor as an argument.  
+The *ConcreteElement* implements an *Accept* operation that takes a visitor as an argument.  
+The *ObjectStructure* provides a composition or collection of the elements and allows the visitor to visit its elements.  
 
 
 

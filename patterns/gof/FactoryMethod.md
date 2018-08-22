@@ -22,7 +22,7 @@ Both classes are abstract, and clients have to extend them in order to realize t
 
 
 The Engine class is responsible for managing Reports and will create them as required. 
-Report subclasses which Engine should instantiate are application–specific and Engine only knows when a new report should be created, 
+Report subclasses which Engine should instantiate are application specific and Engine only knows when a new report should be created, 
 but not what type of Report to create. 
 This leads us to a situation in which our library should instantiate classes, but it only knows about abstract classes, which it cannot instantiate.
 
@@ -69,7 +69,7 @@ The class of end product (ball, toy, sculpture, cake) is determined by the mold.
 The *Product* interface defines the interface of objects the factory method creates.    
 The *ConcreteProduct* class implements the *Product* interface.   
 The *Creator* abstract class declares the factory method interface.   
-The *ConcreteCreator* class implements the *Creator's factory method and returns an instance of the *ConcreteProduct*.  
+The *ConcreteCreator* class implements the *Creator's* factory method and returns an instance of the *ConcreteProduct*.  
 
 
 

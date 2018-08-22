@@ -56,7 +56,7 @@ Dolly the sheep was the first mammal to be cloned, so Dolly is a duplicate.
 
 ###  <a id="Structure"></a>Structure 
 
-The *Prototype* interface defines the *cloneMe()* method.   
+The *Prototype* interface defines the *copyMe()* method.   
 The *ConcretePrototype* implements a *Prototype* interface using *java.lang.Object.clone()* method.
 
 

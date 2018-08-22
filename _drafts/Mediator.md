@@ -69,11 +69,11 @@ The call center will contact the available taxi nearest to customer’s location
 
 ###  <a id="Structure"></a>Structure 
 
-A *Colleague* defines an interface for communication with another *Colleague* via the *Mediator*. 
+A *Colleague* defines an interface for communication with another *Colleague* via the *Mediator*.  
 For the *ConcreteColleague* class, each *Colleague* class knows its *Mediator* object, and each *Colleague* communicates with its mediator 
-whenever it would have otherwise communicated with another colleague. 
-The *Mediator* defines an interface for communicating with *Colleague* objects. 
-The *ConcreteMediator* implements cooperative behavior by coordinating the *Colleague* objects.
+whenever it would have otherwise communicated with another colleague.  
+The *Mediator* defines an interface for communicating with *Colleague* objects.  
+The *ConcreteMediator* implements cooperative behavior by coordinating the *Colleague* objects. 
 
 
 
