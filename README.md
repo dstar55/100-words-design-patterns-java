@@ -1589,9 +1589,9 @@ $  cd /src/main/java/com/hundredwordsgof/strategy
 
 * Structure
 
-The *Strategy* declares an interface common to all supported algorithms. 
-The *ConcreteStrategy* implements the algorithm using the *Strategy* interface. 
-The *Context* uses this interface to call the algorithm defined by a *ConcreteStrategy*.
+The *Strategy* declares an interface common to all supported algorithms.  
+The *ConcreteStrategy* implements the algorithm using the *Strategy* interface.   
+The *Context* uses this interface to call the algorithm defined by a *ConcreteStrategy*.  
 
 
 * Known uses 
