@@ -1657,7 +1657,7 @@ $  cd /src/main/java/com/hundredwordsgof/templatemethod
 
 * Structure
 
-The *AbstractClass* defines abstract primitive operations that concrete subclasses should implement. 
+The *AbstractClass* defines abstract primitive operations that concrete subclasses should implement.  
 The *ConcreteClass* implements the abstract primitive operations to carry out subclass-specific steps of the algorithm.
 
 
