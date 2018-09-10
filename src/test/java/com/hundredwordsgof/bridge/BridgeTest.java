@@ -22,7 +22,7 @@ public class BridgeTest {
     RefinedAbstraction refinedAbstractionB = new RefinedAbstraction(
         new ConcreteImplementorB());
     // invokes operation
-    assertEquals("xxxcom.hundredwordsgof.bridge.ConcreteImplementorB",
+    assertEquals("com.hundredwordsgof.bridge.ConcreteImplementorB",
         refinedAbstractionB.operation());
   }
 }
