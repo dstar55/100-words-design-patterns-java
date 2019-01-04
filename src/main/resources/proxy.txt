@@ -1,0 +1,22 @@
+@startuml
+
+interface Subject{
+  +doOperation(): void
+}
+
+class Proxy{
+  -realSubject: RealSubject
+  +Proxy()
+  +doOperation(): void
+}
+
+class RealSubject{
+  +RealSubject()
+  +doOperation(): void
+}
+
+Subject <|.. Proxy
+Subject <|.. RealSubject
+Proxy -> RealSubject : realSubject
+
+@enduml

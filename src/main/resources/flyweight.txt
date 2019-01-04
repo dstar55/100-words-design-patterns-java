@@ -1,0 +1,32 @@
+@startuml
+
+
+class FlyweightFactory{
+  +FlyweightFactory()
+  +getFlyweight(String, String): Flyweight
+}
+
+
+interface Flyweight{
+  +operation(Object): void
+}
+
+class ConcreteFlyweight{
+  -intrinsicState: Object
+  +ConcreteFlyweight(Object)
+  +operation(Object): void
+  +getIntrinsicState(): Object
+}
+
+class UnsharedConcreteFlyweight{
+  -state: Object
+  +UnsharedConcreteFlyweight(Object)
+  +operation(Object): void
+  +getState(): Object
+}
+
+Flyweight <|.. ConcreteFlyweight
+Flyweight <|.. UnsharedConcreteFlyweight
+FlyweightFactory o-> Flyweight : flyweights
+
+@enduml

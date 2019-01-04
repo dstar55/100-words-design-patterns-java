@@ -1,0 +1,61 @@
+@startuml
+
+abstract class AbstractFactory{
+  +Handler()
+  +createProductA(): AbstractProductA
+  +createProductB(): AbstractProductB
+}
+
+class ConcreteFactory1{
+  +ConcreteFactory1()
+  +createProductA(): AbstractProductA
+  +createProductB(): AbstractProductB
+}
+
+class ConcreteFactory2{
+  +ConcreteFactory2()
+  +createProductA(): AbstractProductA
+  +createProductB(): AbstractProductB
+}
+
+abstract class AbstractProductA{
+  +AbstractProductA()
+}
+
+class ProductA1{
+  +ProductA1()
+}
+
+class ProductA2{
+  +ProductA2()
+}
+
+abstract class AbstractProductB{
+  +AbstractProductB()
+}
+
+class ProductB1{
+  +ProductB1()
+}
+
+class ProductB2{
+  +ProductB2()
+}
+
+
+AbstractFactory <|-- ConcreteFactory1
+AbstractFactory <|-- ConcreteFactory2
+
+
+ConcreteFactory1 ..> ProductA1
+ConcreteFactory1 ..> ProductB1
+ConcreteFactory2 ..> ProductA2
+ConcreteFactory2 ..> ProductB2
+
+AbstractProductA <|-- ProductA1
+AbstractProductA <|-- ProductA2
+
+AbstractProductB <|-- ProductB1
+AbstractProductB <|-- ProductB2
+
+@enduml

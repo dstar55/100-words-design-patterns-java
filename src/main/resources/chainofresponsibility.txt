@@ -1,0 +1,23 @@
+@startuml
+
+abstract class Handler{
+  +Handler()
+  +handleRequest(): void
+  +setSuccesor(Handler): void
+}
+
+class ConcreteHandlerA{
+  +ConcreteHandlerA()
+  +handleRequest(): void
+}
+
+class ConcreteHandlerB{
+  +ConcreteHandlerB()
+  +handleRequest(): void
+}
+
+Handler <|-- ConcreteHandlerA
+Handler <|-- ConcreteHandlerB
+Handler --> Handler : succesor
+
+@enduml

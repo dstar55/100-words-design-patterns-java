@@ -1,0 +1,38 @@
+@startuml
+
+interface Aggregate{
+  +createIterator(): Iterator
+}
+
+interface Iterator{
+  +first(): Object
+  +next(): Object
+  +isDone(): boolean
+  +currentItem(): Object
+}
+
+class ConcreteAggregate{
+  +ConcreteAggregate()
+  +createIterator(): Iterator
+  -getRecords(): String[]
+}
+
+class ConcreteIterator{
+  +index: interface
+  +ConcreteIterator(ConcreteAggregate)
+  +first(): Object
+  +next(): Object
+  +isDone(): boolean
+  +currentItem(): Object
+}
+
+
+
+Aggregate <|.. ConcreteAggregate
+
+Iterator <|.. ConcreteIterator
+
+ConcreteAggregate .> ConcreteIterator
+ConcreteIterator -> ConcreteAggregate 
+
+@enduml

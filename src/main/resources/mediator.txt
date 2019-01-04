@@ -1,0 +1,40 @@
+@startuml
+
+interface Mediator{
+  +notifyColleage(Colleague, String): void
+}
+
+abstract class Colleague{
+  +Colleague(Mediator)
+  +notifyColleage(String): void
+  +receive(String): void
+}
+
+class ConcreteMediator{
+  - colleagues: List<Colleague>
+  +ConcreteMediator()
+  +addColleague(Colleague): void
+  +notifyColleage(Colleague, String): void
+}
+
+class ConcreteColleague1{
+  +ConcreteColleague1(Mediator)
+  +notifyColleage(String): void
+  +receive(String): void
+}
+
+class ConcreteColleague2{
+  +ConcreteColleague2(Mediator)
+  +notifyColleage(String): void
+  +receive(String): void  
+}
+
+Mediator <- Colleague : mediator
+Mediator <|.. ConcreteMediator
+Colleague <|-- ConcreteColleague1 
+Colleague <|-- ConcreteColleague2 
+ConcreteMediator -> ConcreteColleague1 : colleague1
+ConcreteMediator -> ConcreteColleague2 : colleague2
+
+
+@enduml

@@ -1,0 +1,39 @@
+@startuml
+
+class Director{
+  +Director(Builder)
+  +construct(): void
+}
+
+abstract class Builder{
+  +Builder()
+  +createProduct(): Builder
+  +buildPart1(String): Builder
+  +buildPart2(String): Builder
+}
+
+class ConcreteBuilder{
+  +ConcreteBuilder()
+  +createProduct(): Builder
+  +buildPart1(String): Builder
+  +buildPart2(String): Builder
+  +getResult(): Product
+}
+
+class Product{
+  +part1: String
+  +part2: String
+  +Product()
+  +setPart1(String): void
+  +setPart2(String): void
+  +getPart1(): String
+  +getPart12(): String
+  
+}
+
+Director o-> Builder : builder
+Builder <|-- ConcreteBuilder
+ConcreteBuilder .> Product : product
+
+
+@enduml

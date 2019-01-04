@@ -1,0 +1,24 @@
+@startuml
+
+class Client{
+  +Client(Prototype)
+  +operation(): Prototype
+
+}
+
+abstract class Prototype{
+  +Prototype()
+  +copyMe(): Prototype
+}
+
+class ConcretePrototype{
+  +ConcretePrototype()
+  +copyMe(): Prototype
+}
+
+
+Prototype <|-- ConcretePrototype
+Client -> Prototype : 0..1
+
+
+@enduml

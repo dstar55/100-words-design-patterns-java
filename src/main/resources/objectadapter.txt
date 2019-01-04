@@ -1,0 +1,22 @@
+@startuml
+
+interface Target{
+  +request(): String
+}
+
+class Adapter{
+  +Adapter()
+  +request(): String
+}
+
+class Adaptee{
+  +Adapter()
+  +specialRequest(): String
+}
+
+Adapter -> Adaptee : adaptee
+Target <|.. Adapter
+
+
+
+@enduml

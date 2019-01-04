@@ -1,0 +1,36 @@
+@startuml
+
+class Context{
+  +Context()
+  +getOperands(): List<Boolean>
+  +addOperand(Boolean): void
+  +isResult(): boolean
+  +setResult(Boolean): void
+}
+
+abstract class AbstractExpression{
+  +AbstractExpression()
+  +interpret(Context): void
+}
+
+class TerminalExpression{
+  -data: boolean
+  +interpret(Context): void
+}
+
+class AndTerminalExpression{
+  +interpret(Context): void
+}
+
+class OrTerminalExpression{
+  +interpret(Context): void
+}
+
+Context ..> AbstractExpression 
+AbstractExpression <|-- TerminalExpression
+AbstractExpression <|-- AndTerminalExpression
+AbstractExpression <|-- OrTerminalExpression 
+AndTerminalExpression o--> AbstractExpression 
+OrTerminalExpression o--> AbstractExpression  
+
+@enduml

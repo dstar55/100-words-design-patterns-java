@@ -1,0 +1,38 @@
+@startuml
+
+interface Component{
+  +operation(): void
+}
+
+class ConcreteComponent{
+  +ConcreteComponent()
+  +operation(): void
+}
+
+class Decorator{
+  +Decorator()
+  +operation(): void
+  +setComponenet(Component): void
+}
+
+class ConcreteDecoratorA{
+  +state: boolean
+  +ConcreteDecoratorA()
+  +operation(): void
+  +isState(): boolean
+}
+
+class ConcreteDecoratorB{
+  +ConcreteDecoratorB()
+  +operation(): void
+  -addedBehavior(): void
+}
+
+Component <|.. ConcreteComponent
+Component <|.. Decorator
+Decorator o--> Component : component
+Decorator <|-- ConcreteDecoratorA
+Decorator <|-- ConcreteDecoratorB
+
+
+@enduml

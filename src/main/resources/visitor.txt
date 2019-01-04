@@ -1,0 +1,62 @@
+@startuml
+
+class Client{
+
+}
+
+interface Visitor{
+  +visitConcreteElementA(ConcreteElementA): void
+  +visitConcreteElementB(ConcreteElementB): void
+}
+
+class ConcreteVisitor1{
+  +ConcreteVisitor1()
+  +visitConcreteElementA(ConcreteElementA): void
+  +visitConcreteElementB(ConcreteElementB): void
+}
+
+class ConcreteVisitor2{
+  +ConcreteVisitor2()
+  +visitConcreteElementA(ConcreteElementA): void
+  +visitConcreteElementB(ConcreteElementB): void
+}
+
+interface Element{
+  +accept(Visitor): void
+}
+
+class ConcreteElementA{
+  -counter: int
+  +ConcreteElementA()
+  +accept(Visitor): void
+  +operationA(): void
+}
+
+class ConcreteElementB{
+  -counter: int
+  +ConcreteElementB()
+  +accept(Visitor): void
+  +operationB(): void
+}
+
+class ObjectStructure{
+  +ObjectStructure()
+  +add(Element): void
+  +remove(Element): void
+  +getChild(int): Element
+  acceptAll(Visitor): void
+}
+
+
+Client -> Visitor
+Client --> ObjectStructure
+
+Visitor <|-- ConcreteVisitor1
+Visitor <|-- ConcreteVisitor2
+
+Element <|-- ConcreteElementA
+Element <|-- ConcreteElementB
+
+ObjectStructure o--> Element : children
+
+@enduml

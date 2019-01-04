@@ -1,0 +1,33 @@
+@startuml
+
+class Context{
+  +Context(Strategy)
+
+}
+
+interface Strategy{
+  +algorithmInterface(): String
+}
+
+class ConcreteStrategyA{
+  +ConcreteStrategyA()
+  +algorithmInterface(): String
+}
+
+class ConcreteStrategyB{
+  +ConcreteStrategyB()
+  +algorithmInterface(): String
+}
+
+class ConcreteStrategyC{
+  +ConcreteStrategyC()
+  +algorithmInterface(): String
+}
+
+Strategy <|.. ConcreteStrategyA
+Strategy <|.. ConcreteStrategyB
+Strategy <|.. ConcreteStrategyC
+Context o->	 Strategy : strategy
+
+
+@enduml

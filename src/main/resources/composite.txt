@@ -1,0 +1,29 @@
+@startuml
+
+class Client{
+}
+
+abstract class Component{
+  +Component()
+  +operation(): void
+}
+
+class Leaf{
+  +Leaf()
+  +operation(): void
+}
+
+class Composite{
+  +Composite()
+  +operation(): void
+  +add(Component): void
+  +remove(Component): void
+  +getChild(int): Component
+}
+
+Client -> Component 
+Component <|-- Leaf
+Component <|-- Composite
+Composite o--> Component : children
+
+@enduml

@@ -1,0 +1,29 @@
+@startuml
+
+abstract class Invoker{
+  +Invoker(Coommand)
+  +execute(): void
+}
+
+interface Command{
+  +execute(): void
+}
+
+class Receiver{
+  +Receiver()
+  +action(): void
+}
+
+class ConcreteCommand{
+  +ConcreteCommand(Receiver)
+  +execute(): void
+}
+
+
+Invoker -> Command : command 
+Command <|-- ConcreteCommand 
+Receiver <- ConcreteCommand : receiver
+
+
+
+@enduml
