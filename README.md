@@ -4,6 +4,8 @@
 [![GitHub Stats](https://img.shields.io/badge/github-stats-ff5500.svg)](http://githubstats.com/dstar55/100-words-design-patterns-java)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://gus.mit-license.org/)
 
+Official Website: [Design Patterns Stories ](http://www.design-patterns-stories.com)
+
 # 100 words GoF Design Patterns in Java
 
 ## Introduction
