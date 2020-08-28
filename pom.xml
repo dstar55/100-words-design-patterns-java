@@ -43,7 +43,7 @@
 						<target>${compiler.target.configuration}</target>
 					</configuration>
 			</plugin>
-			<!-- JAVADOC - generated with 'mvn javadoc:javadoc' call -->
+			<!-- JAVADOC - generated with 'mvn javadoc:javadoc' call 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -56,15 +56,14 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>			
+			</plugin>		-->	
 		
-			<plugin>
-				<!-- CODE COVERAGE - generated with 'mvn clean test jacoco:report' call -->
+			<!-- CODE COVERAGE - generated with 'mvn clean test jacoco:report' call 
+			<plugin>	
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.7.4.201502262128 </version>
 				<executions>
-					<!-- Prepare execution with Surefire -->
 					<execution>
 						<id>pre-unit-test</id>
 						<goals>
@@ -74,7 +73,6 @@
 							<propertyName>surefireArgLine</propertyName>
 						</configuration>
 					</execution>
-					<!-- Generate report after tests are run -->
 					<execution>
 						<id>post-unit-test</id>
 						<phase>test</phase>
@@ -83,7 +81,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>-->
 			<plugin>
 				<!-- UNIT TEST RUNNER -->
 				<groupId>org.apache.maven.plugins</groupId>
