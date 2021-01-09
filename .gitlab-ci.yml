@@ -3,6 +3,7 @@ image: maven:latest
 stages: 
   - build
   - test
+  - package
   
 variables:
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
@@ -21,3 +22,8 @@ test:
   stage: test 
   script: 
     - mvn test 
+  
+package: 
+  stage: package 
+  script: 
+    - mvn package 
