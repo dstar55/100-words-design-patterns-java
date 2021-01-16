@@ -23,11 +23,6 @@ test:
   stage: test 
   script: 
     - mvn verify 
-  artifacts:
-    reports:
-      junit:
-        - target/surefire-reports/TEST-*.xml
-        - target/failsafe-reports/TEST-*.xml
   
 package: 
   stage: package 
