@@ -4,6 +4,7 @@ stages:
   - build
   - test
   - package
+  - deploy
   
 variables:
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
@@ -27,3 +28,9 @@ package:
   stage: package 
   script: 
     - mvn package 
+
+deploy: 
+  stage: deploy 
+  script: 
+    - mvn deploy -s ci_settings.xml
+
