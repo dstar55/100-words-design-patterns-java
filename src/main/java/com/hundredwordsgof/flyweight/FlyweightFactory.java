@@ -1,3 +1,5 @@
+//This is a comment. It has my name. My name is Payton Suiter.
+
 package com.hundredwordsgof.flyweight;
 
 import java.util.HashMap;
