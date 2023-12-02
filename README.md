@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/dstar55/100-words-design-patterns-java.svg?branch=master)](https://travis-ci.org/dstar55)
 [![Coverage Status](https://coveralls.io/repos/github/dstar55/100-words-design-patterns-java/badge.svg?branch=master)](https://coveralls.io/github/dstar55/100-words-design-patterns-java?branch=master) 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9814c4f9d59b4a6fa12ff122d6331b0a)](https://www.codacy.com/app/dstar55/100-words-design-patterns-java?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dstar55/100-words-design-patterns-java&amp;utm_campaign=Badge_Grade)
-[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/dstar55/100-words-design-patterns-java/master?grs=github&t=white)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://gus.mit-license.org/)
 
 Official Website: [Design Patterns Stories ](http://www.design-patterns-stories.com)
