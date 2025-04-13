@@ -14,6 +14,10 @@ jobs:
           java-version: 1.8
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
+      - name: Run Formatter
+        run: mvn com.coveo:fmt-maven-plugin:format
+      - name: Test
+        run: mvn test        
       - name: Publish
         run: mkdir staging && cp target/*.jar staging
       - uses: actions/upload-artifact@v4
