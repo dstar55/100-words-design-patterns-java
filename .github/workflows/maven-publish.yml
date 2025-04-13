@@ -16,7 +16,7 @@ jobs:
         run: mvn --batch-mode --update-snapshots verify
       - name: Publish
         run: mkdir staging && cp target/*.jar staging
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: Package
           path: staging
