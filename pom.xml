@@ -15,8 +15,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<compiler.version>3.0</compiler.version>
-		<compiler.source.configuration>1.7</compiler.source.configuration>
-		<compiler.target.configuration>1.7</compiler.target.configuration>
+		<compiler.source.configuration>1.8</compiler.source.configuration>
+		<compiler.target.configuration>1.8</compiler.target.configuration>
 	</properties>
 		
 	<!-- LIBRARY DEPENDENCIES -->
